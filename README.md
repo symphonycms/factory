@@ -9,9 +9,9 @@ The bootstrap offers:
 - content structure and typography
 - a universal Symphony network navigation bar
 
-[Symphony bootstrap](http://symphonycms.github.com/bootstrap/) is freely available for all Symphony network sites as a [Git repository](https://github.com/symphonycms/bootstrap/). Also, the new default workspace will be based on a modified version of the main layout.
+[Symphony Bootstrap](http://symphonycms.github.com/bootstrap/) is freely available for all Symphony network sites as a [Git repository](https://github.com/symphonycms/bootstrap/). Also, the new default workspace will be based on a modified version of the main layout.
 
-# Funding
+## Funding
 
 The goal is to make Symphony Bootstrap available and ready to use for the community late summer 2012. To turn this idea into reality, Symphony Bootstrap depends on your help to fund the work.
 
