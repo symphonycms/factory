@@ -7,9 +7,9 @@ The bootstrap offers:
 - layouts to create single or multicolumn designs
 - snippets to create common layout elements like articles, forms, buttons, tables, dialogs and more
 - content structure and typography
-- a universal Symphony network navigation bar
+- a universal Symphony Network navigation bar
 
-[Symphony Bootstrap](http://symphonycms.github.com/bootstrap/) is freely available for all Symphony network sites as a [Git repository](https://github.com/symphonycms/bootstrap/). Also, the new default workspace will be based on a modified version of the main layout.
+[Symphony Bootstrap](http://symphonycms.github.com/bootstrap/) is freely available for all Symphony Network sites as a [Git repository](https://github.com/symphonycms/bootstrap/). Also, the new default workspace will be based on a modified version of the main layout.
 
 ## Funding
 
@@ -19,4 +19,4 @@ The goal is to make Symphony Bootstrap available and ready to use for the commun
 
 (Enter pledgie link here)
 
-The basic goal is 2.000 EUR (approx. US$ 2.500) , which will cover research, design and documentation. Of course, work will not stop after the initial release. The more money is raised, the faster the bootstrap can move on. Thanks!
+The basic goal is 2.000 EUR (approx. US$ 2.500) , which will cover research, design and documentation. Of course, work will not stop after the initial release, but the more money is raised, the faster the bootstrap can move on. Thanks!
