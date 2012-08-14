@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bootstrap status="development">
+	<name>Symphony Bootstrap</name>
+	<description>A design framework for the Symphony Network</description>
+	<repo type="github">https://github.com/symphonycms/bootstrap</repo>
+	<authors>
+		<author>
+			<name github="symphonycms">Symphony CMS</name>
+			<website>http://getsymphony.com</website>
+		</author>
+		<author>
+			<name github="hananils" symphony="hananils">Büro für Web- und Textgestaltung</name>
+			<website>http://hananils.de</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.0" date="">
+			- Initial release 
+		</release>
+	</releases>
+</bootstrap>
