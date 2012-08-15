@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bootstrap status="development">
-	<name>Symphony Bootstrap</name>
+<factory status="development">
+	<name>Symphony Factory</name>
 	<description>A design framework for the Symphony Network</description>
-	<repo type="github">https://github.com/symphonycms/bootstrap</repo>
+	<repo type="github">https://github.com/symphonycms/factory</repo>
 	<authors>
 		<author>
 			<name github="symphonycms">Symphony CMS</name>
@@ -18,4 +18,4 @@
 			- Initial release 
 		</release>
 	</releases>
-</bootstrap>
+</factory>
