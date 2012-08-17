@@ -23,7 +23,7 @@ The goal is to make Symphony Factory available and ready to use for the communit
 
 [Johanna](http://getsymphony.com/get-involved/member/Johanna/) and [Nils Hörrmann](http://getsymphony.com/get-involved/member/nils/) are up for the challenge and willing to invest their time. If you like the idea of a design framework for Symphony and want to support the project, a donation would be very much appreciated.
 
-(Enter pledgie link here)
+<a href='http://www.pledgie.com/campaigns/18062'><img alt='Click here to lend your support to: Symphony Factory and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/18062.png?skin_name=chrome' border='0' /></a>
 
 The basic goal is 2.000 EUR (approx. US$ 2.500), which will cover research, design and documentation. Of course, work will not stop after the initial release, but the more money is raised, the faster the factory can move on.
 
