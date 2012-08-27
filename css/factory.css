@@ -68,11 +68,22 @@ p {
 }
 
 #network .drawer {
-	display: none;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.2s ease-out 0.5s;
+	-moz-transition: height 0.2s ease-out 0.5s;
+	-ms-transition: height 0.2s ease-out 0.5s;
+	-o-transition: height 0.2s ease-out 0.5s;
+	transition: height 0.2s ease-out 0.5s;
 }
 
 #network:hover .drawer {
-	display: block;
+	height: 250px;
+	-webkit-transition: height 0.2s ease-out 0.1s;
+	-moz-transition: height 0.2s ease-out 0.1s;
+	-ms-transition: height 0.2s ease-out 0.1s;
+	-o-transition: height 0.2s ease-out 0.1s;
+	transition: height 0.2s ease-out 0.1s;
 }
 
 #network a {
