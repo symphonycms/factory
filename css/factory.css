@@ -1,0 +1,102 @@
+/**
+ * SYMPHONY FACTORY
+ * A design framework for the Symphony Network
+ * 
+ * @link http://symphonycms.github.com/factory/
+ */
+
+/*-----------------------------------------------------------------------------
+	General definitions
+-----------------------------------------------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 14px/1.5 sans-serif;
+}
+
+img {
+	display: block;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/*-----------------------------------------------------------------------------
+	Grids
+-----------------------------------------------------------------------------*/
+
+.field {
+	box-sizing: border-box;
+	width: 100%;
+	clear: both;
+}
+
+.field:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.column {
+	width: 215px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.column.two-modules {
+	width: 430px;
+}
+
+.column.three-modules {
+	width: 645px;
+}
+
+/*-----------------------------------------------------------------------------
+	Network
+-----------------------------------------------------------------------------*/
+
+#network {
+	background: #b20b4f;
+}
+
+#network .drawer {
+	display: none;
+}
+
+#network:hover .drawer {
+	display: block;
+}
+
+#network a {
+	color: #fff;
+}
+
+#network header {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background: #282828;
+}
+
+#user {
+	position: relative;
+}
+
+#user img {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+/*-----------------------------------------------------------------------------
+	Site
+-----------------------------------------------------------------------------*/
+
