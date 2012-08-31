@@ -30,12 +30,32 @@ p {
 }
 
 /*-----------------------------------------------------------------------------
-	Grids
+	Layouts:
+	
+	There are two kinds of general site layouts: centered and wide.
+	The centered layout is the default one and should be used by all 
+	text focussed sites. The wide version is conceived for sites like 
+	xPathr that need the full window width to deplay their UI.
+-----------------------------------------------------------------------------*/
+
+.centered {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.wide {
+	width: 100%;
+	margin: 0 50px;
+}
+
+/*-----------------------------------------------------------------------------
+	Grids:
+	
+	Grids are organised in two groups: fields with and without sidebar.
 -----------------------------------------------------------------------------*/
 
 .field {
 	box-sizing: border-box;
-	width: 100%;
 	clear: both;
 }
 
@@ -44,6 +64,12 @@ p {
 	clear: both;
 	display: block;
 }
+
+/*-----------------------------------------------------------------------------
+	Columns:
+	
+	There are three different types of columns: full, half and third.
+-----------------------------------------------------------------------------*/
 
 .column {
 	width: 215px;
@@ -60,7 +86,9 @@ p {
 }
 
 /*-----------------------------------------------------------------------------
-	Network
+	Network:
+	
+	Style definitions for the network are of a site.
 -----------------------------------------------------------------------------*/
 
 #network {
@@ -108,6 +136,8 @@ p {
 }
 
 /*-----------------------------------------------------------------------------
-	Site
+	Site:
+	
+	Style definitions for the content area of a site.
 -----------------------------------------------------------------------------*/
 
