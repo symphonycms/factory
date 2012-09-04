@@ -39,7 +39,7 @@ p {
 -----------------------------------------------------------------------------*/
 
 .centered {
-	width: 1000px;
+	width: 1020px;
 	margin: 0 auto;
 }
 
@@ -57,6 +57,7 @@ p {
 .field {
 	box-sizing: border-box;
 	clear: both;
+	margin-bottom: 20px;
 }
 
 .field:after {
@@ -65,24 +66,39 @@ p {
 	display: block;
 }
 
+.field .sidebar {
+	float: left;
+	width: 320px;
+}
+
+.field .content {
+	float: right;
+	width: 640px;
+}
+
 /*-----------------------------------------------------------------------------
 	Columns:
 	
-	There are three different types of columns: full, half and third.
+	There are four different types of columns: full, half, quart and quint.
 -----------------------------------------------------------------------------*/
 
 .column {
-	width: 215px;
+	width: 1000px;
+	margin-left: 20px;
 	box-sizing: border-box;
 	float: left;
 }
 
-.column.two-modules {
-	width: 430px;
+.column.half {
+	width: 490px;
 }
 
-.column.three-modules {
-	width: 645px;
+.column.quart {
+	
+}
+
+.column.quint {
+
 }
 
 /*-----------------------------------------------------------------------------
@@ -141,3 +157,6 @@ p {
 	Style definitions for the content area of a site.
 -----------------------------------------------------------------------------*/
 
+.field h2 {
+	margin-left: 20px;
+}
