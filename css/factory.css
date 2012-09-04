@@ -57,23 +57,13 @@ p {
 .field {
 	box-sizing: border-box;
 	clear: both;
-	margin-bottom: 20px;
+	position: relative;
 }
 
 .field:after {
 	content: "";
 	clear: both;
 	display: block;
-}
-
-.field .sidebar {
-	float: left;
-	width: 320px;
-}
-
-.field .content {
-	float: right;
-	width: 640px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -84,6 +74,7 @@ p {
 	margin: 0 0 20px 20px;
 	box-sizing: border-box;
 	float: left;
+	position: relative;
 }
 
 /* Columns by width */
@@ -113,6 +104,19 @@ p {
 .column.half {
 	width: 490px;
 }
+
+/* Columns by function */
+
+
+.column.sidebar {
+	width: 184px;
+}
+
+.column.content {
+	float: right;
+	width: 796px;
+}
+
 
 /*-----------------------------------------------------------------------------
 	Network:
@@ -175,6 +179,10 @@ p {
 	
 	Style definitions for the content area of a site.
 -----------------------------------------------------------------------------*/
+
+header {
+	margin-left: 20px;
+}
 
 .field h2 {
 	margin-left: 20px;
