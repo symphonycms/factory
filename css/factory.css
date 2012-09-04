@@ -84,7 +84,7 @@ p {
 
 .column {
 	width: 1000px;
-	margin-left: 20px;
+	margin: 0 0 20px 20px;
 	box-sizing: border-box;
 	float: left;
 }
@@ -98,7 +98,7 @@ p {
 }
 
 .column.quint {
-
+	width: 184px;
 }
 
 /*-----------------------------------------------------------------------------
