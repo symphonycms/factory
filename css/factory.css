@@ -152,7 +152,11 @@ p {
 /*-----------------------------------------------------------------------------
 	Network:
 
-	Style definitions for the network are of a site.
+	Style definitions for the network area. 
+	
+	To save space, Factory uses `vh` as unit for the toolbar height. This allows 
+	us to save a bit of vertical space on narrow devices. Browsers that don't 
+	support that unit yet will default to the full height.
 -----------------------------------------------------------------------------*/
 
 #network {
@@ -170,12 +174,31 @@ p {
 	padding: 0;
 	color: #fff;
 	background: #282828;
+	
+	/* Flexible height with fallback */
+	min-height: 30px;
+	height: 45px;
+	height: 7vh;
+	max-height: 45px;
 }
 
 #network header h1 {
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 0.1em;
+}
+
+#network header .centered {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 1040px;
+	margin-left: -520px;
+	padding-bottom: 5px;
+}
+
+#network header .column {
+	margin-bottom: 0;
 }
 
 #user {
