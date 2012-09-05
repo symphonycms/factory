@@ -73,7 +73,6 @@ p {
 
 .field .field {
 	margin-left: -20px;
-	margin-right: -20px;
 	padding-right: 0;
 }
 
@@ -203,7 +202,7 @@ p {
 
 #network:hover .drawer,
 #network.pinned .drawer {
-	height: 250px;
+	height: 200px;
 	-webkit-transition: height 0.2s ease-out 0.1s;
 	-moz-transition: height 0.2s ease-out 0.1s;
 	-ms-transition: height 0.2s ease-out 0.1s;
@@ -216,6 +215,7 @@ p {
 	font-size: 14px;
 	font-weight: normal;
 	text-transform: uppercase;
+	border-bottom: 1px solid #9E0A46;
 }
 
 #network .drawer ul {

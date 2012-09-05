@@ -133,6 +133,7 @@
 .show-grid #network .field:after {
 	content: "";
 	position: relative;
+	visibility: hidden;
 }
 
 .show-grid #network .column {
