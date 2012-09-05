@@ -18,8 +18,8 @@
 	position: fixed;
 	top: 0;
 	left: 50%;
-	margin-left: -510px;
-	width: 1020px;
+	margin-left: -520px;
+	width: 1040px;
 	height: 100%;
 	pointer-events: none;
 }
@@ -83,21 +83,11 @@
 	border-top: 1px solid rgba(196, 226, 205, 0.8);
 }
 
-.show-grid .field:before {
-	content: " ";
-	background: #fff;
-	display: block;
-	width: 20px;
-	height: 5px;
-	top: -2px;
-	position: relative;
-}
-
 .show-grid .field:after {
 	content: attr(class);
 	position: absolute;
 	top: 10px;
-	right: 10px;
+	right: 30px;
 	width: 20px;
 	font-size: 10px;
 	font-weight: normal;

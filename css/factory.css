@@ -42,7 +42,7 @@ p {
 -----------------------------------------------------------------------------*/
 
 .centered {
-	width: 1020px;
+	width: 1040px;
 	margin: 0 auto;
 }
 
@@ -62,6 +62,7 @@ p {
 	box-sizing: border-box;
 	clear: both;
 	position: relative;
+	padding: 0 20px 0 0;
 }
 
 .field:after {
@@ -148,7 +149,8 @@ p {
 	transition: height 0.2s ease-out 0.5s;
 }
 
-#network:hover .drawer {
+#network:hover .drawer,
+#network.pinned .drawer {
 	height: 250px;
 	-webkit-transition: height 0.2s ease-out 0.1s;
 	-moz-transition: height 0.2s ease-out 0.1s;
