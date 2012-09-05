@@ -1,8 +1,11 @@
 /**
  * SYMPHONY FACTORY
  * A design framework for the Symphony Network
- * 
+ *
  * @link http://symphonycms.github.com/factory/
+ * @licence Symphony Community Licence
+ *
+ * Please add your custom site styling in a separate file.
  */
 
 /*-----------------------------------------------------------------------------
@@ -31,10 +34,10 @@ p {
 
 /*-----------------------------------------------------------------------------
 	Layouts:
-	
+
 	There are two kinds of general site layouts: centered and wide.
-	The centered layout is the default one and should be used by all 
-	text focussed sites. The wide version is conceived for sites like 
+	The centered layout is the default one and should be used by all
+	text focussed sites. The wide version is conceived for sites like
 	xPathr that need the full window width to deplay their UI.
 -----------------------------------------------------------------------------*/
 
@@ -50,8 +53,9 @@ p {
 
 /*-----------------------------------------------------------------------------
 	Grids:
-	
-	Grids are organised in two groups: fields with and without sidebar.
+
+	Grid layouts should be grouped in fields. There are two main layout types:
+	fields with and without sidebar, see column definitions by function.
 -----------------------------------------------------------------------------*/
 
 .field {
@@ -67,7 +71,15 @@ p {
 }
 
 /*-----------------------------------------------------------------------------
-	Columns
+	Columns:
+
+	There are three different categories of columns:
+	columns by function, by width and by proportion.
+
+	All columns are floated and it's up to the developer to make sure that
+	the column widths sum up to the full page width per row.
+	The column widths .three, .four, .five are not meant to display text,
+	they should be used for tables and images.
 -----------------------------------------------------------------------------*/
 
 .column {
@@ -75,6 +87,17 @@ p {
 	box-sizing: border-box;
 	float: left;
 	position: relative;
+}
+
+/* Columns by function */
+
+.column.sidebar {
+	width: 184px;
+}
+
+.column.content {
+	float: right;
+	width: 796px;
 }
 
 /* Columns by width */
@@ -105,22 +128,9 @@ p {
 	width: 490px;
 }
 
-/* Columns by function */
-
-
-.column.sidebar {
-	width: 184px;
-}
-
-.column.content {
-	float: right;
-	width: 796px;
-}
-
-
 /*-----------------------------------------------------------------------------
 	Network:
-	
+
 	Style definitions for the network are of a site.
 -----------------------------------------------------------------------------*/
 
@@ -176,7 +186,7 @@ p {
 
 /*-----------------------------------------------------------------------------
 	Site:
-	
+
 	Style definitions for the content area of a site.
 -----------------------------------------------------------------------------*/
 
