@@ -71,6 +71,12 @@ p {
 	display: block;
 }
 
+.field .field {
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-right: 0;
+}
+
 /*-----------------------------------------------------------------------------
 	Columns:
 
@@ -81,6 +87,9 @@ p {
 	the column widths sum up to the full page width per row.
 	The column widths .three, .four, .five are not meant to display text,
 	they should be used for tables and images.
+	
+	If you'd like to nest columns inside a column, make sure to wrap those
+	columns with another .field element.
 -----------------------------------------------------------------------------*/
 
 .column {
@@ -129,6 +138,18 @@ p {
 	width: 490px;
 }
 
+.column.two .column.half {
+	width: 184px;
+}
+
+.column.three .column.half {
+	width: 285px;
+}
+
+.column.four .column.half {
+	width: 388px;
+}
+
 /*-----------------------------------------------------------------------------
 	Network:
 
@@ -139,29 +160,11 @@ p {
 	background: #b20b4f;
 }
 
-#network .drawer {
-	height: 0;
-	overflow: hidden;
-	-webkit-transition: height 0.2s ease-out 0.5s;
-	-moz-transition: height 0.2s ease-out 0.5s;
-	-ms-transition: height 0.2s ease-out 0.5s;
-	-o-transition: height 0.2s ease-out 0.5s;
-	transition: height 0.2s ease-out 0.5s;
-}
-
-#network:hover .drawer,
-#network.pinned .drawer {
-	height: 250px;
-	-webkit-transition: height 0.2s ease-out 0.1s;
-	-moz-transition: height 0.2s ease-out 0.1s;
-	-ms-transition: height 0.2s ease-out 0.1s;
-	-o-transition: height 0.2s ease-out 0.1s;
-	transition: height 0.2s ease-out 0.1s;
-}
-
 #network a {
 	color: #fff;
 }
+
+/* Toolbar */
 
 #network header {
 	margin: 0;
@@ -186,6 +189,40 @@ p {
 	right: 0;
 }
 
+/* Drawer */
+
+#network .drawer {
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.2s ease-out 0.5s;
+	-moz-transition: height 0.2s ease-out 0.5s;
+	-ms-transition: height 0.2s ease-out 0.5s;
+	-o-transition: height 0.2s ease-out 0.5s;
+	transition: height 0.2s ease-out 0.5s;
+}
+
+#network:hover .drawer,
+#network.pinned .drawer {
+	height: 250px;
+	-webkit-transition: height 0.2s ease-out 0.1s;
+	-moz-transition: height 0.2s ease-out 0.1s;
+	-ms-transition: height 0.2s ease-out 0.1s;
+	-o-transition: height 0.2s ease-out 0.1s;
+	transition: height 0.2s ease-out 0.1s;
+}
+
+#network .drawer h2 {
+	color: #C9728D;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+#network .drawer ul {
+	list-style: none;
+	padding: 0;
+}
+
 /*-----------------------------------------------------------------------------
 	Site:
 
@@ -196,6 +233,6 @@ header {
 	margin-left: 20px;
 }
 
-.field h2 {
+.field > h2 {
 	margin-left: 20px;
 }
