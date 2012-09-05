@@ -15,7 +15,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	font: normal 14px/1.5 sans-serif;
+	font: normal 15px/1.7 'PT Sans', sans-serif;
+	overflow-y: scroll;
 }
 
 img {
@@ -174,18 +175,13 @@ p {
 	padding: 0;
 	color: #fff;
 	background: #282828;
+	min-width: 1040px;
 	
 	/* Flexible height with fallback */
-	min-height: 30px;
+	min-height: 35px;
 	height: 45px;
-	height: 7vh;
+	height: 6vh;
 	max-height: 45px;
-}
-
-#network header h1 {
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing: 0.1em;
 }
 
 #network header .centered {
@@ -194,7 +190,29 @@ p {
 	left: 50%;
 	width: 1040px;
 	margin-left: -520px;
-	padding-bottom: 5px;
+	padding-bottom: 4px;
+}
+
+#network header h1 {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family: 'PT Sans Caption', sans-serif;
+	letter-spacing: 0.075em;
+	font-weight: normal;
+}
+
+#network header a {
+	color: rgba(255, 255,255, 0.7);
+	text-decoration: none;
+}
+
+#network header nav a {
+	float: left;
+}
+
+#network header nav a:not(:last-of-type):after {
+	content: "\00B7";
+	margin: 0.5em;
 }
 
 #network header .column {
@@ -207,7 +225,7 @@ p {
 
 #user img {
 	position: absolute;
-	top: 5px;
+	bottom: 0;
 	right: 0;
 }
 
@@ -252,10 +270,33 @@ p {
 	Style definitions for the content area of a site.
 -----------------------------------------------------------------------------*/
 
-header {
+#site header {
 	margin-left: 20px;
+	border-bottom: 1px solid #CFCFCF;
 }
 
-.field > h2 {
+#site header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#site header h1 {
+	margin: 1em 0 0;
+	font-size: 24px;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-weight: normal;
+	float: left;
+}
+
+#site header nav {
+	float: right;
+}
+
+#site header h1 span {
+/*	display: block;*/
+}
+
+#site .field > h2 {
 	margin-left: 20px;
 }
