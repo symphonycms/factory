@@ -99,6 +99,9 @@
 			<header>
 				<h1><span>Symphony</span> Extensions</h1>
 				<nav>
+					<a href="#">Browse</a>
+					<a href="#">Compatibility Matrix</a>
+					<a href="#">Developers</a>
 					<a href="?grid">Show Grid</a>
 					<a href="?">Hide Grid</a>
 				</nav>
@@ -106,17 +109,61 @@
 			
 			<!-- Field with sidebar -->
 			<div class="field">
-				<h2>Field with sidebar</h2>
+				<h2>Date and Time 3.0.6 <em>released</em></h2>
 				<div class="column sidebar">
 					<ul>
-						<li>Just</li>
-						<li>a simple</li>
-						<li>list</li>
+						<li>About</li>
+						<li>Compatibility</li>
+						<li>Version History</li>
 					</ul>				
 				</div>
 				<div class="column content">
-					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.</p>				
-					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.</p>				
+					<h3>About the extension</h3>
+					<p>
+						<img src="http://projekte.nilshoerrmann.de/extensions/datetime/datetime3.png" alt="Date and Time Field">
+					</p>
+					<p>Date and Time provides advanced date and time management for Symphony. It offers an easy interface providing a calendar widget that helps creating multiple dates and date ranges. The field respects the system settings and displays date and time accordingly. Nevertheless, it is capable to read and understand <a href="http://www.php.net/manual/en/datetime.formats.php">relative date formats</a>.</p>
+					<h4>Installation</h4>
+					<p>Information about <a href="http://symphony-cms.com/learn/tasks/view/install-an-extension/">installing and updating extensions</a> can be found in the Symphony documentation at <a href="http://symphony-cms.com/learn/">http://symphony-cms.com/learn/</a>.</p>
+					<h4>Updating</h4>
+					<p>To update Date and Time to a newer version perform the following steps:</p>
+					<ul>
+						<li>Make sure that you have a working backup of your Symphony install.</li>
+						<li>Update the Date and Time folder by either updating the repository and submodule or by replacing the files manually.</li>
+						<li>Log into the backend and enable the Date and Time extension to run the update script.</li>
+					</ul>
+					<p>All interface related components of Date and Time are JavaScript based. Please make sure to clear your browser cache to avoid interface issues. If another extension or the Symphony core throws a JavaScript error, Date and Time will stop working.</p>
+					<h4>Field Settings</h4>
+					<p>Date and Time offers the following field settings:</p>
+					<ul>
+						<li>allow creation of new items: this will add a Create New button to the interface</li>
+						<li>allow sorting of items: this will enable item dragging and reordering</li>
+						<li>allow time editing: this will display date and time in the interface</li>
+						<li>allow date ranges: this will enable range editing</li>
+						<li>pre-populate this field with today's date: this will automatically add the current date to new entries</li>
+					</ul>
+					<h4>Data Source Filtering</h4>
+					<ul>
+						<li>prefixing a filter with <code>start:</code> will only check start dates,</li>
+						<li>prefixing a filter with <code>end:</code> will only check end dates,</li>
+						<li>prefixing a filter with <code>strict:</code> will check, if start <strong>and</strong> end date are in the given filter range,</li>
+						<li>filters without prefixes will check, if start <strong>or</strong> end date are in the given filter range.</li>
+						<li>prefixing a filter with <code>extended:</code> will work like the unprefixed filter but will additionally fetch single dates (those without end date) that lie in the past. This is helpful if you like to display banners only between certain dates and if the user didn't enter an end date. Using the <code>extended</code> filter, this will be interpreted as "display for ever".</li>
+					</ul>
+					<p>Filters separated by comma will find all dates that match one of the given dates or ranges.<br>Filters separated by <code>+</code> will only find dates that match all of the given dates or ranges.</p>
+					<p>This extensions accepts all relative dates known to <a href="http://www.php.net/manual/en/datetime.formats.php">PHP's DateTime class</a> for filtering. It also allows the creation of filter ranges with <code>to</code> or <code>earlier than</code> and <code>later than</code>.</p>
+					<h4>Example Data Source Output</h4>
+					<pre><code>&lt;date-and-time&gt;
+    &lt;date timeline="1" type="range"&gt;
+        &lt;start iso="2011-12-06T10:00:00+01:00" time="10:00" weekday="2" offset="+0100"&gt;2011-12-06&lt;/start&gt;
+        &lt;end iso="2011-12-24T18:00:00+01:00" time="18:00" weekday="6" offset="+0100"&gt;2011-12-24&lt;/end&gt;
+    &lt;/date&gt;
+    &lt;date timeline="2" type="exact"&gt;
+        &lt;start iso="2011-12-25T09:00:00+01:00" time="09:00" weekday="7" offset="+0100"&gt;2011-12-25&lt;/start&gt;
+    &lt;/date&gt;
+&lt;/date-and-time&gt;</code></pre>
+					<h4>Acknowledgement</h4>
+					<p>This extension is not a work of a single person, a lot of people tested it and <a href="https://github.com/hananils/datetime/contributors">contributed to it</a>. The initial layout of the date widget was inspired by Scott Hughes' <a href="http://symphony-cms.com/discuss/thread/103/">calendar mock-up for Symphony 2.0</a> and Rowan Lewis' <a href="https://github.com/rowan-lewis/calendaroverlay/">calendar overlay</a>.</p>
 				</div>
 			</div>
 			
