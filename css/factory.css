@@ -283,19 +283,29 @@ p {
 
 #site header h1 {
 	margin: 1em 0 0;
-	font-size: 24px;
+	padding-top: 5px;
+	font-size: 27px;
+	line-height: 1;
 	font-family: 'PT Sans Caption', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
 	font-weight: normal;
 	float: left;
+	background: url(../img/logo.png) 0 0 no-repeat;
+}
+
+#site header h1 span {
+/*	display: inline-block;*/
+	float: left;
+	width: 203px;
+	height: 35px;
+	text-indent: -1000em;
 }
 
 #site header nav {
 	float: right;
 }
 
-#site header h1 span {
-/*	display: block;*/
-}
 
 #site .field > h2 {
 	margin-left: 20px;
