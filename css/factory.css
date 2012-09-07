@@ -182,6 +182,16 @@ table {
 	color: #fff;
 }
 
+#network #user,
+#network .user {
+	margin-left: 0;
+	margin-right: -20px;
+	margin-bottom: -4px;
+	width: 224px;
+	padding-left: 20px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
 /* Toolbar */
 
 #network header {
@@ -240,7 +250,7 @@ table {
 #user img {
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right: 20px;
 }
 
 /* Drawer */
@@ -276,6 +286,16 @@ table {
 #network .drawer ul {
 	list-style: none;
 	padding: 0;
+}
+
+#network .user {
+	height: 100%;
+}
+
+#network .user p {
+	background: rgba(0, 0, 0, 0.1);
+	margin-left: -20px;
+	padding: 0 20px;
 }
 
 /*-----------------------------------------------------------------------------
