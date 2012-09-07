@@ -80,6 +80,8 @@ table {
 	display: block;
 }
 
+/* Nested fields */
+
 .field .field {
 	margin-left: -20px;
 	padding-right: 0;
