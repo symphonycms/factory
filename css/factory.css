@@ -17,6 +17,7 @@ body {
 	padding: 0;
 	font: normal 15px/1.7 'PT Sans', sans-serif;
 	overflow-y: scroll;
+	background: #fbfdfb;
 }
 
 img {
@@ -33,8 +34,14 @@ p {
 	padding: 0;
 }
 
+code {
+	font: 12px/1.5 Monaco, Consolas, 'Andale Mono', monospace;
+}
+
 table {
 	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 .hidden {
@@ -120,8 +127,14 @@ table {
 	width: 796px;
 }
 
-.table .column.content {
+.data .column.pinned {
+	width: 214px;
+}
+
+.data .column.scroll {
 	overflow-x: scroll;
+	width: 804px;
+	margin: 0;
 }
 
 /* Columns by width */
@@ -288,6 +301,10 @@ table {
 	padding: 0 20px;
 }
 
+#site header .author {
+	float: right;
+}
+
 /* Main site header, e. g. Symphony Extensions */
 
 #site > header {
@@ -333,15 +350,127 @@ table {
 	margin: 37px 0 0 17px;
 }
 
-/* */
+/* Headlines */
 
 #site .field > h2 {
 	margin-left: 20px;
 }
 
-/* Tables */
+/* Data tables */
 
-.table {
-	background: rgba(0, 0, 0, 0.05);
+#site .data {
+	margin: 0 10px;
+	background: #F5F5F5;
 	border-radius: 2px;
+	padding-right: 0;
+	border-left: 1px solid #E6E6E5;
+	border-right: 1px solid #E6E6E5;
+}
+
+#site .data:first-of-type {
+	border-top: 1px solid #E6E6E5;
+}
+
+#site .data:last-of-type {
+	border-bottom: 1px solid #E6E6E5;
+}
+
+#site .data h3.pinned {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: normal;
+	min-height: 30px;
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: 'PT Sans Caption', sans-serif;
+	line-height: 2.3;
+	padding: 0 0 0 9px;
+	color: rgba(0, 0, 0, 0.6);
+	border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#site .data .label {
+	height: 30px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	display: block;
+}
+
+#site .data table th {
+	font-weight: normal;
+	text-align: left;
+}
+
+#site .data table tr {
+	background: #fff;
+	height: 30px;
+}
+
+#site .data table a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*-----------------------------------------------------------------------------
+	Layout snippets
+-----------------------------------------------------------------------------*/
+
+/* Compatibility table */
+
+table.compatibility td.compatible a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+table.compatibility td.compatible:nth-last-child(4) a {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+table.compatibility td.compatible:nth-last-child(3) a {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+table.compatibility td.compatible:nth-last-child(2) a {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+table.compatibility td.compatible:last-child a {
+	color: rgba(255, 255, 255, 1);
+}
+
+table.compatibility td.compatible {
+	background: rgba(146, 196, 77, 0.7);
+	color: rgba(255, 255, 255, 0.7);
+}
+
+table.compatibility td.compatible:nth-last-child(4) {
+	background: rgba(146, 196, 77, 0.75);
+	color: rgba(255, 255, 255, 0.75);
+}
+
+table.compatibility td.compatible:nth-last-child(3) {
+	background: rgba(146, 196, 77, 0.8);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+table.compatibility td.compatible:nth-last-child(2) {
+	background: rgba(146, 196, 77, 0.9);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+table.compatibility td.compatible:last-child {
+	background: rgba(146, 196, 77, 1);
+	color: rgba(255, 255, 255, 1);
+}
+
+/* Repository and download links */
+
+.source code {
+	background: #fff;
+	border: 1px solid #E6E6E5;
+	display: inline-block;
+	white-space: nowrap;
+	box-sizing: border-box;
+	height: 25px;
 }
