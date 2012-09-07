@@ -92,6 +92,11 @@
 						</ul>
 					</div>
 				</div>
+				
+				<!-- Symphony downloads -->
+				<div class="column one">
+				
+				</div>
 			</div>
 		</aside>
 
@@ -108,88 +113,207 @@
 				</nav>
 			</header>
 			
-			<!-- Field with sidebar -->
-			<div class="field">
-				<h2>Date and Time 3.0.6 <em>released</em></h2>
-				<div class="column sidebar">
-					<ul>
-						<li>About</li>
-						<li>Compatibility</li>
-						<li>Version History</li>
-					</ul>				
+			<section>
+				<header>
+					<h2>Date and Time 3.0.6 <em>released</em></h2>
+					<p>by <a href="#">Büro für Web- und Textgestaltung</a></p>
+				</header>	
+						
+				<!-- Compatibility -->
+				<div class="field table">
+					<div class="column sidebar">
+						<h3>
+							<span class="row">Symphony Version</span> <span class="hidden">and</span> <span class="row">Compatibility</span>
+						</h3>
+					</div>
+					<div class="column content">
+						<table class="compatibility">
+							<thead>
+								<tr>
+									<th class="major">2.0.0</th>
+									<th >2.0.3</th>
+									<th >2.0.4</th>
+									<th >2.0.5</th>
+									<th >2.0.6</th>
+									<th >2.0.7</th>
+									<th class="major">2.1.0</th>
+									<th >2.1.1</th>
+									<th >2.1.2</th>
+									<th class="major">2.2.0</th>
+									<th >2.2.1</th>
+									<th >2.2.2</th>
+									<th >2.2.3</th>
+									<th >2.2.4</th>
+									<th >2.2.5</th>
+									<th class="major">2.3.0</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="not-compatible major">No</td>
+									<td class="not-compatible">No</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/1.2">1.2</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/1.2">1.2</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/1.3">1.3</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/1.3">1.3</a>
+									</td>
+									<td class="compatible major">
+										<a href="https://github.com/hananils/datetime/tree/1.3">1.3</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/1.4">1.4</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/1.5.1">1.5.1</a>
+									</td>
+									<td class="compatible major">
+										<a href="https://github.com/hananils/datetime/tree/1.5.1">1.5.1</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/2.4">2.4</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/2.4">2.4</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/2.4">2.4</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/2.4">2.4</a>
+									</td>
+									<td class="compatible">
+										<a href="https://github.com/hananils/datetime/tree/2.4">2.4</a>
+									</td>
+									<td class="compatible major">3.0.6</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="column sidebar">
+						<h3>Get Extension</h3>
+					</div>
+					<div class="column content">
+						Git links here
+					</div>
 				</div>
-				<div class="column content">
-					<h3>About the extension</h3>
-					<p>
-						<img src="http://projekte.nilshoerrmann.de/extensions/datetime/datetime3.png" alt="Date and Time Field">
-					</p>
-					<p>Date and Time provides advanced date and time management for Symphony. It offers an easy interface providing a calendar widget that helps creating multiple dates and date ranges. The field respects the system settings and displays date and time accordingly. Nevertheless, it is capable to read and understand <a href="http://www.php.net/manual/en/datetime.formats.php">relative date formats</a>.</p>
-					<h4>Installation</h4>
-					<p>Information about <a href="http://symphony-cms.com/learn/tasks/view/install-an-extension/">installing and updating extensions</a> can be found in the Symphony documentation at <a href="http://symphony-cms.com/learn/">http://symphony-cms.com/learn/</a>.</p>
-					<h4>Updating</h4>
-					<p>To update Date and Time to a newer version perform the following steps:</p>
-					<ul>
-						<li>Make sure that you have a working backup of your Symphony install.</li>
-						<li>Update the Date and Time folder by either updating the repository and submodule or by replacing the files manually.</li>
-						<li>Log into the backend and enable the Date and Time extension to run the update script.</li>
-					</ul>
-					<p>All interface related components of Date and Time are JavaScript based. Please make sure to clear your browser cache to avoid interface issues. If another extension or the Symphony core throws a JavaScript error, Date and Time will stop working.</p>
-					<h4>Field Settings</h4>
-					<p>Date and Time offers the following field settings:</p>
-					<ul>
-						<li>allow creation of new items: this will add a Create New button to the interface</li>
-						<li>allow sorting of items: this will enable item dragging and reordering</li>
-						<li>allow time editing: this will display date and time in the interface</li>
-						<li>allow date ranges: this will enable range editing</li>
-						<li>pre-populate this field with today's date: this will automatically add the current date to new entries</li>
-					</ul>
-					<h4>Data Source Filtering</h4>
-					<ul>
-						<li>prefixing a filter with <code>start:</code> will only check start dates,</li>
-						<li>prefixing a filter with <code>end:</code> will only check end dates,</li>
-						<li>prefixing a filter with <code>strict:</code> will check, if start <strong>and</strong> end date are in the given filter range,</li>
-						<li>filters without prefixes will check, if start <strong>or</strong> end date are in the given filter range.</li>
-						<li>prefixing a filter with <code>extended:</code> will work like the unprefixed filter but will additionally fetch single dates (those without end date) that lie in the past. This is helpful if you like to display banners only between certain dates and if the user didn't enter an end date. Using the <code>extended</code> filter, this will be interpreted as "display for ever".</li>
-					</ul>
-					<p>Filters separated by comma will find all dates that match one of the given dates or ranges.<br>Filters separated by <code>+</code> will only find dates that match all of the given dates or ranges.</p>
-					<p>This extensions accepts all relative dates known to <a href="http://www.php.net/manual/en/datetime.formats.php">PHP's DateTime class</a> for filtering. It also allows the creation of filter ranges with <code>to</code> or <code>earlier than</code> and <code>later than</code>.</p>
-					<h4>Example Data Source Output</h4>
-					<pre><code>&lt;date-and-time&gt;
-    &lt;date timeline="1" type="range"&gt;
-        &lt;start iso="2011-12-06T10:00:00+01:00" time="10:00" weekday="2" offset="+0100"&gt;2011-12-06&lt;/start&gt;
-        &lt;end iso="2011-12-24T18:00:00+01:00" time="18:00" weekday="6" offset="+0100"&gt;2011-12-24&lt;/end&gt;
-    &lt;/date&gt;
-    &lt;date timeline="2" type="exact"&gt;
-        &lt;start iso="2011-12-25T09:00:00+01:00" time="09:00" weekday="7" offset="+0100"&gt;2011-12-25&lt;/start&gt;
-    &lt;/date&gt;
-&lt;/date-and-time&gt;</code></pre>
-					<h4>Acknowledgement</h4>
-					<p>This extension is not a work of a single person, a lot of people tested it and <a href="https://github.com/hananils/datetime/contributors">contributed to it</a>. The initial layout of the date widget was inspired by Scott Hughes' <a href="http://symphony-cms.com/discuss/thread/103/">calendar mock-up for Symphony 2.0</a> and Rowan Lewis' <a href="https://github.com/rowan-lewis/calendaroverlay/">calendar overlay</a>.</p>
+				
+				<div class="field">
+					<div class="column">
+						<p>Date and time management for Symphony
+						</p>
+						<div class="clones">
+							<p class="clone">
+								<span>Clone URL</span>
+								<span class="code input">git://github.com/hananils/datetime.git</span>
+							</p>
+							<p class="clone submodule">
+								<span>Add as a submodule</span>
+								<span class="code input">git submodule add git://github.com/hananils/datetime.git extensions/datetime --recursive</span>
+							</p>
+						</div>
+						<dl class="links">
+							<dt class="list">Download</dt>
+							<dd class="list"><a href="https://github.com/hananils/datetime/tarball/master">.tar.gz</a>, <a href="https://github.com/hananils/datetime/zipball/master">.zip</a></dd>
+							<dt class="list">Links</dt>
+							<dd class="list"><a href="https://github.com/hananils/datetime">Github</a>, <a href="http://symphony-cms.com/download/extensions/view/27338/">Homepage</a>, <a href="https://github.com/hananils/datetime/issues">Issues</a></dd>
+							<dt class="list">Tags</dt>
+							<dd class="list"><a href="/extensions/?type=field-types">Field Types</a>, <a href="/extensions/?type=interface">Interface</a></dd>
+							<dt class="list">Translations</dt>
+							<dd class="list"><a href="https://github.com/hananils/datetime/blob/master/lang/lang.de.php">de</a>, <a href="https://github.com/hananils/datetime/blob/master/lang/lang.fr.php">fr</a>, <a href="https://github.com/hananils/datetime/blob/master/lang/lang.it.php">it</a>, <a href="https://github.com/hananils/datetime/blob/master/lang/lang.no.php">no</a>, <a href="https://github.com/hananils/datetime/blob/master/lang/lang.ro.php">ro</a></dd>
+						</dl>
+						<ul class="stats">
+							<li class="watchers">
+								<span class="icon"/>
+								<a href="https://github.com/hananils/datetime/watchers">39 watchers</a>
+							</li>
+							<li class="forks">
+								<span class="icon"/>
+								<a href="https://github.com/hananils/datetime/network">20 forks</a>
+							</li>
+							<li class="issues">
+								<span class="icon"/>
+								<a href="https://github.com/hananils/datetime/issues">3 open issues</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			
-			<!-- Full width field -->
-			<div class="field">
-				<h2>Field without sidebar</h2>
 				
-				<!-- Full width column -->
-				<div class="column">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
+				<!-- Field with sidebar -->
+				<div class="field">
+					<div class="column sidebar">
+						<ul class="sticky">
+							<li>Clone/Download</li>
+							<li>Compatibility</li>
+							<li>About</li>
+							<li>Version History</li>
+						</ul>				
+					</div>
+					<div class="column content">
+						<h3>About the extension</h3>
+						<p>
+							<img src="http://projekte.nilshoerrmann.de/extensions/datetime/datetime3.png" alt="Date and Time Field">
+						</p>
+						<p>Date and Time provides advanced date and time management for Symphony. It offers an easy interface providing a calendar widget that helps creating multiple dates and date ranges. The field respects the system settings and displays date and time accordingly. Nevertheless, it is capable to read and understand <a href="http://www.php.net/manual/en/datetime.formats.php">relative date formats</a>.</p>
+						<h4>Installation</h4>
+						<p>Information about <a href="http://symphony-cms.com/learn/tasks/view/install-an-extension/">installing and updating extensions</a> can be found in the Symphony documentation at <a href="http://symphony-cms.com/learn/">http://symphony-cms.com/learn/</a>.</p>
+						<h4>Updating</h4>
+						<p>To update Date and Time to a newer version perform the following steps:</p>
+						<ul>
+							<li>Make sure that you have a working backup of your Symphony install.</li>
+							<li>Update the Date and Time folder by either updating the repository and submodule or by replacing the files manually.</li>
+							<li>Log into the backend and enable the Date and Time extension to run the update script.</li>
+						</ul>
+						<p>All interface related components of Date and Time are JavaScript based. Please make sure to clear your browser cache to avoid interface issues. If another extension or the Symphony core throws a JavaScript error, Date and Time will stop working.</p>
+						<h4>Field Settings</h4>
+						<p>Date and Time offers the following field settings:</p>
+						<ul>
+							<li>allow creation of new items: this will add a Create New button to the interface</li>
+							<li>allow sorting of items: this will enable item dragging and reordering</li>
+							<li>allow time editing: this will display date and time in the interface</li>
+							<li>allow date ranges: this will enable range editing</li>
+							<li>pre-populate this field with today's date: this will automatically add the current date to new entries</li>
+						</ul>
+						<h4>Data Source Filtering</h4>
+						<ul>
+							<li>prefixing a filter with <code>start:</code> will only check start dates,</li>
+							<li>prefixing a filter with <code>end:</code> will only check end dates,</li>
+							<li>prefixing a filter with <code>strict:</code> will check, if start <strong>and</strong> end date are in the given filter range,</li>
+							<li>filters without prefixes will check, if start <strong>or</strong> end date are in the given filter range.</li>
+							<li>prefixing a filter with <code>extended:</code> will work like the unprefixed filter but will additionally fetch single dates (those without end date) that lie in the past. This is helpful if you like to display banners only between certain dates and if the user didn't enter an end date. Using the <code>extended</code> filter, this will be interpreted as "display for ever".</li>
+						</ul>
+						<p>Filters separated by comma will find all dates that match one of the given dates or ranges.<br>Filters separated by <code>+</code> will only find dates that match all of the given dates or ranges.</p>
+						<p>This extensions accepts all relative dates known to <a href="http://www.php.net/manual/en/datetime.formats.php">PHP's DateTime class</a> for filtering. It also allows the creation of filter ranges with <code>to</code> or <code>earlier than</code> and <code>later than</code>.</p>
+						<h4>Example Data Source Output</h4>
+						<pre><code>&lt;date-and-time&gt;
+	    &lt;date timeline="1" type="range"&gt;
+	        &lt;start iso="2011-12-06T10:00:00+01:00" time="10:00" weekday="2" offset="+0100"&gt;2011-12-06&lt;/start&gt;
+	        &lt;end iso="2011-12-24T18:00:00+01:00" time="18:00" weekday="6" offset="+0100"&gt;2011-12-24&lt;/end&gt;
+	    &lt;/date&gt;
+	    &lt;date timeline="2" type="exact"&gt;
+	        &lt;start iso="2011-12-25T09:00:00+01:00" time="09:00" weekday="7" offset="+0100"&gt;2011-12-25&lt;/start&gt;
+	    &lt;/date&gt;
+	&lt;/date-and-time&gt;</code></pre>
+						<h4>Acknowledgement</h4>
+						<p>This extension is not a work of a single person, a lot of people tested it and <a href="https://github.com/hananils/datetime/contributors">contributed to it</a>. The initial layout of the date widget was inspired by Scott Hughes' <a href="http://symphony-cms.com/discuss/thread/103/">calendar mock-up for Symphony 2.0</a> and Rowan Lewis' <a href="https://github.com/rowan-lewis/calendaroverlay/">calendar overlay</a>.</p>
+					</div>
+				</div>
+			</section>
 				
-				<!-- Half width columns -->			
-				<div class="column half">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.</div>				
-				<div class="column half">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.</div>
-				
-				<!-- Mixed module widths -->
-				<div class="column three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.</div>		
-				<div class="column two">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Donec sed odio dui. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Maecenas faucibus mollis interdum.</div>		
-				
-				<!-- One module -->
+			<!-- Footer -->
+			<footer class="field">
 				<div class="column one">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>		
 				<div class="column one">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>		
 				<div class="column one">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>		
 				<div class="column one">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>		
 				<div class="column one">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>		
-			</div>
+			</footer>
 		</div>
 
 		<!-- Grid -->
