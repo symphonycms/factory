@@ -120,6 +120,10 @@ table {
 	width: 796px;
 }
 
+.table .column.content {
+	overflow-x: scroll;
+}
+
 /* Columns by width */
 
 .one {
@@ -320,3 +324,7 @@ table {
 #site .field > h2 {
 	margin-left: 20px;
 }
+
+/* Tables */
+
+
