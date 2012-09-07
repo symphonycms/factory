@@ -112,41 +112,41 @@ p {
 
 /* Columns by width */
 
-.column.one {
+.one {
 	width: 184px;
 }
 
-.column.two {
+.two {
 	width: 388px;
 }
 
-.column.three {
+.three {
 	width: 592px;
 }
 
-.column.four {
+.four {
 	width: 796px;
 }
 
-.column.five {
+.five {
 	width: 1000px;
 }
 
 /* Columns by proportion */
 
-.column.half {
+.half {
 	width: 490px;
 }
 
-.column.two .column.half {
+.two .half {
 	width: 184px;
 }
 
-.column.three .column.half {
+.three .half {
 	width: 285px;
 }
 
-.column.four .column.half {
+.four .half {
 	width: 388px;
 }
 
