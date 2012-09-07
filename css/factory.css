@@ -285,8 +285,9 @@ table {
 -----------------------------------------------------------------------------*/
 
 #site header {
-	margin-left: 20px;
-	border-bottom: 1px solid #CFCFCF;
+	padding: 0 20px 10px 20px;
+	border-bottom: 1px solid #dcdcdc;
+	box-shadow: 0 11px 15px -15px #c2c2c2, 0 2px 4px -3px #cfcfcf;
 }
 
 #site header:after {
@@ -309,7 +310,6 @@ table {
 }
 
 #site header h1 span {
-/*	display: inline-block;*/
 	float: left;
 	width: 203px;
 	height: 35px;
@@ -320,6 +320,12 @@ table {
 	float: right;
 }
 
+#site header nav a {
+	color: #000;
+	text-decoration: none;
+	float: left;
+	margin: 37px 0 0 17px;
+}
 
 #site .field > h2 {
 	margin-left: 20px;
