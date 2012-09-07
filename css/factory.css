@@ -285,18 +285,24 @@ table {
 -----------------------------------------------------------------------------*/
 
 #site header {
+	padding: 0 20px;
+}
+
+/* Main site header, e. g. Symphony Extensions */
+
+#site > header {
 	padding: 0 20px 10px 20px;
-	border-bottom: 1px solid #dcdcdc;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 2px 4px -3px #cfcfcf;
 }
 
-#site header:after {
+#site > header:after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-#site header h1 {
+#site > header h1 {
 	margin: 1em 0 0;
 	padding-top: 5px;
 	font-size: 27px;
@@ -309,23 +315,25 @@ table {
 	background: url(../img/logo.png) 0 0 no-repeat;
 }
 
-#site header h1 span {
+#site > header h1 span {
 	float: left;
 	width: 203px;
 	height: 35px;
 	text-indent: -1000em;
 }
 
-#site header nav {
+#site > header nav {
 	float: right;
 }
 
-#site header nav a {
+#site > header nav a {
 	color: #000;
 	text-decoration: none;
 	float: left;
 	margin: 37px 0 0 17px;
 }
+
+/* */
 
 #site .field > h2 {
 	margin-left: 20px;
@@ -333,4 +341,7 @@ table {
 
 /* Tables */
 
-
+.table {
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 2px;
+}
