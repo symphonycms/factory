@@ -13,12 +13,6 @@
 	display: none;
 }
 
-/* Toggle grid */
-
-.show-grid a.show-grid:before {
-	content: "Hide ";
-}
-
 /* Show grid */
 
 .show-grid #grid {

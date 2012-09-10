@@ -195,12 +195,8 @@ table {
 	color: #fff;
 }
 
-#network a.show-grid {
+#network a:not([href]) {
 	cursor: pointer;
-}
-
-#network a.show-grid:before {
-	content: "Show ";
 }
 
 #network #user,
@@ -258,6 +254,10 @@ table {
 #network header nav a:not(:last-of-type):after {
 	content: "\00B7";
 	margin: 0.5em;
+}
+
+#network header nav a.dimmed {
+	color: rgba(255, 255,255, 0.4);
 }
 
 #network header .column {

@@ -62,7 +62,7 @@
 		}
 		
 		// Toggle grid from network navigation
-		$('a.show-grid').on('click.factory', function toggleGridWithButton(event) {
+		$('a.toggle-grid').on('click.factory', function toggleGridWithButton(event) {
 			Grid.toggleGrid();
 		});
 	
