@@ -47,6 +47,7 @@
 	width: 82px;
 	height: 100%;
 	margin-left: 20px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border-left: 1px solid rgba(196, 226, 205, 0.8);
 	border-right: 1px solid rgba(196, 226, 205, 0.8);
@@ -63,6 +64,7 @@
 	background: #EDF6F0;
 	width: 100%;
 	padding: 0 0 1em;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	z-index: 2000;
 	text-align: center;
@@ -82,10 +84,14 @@
 /* Fields */
 
 .show-grid .field {
-	border-top: 1px solid rgba(196, 226, 205, 0.8);
+	background: -webkit-linear-gradient(top, #CBE5D3 1px, #fff 1px, #fff 100%);
+	background: -moz-linear-gradient(top, #CBE5D3 1px, #fff 1px, #fff 100%);
+	background: -ms-linear-gradient(top, #CBE5D3 1px, #fff 1px, #fff 100%);
+	background: -o-linear-gradient(top, #CBE5D3 1px, #fff 1px, #fff 100%);
+	background: linear-gradient(to bottom, #CBE5D3 1px, #fff 1px, #fff 100%);
 }
 
-.show-grid .field:after {
+.show-grid .field:before {
 	content: attr(class);
 	position: absolute;
 	top: 10px;
@@ -106,8 +112,7 @@
 
 .show-grid .column {
 	background: rgba(194, 234, 247, 0.5);
-	border-top: 1px solid rgb(194, 234, 247);
-	border-bottom: 1px solid rgb(194, 234, 247);
+	box-shadow: 0 0 0 1px rgb(194, 234, 247);
 }
 
 .show-grid .column:after {
@@ -128,10 +133,6 @@
 
 /* Disable grid details for the network toolbar */
 
-.show-grid #network .field {
-	border: none;
-}
-
 .show-grid #network .field:after {
 	content: "";
 	position: relative;
@@ -140,7 +141,7 @@
 
 .show-grid #network .column {
 	background: none;
-	border: none;
+	box-shadow: none;
 }
 
 .show-grid #network .field:before,
