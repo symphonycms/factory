@@ -133,6 +133,10 @@
 
 /* Disable grid details for the network toolbar */
 
+.show-grid #network .field:not(header) {
+	background: transparent;
+}
+
 .show-grid #network .field:after {
 	content: "";
 	position: relative;
