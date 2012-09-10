@@ -53,7 +53,7 @@ table {
 
 	There are two kinds of general site layouts: centered and wide.
 	The centered layout is the default one and should be used by all
-	text focussed sites. The wide version is conceived for sites like
+	text focussed sites. The fluid version is conceived for sites like
 	xPathr that need the full window width to deplay their UI.
 -----------------------------------------------------------------------------*/
 
@@ -62,7 +62,7 @@ table {
 	margin: 0 auto;
 }
 
-.wide {
+.fluid {
 	width: 100%;
 	margin: 0 50px;
 }
