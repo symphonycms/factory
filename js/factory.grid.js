@@ -20,8 +20,14 @@
 
 	var Grid = {
 	
+		elements: {},
+		
+		init: function() {
+			Grid.elements.body = $('body');
+		},
+	
 		toggleGrid: function() {
-			if($('body').is('.show-grid')) {
+			if(Grid.elements.body.is('.show-grid')) {
 				Grid.hideGrid();		
 			}
 			else {
@@ -31,11 +37,11 @@
 		
 		showGrid: function() {
 			Grid.loadAssets();
-			$('body').addClass('show-grid');
+			Grid.elements.body.addClass('show-grid');
 		},
 		
 		hideGrid: function() {
-			$('body').removeClass('show-grid');
+			Grid.elements.body.removeClass('show-grid');
 		},
 		
 		loadAssets: function() {
@@ -55,6 +61,8 @@
 
 	/* Initialisation */
 	$(document).on('ready.factory', function ready() {
+
+		Grid.init();
 	
 		// Toggle grid via URL
 		if(location.search == '?grid') {
@@ -74,4 +82,5 @@
 			}
 		});
 	});
+	
 })(jQuery.noConflict());
