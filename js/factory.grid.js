@@ -6,20 +6,72 @@
  */
 
 (function($) {
+
+/*-----------------------------------------------------------------------------
+	The Grid:
+
+	This object bundles functions to show and hide the grid used for 
+	Symphony Factory. To enable the grid display, include this file into your
+	project – all needed stylesheets will be loaded automatically.
+	
+	The grid can be toggled by appending `?grid` to the URL, 
+	by clicking `a.show-grid` or by using the keyboard shortcut `ctrl + ,`.
+-----------------------------------------------------------------------------*/
+
+	var Grid = {
+	
+		toggleGrid: function() {
+			if($('body').is('.show-grid')) {
+				Grid.hideGrid();		
+			}
+			else {
+				Grid.showGrid();		
+			}
+		},
+		
+		showGrid: function() {
+			Grid.loadAssets();
+			$('body').addClass('show-grid');
+		},
+		
+		hideGrid: function() {
+			$('body').removeClass('show-grid');
+		},
+		
+		loadAssets: function() {
+			var stylesheet = $('link[href="css/factory.grid.css"]');
+
+			// Load missing grid styles
+			if(stylesheet.length == 0) {
+				$('<link />', {
+					rel: 'stylesheet',
+					type: 'text/css',
+					href: 'css/factory.grid.css'
+				}).appendTo('head');			
+			}
+		}
+				
+	};
+
+	/* Initialisation */
 	$(document).on('ready.factory', function ready() {
 	
-		// Show grid
+		// Toggle grid via URL
 		if(location.search == '?grid') {
-	
-			// Load styles
-			$('<link />', {
-				rel: 'stylesheet',
-				type: 'text/css',
-				href: 'css/factory.grid.css'
-			}).appendTo('head');
-			
-			// Initialise grid
-			$('body').addClass('show-grid');
+			Grid.showGrid();		
 		}
+		
+		// Toggle grid from network navigation
+		$('a.show-grid').on('click.factory', function toggleGridWithButton(event) {
+			Grid.toggleGrid();
+		});
+	
+		// Toggle grid with keyboard shortcut (using "ctrl + ,")
+		$(document).on('keypress.factory', function toggleGridWithKeyboard(event) {
+			console.log(event);
+			if(event.which == 44 && event.ctrlKey == true) {
+				Grid.toggleGrid();	
+			}
+		});
 	});
 })(jQuery.noConflict());

@@ -195,6 +195,14 @@ table {
 	color: #fff;
 }
 
+#network a.show-grid {
+	cursor: pointer;
+}
+
+#network a.show-grid:before {
+	content: "Show ";
+}
+
 #network #user,
 #network .user {
 	margin-left: 0;
