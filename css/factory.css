@@ -75,6 +75,7 @@ table {
 -----------------------------------------------------------------------------*/
 
 .field {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	clear: both;
 	position: relative;
@@ -111,6 +112,7 @@ table {
 
 .column {
 	margin: 0 0 20px 20px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
 	position: relative;
@@ -279,21 +281,20 @@ table {
 #network .drawer {
 	height: 0;
 	overflow: hidden;
-	-webkit-transition: height 0.2s ease-out 0.5s;
-	-moz-transition: height 0.2s ease-out 0.5s;
-	-ms-transition: height 0.2s ease-out 0.5s;
-	-o-transition: height 0.2s ease-out 0.5s;
-	transition: height 0.2s ease-out 0.5s;
+	-webkit-transition: height 0.2s ease-out;
+	-moz-transition: height 0.2s ease-out;
+	-ms-transition: height 0.2s ease-out;
+	-o-transition: height 0.2s ease-out;
+	transition: height 0.2s ease-out;
 }
 
-#network:hover .drawer,
 #network.pinned .drawer {
 	height: 200px;
-	-webkit-transition: height 0.2s ease-out 0.1s;
-	-moz-transition: height 0.2s ease-out 0.1s;
-	-ms-transition: height 0.2s ease-out 0.1s;
-	-o-transition: height 0.2s ease-out 0.1s;
-	transition: height 0.2s ease-out 0.1s;
+	-webkit-transition: height 0.2s ease-out;
+	-moz-transition: height 0.2s ease-out;
+	-ms-transition: height 0.2s ease-out;
+	-o-transition: height 0.2s ease-out;
+	transition: height 0.2s ease-out;
 }
 
 #network .drawer h2 {
@@ -422,6 +423,7 @@ table {
 #site .data .label {
 	height: 30px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	display: block;
 }
@@ -499,6 +501,7 @@ table.compatibility td.compatible:last-child {
 	border: 1px solid #E6E6E5;
 	display: inline-block;
 	white-space: nowrap;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 25px;
 }
