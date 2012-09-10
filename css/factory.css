@@ -338,14 +338,36 @@ table {
 
 #site > header {
 	padding: 0 20px 10px 20px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 11px 15px -15px #c2c2c2, 0 2px 4px -3px #cfcfcf;
+	border-bottom: 1px solid #CFCFCF;
+	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
+	position: relative;
+	height: 75px;
 }
 
+#site > header:before,
 #site > header:after {
 	content: "";
 	display: block;
-	clear: both;
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
+	background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
+	height: 15px;
+	width: 20px;
+	position: absolute;
+	bottom: -14px;
+	left: 0;
+}
+
+#site > header:after {
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+	background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+	background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%);
+	left: auto;
+	right: 0;
 }
 
 #site > header h1 {
