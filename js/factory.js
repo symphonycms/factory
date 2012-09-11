@@ -18,6 +18,8 @@
 		elements: {},
 		
 		init: function() {
+		
+			// Cache elements
 			Factory.elements.body = $('body');
 			Factory.elements.network = $('#network');
 			Factory.elements.networkToggle = Factory.elements.network.find('header h1');
@@ -25,10 +27,13 @@
 		},
 	
 		toggleNetwork: function() {
-			console.log(Factory.elements.drawer.height());
+		
+			// Hide network
 			if(Factory.elements.drawer.height() > 0) {
 				Factory.hideNetwork();		
 			}
+			
+			// Show network
 			else {
 				Factory.showNetwork();		
 			}
@@ -37,10 +42,38 @@
 		showNetwork: function() {
 			var height = Factory.elements.drawer[0].scrollHeight;
 			Factory.elements.drawer.height(height);
+
+			// Allow network hiding with transition
+			Factory.elements.network.removeClass('open');
+			
+			// Store status
+			Factory.storeNetworkState('opened');
 		},
 		
 		hideNetwork: function() {
 			Factory.elements.drawer.height(0);
+			
+			// Store status
+			Factory.storeNetworkState('closed');
+		},
+		
+		storeNetworkState: function(value) {
+			if(Modernizr.localstorage) {
+				localStorage.setItem("symphony.network.status", value);
+			}
+		},
+		
+		restoreNetworkState: function() {
+			if(Modernizr.localstorage) {
+			
+				// If network drawer has been open last time, reopen it
+				if(localStorage.getItem("symphony.network.status") == 'opened'){
+					
+					// Open drawer without transition
+					Factory.elements.network.addClass('open');
+					Factory.showNetwork();
+				}
+			}
 		}
 		
 	};
@@ -50,11 +83,13 @@
 		Factory.init();
 	
 		// Toggle network
-		$('#network h1 a').on('click.factory', function toggleNetwork(event) {
+		$('#network h1 a, #user').on('click.factory', function toggleNetwork(event) {
 			event.preventDefault();
 			Factory.toggleNetwork();
 		});
-	
+		
+		// Get network state
+		Factory.restoreNetworkState();
 	});
 	
 })(jQuery.noConflict());
