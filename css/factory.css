@@ -64,7 +64,9 @@ table {
 
 .fluid {
 	width: 100%;
-	margin: 0 50px;
+	padding: 0 50px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*-----------------------------------------------------------------------------
@@ -183,10 +185,6 @@ table {
 	Network:
 
 	Style definitions for the network area. 
-	
-	To save space, Factory uses `vh` as unit for the toolbar height. This allows 
-	us to save a bit of vertical space on narrow devices. Browsers that don't 
-	support that unit yet will default to the full height.
 -----------------------------------------------------------------------------*/
 
 #network {
@@ -215,15 +213,12 @@ table {
 	min-width: 1040px;
 	font-family: 'PT Sans Caption', sans-serif;
 	height: 45px;
+	overflow: hidden;
 }
 
 #network header .centered {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 1040px;
-	margin-left: -520px;
-	padding-bottom: 4px;
+	position: relative;
+	padding-top: 17px;
 }
 
 #network header h1 {
@@ -263,30 +258,6 @@ table {
 	user-select: none;
 }
 
-/* User */
-
-#user,
-#network .user {
-	margin-left: 0;
-	margin-right: -20px;
-	margin-bottom: -4px;
-	width: 224px;
-	padding-left: 20px;
-	background: rgba(0, 0, 0, 0.1);
-}
-
-#user {
-	position: relative;
-	font-size: 15px;
-	font-family: 'PT Sans Caption', sans-serif;
-}
-
-#user img {
-	position: absolute;
-	bottom: 0;
-	right: 20px;
-}
-
 /* Drawer */
 
 #network .drawer {
@@ -301,36 +272,89 @@ table {
 	font-family: 'PT Sans', sans-serif;
 }
 
-#network.pinned .drawer {
-	height: 200px;
-	-webkit-transition: height 0.2s ease-out;
-	-moz-transition: height 0.2s ease-out;
-	-ms-transition: height 0.2s ease-out;
-	-o-transition: height 0.2s ease-out;
-	transition: height 0.2s ease-out;
+#network .drawer ::selection,
+#network .drawer ::-moz-selection {
+	background: rgba(0, 0, 0, 0.1);
 }
 
-#network .drawer h2 {
-	color: #C9728D;
-	font-size: 14px;
+#network.open .drawer {
+	height: auto;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+#network .drawer > .column {
+	margin-top: 18px;
+}
+
+#network .drawer > .column:first-of-type {
+	margin-left: 0;
+	width: 204px;
+}
+
+#network .drawer .column h2 {
+	color: #d96f90;
+	font-size: 13px;
 	font-weight: normal;
 	text-transform: uppercase;
 	border-bottom: 1px solid #9E0A46;
+	font-family: 'PT Sans Caption', sans-serif;
+	letter-spacing: 0.05em;
+	margin: 0 0 0 10px;
+	padding: 0 0 3px 10px;
 }
 
 #network .drawer ul {
 	list-style: none;
-	padding: 0;
+	padding: 0 0 0 20px;
+	margin-top: 5px;
 }
 
-#network .user {
+#network .drawer ul.column:first-of-type {
+	margin-left: 0;
+}
+
+/* User */
+
+#user {
+	margin: 0;
+	width: 204px;
+	padding: 18px 10px 0;
+	background: #141414;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 14px;
+	font-family: 'PT Sans', sans-serif;
+	height: 45px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+#user img {
+	position: absolute;
+	bottom: 4px;
+	right: 10px;
+	border-radius: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+#network .column.user {
 	height: 100%;
+	margin: 0 -10px -4px 10px;
+	width: 204px;
+	padding-left: 10px;
+	background: rgba(0, 0, 0, 0.1);
 }
 
-#network .user p {
+#network .column.user p {
 	background: rgba(0, 0, 0, 0.1);
-	margin-left: -20px;
-	padding: 0 20px;
+	margin-left: -10px;
+	padding: 0 10px;
 }
 
 /*-----------------------------------------------------------------------------
