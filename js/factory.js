@@ -27,39 +27,16 @@
 		},
 	
 		toggleNetwork: function() {
-		
-			// Hide network
-			if(Factory.elements.drawer.height() > 0) {
-				Factory.hideNetwork();		
-			}
+			Factory.elements.drawer.slideToggle('fast', function() {
 			
-			// Show network
-			else {
-				Factory.showNetwork();		
-			}
-		},
-		
-		showNetwork: function() {
-			var height = Factory.elements.drawer[0].scrollHeight;
-			Factory.elements.drawer.height(height);
-
-			// Allow network hiding with transition
-			Factory.elements.network.removeClass('open');
-			
-			// Store status
-			Factory.storeNetworkState('opened');
-		},
-		
-		hideNetwork: function() {
-			Factory.elements.drawer.height(0);
-			
-			// Store status
-			Factory.storeNetworkState('closed');
+				// Store state
+				Factory.storeNetworkState();	
+			});
 		},
 		
 		storeNetworkState: function(value) {
 			if(Modernizr.localstorage) {
-				localStorage.setItem("symphony.network.status", value);
+				localStorage.setItem('symphony.network.opened', Factory.elements.drawer.is(':visible'));
 			}
 		},
 		
@@ -67,11 +44,11 @@
 			if(Modernizr.localstorage) {
 			
 				// If network drawer has been open last time, reopen it
-				if(localStorage.getItem("symphony.network.status") == 'opened'){
+				if(localStorage.getItem('symphony.network.opened') == 'true'){
+					Factory.elements.drawer.show();
 					
-					// Open drawer without transition
-					Factory.elements.network.addClass('open');
-					Factory.showNetwork();
+					// Store state
+					Factory.storeNetworkState();
 				}
 			}
 		}

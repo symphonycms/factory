@@ -261,13 +261,7 @@ table {
 /* Drawer */
 
 #network .drawer {
-	height: 0;
-	overflow: hidden;
-	-webkit-transition: height 0.2s ease-out;
-	-moz-transition: height 0.2s ease-out;
-	-ms-transition: height 0.2s ease-out;
-	-o-transition: height 0.2s ease-out;
-	transition: height 0.2s ease-out;
+	display: none;
 	font-size: 15px;
 	font-family: 'PT Sans', sans-serif;
 }
@@ -277,14 +271,6 @@ table {
 	background: rgba(0, 0, 0, 0.1);
 }
 
-#network.open .drawer {
-	height: auto;
-	-webkit-transition: none;
-	-moz-transition: none;
-	-ms-transition: none;
-	-o-transition: none;
-	transition: none;
-}
 
 #network .drawer > .column {
 	margin-top: 18px;
