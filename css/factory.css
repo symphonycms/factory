@@ -319,6 +319,7 @@ table {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	cursor: pointer;
+	color: rgba(255, 255, 255, 0.85);
 }
 
 #user img {
@@ -348,6 +349,7 @@ table {
 	text-transform: uppercase;
 	font-family: 'PT Sans Caption', sans-serif;
 	letter-spacing: 0.05em;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -433,7 +435,16 @@ table {
 	color: #000;
 	text-decoration: none;
 	float: left;
-	margin: 37px 0 0 17px;
+	margin: 37px 0 0 20px;
+}
+
+#site > header nav a.active {
+	background: #B20B4F;
+	color: #fff;
+	padding: 0 10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	border-radius: 4px;
 }
 
 /* Headlines */
