@@ -49,8 +49,6 @@
 	margin-left: 20px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border-left: 1px solid rgba(196, 226, 205, 0.8);
-	border-right: 1px solid rgba(196, 226, 205, 0.8);
 	position: relative;
 	float: left;
 }
