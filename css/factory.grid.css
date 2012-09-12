@@ -49,6 +49,8 @@
 	margin-left: 20px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border-left: 1px solid rgba(196, 226, 205, 0.8);
+	border-right: 1px solid rgba(196, 226, 205, 0.8);
 	position: relative;
 	float: left;
 }
@@ -67,8 +69,6 @@
 	z-index: 2000;
 	text-align: center;
 	border-top: 1px solid #B20B4F;
-	border-left: 1px solid #CCE6D4;
-	border-right: 1px solid #CCE6D4;
 }
 
 .show-grid #grid .module.double {
@@ -89,7 +89,7 @@
 	background: linear-gradient(to bottom, #CBE5D3 1px, #fff 1px, #fff 100%);
 }
 
-.show-grid .field:before {
+.show-grid.advanced-grid .field:before {
 	content: attr(class);
 	position: absolute;
 	top: 10px;
@@ -110,10 +110,9 @@
 
 .show-grid .column {
 	background: rgba(194, 234, 247, 0.5);
-/*	box-shadow: 0 0 0 1px rgb(194, 234, 247);*/
 }
 
-.show-grid .column:after {
+.show-grid.advanced-grid .column:after {
 	content: attr(class);
 	position: absolute;
 	top: 10px;

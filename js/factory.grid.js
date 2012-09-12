@@ -52,6 +52,14 @@
 			Factory.storeSetting('grid', false);
 		},
 		
+		showGridLabels: function() {
+			Grid.elements.body.removeClass('advanced-grid');
+		},
+		
+		hideGridLabels: function() {
+			Grid.elements.body.addClass('advanced-grid');
+		},
+		
 		addGrid: function() {
 			if(Grid.elements.grid.length == 0) {
 				var module = $('<div class="module" />');
@@ -104,9 +112,18 @@
 	
 		// Toggle grid with keyboard shortcut (using "ctrl + ,")
 		$(document).on('keypress.factory', function toggleGridWithKeyboard(event) {
-			console.log(event);
 			if(event.which == 44 && event.ctrlKey == true) {
-				Grid.toggleGrid();	
+			
+				// Grid is visible, simplify it
+				if(Grid.elements.grid.is(':visible') && !Grid.elements.body.is('.advanced-grid')) {
+					Grid.hideGridLabels();	
+				}
+				
+				// Grid is simplified, hide it; grid is hidden, show it
+				else {
+					Grid.showGridLabels();	
+					Grid.toggleGrid();	
+				}
 			}
 		});
 	
