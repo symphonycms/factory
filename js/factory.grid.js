@@ -38,10 +38,16 @@
 		showGrid: function() {
 			Grid.loadAssets();
 			Grid.elements.body.addClass('show-grid');
+				
+			// Store state
+			Factory.storeSetting('grid', true);
 		},
 		
 		hideGrid: function() {
 			Grid.elements.body.removeClass('show-grid');
+				
+			// Store state
+			Factory.storeSetting('grid', false);
 		},
 		
 		loadAssets: function() {
@@ -59,15 +65,12 @@
 				
 	};
 
-	/* Initialisation */
-	$(document).on('ready.factory', function ready() {
+/*-----------------------------------------------------------------------------
+	Initialisation
+-----------------------------------------------------------------------------*/
 
+	$(document).on('ready.factory', function ready() {
 		Grid.init();
-	
-		// Toggle grid via URL
-		if(location.search == '?grid') {
-			Grid.showGrid();		
-		}
 		
 		// Toggle grid from network navigation
 		$('a.toggle-grid').on('click.factory', function toggleGridWithButton(event) {
@@ -81,6 +84,16 @@
 				Grid.toggleGrid();	
 			}
 		});
+	
+		// Toggle grid via URL
+		if(location.search == '?grid') {
+			Grid.showGrid();		
+		}
+	
+		// Restore grid, if it was loaded before
+		if(Factory.loadSetting('grid') === true) {
+			Grid.showGrid();		
+		}
 	});
 	
 })(jQuery.noConflict());
