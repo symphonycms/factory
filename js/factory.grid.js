@@ -24,6 +24,7 @@
 		
 		init: function() {
 			Grid.elements.body = $('body');
+			Grid.elements.grid = $('#grid');
 		},
 	
 		toggleGrid: function() {
@@ -37,6 +38,7 @@
 		
 		showGrid: function() {
 			Grid.loadAssets();
+			Grid.addGrid();
 			Grid.elements.body.addClass('show-grid');
 				
 			// Store state
@@ -48,6 +50,29 @@
 				
 			// Store state
 			Factory.storeSetting('grid', false);
+		},
+		
+		addGrid: function() {
+			if(Grid.elements.grid.length == 0) {
+				var module = $('<div class="module" />');
+			
+				// Create grid
+				Grid.elements.grid = $('<div />', {
+					id: 'grid',
+					class: 'centered'
+				}).appendTo(Grid.elements.body);
+				
+				// Add columns
+				module.clone().addClass('double').appendTo(Grid.elements.grid);
+				module.clone().appendTo(Grid.elements.grid);
+				module.clone().appendTo(Grid.elements.grid);
+				module.clone().appendTo(Grid.elements.grid);
+				module.clone().appendTo(Grid.elements.grid);
+				module.clone().appendTo(Grid.elements.grid);
+				module.clone().appendTo(Grid.elements.grid);
+				module.clone().appendTo(Grid.elements.grid);
+				module.clone().appendTo(Grid.elements.grid);
+			}
 		},
 		
 		loadAssets: function() {

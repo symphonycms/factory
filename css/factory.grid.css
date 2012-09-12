@@ -112,7 +112,7 @@
 
 .show-grid .column {
 	background: rgba(194, 234, 247, 0.5);
-	box-shadow: 0 0 0 1px rgb(194, 234, 247);
+/*	box-shadow: 0 0 0 1px rgb(194, 234, 247);*/
 }
 
 .show-grid .column:after {
