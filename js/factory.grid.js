@@ -25,44 +25,16 @@
 		init: function() {
 			Grid.elements.body = $('body');
 			Grid.elements.grid = $('#grid');
-		},
-	
-		toggleGrid: function() {
-			if(Grid.elements.body.is('.show-grid')) {
-				Grid.hideGrid();		
-			}
-			else {
-				Grid.showGrid();		
-			}
-		},
-		
-		showGrid: function() {
+			
+			// Prepare grid
 			Grid.loadAssets();
 			Grid.addGrid();
-			Grid.elements.body.addClass('show-grid');
-				
-			// Store state
-			Factory.storeSetting('grid', true);
-		},
-		
-		hideGrid: function() {
-			Grid.elements.body.removeClass('show-grid');
-				
-			// Store state
-			Factory.storeSetting('grid', false);
-		},
-		
-		showGridLabels: function() {
-			Grid.elements.body.removeClass('advanced-grid');
-		},
-		
-		hideGridLabels: function() {
-			Grid.elements.body.addClass('advanced-grid');
 		},
 		
 		addGrid: function() {
 			if(Grid.elements.grid.length == 0) {
 				var module = $('<div class="module" />');
+				var gutter = $('<div class="gutter" />');
 			
 				// Create grid
 				Grid.elements.grid = $('<div />', {
@@ -71,15 +43,25 @@
 				}).appendTo(Grid.elements.body);
 				
 				// Add columns
-				module.clone().addClass('double').appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
+				module.clone().addClass('double left-alignment').appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
+				module.clone().addClass('left-alignment').appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
 				module.clone().appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
 				module.clone().appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
 				module.clone().appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
 				module.clone().appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
 				module.clone().appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
 				module.clone().appendTo(Grid.elements.grid);
-				module.clone().appendTo(Grid.elements.grid);
-				module.clone().appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
+				module.clone().addClass('right-alignment').appendTo(Grid.elements.grid);
+				gutter.clone().appendTo(Grid.elements.grid);
 			}
 		},
 		
@@ -94,6 +76,35 @@
 					href: 'css/factory.grid.css'
 				}).appendTo('head');			
 			}
+		},
+	
+		toggleGrid: function(show) {
+			Grid.elements.body.toggleClass('show-grid', show);
+			
+			// Status
+			var status = Grid.elements.body.is('.show-grid');
+			Factory.storeSetting('grid', status);
+			
+			// Hide labels and columns, if grid is hidden
+			if(status === false) {
+				Grid.toggleLabels(false);
+				Grid.toggleColumns(false);
+			}
+		},
+		
+		toggleBaselines: function() {
+			Grid.elements.body.toggleClass('show-baselines');
+			Factory.storeSetting('baselines', Grid.elements.body.is('.show-baselines'));
+		},
+
+		toggleLabels: function(show) {
+			Grid.elements.body.toggleClass('show-labels', show);
+			Factory.storeSetting('labels', Grid.elements.body.is('.show-labels'));
+		},
+
+		toggleColumns: function(show) {
+			Grid.elements.body.toggleClass('show-columns', show);
+			Factory.storeSetting('columns', Grid.elements.body.is('.show-columns'));
 		}
 				
 	};
@@ -104,37 +115,57 @@
 
 	$(document).on('ready.factory', function ready() {
 		Grid.init();
-		
-		// Toggle grid from network navigation
-		$('a.toggle-grid').on('click.factory', function toggleGridWithButton(event) {
-			Grid.toggleGrid();
-		});
 	
-		// Toggle grid with keyboard shortcut (using "ctrl + ,")
-		$(document).on('keypress.factory', function toggleGridWithKeyboard(event) {
-			if(event.which == 44 && event.ctrlKey == true) {
-			
-				// Grid is visible, simplify it
-				if(Grid.elements.grid.is(':visible') && !Grid.elements.body.is('.advanced-grid')) {
-					Grid.hideGridLabels();	
-				}
-				
-				// Grid is simplified, hide it; grid is hidden, show it
-				else {
-					Grid.showGridLabels();	
-					Grid.toggleGrid();	
-				}
+		// Toggle grid
+		$(document).on('keydown.factory', function toggle(event) {
+			var grid;
+		
+			// Show/hide labels, shortcut = l
+			if(event.which == 76) {
+				grid = true;
+				Grid.toggleLabels();	
+			}
+		
+			// Show/hide columns, shortcut = c
+			if(event.which == 67) {
+				grid = true;
+				Grid.toggleColumns();	
+			}
+		
+			// Show/hide baselines, shortcut = b
+			if(event.which == 66) {
+				Grid.toggleBaselines();	
+			}
+		
+			// Show/hide grid, shortcut = g
+			if(event.which == 71 || grid === true) {
+				Grid.toggleGrid(grid);	
 			}
 		});
+		
+		// Restore grid, if it was loaded before
+		var restore;
 	
-		// Toggle grid via URL
-		if(location.search == '?grid') {
-			Grid.showGrid();		
+		// Labels
+		if(Factory.loadSetting('labels') === true) {
+			restore = true;
+			Grid.toggleLabels();		
+		}
+	
+		// Columns
+		if(Factory.loadSetting('columns') === true) {
+			restore = true;
+			Grid.toggleColumns();		
+		}
+	
+		// Baselines
+		if(Factory.loadSetting('baselines') === true) {
+			Grid.toggleBaselines();		
 		}
 	
 		// Restore grid, if it was loaded before
-		if(Factory.loadSetting('grid') === true) {
-			Grid.showGrid();		
+		if(Factory.loadSetting('grid') === true || restore === true) {
+			Grid.toggleGrid(restore);		
 		}
 	});
 	

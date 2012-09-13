@@ -9,11 +9,13 @@
 	Grid
 -----------------------------------------------------------------------------*/
 
+/* Inactive grid */
+
 #grid {
 	display: none;
 }
 
-/* Show grid */
+/* Active grid */
 
 .show-grid #grid {
 	display: block;
@@ -26,27 +28,23 @@
 	pointer-events: none;
 }
 
-.show-grid #grid:after {
-	content: " ";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 25px;
-	width: 100%;
-	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 80%);
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%);
-	background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 80%);
-	background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 80%);
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 80%);
+.show-baselines {
+	background-color: #fbfdfb; 
+	background-image: -webkit-linear-gradient(#eee 1px, transparent 1px);
+	background-image: -moz-linear-gradient(#eee 1px, transparent 1px);
+	background-image: -ms-linear-gradient(#eee 1px, transparent 1px);
+	background-image: -o-linear-gradient(#eee 1px, transparent 1px);
+	background-image: linear-gradient(#eee 1px, transparent 1px);
+	background-size: 100% 1.7em;	
 }
 
-/* Basics */
+/* Modules and gutter */
 
-.show-grid #grid .module {
+.show-grid #grid .module,
+.show-grid #grid .gutter {
 	background: rgba(196, 226, 205, 0.3);
 	width: 82px;
 	height: 100%;
-	margin-left: 20px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border-left: 1px solid rgba(196, 226, 205, 0.8);
@@ -55,41 +53,75 @@
 	float: left;
 }
 
-.show-grid #grid .module:before {
-	content: "82px";
-	position: absolute;
-	bottom: 0;
-	font-size: 10px;
-	color: rgba(0, 0, 0, 0.7);
-	background: #EDF6F0;
-	width: 100%;
-	padding: 0 0 1em;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	z-index: 2000;
-	text-align: center;
-	border-top: 1px solid #B20B4F;
+.show-grid #grid .gutter {
+	width: 20px;
+	background: rgba(250, 231, 159, 0.1);
+	border: none;
 }
 
 .show-grid #grid .module.double {
 	width: 184px;
 }
 
-.show-grid #grid .module.double:before {
-	content: "184px";
+/* Optical margin alignment */
+
+.show-grid #grid .module.left-alignment:before,
+.show-grid #grid .module.right-alignment:before {
+	content: "";
+	width: 10px;
+	height: 100%;
+	background: rgba(250, 231, 159, 0.5);
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -11px;
+}
+
+.show-grid #grid .module.right-alignment:before {
+	left: auto;
+	right: -11px;
+}
+
+/* Measurements */
+
+.show-grid #grid .module:after,
+.show-grid #grid .gutter:after {
+	content: "82";
+	position: absolute;
+	bottom: 1em;
+	font-size: 10px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	z-index: 2000;
+	text-align: center;
+	padding: 0.1em;
+	color: #757A77;
+	background: #fff;
+}
+
+.show-grid #grid .module.double:after {
+	content: "182";
+}
+
+.show-grid #grid .gutter:after {
+	content: "20";
+	border: none;
+	background: #B20B4F;
+	color: #fff;
 }
 
 /* Fields */
 
 .show-grid .field {
-	background: -webkit-linear-gradient(top, #CBE5D3 1px, #fff 1px, #fff 100%);
-	background: -moz-linear-gradient(top, #CBE5D3 1px, #fff 1px, #fff 100%);
-	background: -ms-linear-gradient(top, #CBE5D3 1px, #fff 1px, #fff 100%);
-	background: -o-linear-gradient(top, #CBE5D3 1px, #fff 1px, #fff 100%);
-	background: linear-gradient(to bottom, #CBE5D3 1px, #fff 1px, #fff 100%);
+	background: -webkit-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background: -moz-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background: -ms-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to bottom, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
 }
 
-.show-grid.advanced-grid .field:before {
+.show-labels .field:before {
 	content: attr(class);
 	position: absolute;
 	top: 10px;
@@ -108,11 +140,11 @@
 
 /* Columns */
 
-.show-grid .column {
+.show-columns .column {
 	background: rgba(194, 234, 247, 0.5);
 }
 
-.show-grid.advanced-grid .column:after {
+.show-labels .column:after {
 	content: attr(class);
 	position: absolute;
 	top: 10px;
