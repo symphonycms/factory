@@ -9,7 +9,17 @@
  */
 
 /*-----------------------------------------------------------------------------
-	General definitions
+	General definitions:
+	
+  # Colours
+	
+	$network: b20b4f;
+	$site: #fbfdfb;
+	$pink: #b20b4f;	
+	
+  # Units
+	
+	Use `rem` for vertical and `px` for horizontal units.
 -----------------------------------------------------------------------------*/
 
 body {
