@@ -819,10 +819,26 @@ table.compatibility td.compatible:last-child {
 .sidebar ul li {
 	font-size: 13px;
 	line-height: 1.5rem;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+
+.sidebar ul li.selected {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 2px;
+}
+
+.sidebar ul li.selected:after {
+	content: "\2713";
+	float: right;
+	padding-right: 5px;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 .sidebar input {
 	margin-left: -10px;
 	padding-left: 8px;
-	width: 190px;
+	box-sizing: border-box;
+	width: 194px;
 }
