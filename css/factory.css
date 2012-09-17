@@ -358,12 +358,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #network header {
 	margin: 0;
-	padding: 0.25rem 0 0;
+	padding: 0.5rem 0 0;
 	color: #fff;
 	background: #282828;
 	min-width: 1040px;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	height: 2rem;
+	height: 2.25rem;
 	overflow: hidden;
 }
 
@@ -823,9 +823,10 @@ table.compatibility td.compatible:last-child {
 	padding-left: 10px;
 }
 
-.sidebar ul li.selected {
+.sidebar ul li.selected,
+.sidebar ul li:hover {
 	background: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.075);
 	border-radius: 2px;
 }
 
