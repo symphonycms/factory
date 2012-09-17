@@ -15,7 +15,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	font: normal 10px/1.5rem 'Open Sans', 'PT Sans', sans-serif;
+	font-family: 'Open Sans', 'PT Sans', sans-serif;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 1.5;
 	overflow-y: scroll;
 	background: #fbfdfb;
 }
@@ -569,7 +572,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #site > header nav {
 	float: right;
 	margin-right: -10px;
-	margin-top: 0.25rem;
+	margin-top: 0.3rem;
+	line-height: 1.5rem;
 }
 
 #site > header nav a {
@@ -726,19 +730,17 @@ table.compatibility td.compatible:last-child {
 /* Community */
 
 #site .content article {
-	border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-	padding: 0.375rem 0 0;
-	min-height: 3.75rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	height: 3.75rem;
+	line-height: 1.5rem;
+	padding-top: 0.4rem;
 }
 
-/* Hack for baseline grid testing */
-/*#site .content {
-	margin-top: -0.375rem;
-}*/
+#site .content article:nth-child(odd) {
+}
 
 #site .content article header {
 	padding: 0;
-	line-height: 1.5rem;
 }
 
 #site .content article h3 {
@@ -780,7 +782,7 @@ table.compatibility td.compatible:last-child {
 	font-size: 18px;
 	border-radius: 2px;
 	float: right;
-	padding: 0.28em 10px 0.275em 0.2em;
+	padding: 0.28em 10px 0.275em 0.5rem;
 	margin: 5px 0 5px 5px;
 	line-height: 1;	
 	white-space: nowrap;
