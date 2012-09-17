@@ -629,6 +629,19 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	margin-bottom: 1rem;
 }
 
+#site p[data-pullquote] {
+	position: inherit;
+}
+
+#site p[data-pullquote]:before {
+	content: attr(data-pullquote);
+	font-size: 18px;
+	width: 184px;
+	padding: 30px;
+	display: block;
+	float: right;
+} 
+
 /* Data tables */
 
 #site .data {
