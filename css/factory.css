@@ -637,9 +637,15 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	content: attr(data-pullquote);
 	font-size: 18px;
 	width: 184px;
-	padding: 30px;
+	padding: 3rem 0 3rem 30px;
 	display: block;
 	float: right;
+}
+
+#site .content aside {
+	float: right;
+	width: 184px;
+	padding: 0 0 3rem 30px;
 } 
 
 /* Data tables */
