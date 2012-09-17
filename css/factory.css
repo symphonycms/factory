@@ -809,16 +809,20 @@ table.compatibility td.compatible:last-child {
 
 .sidebar h3 {
 	font-size: 13px;
+	line-height: 1.5rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+	margin-top: 0.4rem;
 }
 
-.sidebar h3:not(:first-child) {
-	margin-top: 20px;
+.sidebar ul li {
+	font-size: 13px;
+	line-height: 1.5rem;
 }
 
 .sidebar input {
-	margin-left: -6px;
+	margin-left: -10px;
+	padding-left: 8px;
 	width: 190px;
 }
