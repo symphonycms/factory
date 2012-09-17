@@ -17,6 +17,27 @@
 	background-image: linear-gradient(#eee 1px, transparent 1px), linear-gradient(#faf5dc 1px, transparent 1px);
 }
 
+.show-baselines.full-width {
+	position: relative;
+}
+
+.show-baselines.full-width:before,
+.show-baselines.full-width:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: inherit;
+}
+
+.show-baselines.full-width:after {
+	left: auto;
+	right: -100%;
+}
+
 /*-----------------------------------------------------------------------------
 	Grid
 -----------------------------------------------------------------------------*/

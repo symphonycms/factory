@@ -29,7 +29,8 @@
 			grid: [],
 			baseline: 1.5,
 			baselineUnit: 'rem',
-			baselineContext: '#site'
+			baselineContext: '#site',
+			baselineFullWidth: true
 		},
 		
 		init: function(options) {
@@ -46,7 +47,7 @@
 			Grid.loadAssets();
 			Grid.createGrid();
 			Grid.visualiseGrid();
-			Grid.setBaselineDistance();
+			Grid.setBaselines();
 		},
 		
 		createGrid: function(options) {
@@ -105,11 +106,16 @@
 			});
 		},
 		
-		setBaselineDistance: function() {
+		setBaselines: function() {
 			Grid.elements.baseline.css({			
 				'background-position': '0 0, 0 ' + (Grid.settings.baseline / 2) + Grid.settings.baselineUnit,
 				'background-size': '100% ' + Grid.settings.baseline + Grid.settings.baselineUnit
 			});
+			
+			// Set wide mode – note that this will set the context element to `position: relative`
+			if(Grid.settings.baselineFullWidth === true) {
+				Grid.elements.baseline.addClass('full-width');
+			}
 		},
 		
 		clear: function() {
