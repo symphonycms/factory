@@ -653,6 +653,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #site .column:not(.sidebar) ul {
+	font-size: 13px;
 
 	/* This needs to be changed into something nice */
 	list-style-type: disc;
