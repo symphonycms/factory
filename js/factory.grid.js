@@ -13,56 +13,107 @@
 	This object bundles functions to show and hide the grid used for 
 	Symphony Factory. To enable the grid display, include this file into your
 	project – all needed stylesheets will be loaded automatically.
-	
-	The grid can be toggled by appending `?grid` to the URL, 
-	by clicking `a.show-grid` or by using the keyboard shortcut `ctrl + ,`.
 -----------------------------------------------------------------------------*/
 
 	var Grid = {
 	
 		elements: {},
 		
-		init: function() {
-			Grid.elements.body = $('body');
-			Grid.elements.grid = $('#grid');
-			
-			// Prepare grid
-			Grid.loadAssets();
-			Grid.addGrid();
+		settings: {
+			module: 82,
+			moduleUnit: 'px',
+			gutter: 20,
+			gutterUnit: 'px',
+			opticalAlignment: 10,
+			opticalAlignmentUnit: 'px',
+			grid: [],
+			baseline: 1.5,
+			baselineUnit: 'rem',
+			baselineContext: '#site'
 		},
 		
-		addGrid: function() {
-			if(Grid.elements.grid.length == 0) {
-				var module = $('<div class="module" />');
-				var gutter = $('<div class="gutter" />');
+		init: function(options) {
 			
-				// Create grid
-				Grid.elements.grid = $('<div />', {
-					id: 'grid',
-					class: 'centered'
-				}).appendTo(Grid.elements.body);
+			// Apply settings
+			$.extend(Grid.settings, options);
+		
+			// Cache elements
+			Grid.elements.body = $('body');
+			Grid.elements.grid = $('#grid');
+			Grid.elements.baseline = $(Grid.settings.baselineContext);
+			
+			// Create grid
+			Grid.loadAssets();
+			Grid.createGrid();
+			Grid.visualiseGrid();
+			Grid.setBaselineDistance();
+		},
+		
+		createGrid: function(options) {
+		
+			// Clear existing grid
+			Grid.clear();
+		
+			// Create grid
+			Grid.elements.grid = $('<div />', {
+				id: 'grid',
+				class: 'centered'
+			}).appendTo(Grid.elements.body);
+		},
+		
+		visualiseGrid: function() {
+			var module = $('<div class="module" />'),
+				gutter = $('<div class="gutter" />'),
+				alignment = $('<div class="alignment" />');
+			
+			// Add columns and gutter
+			$.each(Grid.settings.grid, function addColumn(index, element) {
+				var count = parseInt(element.match(/[0-9]+/g)[0]),
+					column, width;
 				
-				// Add columns
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().addClass('double left-alignment').appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().addClass('left-alignment').appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-				module.clone().addClass('right-alignment').appendTo(Grid.elements.grid);
-				gutter.clone().appendTo(Grid.elements.grid);
-			}
+				// Add column
+				if(element.indexOf('c') == 0) {
+					width = Grid.settings.module * count + Grid.settings.gutter * (count - 1);
+					column = module.clone().css({
+						width: width + Grid.settings.moduleUnit
+					}).attr('data-width', width).appendTo(Grid.elements.grid);
+					
+					// Add left optical alignment
+					if(element.indexOf('l') > -1) {
+						alignment.clone().css({
+							width: Grid.settings.opticalAlignment + Grid.settings.opticalAlignmentUnit,
+							left: (-Grid.settings.opticalAlignment - 1) + Grid.settings.opticalAlignmentUnit
+						}).addClass('left').prependTo(column);
+					}
+					
+					// Add right optical alignment
+					if(element.indexOf('r') > -1) {
+						alignment.clone().css({
+							width: Grid.settings.opticalAlignment + Grid.settings.opticalAlignmentUnit,
+							right: (-Grid.settings.opticalAlignment - 1) + Grid.settings.opticalAlignmentUnit
+						}).addClass('right').appendTo(column);
+					}
+				}
+				
+				// Add gutter
+				if(element.indexOf('g') == 0) {
+					width = Grid.settings.gutter * count;
+					gutter.clone().css({
+						width: width + Grid.settings.gutterUnit
+					}).attr('data-width', width).appendTo(Grid.elements.grid);
+				}
+			});
+		},
+		
+		setBaselineDistance: function() {
+			Grid.elements.baseline.css({			
+				'background-position': '0 0, 0 ' + (Grid.settings.baseline / 2) + Grid.settings.baselineUnit,
+				'background-size': '100% ' + Grid.settings.baseline + Grid.settings.baselineUnit
+			});
+		},
+		
+		clear: function() {
+			Grid.elements.grid.remove();
 		},
 		
 		loadAssets: function() {
@@ -93,8 +144,8 @@
 		},
 		
 		toggleBaselines: function() {
-			Grid.elements.body.toggleClass('show-baselines');
-			Factory.storeSetting('baselines', Grid.elements.body.is('.show-baselines'));
+			Grid.elements.baseline.toggleClass('show-baselines');
+			Factory.storeSetting('baselines', Grid.elements.baseline.is('.show-baselines'));
 		},
 
 		toggleLabels: function(show) {
@@ -114,7 +165,11 @@
 -----------------------------------------------------------------------------*/
 
 	$(document).on('ready.factory', function ready() {
-		Grid.init();
+		
+		// Create grid
+		Grid.init({
+			grid: ['g1', 'c2l', 'g1', 'c1l', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1r', 'g1']
+		});
 	
 		// Toggle grid
 		$(document).on('keydown.factory', function toggle(event) {

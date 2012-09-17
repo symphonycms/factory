@@ -4,6 +4,18 @@
  *
  * @link http://symphonycms.github.com/factory/
  */
+ 
+/*-----------------------------------------------------------------------------
+	Baselines
+-----------------------------------------------------------------------------*/
+
+.show-baselines {
+	background-image: -webkit-linear-gradient(#eee 1px, transparent 1px), -webkit-linear-gradient(#faf5dc 1px, transparent 1px);
+	background-image: -moz-linear-gradient(#eee 1px, transparent 1px), -moz-linear-gradient(#faf5dc 1px, transparent 1px);
+	background-image: -ms-linear-gradient(#eee 1px, transparent 1px), -ms-linear-gradient(#faf5dc 1px, transparent 1px);
+	background-image: -o-linear-gradient(#eee 1px, transparent 1px), -o-linear-gradient(#faf5dc 1px, transparent 1px);
+	background-image: linear-gradient(#eee 1px, transparent 1px), linear-gradient(#faf5dc 1px, transparent 1px);
+}
 
 /*-----------------------------------------------------------------------------
 	Grid
@@ -28,22 +40,11 @@
 	pointer-events: none;
 }
 
-.show-baselines {
-	background-color: #fbfdfb; 
-	background-image: -webkit-linear-gradient(#eee 1px, transparent 1px);
-	background-image: -moz-linear-gradient(#eee 1px, transparent 1px);
-	background-image: -ms-linear-gradient(#eee 1px, transparent 1px);
-	background-image: -o-linear-gradient(#eee 1px, transparent 1px);
-	background-image: linear-gradient(#eee 1px, transparent 1px);
-	background-size: 100% 1.7em;	
-}
-
 /* Modules and gutter */
 
 .show-grid #grid .module,
 .show-grid #grid .gutter {
 	background: rgba(196, 226, 205, 0.3);
-	width: 82px;
 	height: 100%;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -54,39 +55,25 @@
 }
 
 .show-grid #grid .gutter {
-	width: 20px;
 	background: rgba(250, 231, 159, 0.1);
 	border: none;
 }
 
-.show-grid #grid .module.double {
-	width: 184px;
-}
-
 /* Optical margin alignment */
 
-.show-grid #grid .module.left-alignment:before,
-.show-grid #grid .module.right-alignment:before {
-	content: "";
-	width: 10px;
+.show-grid #grid .module .alignment {
 	height: 100%;
 	background: rgba(250, 231, 159, 0.5);
 	display: block;
 	position: absolute;
 	top: 0;
-	left: -11px;
-}
-
-.show-grid #grid .module.right-alignment:before {
-	left: auto;
-	right: -11px;
 }
 
 /* Measurements */
 
 .show-grid #grid .module:after,
 .show-grid #grid .gutter:after {
-	content: "82";
+	content: attr(data-width);
 	position: absolute;
 	bottom: 1em;
 	font-size: 10px;
@@ -100,12 +87,7 @@
 	background: #fff;
 }
 
-.show-grid #grid .module.double:after {
-	content: "182";
-}
-
 .show-grid #grid .gutter:after {
-	content: "20";
 	border: none;
 	background: #B20B4F;
 	color: #fff;
