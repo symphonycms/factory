@@ -631,6 +631,35 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	max-width: 592px;
 }
 
+#site p[data-pullquote] {
+
+	/* It seems like any definition is needed here so that the following pseudo element works as expected */
+	position: inherit;
+}
+
+#site p[data-pullquote]:before {
+	content: attr(data-pullquote);
+	font-size: 18px;
+	width: 184px;
+	padding: 1.5rem 0 2rem 40px;
+	display: block;
+	float: right;
+	margin-right: -102px;
+}
+
+#site .content aside {
+	float: right;
+	width: 184px;
+	padding: 0 0 2rem 30px;
+}
+
+#site .column:not(.sidebar) ul {
+	font-size: 13px;
+
+	/* This needs to be changed into something nice */
+	list-style-type: disc;
+}
+
 /* Data tables */
 
 #site .data {
