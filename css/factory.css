@@ -625,7 +625,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #site p.introduction {
 	font-size: 18px;
 	font-weight: 300;
-	line-height: 2rem;
+	line-height: 2.25rem;
 	margin-bottom: 1rem;
 }
 
