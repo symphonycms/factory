@@ -345,18 +345,17 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #network header {
 	margin: 0;
-	padding: 0;
+	padding: 0.25rem 0 0;
 	color: #fff;
 	background: #282828;
 	min-width: 1040px;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	height: 45px;
+	height: 2rem;
 	overflow: hidden;
 }
 
 #network header .centered {
 	position: relative;
-	padding-top: 17px;
 }
 
 #network header h1 {
@@ -512,12 +511,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 /* Main site header, e. g. Symphony Extensions */
 
 #site > header {
-	padding: 10px 20px 5px 20px;
+	padding: 0 20px 0 20px;
 	border-bottom: 1px solid #CFCFCF;
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
 	position: relative;
-	height: 71px;
-	margin-bottom: 30px;
+	height: 5.25rem;
+	margin-bottom: 1.9rem;
 }
 
 #site > header:before,
@@ -529,10 +528,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	background: -ms-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
 	background: -o-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
 	background: linear-gradient(to right, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	height: 15px;
+	height: 5px;
 	width: 20px;
 	position: absolute;
-	bottom: -14px;
+	bottom: -3px;
 	left: 0;
 }
 
@@ -547,7 +546,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #site > header h1 {
-	margin: 1em 0 0;
+	margin: 2rem 0 0;
 	padding-top: 5px;
 	font-size: 26px;
 	line-height: 1;
@@ -570,6 +569,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #site > header nav {
 	float: right;
 	margin-right: -10px;
+	margin-top: 0.25rem;
 }
 
 #site > header nav a {
