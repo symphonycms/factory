@@ -784,17 +784,11 @@ table.compatibility td.compatible:last-child {
 
 #site .content article {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-<<<<<<< HEAD
-	line-height: 1.5rem;
-	padding-top: 0.4rem;
-=======
-	height: 6rem;
 	padding-top: 0.64rem;
->>>>>>> ee436335726ccc5b10538ba49bd7650e29686d41
 }
 
 #site .content article.thread {
-	height: 3.75rem;	
+	height: 6rem;	
 }
 
 #site .content article:nth-child(odd) {
