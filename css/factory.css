@@ -867,9 +867,22 @@ table.compatibility td.compatible:last-child {
 	vertical-align: 10%;
 }
 
+/* Footer */
+
 #site .content article footer {
 	float: right;
 	width: 184px;
+}
+
+#site .content article footer p {
+	font-size: 1.3rem;
+	text-align: right;
+	margin: 1.2rem 0 0.5rem;
+}
+
+#site .content article footer strong {
+	display: block;
+	font-weight: 700;
 }
 
 #site .content article footer img {
