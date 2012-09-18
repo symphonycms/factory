@@ -139,11 +139,15 @@
 			
 			<!-- Field with sidebar -->
 			<div class="field">
-				<h2>Symphony Factory</h2>
-				<nav>
-					<a href="#" class="open">Open</a>
-					<a href="#" class="star">Star</a>
-				</nav>
+				<h2>Symphony Factory <em>· 72 Replies</em></h2>
+				<ul class="tools">
+					<li class="open">
+						<a href="#">Open</a>
+					</li>
+					<li class="star">
+						<a href="#">Star</a>
+					</li>
+				</ul>
 				<div class="column sidebar">
 					<h3>Search</h3>
 					<form>
@@ -165,17 +169,6 @@
 				</div>
 				<div class="column content">
 
-					<!-- Thread navigation -->
-					<nav class="pagination top">
-						<h4>You are looking at page 1 of 4</h4>
-						<a href="#">Previous</a>
-						<a href="#" class="selected">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">Next</a>
-					</nav>
-
 					<!-- Initial comment -->
 					<article id="position-1" class="comment highlighted">
 					
@@ -183,7 +176,7 @@
 						<footer>
 							<h4>Nils</h4>
 							<a href="http://getsymphony.com/get-involved/member/Nils/">
-								<img src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=50&amp;d=http%3A%2F%2Fgetsymphony.com%2Fworkspace%2Fassets%2Fimages%2Ficons%2Fsymphony-avatar.png" width="50" height="50" />
+								<img src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=184" width="184" height="184" />
 							</a>
 							<time>17 Aug 12, 12:07 pm</time>
 							<a href="#position-1">Comment #1</a>
@@ -207,7 +200,7 @@
 							<p>We hope the factory will make the development and maintenance of existing sites easier and encourage others to create additional ressources.</p>
 							<p><a href="http://symphonycms.github.com/factory/">Symphony Factory</a> will be freely available for all Symphony Network sites as a <a href="https://github.com/symphonycms/factory/">Git repository</a>. Also, the new default workspace shall be based on a modified version of the main layout.</p>
 							<p>
-								<img src="https://raw.github.com/symphonycms/factory/development/img/sym_factory-withopennetwork.png" alt="Mockup: Symphony stream with open network overview"/>
+								<img src="https://raw.github.com/symphonycms/factory/development/img/sym_factory-withopennetwork.png" alt="Mockup: Symphony stream with open network overview" />
 							</p>
 							<p>
 								<em>Mockup: Symphony stream with open network overview</em>
@@ -217,7 +210,7 @@
 							<p><a href="http://getsymphony.com/get-involved/member/Johanna/">Johanna</a> and I are up for the challenge and willing to invest our time. If you like the idea of a design framework for Symphony and want to support the project, a donation would be very much appreciated.</p>
 							<p>
 								<a href="http://www.pledgie.com/campaigns/18062">
-									<img alt="Click here to lend your support to: Symphony Factory and make a donation at www.pledgie.com !" src="http://www.pledgie.com/campaigns/18062.png?skin_name=chrome" border="0"/>
+									<img alt="Click here to lend your support to: Symphony Factory and make a donation at www.pledgie.com !" src="http://www.pledgie.com/campaigns/18062.png?skin_name=chrome" border="0" />
 								</a>
 							</p>
 							<p>The basic goal is 2.000 EUR (approx. US$ 2.500), which will cover research, design and documentation. Of course, work will not stop after the initial release, but the more money is raised, the faster the factory can move on.</p>
@@ -253,6 +246,8 @@
 				Hurray for you both!</p>
 						</div>
 					</article>
+					
+					<!-- Response -->
 					<article id="position-3" class="comment">
 						<ul class="meta">
 							<li class="gravatar">
@@ -749,27 +744,21 @@
 							<p>Mockup looks beautiful. Keep going!</p>
 						</div>
 					</div>
-					<ul class="pagination">
-						<li class="disabled">
-							<a class="pagination-previous" href="/discuss/thread/91734/4/">&#xAB; Previous</a>
-						</li>
-						<li class="selected">
-							<a class="page" href="/discuss/thread/91734/1/">1</a>
-						</li>
-						<li>
-							<a class="page" href="/discuss/thread/91734/2/">2</a>
-						</li>
-						<li>
-							<a class="page" href="/discuss/thread/91734/3/">3</a>
-						</li>
-						<li>
-							<a class="page" href="/discuss/thread/91734/4/">4</a>
-						</li>
-						<li>
-							<a class="pagination-next" href="/discuss/thread/91734/2/">Next &#xBB;</a>
-						</li>
-					</ul>
-					<form method="post" action="#form-comment" enctype="multipart/form-data">
+
+					<!-- Thread navigation -->
+					<nav class="pagination fixed">
+						<a>Previous</a>
+						<div class="pages">
+							<a href="#" class="selected">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+						</div>
+						<a href="#">Next</a>
+					</nav>
+					
+					<!-- New message -->
+<!--					<form method="post" action="#form-comment" enctype="multipart/form-data">
 						<fieldset>
 							<div class="block">
 								<label for="comment">Comment</label>
@@ -792,7 +781,7 @@
 								<a id="cancel" href="http://getsymphony.com/discuss/">Cancel and go back</a>
 							</div>
 						</div>
-					</form>
+					</form>-->
 				</div>
 			</div>
 		</div>
