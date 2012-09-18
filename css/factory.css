@@ -614,8 +614,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 /* Headlines */
 
 #site .field > h2 {
-	margin-top: 3.2rem;
-	margin-left: 20px;
+	margin: 3.2rem 0 1.5rem 20px;
 	font-size: 2.2rem;
 	font-weight: 400;
 	line-height: 3.6rem;
@@ -865,6 +864,13 @@ table.compatibility td.compatible:last-child {
 
 #site .content article footer {
 	float: right;
+	width: 184px;
+}
+
+#site .content article footer img {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	margin-right: -10px;
 }
 
 /* Sidebar */
@@ -999,6 +1005,7 @@ ul.tools {
 }
 
 ul.tools li {
+	list-style: none;
 	float: left;
 	font-size: 1.3rem;
 	padding: 0 10px;
