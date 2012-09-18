@@ -614,7 +614,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 /* Headlines */
 
 #site .field > h2 {
-	margin: 3.2rem 0 1.5rem 20px;
+	margin: 3.2rem 0 2.7rem 20px;
 	font-size: 2.2rem;
 	font-weight: 400;
 	line-height: 3.6rem;
@@ -629,6 +629,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #site p {
 	max-width: 592px;
+	margin-bottom: 1.2rem;
 }
 
 #site p.introduction {
@@ -1004,6 +1005,10 @@ ul.tools {
 	right: 10px;
 }
 
+ul.tools:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 ul.tools li {
 	list-style: none;
 	float: left;
@@ -1023,6 +1028,10 @@ ul.tools li:first-child {
 ul.tools li:last-child {
 	border-radius: 0 2px 2px 0;
 	border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ul.tools li:hover {
+	background: rgba(0, 0, 0, 0.015);
 }
 
 ul.tools a {
@@ -1047,7 +1056,7 @@ ul.tools li.star:hover:after {
 
 h2 .tag {
 	background: #92C44D;
-	border: 1px solid #77a33b;
+	border: 1px solid #92C44D;
 	display: inline-block;
 	font-size: 1.3rem;
 	line-height: 2.4rem;
