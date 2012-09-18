@@ -597,18 +597,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	border: 1px solid transparent;
 }
 
-#site > header nav a.active,
-#site > header nav a:hover {
-	background: #B20B4F;
-	color: #fff;
-	border-radius: 2px;
-	border: 1px solid #900840;
+#site > header nav a.active {
+	font-weight: 700;
 }
 
-#site > header nav a:not(.active):hover {
-	background: rgba(0, 0, 0, 0.1);
-	border-color: rgba(0, 0, 0, 0.1);
-	color: #000;
+#site > header nav a:hover  {
+	color: #B20B4F;
 }
 
 /* Headlines */
@@ -865,6 +859,17 @@ table.compatibility td.compatible:last-child {
 	font-size: 1.3rem;
 	font-weight: 400;
 	vertical-align: 10%;
+}
+
+#site .content article h3 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	margin: 2.4rem 0 1.2rem;
+}
+
+#site .content article.highlighted ul {
+	font-size: 1.5rem;
+	max-width: 592px;
 }
 
 /* Footer */
