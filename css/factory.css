@@ -614,6 +614,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 /* Headlines */
 
 #site .field > h2 {
+	margin-top: 3.2rem;
 	margin-left: 20px;
 	font-size: 2.2rem;
 	font-weight: 400;
@@ -862,6 +863,10 @@ table.compatibility td.compatible:last-child {
 	vertical-align: 10%;
 }
 
+#site .content article footer {
+	float: right;
+}
+
 /* Sidebar */
 
 .sidebar h3 {
@@ -989,7 +994,7 @@ nav.pagination div.pages {
 ul.tools {
 	box-sizing: border-box;
 	position: absolute;
-	top: 0;
+	top: 0.6rem;
 	right: 10px;
 }
 
@@ -1017,9 +1022,32 @@ ul.tools a {
 	color: #000;
 }
 
-ul.tools a.star:after {
+ul.tools li.star {
+	padding: 0 7px 0 10px;
+}
+
+ul.tools li.star:after {
 	content: "\2605";
-	padding: 0 0 0 5px;
-	color: rgba(0, 0, 0, 0.4);
-	display: block;
+	padding-left: 3px;
+	color: #ccc;
+}
+
+ul.tools li.star:hover:after {
+	color: #000;
+}
+
+/* Headline tag */
+
+h2 .tag {
+	background: #92C44D;
+	border: 1px solid #77a33b;
+	display: inline-block;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	padding: 0 10px;
+	border-radius: 2px;
+	color: #fff;
+	top: -0.3rem;
+	position: relative;
+	margin-left: 5px;
 }
