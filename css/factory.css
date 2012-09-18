@@ -21,16 +21,18 @@
 	
 	Use `rem` for vertical and `px` for horizontal units.
 -----------------------------------------------------------------------------*/
+html {
+	font-size: 10px;
+}
 
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', 'PT Sans', sans-serif;
 	font-weight: normal;
-	font-size: 10px;
-	line-height: 1.5;
 	overflow-y: scroll;
 	background: #fbfdfb;
+	line-height: 2.4rem;
 }
 
 img {
@@ -358,12 +360,12 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #network header {
 	margin: 0;
-	padding: 0.5rem 0 0;
+	padding: 0.8rem 0 0;
 	color: #fff;
 	background: #282828;
 	min-width: 1040px;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	height: 2.25rem;
+	height: 3.6rem;
 	overflow: hidden;
 }
 
@@ -375,11 +377,11 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	text-transform: uppercase;
 	letter-spacing: 0.075em;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 1.5rem;;
 }
 
 #network header h1 a {
-	font-size: 15px;
+	font-size: 1.5rem;
 }
 
 #network header nav a {
@@ -528,8 +530,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	border-bottom: 1px solid #CFCFCF;
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
 	position: relative;
-	height: 5.25rem;
-	margin-bottom: 1.5rem;
+	height: 8.4rem;
+	margin-bottom: 2.4rem;
 }
 
 #site > header:before,
@@ -559,10 +561,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 #site > header h1 {
-	margin: 2rem 0 0;
-	padding-top: 5px;
-	font-size: 26px;
-	line-height: 1;
+	margin: 3.2rem 0 0;
+	padding-top: 0.5rem;
+	font-size: 2.6rem;
+	line-height: 2.6rem;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -582,17 +584,16 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #site > header nav {
 	float: right;
 	margin-right: -10px;
-	margin-top: 0.3rem;
-	line-height: 1.5rem;
+	margin-top: 4.1rem;
 }
 
 #site > header nav a {
 	color: #000;
 	text-decoration: none;
 	float: left;
-	margin: 37px 0 0 2px;
+	margin: 0 0 0 2px;
 	padding: 0 9px;
-	font-size: 15px;
+	font-size: 1.5rem;
 	border: 1px solid transparent;
 }
 
@@ -619,14 +620,13 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 /* Content */
 
 #site p {
-	line-height: 1.5rem;
 	max-width: 592px;
 }
 
 #site p.introduction {
-	font-size: 18px;
+	font-size: 2.2rem;
 	font-weight: 300;
-	line-height: 2.25rem;
+	line-height: 3.6rem;
 	margin-bottom: 1rem;
 	max-width: 592px;
 }
@@ -639,7 +639,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #site p[data-pullquote]:before {
 	content: attr(data-pullquote);
-	font-size: 18px;
+	font-size: 1.8rem;
 	width: 184px;
 	padding: 1.5rem 0 2rem 40px;
 	display: block;
@@ -682,21 +682,20 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 #site .data h3.pinned {
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: normal;
-	min-height: 30px;
+	min-height: 3rem;
 	display: block;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: normal;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	line-height: 2.3;
 	padding: 0 0 0 9px;
 	color: rgba(0, 0, 0, 0.6);
 	border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 #site .data .label {
-	height: 30px;
+	height: 3rem;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -778,15 +777,20 @@ table.compatibility td.compatible:last-child {
 	white-space: nowrap;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	height: 25px;
+	height: 2.5rem;
 }
 
 /* Community */
 
 #site .content article {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
 	line-height: 1.5rem;
 	padding-top: 0.4rem;
+=======
+	height: 6rem;
+	padding-top: 0.64rem;
+>>>>>>> ee436335726ccc5b10538ba49bd7650e29686d41
 }
 
 #site .content article.thread {
@@ -801,12 +805,8 @@ table.compatibility td.compatible:last-child {
 }
 
 #site .content article h3 {
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: 600;
-}
-
-#site .content article p {
-	line-height: 1.5rem;
 }
 
 #site .content article a {
@@ -815,17 +815,17 @@ table.compatibility td.compatible:last-child {
 }
 
 #site .content article .response {
-	font-size: 36px;
+	font-size: 3.6rem;
 	text-align: right;
 	font-weight: 300;
-	line-height: 1.2;
+	line-height: 4.3rem;
 	overflow: visible;
 	position: relative;
 }
 
 #site .content article .response a {
 	position: absolute;
-	top: 6px;
+	top: 0.6rem;
 	right: -10px;
 	display: block;
 	width: 150px;
@@ -836,18 +836,18 @@ table.compatibility td.compatible:last-child {
 	color: #fff;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 1.8rem;
 	border-radius: 2px;
 	float: right;
-	padding: 0.28rem 10px 0.275em 0.5rem;
-	margin: 0.5rem 0 0 0.25rem;
-	line-height: 1;	
+	padding: 0.5rem 10px 0.4rem 0.8rem;
+	margin: 0.8rem 0 0 0.4rem;
+	line-height: 1.8rem;	
 	white-space: nowrap;
 }
 
 #site .content article .response .tag:before {
 	content: "+";
-	font-size: 13px;
+	font-size: 1.3rem;
 	font-weight: 400;
 	vertical-align: 10%;
 }
@@ -855,17 +855,15 @@ table.compatibility td.compatible:last-child {
 /* Sidebar */
 
 .sidebar h3 {
-	font-size: 13px;
-	line-height: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	margin-top: 0.4rem;
+	margin-top: 0.6rem;
 }
 
 .sidebar ul li {
-	font-size: 13px;
-	line-height: 1.5rem;
+	font-size: 1.3rem;
 	margin-left: -10px;
 	padding-left: 10px;
 }

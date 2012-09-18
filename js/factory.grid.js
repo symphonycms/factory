@@ -27,7 +27,7 @@
 			opticalAlignment: 10,
 			opticalAlignmentUnit: 'px',
 			grid: [],
-			baseline: 1.5,
+			baseline: 2.4,
 			baselineUnit: 'rem',
 			baselineContext: '#site',
 			baselineFullWidth: true
