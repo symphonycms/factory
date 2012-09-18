@@ -180,27 +180,31 @@
 		// Toggle grid
 		$(document).on('keydown.factory', function toggle(event) {
 			var grid;
-		
-			// Show/hide labels, shortcut = l
-			if(event.which == 76) {
-				grid = true;
-				Grid.toggleLabels();	
-			}
-		
-			// Show/hide columns, shortcut = c
-			if(event.which == 67) {
-				grid = true;
-				Grid.toggleColumns();	
-			}
-		
-			// Show/hide baselines, shortcut = b
-			if(event.which == 66) {
-				Grid.toggleBaselines();	
-			}
-		
-			// Show/hide grid, shortcut = g
-			if(event.which == 71 || grid === true) {
-				Grid.toggleGrid(grid);	
+			
+			// Make sure that no additional keys are pressed
+			if(event.metaKey !== true && event.altKey !== true && event.shiftKey !== true && event.ctrlKey !== true) {
+			
+				// Show/hide labels, shortcut = l
+				if(event.which == 76) {
+					grid = true;
+					Grid.toggleLabels();	
+				}
+			
+				// Show/hide columns, shortcut = c
+				if(event.which == 67) {
+					grid = true;
+					Grid.toggleColumns();	
+				}
+			
+				// Show/hide baselines, shortcut = b
+				if(event.which == 66) {
+					Grid.toggleBaselines();	
+				}
+			
+				// Show/hide grid, shortcut = g
+				if(event.which == 71 || grid === true) {
+					Grid.toggleGrid(grid);	
+				}
 			}
 		});
 		
