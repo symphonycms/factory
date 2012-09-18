@@ -1005,6 +1005,12 @@ ul.tools {
 	right: 10px;
 }
 
+footer ul.tools {
+	position: relative;
+	float: right;
+	margin-right: -20px;
+}
+
 ul.tools:hover {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
