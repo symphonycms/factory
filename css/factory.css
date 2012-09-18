@@ -632,6 +632,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	margin-bottom: 1.2rem;
 }
 
+#site article.thread p {
+	margin-bottom: 0;
+}
+
 #site p.introduction {
 	font-size: 2.2rem;
 	font-weight: 300;
