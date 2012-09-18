@@ -615,6 +615,14 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 
 #site .field > h2 {
 	margin-left: 20px;
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 3.6rem;
+}
+
+#site .field > h2 em {
+	font-weight: 300;
+	font-style: normal;
 }
 
 /* Content */
@@ -629,6 +637,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	line-height: 3.6rem;
 	margin-bottom: 1rem;
 	max-width: 592px;
+}
+
+#site article.highlighted p {
+	font-size: 1.5rem;
 }
 
 #site p[data-pullquote] {
@@ -787,6 +799,10 @@ table.compatibility td.compatible:last-child {
 	padding-top: 0.64rem;
 }
 
+#site .content article:last-of-type {
+	border-bottom: none;
+}
+
 #site .content article.thread {
 	height: 6rem;	
 }
@@ -881,4 +897,129 @@ table.compatibility td.compatible:last-child {
 	padding-left: 8px;
 	box-sizing: border-box;
 	width: 194px;
+}
+
+/* Pagination */
+
+nav.pagination {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	font-size: 1.3rem;
+	margin: 0 -10px;
+	float: left;
+	width: 816px;
+	position: relative;
+	padding: 0;
+	box-sizing: border-box;
+
+	/* This is needed to remove whitespace between the nested links */
+	font-size: 0;
+}
+
+article.thread + nav.pagination {
+	margin-top: 1.8rem;
+}
+
+nav.pagination a {
+	font-size: 1.3rem;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 0 10px;
+	margin: 0;
+	display: inline-block;
+	color: #000;
+}
+
+nav.pagination a:not([href]) {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+nav.pagination > a:first-child {
+	float: left;
+	display: block;
+	border-right: 0;
+	border-radius: 2px 0 0 2px;
+}
+
+nav.pagination > a:last-child {
+	border-right: 0;
+	float: right;
+	display: block;
+	border-radius: 0 2px 2px 0;
+}
+
+nav.pagination a.selected,
+nav.pagination a[href]:hover {
+	background: #282828;
+	color: #fff;
+	margin-top: -1px;
+	margin-bottom: -1px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+nav.pagination a[href]:hover {
+	background: #B20B4F;
+}
+
+nav.pagination a.ellipsis {
+	margin-left: 30px;
+}
+
+nav.pagination a.ellipsis:before {
+	content: "\00B7\00B7\00B7";
+	color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	margin-left: -30px;
+	padding-right: 10px;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav.pagination div.pages {
+	text-align: center;
+	width: 500px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -250px;
+}
+
+/* Tools */
+
+ul.tools {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+ul.tools li {
+	float: left;
+	font-size: 1.3rem;
+	padding: 0 10px;
+	background: #fff;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	font-size: 1.3rem;
+}
+
+ul.tools li:first-child {
+	border-radius: 2px 0 0 2px;
+}
+
+ul.tools li:last-child {
+	border-radius: 0 2px 2px 0;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ul.tools a {
+	color: #000;
+}
+
+ul.tools a.star:after {
+	content: "\2605";
+	padding: 0 0 0 5px;
+	color: rgba(0, 0, 0, 0.4);
+	display: block;
 }
