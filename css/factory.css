@@ -1068,7 +1068,6 @@ table.compatibility td.compatible a {
 }
 
 #user img {
-	border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 2px;
 	margin: 0.2rem 0 0 10px;
 	float: left;
