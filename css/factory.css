@@ -1021,6 +1021,7 @@ table.compatibility td.compatible a {
 	margin: 0 0 0 10px;
 	padding: 0 0 3px 10px;
 	text-transform: uppercase;
+	display: block;
 }
 
 #network .drawer > .column {
