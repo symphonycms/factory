@@ -32,7 +32,7 @@ body {
 	background: #fbfdfb;
 	font-family: 'Open Sans', 'PT Sans', sans-serif;
 	font-size: 1.3rem;
-	font-weight: normal;
+	font-weight: 400;
 	line-height: 2.4rem;
 	margin: 0;
 	overflow-y: scroll;
@@ -469,7 +469,7 @@ p.introduction {
 	font-size: 2.2rem;
 	font-weight: 300;
 	line-height: 3.6rem;
-	margin-bottom: 1rem;
+	margin: 0.8rem 0 1rem;
 	max-width: 592px;
 }
 
