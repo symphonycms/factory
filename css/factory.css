@@ -925,9 +925,14 @@ table.compatibility td.compatible a {
 -----------------------------------------------------------------------------*/
 
 #network {
-	background: #b20b4f;
-	border-bottom: 1px solid #d9d9d9;
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	background-color: #b20b4f;
+	border-bottom: 2px solid #d9d9d9;
+}
+
+#network:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 #network a {
@@ -943,55 +948,53 @@ table.compatibility td.compatible a {
 /* Toolbar */
 
 #network header {
-	background: #282828;
+	background-color: #282828;
 	color: #fff;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
 	height: 3.6rem;
 	margin: 0;
 	min-width: 1040px;
 	overflow: hidden;
-	padding: 0.8rem 0 0;
+	padding: 0;
 }
 
-#network header a.toggle-grid {
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
-}
-
-#network header nav a.dimmed {
-	color: rgba(255, 255,255, 0.4);
-}
-
-#network header .centered {
+#network header div.centered {
 	position: relative;
 }
 
-#network header .column {
-	margin-bottom: 0;
-}
-
-#network header nav a {
-	color: rgba(255, 255,255, 0.7);
-	float: left;
-	padding-top: 1px;
-}
-
-#network header nav a:not(:last-of-type):after {
-	content: "\00B7";
-	margin: 0.5em;
-}
-
 #network header h1 {
+	padding: 0;
+	line-height: 3rem;
+}
+
+#network header h1 a {
 	font-size: 1.5rem;
 	font-weight: 600;
 	letter-spacing: 0.075em;
 	text-transform: uppercase;
 }
 
-#network header h1 a {
-	font-size: 1.5rem;
+#network header nav {
+	margin-top: 0.5rem;
+}
+
+#network header nav a {
+	color: rgba(255, 255,255, 0.7);
+	float: left;
+	line-height: 3rem;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+#network header nav a:hover {
+	color: #fff;
+}
+
+#network header nav a:not(:last-of-type):after,
+#network header nav a:not(:last-of-type):hover:after {
+	content: "\00B7";
+	color: rgba(255, 255,255, 0.7);
+	margin: 0.5em;
 }
 
 /* Drawer */
@@ -999,7 +1002,12 @@ table.compatibility td.compatible a {
 #network .drawer {
 	display: none;
 	font-family: 'Open Sans', 'PT Sans', sans-serif;
-	font-size: 15px;
+}
+
+#network .drawer:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 #network .drawer ul.column:first-of-type {
@@ -1022,6 +1030,7 @@ table.compatibility td.compatible a {
 	padding: 0 0 3px 10px;
 	text-transform: uppercase;
 	display: block;
+	line-height: 2.4rem;
 }
 
 #network .drawer > .column {
@@ -1035,8 +1044,12 @@ table.compatibility td.compatible a {
 
 #network .drawer ul {
 	list-style: none;
-	margin-top: 5px;
 	padding: 0 0 0 20px;
+	line-height: 2.4rem;
+}
+
+#network .drawer a {
+	font-size: 1.3rem;
 }
 
 /* User */
@@ -1048,10 +1061,6 @@ table.compatibility td.compatible a {
 	color: rgba(255, 255, 255, 0.85);
 	cursor: pointer;
 	font-family: 'Open Sans', 'PT Sans', sans-serif;
-	font-size: 14px;
-	height: 45px;
-	margin: 0;
-	padding: 18px 10px 0;
 	position: absolute;
 	right: 10px;
 	top: 0;
@@ -1059,11 +1068,23 @@ table.compatibility td.compatible a {
 }
 
 #user img {
-	border: 1px solid rgba(255, 255, 255, 0.075);
+	border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 2px;
-	bottom: 4px;
-	position: absolute;
-	right: 10px;
+	margin: 0.2rem 0 0 10px;
+	float: left;
+}
+
+#user p {
+	font-size: 1.4rem;
+	font-weight: 300;
+	padding: 0.5rem 0 0 50px;
+	line-height: 3rem;
+}
+
+#user p strong {
+	font-weight: 300;
+	float: right;
+	padding-right: 10px;
 }
 
 #network .column.user {
