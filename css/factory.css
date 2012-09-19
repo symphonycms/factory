@@ -497,8 +497,20 @@ table {
 
 ul {
 	list-style: none;
-	margin: 0;
+	margin: 0 0 1.2rem;
 	padding: 0;
+}
+
+ul li {
+	padding-left: 10px;
+	position: relative;
+}
+
+ul li::before {
+	content: "·";
+	position: absolute;
+	left: 0;
+	font-weight: 800;
 }
 
 a {
@@ -592,11 +604,6 @@ code {
 	padding: 0;
 }
 
-.entries article.highlighted ul {
-	font-size: 1.5rem;
-	max-width: 592px;
-}
-
 /* Footers */
 
 .entries article footer {
@@ -645,7 +652,10 @@ code {
 .sidebar ul li {
 	font-size: 1.3rem;
 	margin-left: -10px;
-	padding-left: 10px;
+}
+
+.sidebar ul li::before {
+	content: none;
 }
 
 .sidebar ul li.selected,
@@ -690,6 +700,11 @@ code {
 .tools li {
 	float: left;
 	list-style: none;
+	padding-left: 0;
+}
+
+.tools li::before {
+	content: none;
 }
 
 .tools a[href]:hover {
@@ -929,8 +944,8 @@ table.compatibility td.compatible a {
 	border-bottom: 2px solid #d9d9d9;
 }
 
-#network:after {
-	content: "";
+#network::after {
+	content: none;
 	display: block;
 	clear: both;
 }
@@ -943,6 +958,14 @@ table.compatibility td.compatible a {
 
 #network a:not([href]) {
 	cursor: pointer;
+}
+
+#network ul li::before {
+	content: none;
+}
+
+#network ul li {
+	padding-left: 0;
 }
 
 /* Toolbar */
