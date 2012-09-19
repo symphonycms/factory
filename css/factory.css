@@ -23,6 +23,8 @@
 -----------------------------------------------------------------------------*/
 
 html {
+
+	/* This makes 1rem eqal 10px */
 	font-size: 10px;
 }
 
@@ -35,39 +37,6 @@ body {
 	background: #fbfdfb;
 	line-height: 2.4rem;
 	font-size: 1.3rem;
-}
-
-p {
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	color: #B20B4F;
-}
-
-img {
-	display: block;
-}
-
-code {
-	font: 12px/1.5 Monaco, Consolas, 'Andale Mono', monospace;
-}
-
-table {
-	width: 100%;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
 }
 
 /* Behaviours */
@@ -493,6 +462,39 @@ header.sub .tag {
 /*-----------------------------------------------------------------------------
 	Content:
 -----------------------------------------------------------------------------*/
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #B20B4F;
+}
+
+img {
+	display: block;
+}
+
+code {
+	font: 12px/1.5 Monaco, Consolas, 'Andale Mono', monospace;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
 #site p {
 	max-width: 592px;
