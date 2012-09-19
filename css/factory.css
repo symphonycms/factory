@@ -1091,15 +1091,13 @@ table.compatibility td.compatible a {
 }
 
 #user img {
-	border-radius: 2px;
-	margin: 0.2rem 0 0 10px;
 	float: left;
 }
 
 #user p {
 	font-size: 1.4rem;
 	font-weight: 300;
-	padding: 0.5rem 0 0 50px;
+	padding: 0.5rem 0 0 46px;
 	line-height: 3rem;
 }
 
