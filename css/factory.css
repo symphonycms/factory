@@ -21,6 +21,7 @@
 	
 	Use `rem` for vertical and `px` for horizontal units.
 -----------------------------------------------------------------------------*/
+
 html {
 	font-size: 10px;
 }
@@ -33,14 +34,12 @@ body {
 	overflow-y: scroll;
 	background: #fbfdfb;
 	line-height: 2.4rem;
+	font-size: 1.3rem;
 }
-
-/* Paragraphs */
 
 p {
 	margin: 0;
 	padding: 0;
-	font-size: 13px;
 }
 
 a {
@@ -246,25 +245,6 @@ ul {
 }
 
 /*-----------------------------------------------------------------------------
-	Headlines:
-
-	General style definitions for headlines. 
------------------------------------------------------------------------------*/
-
-h1, h2, h3, h4, h5 {
-	margin: 0;
-	padding: 0;
-}
-
-h2 {
-	margin: 0 0 2.8rem;
-	font-size: 2.6rem;
-	font-weight: 400;
-	line-height: 3.6rem;
-	display: inline-block;
-}
-
-/*-----------------------------------------------------------------------------
 	Forms:
 
 	Style definitions for form elements. 
@@ -352,189 +332,54 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 
 /*-----------------------------------------------------------------------------
-	Network:
+	Headers:
 
-	Style definitions for the network area. 
+	Style definitions for page headlines and headers.
 -----------------------------------------------------------------------------*/
 
-#network {
-	background: #b20b4f;
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid #d9d9d9;
-}
-
-#network a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 14px;
-}
-
-#network a:not([href]) {
-	cursor: pointer;
-}
-
-/* Toolbar */
-
-#network header {
-	margin: 0;
-	padding: 0.8rem 0 0;
-	color: #fff;
-	background: #282828;
-	min-width: 1040px;
+h1 {
+	margin: 3.2rem 0 0;
+	padding-top: 0.5rem;
+	font-size: 2.6rem;
+	line-height: 2.6rem;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	height: 3.6rem;
-	overflow: hidden;
-}
-
-#network header .centered {
-	position: relative;
-}
-
-#network header h1 {
 	text-transform: uppercase;
-	letter-spacing: 0.075em;
-	font-weight: 600;
-	font-size: 1.5rem;;
-}
-
-#network header h1 a {
-	font-size: 1.5rem;
-}
-
-#network header nav a {
-	color: rgba(255, 255,255, 0.7);
-	float: left;
-	padding-top: 1px;
-}
-
-#network header nav a:not(:last-of-type):after {
-	content: "\00B7";
-	margin: 0.5em;
-}
-
-#network header nav a.dimmed {
-	color: rgba(255, 255,255, 0.4);
-}
-
-#network header .column {
-	margin-bottom: 0;
-}
-
-#network header a.toggle-grid {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-/* Drawer */
-
-#network .drawer {
-	display: none;
-	font-size: 15px;
-	font-family: 'Open Sans', 'PT Sans', sans-serif;
-}
-
-#network .drawer ::selection,
-#network .drawer ::-moz-selection {
-	background: rgba(0, 0, 0, 0.1);
-}
-
-
-#network .drawer > .column {
-	margin-top: 18px;
-}
-
-#network .drawer > .column:first-of-type {
-	margin-left: 0;
-	width: 204px;
-}
-
-#network .drawer .column h2 {
-	color: #d96f90;
-	font-size: 13px;
-	font-weight: normal;
-	text-transform: uppercase;
-	border-bottom: 1px solid #9E0A46;
-	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
 	letter-spacing: 0.05em;
-	margin: 0 0 0 10px;
-	padding: 0 0 3px 10px;
+	font-weight: 300;	
 }
 
-#network .drawer ul {
-	list-style: none;
-	padding: 0 0 0 20px;
-	margin-top: 5px;
+h2 {
+	margin: 0 0 2.8rem;
+	font-size: 2.6rem;
+	font-weight: 400;
+	line-height: 3.6rem;
+	display: inline-block;
 }
 
-#network .drawer ul.column:first-of-type {
-	margin-left: 0;
-}
+h3 {
 
-/* User */
-
-#user {
+	/* @todo: needs to be defined properly */
 	margin: 0;
-	width: 204px;
-	padding: 18px 10px 0;
-	background: #141414;
-	position: absolute;
-	top: 0;
-	right: 10px;
-	font-size: 14px;
-	font-family: 'Open Sans', 'PT Sans', sans-serif;
-	height: 45px;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	cursor: pointer;
-	color: rgba(255, 255, 255, 0.85);
+	padding: 0;
 }
 
-#user img {
-	position: absolute;
-	bottom: 4px;
-	right: 10px;
-	border-radius: 2px;
-	border: 1px solid rgba(255, 255, 255, 0.075);
+h4 {
+
+	/* @todo: needs to be defined properly */
+	margin: 0;
+	padding: 0;	
 }
 
-#network .column.user {
-	height: 190px;
-	margin: 0 -10px -4px 10px;
-	width: 204px;
-	padding-left: 10px;
-	background: rgba(0, 0, 0, 0.1);
+h5 {
+
+	/* @todo: needs to be defined properly */
+	margin: 0;
+	padding: 0;	
 }
 
-#network .column.user p {
-	background: rgba(0, 0, 0, 0.1);
-	margin-left: -10px;
-	padding: 17px 10px 0;
-	height: 44px;
-	color: rgba(0, 0, 0, 0.5);
-	font-size: 13px;
-	font-weight: normal;
-	text-transform: uppercase;
-	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	letter-spacing: 0.05em;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
+/* Main site header */
 
-#network .column.user ul {
-	padding-left: 0;
-}
-
-/*-----------------------------------------------------------------------------
-	Site:
-
-	Style definitions for the content area of a site.
------------------------------------------------------------------------------*/
-
-/* Main site header, e. g. Symphony Extensions */
-
-#site > header {
+header.main {
 	padding: 0 20px 0 20px;
 	border-bottom: 1px solid #CFCFCF;
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
@@ -543,8 +388,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	margin-bottom: 2.4rem;
 }
 
-#site > header:before,
-#site > header:after {
+header.main:before,
+header.main:after {
 	content: "";
 	display: block;
 	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
@@ -559,7 +404,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	left: 0;
 }
 
-#site > header:after {
+header.main:after {
 	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
 	background: -moz-linear-gradient(left, rgba(251, 253, 251, 0) 0%,rgba(251, 253, 251, 1) 100%);
 	background: -ms-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
@@ -569,34 +414,26 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	right: 0;
 }
 
-#site > header h1 {
-	margin: 3.2rem 0 0;
-	padding-top: 0.5rem;
-	font-size: 2.6rem;
-	line-height: 2.6rem;
-	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	font-weight: 300;
+header.main h1 {
 	float: left;
 	background: url(../img/logo.png) 0 1px no-repeat;
 	text-rendering: optimizeLegibility;
 }
 
-#site > header h1 span {
+header.main h1 span {
 	float: left;
 	width: 203px;
 	height: 35px;
 	text-indent: -1000em;
 }
 
-#site > header nav {
+header.main nav {
 	float: right;
 	margin-right: -10px;
 	margin-top: 4.1rem;
 }
 
-#site > header nav a {
+header.main nav a {
 	color: #000;
 	text-decoration: none;
 	float: left;
@@ -606,39 +443,39 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	border: 1px solid transparent;
 }
 
-#site > header nav a.active {
+header.main nav a.active {
 	font-weight: 700;
 }
 
-#site > header nav a:hover  {
+header.main nav a:hover  {
 	color: #B20B4F;
 }
 
-/* Topics */
+/* Subheader */
 
-#site header.topic {
+header.sub {
 	margin: 3.1rem 20px 0;
 	max-width: 796px;
 }
 
-#site header.topic h2 {
+header.sub h2 {
 	padding-right: 6px;
 }
 
-#site header.topic h2.with-separator:after {
+header.sub h2.with-separator:after {
 	content: "\00B7";
 	font-weight: 300;
 	padding-left: 10px;
 }
 
-#site header.topic p {
+header.sub p {
 	display: inline-block;
 	font-size: 2.6rem;
 	font-weight: 300;
 	line-height: 3.6rem;
 }
 
-#site header.topic .tag {
+header.sub .tag {
 	background: #92C44D;
 	border: 1px solid #92C44D;
 	display: inline-block;
@@ -653,7 +490,9 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	font-style: normal;
 }
 
-/* Content */
+/*-----------------------------------------------------------------------------
+	Content:
+-----------------------------------------------------------------------------*/
 
 #site p {
 	max-width: 592px;
@@ -1121,3 +960,178 @@ ul.tools li.star:hover:after {
 	color: #000;
 }
 
+
+/*-----------------------------------------------------------------------------
+	Network:
+
+	Style definitions for the network area. 
+-----------------------------------------------------------------------------*/
+
+#network {
+	background: #b20b4f;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid #d9d9d9;
+}
+
+#network a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#network a:not([href]) {
+	cursor: pointer;
+}
+
+/* Toolbar */
+
+#network header {
+	margin: 0;
+	padding: 0.8rem 0 0;
+	color: #fff;
+	background: #282828;
+	min-width: 1040px;
+	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
+	height: 3.6rem;
+	overflow: hidden;
+}
+
+#network header .centered {
+	position: relative;
+}
+
+#network header h1 {
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	font-weight: 600;
+	font-size: 1.5rem;;
+}
+
+#network header h1 a {
+	font-size: 1.5rem;
+}
+
+#network header nav a {
+	color: rgba(255, 255,255, 0.7);
+	float: left;
+	padding-top: 1px;
+}
+
+#network header nav a:not(:last-of-type):after {
+	content: "\00B7";
+	margin: 0.5em;
+}
+
+#network header nav a.dimmed {
+	color: rgba(255, 255,255, 0.4);
+}
+
+#network header .column {
+	margin-bottom: 0;
+}
+
+#network header a.toggle-grid {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Drawer */
+
+#network .drawer {
+	display: none;
+	font-size: 15px;
+	font-family: 'Open Sans', 'PT Sans', sans-serif;
+}
+
+#network .drawer ::selection,
+#network .drawer ::-moz-selection {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+
+#network .drawer > .column {
+	margin-top: 18px;
+}
+
+#network .drawer > .column:first-of-type {
+	margin-left: 0;
+	width: 204px;
+}
+
+#network .drawer .column h2 {
+	color: #d96f90;
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: uppercase;
+	border-bottom: 1px solid #9E0A46;
+	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
+	letter-spacing: 0.05em;
+	margin: 0 0 0 10px;
+	padding: 0 0 3px 10px;
+}
+
+#network .drawer ul {
+	list-style: none;
+	padding: 0 0 0 20px;
+	margin-top: 5px;
+}
+
+#network .drawer ul.column:first-of-type {
+	margin-left: 0;
+}
+
+/* User */
+
+#user {
+	margin: 0;
+	width: 204px;
+	padding: 18px 10px 0;
+	background: #141414;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 14px;
+	font-family: 'Open Sans', 'PT Sans', sans-serif;
+	height: 45px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.85);
+}
+
+#user img {
+	position: absolute;
+	bottom: 4px;
+	right: 10px;
+	border-radius: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+#network .column.user {
+	height: 190px;
+	margin: 0 -10px -4px 10px;
+	width: 204px;
+	padding-left: 10px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#network .column.user p {
+	background: rgba(0, 0, 0, 0.1);
+	margin-left: -10px;
+	padding: 17px 10px 0;
+	height: 44px;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
+	letter-spacing: 0.05em;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#network .column.user ul {
+	padding-left: 0;
+}
