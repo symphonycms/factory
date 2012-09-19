@@ -637,6 +637,47 @@ code {
 }
 
 /*-----------------------------------------------------------------------------
+	Sidebar:
+	
+	Styling for elements used inside sidebar columns. 
+-----------------------------------------------------------------------------*/
+
+.sidebar h3 {
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-top: 0.6rem;
+}
+
+.sidebar ul li {
+	font-size: 1.3rem;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+
+.sidebar ul li.selected,
+.sidebar ul li:hover {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.075);
+	border-radius: 2px;
+}
+
+.sidebar ul li.selected:after {
+	content: "\2713";
+	float: right;
+	padding-right: 5px;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar input {
+	margin-left: -10px;
+	padding-left: 8px;
+	box-sizing: border-box;
+	width: 194px;
+}
+
+/*-----------------------------------------------------------------------------
 	Toolbars:
 	
 	Toolbars should be used for entry interactions and paginations
@@ -755,12 +796,12 @@ header.sub .tools {
 }
 
 /*-----------------------------------------------------------------------------
-	Content:
+	Tables:
 -----------------------------------------------------------------------------*/
 
 /* Data tables */
 
-#site .data {
+.data {
 	margin: 0 10px;
 	background: #F5F5F5;
 	border-radius: 2px;
@@ -769,15 +810,15 @@ header.sub .tools {
 	border-right: 1px solid #E6E6E5;
 }
 
-#site .data:first-of-type {
+.data:first-of-type {
 	border-top: 1px solid #E6E6E5;
 }
 
-#site .data:last-of-type {
+.data:last-of-type {
 	border-bottom: 1px solid #E6E6E5;
 }
 
-#site .data h3.pinned {
+.data h3.pinned {
 	margin: 0;
 	padding: 0;
 	font-size: 1.4rem;
@@ -792,7 +833,7 @@ header.sub .tools {
 	border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-#site .data .label {
+.data .label {
 	height: 3rem;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	-moz-box-sizing: border-box;
@@ -800,24 +841,20 @@ header.sub .tools {
 	display: block;
 }
 
-#site .data table th {
+.data table th {
 	font-weight: normal;
 	text-align: left;
 }
 
-#site .data table tr {
+.data table tr {
 	background: #fff;
 	height: 30px;
 }
 
-#site .data table a {
+.data table a {
 	color: #fff;
 	text-decoration: none;
 }
-
-/*-----------------------------------------------------------------------------
-	Layout snippets
------------------------------------------------------------------------------*/
 
 /* Compatibility table */
 
@@ -866,7 +903,9 @@ table.compatibility td.compatible:last-child {
 	color: rgba(255, 255, 255, 1);
 }
 
-/* Repository and download links */
+/*-----------------------------------------------------------------------------
+	Code: 
+-----------------------------------------------------------------------------*/
 
 .source code {
 	background: #fff;
@@ -877,45 +916,6 @@ table.compatibility td.compatible:last-child {
 	box-sizing: border-box;
 	height: 2.5rem;
 }
-
-/* Sidebar */
-
-.sidebar h3 {
-	font-size: 1.3rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	margin-top: 0.6rem;
-}
-
-.sidebar ul li {
-	font-size: 1.3rem;
-	margin-left: -10px;
-	padding-left: 10px;
-}
-
-.sidebar ul li.selected,
-.sidebar ul li:hover {
-	background: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.075);
-	border-radius: 2px;
-}
-
-.sidebar ul li.selected:after {
-	content: "\2713";
-	float: right;
-	padding-right: 5px;
-	color: rgba(0, 0, 0, 0.7);
-}
-
-.sidebar input {
-	margin-left: -10px;
-	padding-left: 8px;
-	box-sizing: border-box;
-	width: 194px;
-}
-
-
 
 /*-----------------------------------------------------------------------------
 	Network:
