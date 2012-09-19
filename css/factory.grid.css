@@ -27,15 +27,15 @@
 	display: block;
 	position: absolute;
 	top: 0;
-	left: -100%;
-	width: 100%;
+	left: -50px;
+	width: 50px;
 	height: 100%;
 	background: inherit;
 }
 
 .show-baselines.full-width:after {
 	left: auto;
-	right: -100%;
+	right: -50px;
 }
 
 /*-----------------------------------------------------------------------------
