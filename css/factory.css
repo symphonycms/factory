@@ -35,14 +35,7 @@ body {
 	line-height: 2.4rem;
 }
 
-img {
-	display: block;
-}
-
-h1, h2, h3, h4, h5 {
-	margin: 0;
-	padding: 0;
-}
+/* Paragraphs */
 
 p {
 	margin: 0;
@@ -56,6 +49,10 @@ a {
 
 a:hover {
 	color: #B20B4F;
+}
+
+img {
+	display: block;
 }
 
 code {
@@ -73,6 +70,8 @@ ul {
 	padding: 0;
 	list-style: none;
 }
+
+/* Behaviours */
 
 .hidden {
 	display: none;
@@ -247,6 +246,25 @@ ul {
 }
 
 /*-----------------------------------------------------------------------------
+	Headlines:
+
+	General style definitions for headlines. 
+-----------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0 0 2.8rem;
+	font-size: 2.6rem;
+	font-weight: 400;
+	line-height: 3.6rem;
+	display: inline-block;
+}
+
+/*-----------------------------------------------------------------------------
 	Forms:
 
 	Style definitions for form elements. 
@@ -316,7 +334,6 @@ input[type=submit] {
 	font-family: 'Open Sans', 'PT Sans', sans-serif;
 }
 
-a,
 select,
 input[type="reset"], input[type=button], input[type=submit],
 textarea,
@@ -515,14 +532,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	Style definitions for the content area of a site.
 -----------------------------------------------------------------------------*/
 
-#site header {
-	padding: 0 20px;
-}
-
-#site header .author {
-	float: right;
-}
-
 /* Main site header, e. g. Symphony Extensions */
 
 #site > header {
@@ -605,18 +614,42 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 	color: #B20B4F;
 }
 
-/* Headlines */
+/* Topics */
 
-#site .field > h2 {
-	margin: 3.1rem 0 2.8rem 20px;
-	font-size: 2.6rem;
+#site header.topic {
+	margin: 3.1rem 20px 0;
 	max-width: 796px;
-	font-weight: 400;
+}
+
+#site header.topic h2 {
+	padding-right: 6px;
+}
+
+#site header.topic h2.with-separator:after {
+	content: "\00B7";
+	font-weight: 300;
+	padding-left: 10px;
+}
+
+#site header.topic p {
+	display: inline-block;
+	font-size: 2.6rem;
+	font-weight: 300;
 	line-height: 3.6rem;
 }
 
-#site .field > h2 em {
-	font-weight: 300;
+#site header.topic .tag {
+	background: #92C44D;
+	border: 1px solid #92C44D;
+	display: inline-block;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	padding: 0 10px;
+	border-radius: 2px;
+	color: #fff;
+	top: -0.5rem;
+	position: relative;
+	margin-left: 5px;
 	font-style: normal;
 }
 
@@ -871,6 +904,7 @@ table.compatibility td.compatible:last-child {
 
 #site .content article.thread h3 {
 	font-size: 1.5rem;
+	line-height: inherit;
 	margin: 0;
 }
 
@@ -1087,18 +1121,3 @@ ul.tools li.star:hover:after {
 	color: #000;
 }
 
-/* Headline tag */
-
-h2 .tag {
-	background: #92C44D;
-	border: 1px solid #92C44D;
-	display: inline-block;
-	font-size: 1.3rem;
-	line-height: 2.4rem;
-	padding: 0 10px;
-	border-radius: 2px;
-	color: #fff;
-	top: -0.5rem;
-	position: relative;
-	margin-left: 5px;
-}
