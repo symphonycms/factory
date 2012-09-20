@@ -6,8 +6,10 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<link media="screen" href="css/factory.css" type="text/css" rel="stylesheet" />
+		<link media="screen" href="css/prism.css" type="text/css" rel="stylesheet" />
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/prism.js"></script>
 		<script type="text/javascript" src="js/factory.js"></script>
 		<script type="text/javascript" src="js/factory.grid.js"></script>
 	</head>
@@ -140,7 +142,7 @@
 						</li>
 					</ul>				
 				</div>
-				<div class="column content">
+				<div class="column content language-markup">
 					<p class="introduction">Symphony Factory is an easy-to-use HTML, CSS and JavaScript framework to create websites for the Symphony Network with a unified design. It is freely available for all Symphony Network sites.</p>
 					<p>Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					<p>I work on Mac, using the default install of PHP and homebrew install of MySQL. I used to use MAMP, but decided to be more Terminal centric over UI, so went for the defaults (with a little upgrading and customisation). I use:</p>
@@ -154,7 +156,30 @@
 					</ul>
 					<p>Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					<h3>Another really really looooong headline that will fill a whole row and a bit of another</h3>
-					<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
+					<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id <code class="highlight">&lt;div id=&quot;{$current-page}&quot;&gt;&lt;/div&gt;</code> ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
+					<pre data-line="8-14"><code class="highlight">
+&lt;!-- Main navigation, see http://symphonycms.github.com/factory --&gt;
+&lt;xsl:template match=&quot;data&quot;&gt;
+	&lt;header class=&quot;field&quot;&gt;
+		&lt;div class=&quot;centered&quot;&gt;
+			&lt;h1 class=&quot;column two&quot;&gt;
+				&lt;a href=&quot;index.htm&quot;&gt;Symphony Network&lt;/a&gt;
+			&lt;/h1&gt;
+			&lt;nav class=&quot;column six&quot;&gt;
+				&lt;a href=&quot;community.htm&quot;&gt;Community&lt;/a&gt;
+				&lt;a href=&quot;documentation.htm&quot;&gt;Documentation&lt;/a&gt;
+				&lt;a href=&quot;extensions.htm&quot;&gt;Extensions&lt;/a&gt;
+				&lt;a href=&quot;ninjas.htm&quot;&gt;Ninjas&lt;/a&gt;
+				&lt;a href=&quot;xpathr.htm&quot;&gt;xPathr&lt;/a&gt;
+			&lt;/nav&gt;
+			&lt;div id=&quot;user&quot; class=&quot;two&quot;&gt;
+				&lt;img src=&quot;http://gravatar.com/avatar/76a76733a9f16e46f0d8c88b5beac523?s=36&quot; width=&quot;36&quot; height=&quot;36&quot; alt=&quot;Allen Chang&quot; /&gt;
+				&lt;p&gt;Allen Chang &lt;strong&gt;+15&lt;/strong&gt;&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
+&lt;/xsl:template&gt;
+					</code></pre>
 					<p>Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<h4>Another headline</h4>
 					<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor.</p>
