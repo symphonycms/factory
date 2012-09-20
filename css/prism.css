@@ -145,23 +145,6 @@ pre[data-line] {
 		top: auto;
 		bottom: .4em;
 	}
-.token.tab:not(:empty):before,
-.token.cr:before,
-.token.lf:before {
-	color: hsl(24, 20%, 85%);
-}
-
-.token.tab:not(:empty):before {
-	content: '▸';
-}
-
-.token.cr:before {
-	content: '␍';
-}
-
-.token.lf:before {
-	content: '␊';
-}
 .token a {
 	color: inherit;
 }

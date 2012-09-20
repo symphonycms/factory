@@ -30,7 +30,7 @@ html {
 
 body {
 	background: #fbfdfb;
-	font-family: 'Open Sans', 'PT Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
 	font-weight: 400;
 	line-height: 2.4rem;
@@ -218,7 +218,7 @@ select[multiple] {
 	-moz-box-sizing: border-box;
 	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
 	box-sizing: border-box;
-	font-family: 'Open Sans', 'PT Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	margin-top: 2px;
 	padding: 3px 5px;
@@ -270,7 +270,7 @@ input[type=checkbox] {
 
 button,
 input[type=submit] {
-	font-family: 'Open Sans', 'PT Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 select,
@@ -938,6 +938,76 @@ table.compatibility td.compatible a {
 }
 
 /*-----------------------------------------------------------------------------
+	Syntax highlighting:
+
+	These styles adjusts the default Prims styles.
+-----------------------------------------------------------------------------*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+	text-shadow: none;
+}
+
+pre[class*="language-"] {
+	margin: .5em -10px;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #F5F5F5;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #a6a6a6;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+	color: #A00947;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+	color: #737373;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #0080a0;
+}
+
+pre[data-line] {
+	padding: 1em 0 1em 20px;
+}
+
+/* Highlighting */
+
+.line-highlight {
+	background: rgba(0, 0, 0, 0.03);
+}
+
+.line-highlight:before,
+.line-highlight[data-end]:after {
+	padding: 0 .5em;
+	margin-left: -7px;
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.5);
+	font: normal 1rem/1.5rem 'Open Sans', sans-serif;
+	text-align: left;
+	vertical-align: 0;
+	border-radius: 0;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+/*-----------------------------------------------------------------------------
 	Network:
 
 	Style definitions for the network area.
@@ -1028,7 +1098,7 @@ table.compatibility td.compatible a {
 
 #network .drawer {
 	display: none;
-	font-family: 'Open Sans', 'PT Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #network .drawer:after {
@@ -1087,7 +1157,7 @@ table.compatibility td.compatible a {
 	box-sizing: border-box;
 	color: rgba(255, 255, 255, 0.85);
 	cursor: pointer;
-	font-family: 'Open Sans', 'PT Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	position: absolute;
 	right: 10px;
 	top: 0;
