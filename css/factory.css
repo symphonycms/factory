@@ -1050,9 +1050,9 @@ table.compatibility td.compatible a {
 	border-bottom: 1px solid #9E0A46;
 	color: #d96f90;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 0.05em;
+	font-size: 1.3rem;
+	font-weight: 300;
+	letter-spacing: 0.1em;
 	margin: 0 0 0 10px;
 	padding: 0 0 3px 10px;
 	text-transform: uppercase;
@@ -1113,7 +1113,7 @@ table.compatibility td.compatible a {
 
 #network .column.user {
 	background: rgba(0, 0, 0, 0.1);
-	height: 190px;
+	height: 100%;
 	margin: 0 -10px -4px 10px;
 	padding-left: 10px;
 	width: 204px;
