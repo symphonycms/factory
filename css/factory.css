@@ -326,6 +326,10 @@ h3 {
 	max-width: 592px;
 }
 
+.column > h3 {
+	margin-top: 0.7rem;
+}
+
 h4 {
 	font-size: 1.8rem;
 	font-weight: 400;
@@ -457,6 +461,30 @@ header.sub .tag {
 	top: -0.5rem;
 }
 
+header.sub p.subheading {
+	font-size: 1.3rem;
+	font-weight: 400;
+	display: block;
+	margin-top: -3.4rem;
+	text-transform: uppercase;
+/*	letter-spacing: 0.1em;*/
+	text-rendering: optimizeLegibility;
+	color: #555;
+	color: #9b9b9b;
+	
+	font-size: 1.3rem;
+	text-transform: none;
+/*	letter-spacing: normal;*/
+	
+}
+
+header.sub p.subheading em {
+	color: #9b9b9b;
+	color: #555;
+	font-style: normal;
+	letter-spacing: normal;
+}
+
 /*-----------------------------------------------------------------------------
 	Content elements:
 	
@@ -464,8 +492,8 @@ header.sub .tag {
 -----------------------------------------------------------------------------*/
 
 p {
-	margin: 0 0 1.2rem;
-	max-width: 592px;
+	margin: 0 20px 1.2rem;
+	max-width: 551px;
 	padding: 0;
 }
 
@@ -491,6 +519,13 @@ p[data-pullquote]:before {
 	margin-right: -102px;
 	padding: 1.5rem 0 2rem 40px;
 	width: 184px;
+}
+
+/* is this the wrong spot for this? */
+.column p,
+header p {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 table {
@@ -651,6 +686,10 @@ code {
 	letter-spacing: 0.1em;
 	margin-top: 0.6rem;
 	text-transform: uppercase;
+}
+
+.sidebar > ul {
+	margin-top: 1.8rem;
 }
 
 .sidebar ul li {
