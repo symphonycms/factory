@@ -326,8 +326,8 @@ h3 {
 	max-width: 592px;
 }
 
-.column > h3 {
-	margin-top: 0.7rem;
+.column > h3:first-child {
+	margin-top: 0.9rem;
 }
 
 h4 {
@@ -656,23 +656,8 @@ code {
 	margin: 1.2rem 0 0.5rem;
 	text-align: right;
 }
-
-/* Asides */
-
-.sidebar aside {
-	padding: 0 0 2rem;
-	width: 194px;
-	margin-left: -10px;
-}
-
-.sidebar aside p {
-	background: rgba(40, 40, 40, 0.65);
-	color: #fff;
-	padding: 0 0 0 10px;
-}
-
-.sidebar aside img {
-	border-bottom: 10px solid rgba(40, 40, 40, 0.65);
+.column.content.entries {
+	padding-left: 10px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -689,7 +674,7 @@ code {
 	text-transform: uppercase;
 }
 
-.sidebar > ul {
+.sidebar > ul:first-child {
 	margin-top: 1.8rem;
 }
 
@@ -698,12 +683,12 @@ code {
 	margin-left: -10px;
 	
 /* @todo: next definitions good for li's consisting of more than one line (interview questions) - not so much for regular sidebar nav */
-	margin-bottom: 1.2rem;
+	margin-bottom: 1rem;
 	line-height: 2rem;
 	
 }
 
-.sidebar ul li::before {
+.sidebar ul li:before {
 	content: none;
 }
 
@@ -726,6 +711,32 @@ code {
 	margin-left: -10px;
 	padding-left: 8px;
 	width: 194px;
+}
+
+/* Asides */
+
+.sidebar aside {
+	padding: 0 0 2rem;
+	width: 194px;
+	margin-left: -10px;
+}
+
+.sidebar aside p {
+	background: #e8e8e8;
+	color: #555;
+	padding: 0.7rem 0 1.2rem 10px;
+	border-top: 10px solid rgba(40, 40, 40, 0.2);
+	margin-top: -10px;
+	z-index: 1000;
+	position: relative;
+	-webkit-background-clip: padding-box; /* for Safari */
+	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	line-height: 2rem;
+	font-size: 1.2rem;
+}
+
+.sidebar > aside:first-child {
+	margin-top: 1.4rem;
 }
 
 /*-----------------------------------------------------------------------------
