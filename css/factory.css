@@ -669,10 +669,20 @@ code {
 
 /* Asides */
 
-.entries article aside {
-	float: right;
-	padding: 0 0 2rem 30px;
-	width: 184px;
+.sidebar aside {
+	padding: 0 0 2rem;
+	width: 194px;
+	margin-left: -10px;
+}
+
+.sidebar aside p {
+	background: rgba(40, 40, 40, 0.65);
+	color: #fff;
+	padding: 0 0 0 10px;
+}
+
+.sidebar aside img {
+	border-bottom: 10px solid rgba(40, 40, 40, 0.65);
 }
 
 /*-----------------------------------------------------------------------------
@@ -696,6 +706,11 @@ code {
 .sidebar ul li {
 	font-size: 1.3rem;
 	margin-left: -10px;
+	
+/* @todo: next definitions good for li's consisting of more than one line (interview questions) - not so much for regular sidebar nav */
+	margin-bottom: 1.2rem;
+	line-height: 2rem;
+	
 }
 
 .sidebar ul li::before {
