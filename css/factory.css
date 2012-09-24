@@ -435,8 +435,9 @@ header.sub h2 {
 
 header.sub h2.with-separator:after {
 	content: "\00B7";
-	font-weight: 300;
+	font-weight: 600;
 	padding-left: 10px;
+	color: #B20B4F;
 }
 
 header.sub p {
