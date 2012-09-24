@@ -462,28 +462,18 @@ header.sub .tag {
 	top: -0.5rem;
 }
 
-header.sub p.subheading {
+footer.author.bottom {
 	font-size: 1.3rem;
 	font-weight: 400;
-	display: block;
-	margin-top: -3.4rem;
-	text-transform: uppercase;
-/*	letter-spacing: 0.1em;*/
-	text-rendering: optimizeLegibility;
-	color: #555;
 	color: #9b9b9b;
-	
 	font-size: 1.3rem;
-	text-transform: none;
-/*	letter-spacing: normal;*/
 	
 }
 
-header.sub p.subheading em {
+footer.author.bottom em {
 	color: #9b9b9b;
 	color: #555;
 	font-style: normal;
-	letter-spacing: normal;
 }
 
 /*-----------------------------------------------------------------------------
