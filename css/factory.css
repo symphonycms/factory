@@ -60,7 +60,7 @@ body {
 
 .centered {
 	margin: 0 auto;
-	width: 1040px;
+	width: 1060px;
 }
 
 .fluid {
@@ -81,7 +81,7 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	clear: both;
-	padding: 0 20px 0 0;
+	padding: 0 30px 0 0;
 	position: relative;
 }
 
@@ -94,7 +94,7 @@ body {
 /* Nested fields */
 
 .field .field {
-	margin-left: -20px;
+	margin-left: -30px;
 	padding-right: 0;
 }
 
@@ -124,7 +124,7 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 30px;
 	position: relative;
 }
 
@@ -135,50 +135,50 @@ body {
 /* Columns by function */
 
 .column.sidebar {
-	width: 184px;
+	width: 176px;
 }
 
 .column.content {
 	float: right;
-	width: 796px;
+	width: 794px;
 }
 
 /* Columns by width */
 
 .one {
-	width: 82px;
+	width: 73px;
 }
 
 .two {
-	width: 184px;
+	width: 176px;
 }
 
 .three {
-	width: 286px;
+	width: 279px;
 }
 
 .four {
-	width: 388px;
+	width: 382px;
 }
 
 .five {
-	width: 490px;
+	width: 485px;
 }
 
 .six {
-	width: 592px;
+	width: 588px;
 }
 
 .seven {
-	width: 694px;
+	width: 690px;
 }
 
 .eight {
-	width: 796px;
+	width: 793px;
 }
 
 .nine {
-	width: 898px;
+	width: 896px;
 }
 
 .ten {
@@ -188,19 +188,19 @@ body {
 /* Columns by proportion */
 
 .half {
-	width: 490px;
+	width: 484px;
 }
 
 .four .half {
-	width: 184px;
+	width: 176px;
 }
 
 .six .half {
-	width: 285px;
+	width: 279px;
 }
 
 .eight .half {
-	width: 388px;
+	width: 382px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -313,7 +313,7 @@ h2 {
 	font-size: 2.6rem;
 	font-weight: 400;
 	line-height: 3.6rem;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 30px;
 }
 
 /* @todo: needs a smaller line-height - might not work for the introduction though */
@@ -326,7 +326,7 @@ h3 {
 	max-width: 592px;
 }
 
-.column > h3:first-child {
+.column.entries > h3:first-child {
 	margin-top: 0.9rem;
 }
 
@@ -338,7 +338,7 @@ h4 {
 	max-width: 592px;
 }
 
-/* @todo: needs more adjusting */
+/* @todo: needs more adjusting 
 h5 {
 	font-size: 1.5rem;
 	font-weight: 600;
@@ -354,7 +354,7 @@ header.main {
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
 	height: 8.4rem;
 	margin-bottom: 2.4rem;
-	padding: 0 20px 0 20px;
+	padding: 0 30px;
 	position: relative;
 }
 
@@ -424,7 +424,7 @@ header.main h1 span {
 /* Subheader */
 
 header.sub {
-	margin: 3.1rem 20px 0;
+	margin: 3.1rem 30px 0;
 	max-width: 796px;
 }
 
@@ -483,8 +483,8 @@ footer.author.bottom em {
 -----------------------------------------------------------------------------*/
 
 p {
-	margin: 0 20px 1.2rem;
-	max-width: 551px;
+	margin: 0 30px 1.2rem;
+	max-width: 556px;
 	padding: 0;
 }
 
@@ -597,6 +597,7 @@ code {
 	overflow: visible;
 	position: relative;
 	text-align: right;
+	margin-left: 23px; /* actually this should equal 20px, 3 extra pixels for optical alignment */
 }
 
 .overview article .response .tag {
@@ -608,7 +609,7 @@ code {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.8rem;
-	margin: 0.8rem 0 0 0.4rem;
+	margin: 0.8rem 3px 0 0.4rem; /* 3px right margin to correct optical alignment from above */
 	padding: 0.5rem 10px 0.4rem 0.8rem;
 	white-space: nowrap;
 }
@@ -655,9 +656,6 @@ code {
 .entries article footer p {
 	margin: 1.2rem 0 0.5rem;
 	text-align: right;
-}
-.column.content.entries {
-	padding-left: 10px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -710,7 +708,7 @@ code {
 	box-sizing: border-box;
 	margin-left: -10px;
 	padding-left: 8px;
-	width: 194px;
+	width: 187px;
 }
 
 /* Asides */
@@ -804,7 +802,7 @@ footer .tools {
 
 header.sub .tools {
 	position: absolute;
-	right: 10px;
+	right: 20px;
 	top: 0.5rem;
 }
 
@@ -1106,7 +1104,7 @@ pre[data-line] {
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
 	height: 3.6rem;
 	margin: 0;
-	min-width: 1040px;
+	min-width: 1059px;
 	overflow: hidden;
 	padding: 0;
 }
@@ -1117,6 +1115,7 @@ pre[data-line] {
 
 #network header h1 {
 	padding: 0;
+	overflow: visible;
 	line-height: 3rem;
 }
 
@@ -1125,6 +1124,7 @@ pre[data-line] {
 	font-weight: 600;
 	letter-spacing: 0.075em;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 #network header nav {
@@ -1175,8 +1175,8 @@ pre[data-line] {
 	font-size: 1.3rem;
 	font-weight: 300;
 	letter-spacing: 0.1em;
-	margin: 0 0 0.3rem -10px;
-	padding: 0 0 0.3rem 10px;
+	margin: 0 -10px 0.3rem;
+	padding: 0 10px 0.3rem;
 	text-transform: uppercase;
 	display: block;
 	line-height: 2.4rem;
@@ -1206,7 +1206,7 @@ pre[data-line] {
 	float: left;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 398px;
+	width: 402px;
 }
 
 #network .drawer .get-symphony:hover {
@@ -1237,9 +1237,9 @@ pre[data-line] {
 	cursor: pointer;
 	font-family: 'Open Sans', sans-serif;
 	position: absolute;
-	right: 10px;
+	right: 20px;
 	top: 0;
-	width: 204px;
+	width: 196px;
 }
 
 #user img {
@@ -1262,14 +1262,15 @@ pre[data-line] {
 #network .column.user {
 	background: rgba(0, 0, 0, 0.1);
 	height: 100%;
-	margin: 0 -10px -4px 10px;
+	margin: 0 -10px 0 20px;
 	padding-top: 18px;
 	padding-left: 10px;
-	width: 204px;
+	width: 196px;
 }
 
 #network .column.user h2 {
 	border-color: rgba(0, 0, 0, 0.1);
+	margin-right: 0;
 }
 
 #network .column.user ul {

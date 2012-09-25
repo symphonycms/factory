@@ -20,9 +20,9 @@
 		elements: {},
 		
 		settings: {
-			module: 82,
+			module: 73,
 			moduleUnit: 'px',
-			gutter: 20,
+			gutter: 30,
 			gutterUnit: 'px',
 			opticalAlignment: 10,
 			opticalAlignmentUnit: 'px',
@@ -174,7 +174,7 @@
 		
 		// Create grid
 		Grid.init({
-			grid: ['g1', 'c2l', 'g1', 'c1l', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1', 'g1', 'c1r', 'g1']
+			grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c2lr', 'g1']
 		});
 	
 		// Toggle grid

@@ -55,8 +55,8 @@
 	position: fixed;
 	top: 0;
 	left: 50%;
-	margin-left: -520px;
-	width: 1040px;
+	margin-left: -529px;
+	width: 1061px;
 	height: 100%;
 	pointer-events: none;
 }
@@ -117,11 +117,11 @@
 /* Fields */
 
 .show-grid .field {
-	background: -webkit-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
-	background: -moz-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
-	background: -ms-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
-	background: -o-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
-	background: linear-gradient(to bottom, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background-image: -webkit-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background-image: -moz-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background-image: -ms-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background-image: -o-linear-gradient(top, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
+	background-image: linear-gradient(to bottom, #CBE5D3 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 100%);
 }
 
 .show-labels .field:before {
@@ -166,22 +166,5 @@
 /* Disable grid details for the network toolbar */
 
 .show-grid #network .field:not(header) {
-	background: transparent;
-}
-
-.show-grid #network .field:after {
-	content: "";
-	position: relative;
-	visibility: hidden;
-}
-
-.show-grid #network .column {
-	background: none;
-	box-shadow: none;
-}
-
-.show-grid #network .field:before,
-.show-grid #network .column:before,
-.show-grid #network .column:after {
-	display: none;
+	background-image: none;
 }
