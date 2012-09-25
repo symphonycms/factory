@@ -506,13 +506,13 @@ p[data-pullquote]:before {
 	content: attr(data-pullquote);
 	display: block;
 	float: right;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-weight: 300;
-	color: #555;
+	color: #888;
 	line-height: 3rem;
-	margin-right: -115px;
+	margin-right: -208px;
 	padding: 0 0 2rem 20px;
-	width: 186px;
+	width: 279px;
 }
 
 /* is this the wrong spot for this? */
