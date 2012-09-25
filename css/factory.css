@@ -510,9 +510,9 @@ p[data-pullquote]:before {
 	font-weight: 300;
 	color: #888;
 	line-height: 3rem;
-	margin-right: -208px;
-	padding: 0 0 2rem 20px;
-	width: 279px;
+	margin-right: -238px;
+	padding: 0 0 2rem 35px;
+	width: 309px;
 }
 
 /* is this the wrong spot for this? */
