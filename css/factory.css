@@ -507,9 +507,12 @@ p[data-pullquote]:before {
 	display: block;
 	float: right;
 	font-size: 1.8rem;
-	margin-right: -102px;
-	padding: 1.5rem 0 2rem 40px;
-	width: 184px;
+	font-weight: 300;
+	color: #555;
+	line-height: 3rem;
+	margin-right: -115px;
+	padding: 0 0 2rem 20px;
+	width: 186px;
 }
 
 /* is this the wrong spot for this? */
@@ -721,7 +724,7 @@ code {
 .sidebar aside p {
 	background: #e8e8e8;
 	color: #555;
-	padding: 0.7rem 10px 1.2rem;
+	padding: 0.6rem 10px 1.2rem;
 	border-top: 10px solid rgba(40, 40, 40, 0.2);
 	margin-top: -10px;
 	z-index: 1000;
