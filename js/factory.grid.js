@@ -39,7 +39,19 @@
 			opticalAlignment: 10,
 			opticalAlignmentUnit: 'px',
 			
-			// Grids
+			/**
+			 * The grid array defines columns and gutter using the following schemes.
+			 * 
+			 * To define gutter: 
+			 * - g1 (one module wide)
+			 * - g2 (two modules wide) and so on
+			 * 
+			 * To define columns: 
+			 * - c1 (one module wide)
+			 * - c1l (one module wide, optical alignment left)
+			 * - c2r (two modules wide, optical alignment right)
+			 * - c2lr (two modules wide, optical alignment left and right) and so on
+			 */
 			grid: [],
 			gridContext: '#site',
 			breakpoints: {},
