@@ -584,12 +584,12 @@ table {
 
 ul {
 	list-style: none;
-	margin: 0 0 1.2rem;
+	margin: 0 0 1.2rem 3rem;
 	padding: 0;
 }
 
 ul li {
-	padding-left: 10px;
+	padding-left: 13px;
 	position: relative;
 }
 
@@ -598,6 +598,10 @@ ul li::before {
 	position: absolute;
 	left: 0;
 	font-weight: 800;
+}
+
+ul li > ul {
+	margin: 0 0 0 15px;
 }
 
 a {
