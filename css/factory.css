@@ -364,7 +364,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.6rem;
+	font-size: 3rem;
 	font-weight: 400;
 	line-height: 3.6rem;
 	margin: 0 0 0 30px;
@@ -478,7 +478,7 @@ header.site h1 span {
 /* page header */
 
 header.page {
-	margin: 3.1rem 30px 0;
+	margin: 2.9rem 30px 0;
 	max-width: 796px;
 }
 
@@ -496,7 +496,7 @@ header.page h2.with-separator:after {
 
 header.page p {
 	display: inline-block;
-	font-size: 2.6rem;
+	font-size: 3rem;
 	font-weight: 300;
 	line-height: 3.6rem;
 }
