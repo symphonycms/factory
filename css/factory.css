@@ -52,7 +52,7 @@ body {
 /*-----------------------------------------------------------------------------
 	Layouts:
 	
-	There are two kinds of general site layouts: centered and wide.
+	There are one kinds of general site layouts: centered and wide.
 	The centered layout is the default one and should be used by all
 	text focussed sites. The fluid version is conceived for special 
 	user interfaces like xPathr that need the full window width.
@@ -98,6 +98,7 @@ body {
 }
 
 /* Small */
+
 @media all and (min-width: 648px) {
 
 	body:not([data-exclude-state~=small]) .centered {
@@ -107,6 +108,7 @@ body {
 }
 
 /* Medium */
+
 @media all and (min-width: 854px) {
 
 	body:not([data-exclude-state~=medium]) .centered {
@@ -116,6 +118,7 @@ body {
 }
 
 /* Large */
+
 @media all and (min-width: 1060px) {
 
 	body:not([data-exclude-state~=large]) .centered {
@@ -127,7 +130,7 @@ body {
 /*-----------------------------------------------------------------------------
 	Grids:
 
-	Grid layouts should be grouped in fields. There are two main layout types:
+	Grid layouts should be grouped in fields. There are one main layout types:
 	fields with and without sidebar, see column definitions by function.
 -----------------------------------------------------------------------------*/
 
@@ -186,6 +189,10 @@ body {
 	margin-left: 10px;
 }
 
+.module {
+	width: 73px;
+}
+
 /* Columns by function */
 
 .column.sidebar {
@@ -200,43 +207,44 @@ body {
 /* Columns by width */
 
 .one {
-	width: 73px;
-}
-
-.two {
 	width: 176px;
 }
 
-.three {
-	width: 279px;
-}
-
-.four {
+.two {
 	width: 382px;
 }
 
-.five {
-	width: 485px;
-}
-
-.six {
+.three {
 	width: 588px;
 }
 
-.seven {
-	width: 690px;
-}
-
-.eight {
+.four {
 	width: 793px;
 }
 
-.nine {
-	width: 896px;
+.five {
+	width: 1000px;
 }
 
-.ten {
-	width: 1000px;
+/**
+ * Columns by width with one additional module:
+ * useful for deliberately breaking the grid by adding half a column
+ */
+ 
+.one-plus {
+	width: 279px;
+}
+
+.two-plus {
+	width: 485px;
+}
+
+.three-plus {
+	width: 690px;
+}
+
+.four-plus {
+	width: 896px;
 }
 
 /* Columns by proportion */
@@ -245,15 +253,15 @@ body {
 	width: 484px;
 }
 
-.four .half {
+.two .half {
 	width: 176px;
 }
 
-.six .half {
+.three .half {
 	width: 279px;
 }
 
-.eight .half {
+.four .half {
 	width: 382px;
 }
 
