@@ -778,13 +778,7 @@ code {
 .sidebar aside p {
 	background: #e8e8e8;
 	color: #555;
-	padding: 0.6rem 10px 1.2rem;
-	border-top: 10px solid rgba(40, 40, 40, 0.2);
-	margin-top: -10px;
-	z-index: 1000;
-	position: relative;
-	-webkit-background-clip: padding-box; /* for Safari */
-	background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+	padding: 0.6rem 10px 0.6rem;
 	line-height: 2rem;
 	font-size: 1.2rem;
 }
