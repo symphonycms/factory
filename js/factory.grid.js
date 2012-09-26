@@ -25,6 +25,7 @@
 		},
 		
 		settings: {
+			name: null,
 		
 			// Modules
 			module: 73,
@@ -42,6 +43,8 @@
 			grid: [],
 			gridContext: '#site',
 			breakpoints: {},
+			breakpointCurrent: 0,
+			width: 0,
 			
 			// Baselines
 			baseline: 2.4,
@@ -99,36 +102,56 @@
 		
 			// Create grid
 			Grid.elements.grid = $('<div />', {
-				id: 'grid',
-				class: 'centered'
+				id: 'grid'
 			}).appendTo(Grid.elements.body);
 		},
 		
 		adapt: function(event) {
 			var width = $(window).width(),
-				breakpoint;
+				excluded = Grid.elements.body.attr('data-exclude-breakpoint') || '',
+				breakpoint, size;
 			
 			// Get breakpoint
 			$.each(Grid.settings.breakpoints, function(index, settings) {
-				if(width > index) {
+				if(width > index && excluded.indexOf(settings.name) == -1) {
 					breakpoint = settings;
+					size = index;
 				}
 			});
 			
 			// Visualise
-			Grid.clear(true);
-			Grid.set(breakpoint);
-			Grid.visualise();
+			if(Grid.settings.breakpointCurrent != size) {
+				Grid.clear(true);
+				Grid.set(breakpoint);
+				Grid.resize();
+				Grid.visualise();
+				
+				// Store current breakpoint
+				Grid.set({
+					breakpointCurrent: size
+				});
+			}
+		},
+		
+		resize: function() {
+		
+			// Fluid state
+			if(Grid.settings.name == 'fluid') {
+				Grid.elements.grid.addClass('fluid');
+				Grid.elements.grid.removeAttr('style');
+			}
+			
+			// Fixed states
+			else {
+				Grid.elements.grid.removeClass('fluid');
+				Grid.elements.grid.width(Grid.settings.width).css('margin-left', -Grid.settings.width / 2);
+			}
 		},
 		
 		visualise: function() {
 			var module = $('<div class="module" />'),
 				gutter = $('<div class="gutter" />'),
-				alignment = $('<div class="alignment" />'),
-				size = Grid.elements.context.width();
-			
-			// Set grid width
-			Grid.elements.grid.width(size);
+				alignment = $('<div class="alignment" />');
 			
 			// Add columns and gutter
 			$.each(Grid.settings.grid, function addColumn(index, element) {
@@ -304,19 +327,47 @@
 		Grid.init({
 			breakpoints: {
 			
-				// Small
+				// Fluid
 				0: {
-					grid: ['g1', 'c2lr', 'g1', 'c2lr', 'g1', 'c2lr', 'g1']
+					name: 'fluid',
+					module: 80,
+					moduleUnit: '%',
+					gutter: 10,
+					gutterUnit: '%',
+					grid: ['g1', 'c1lr', 'g1']
+				},
+				
+				// Small
+				648: {
+					name: 'small',
+					module: 73,
+					moduleUnit: 'px',
+					gutter: 30,
+					gutterUnit: 'px',
+					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1'],
+					width: 648
 				},
 			
 				// Medium
 				854: {
+					name: 'medium',
+					module: 73,
+					moduleUnit: 'px',
+					gutter: 30,
+					gutterUnit: 'px',
 					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1'],
+					width: 854
 				},
 				
 				// Large
 				1060: {
+					name: 'large',
+					module: 73,
+					moduleUnit: 'px',
+					gutter: 30,
+					gutterUnit: 'px',
 					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c2lr', 'g1'],
+					width: 1060
 				}
 			}		
 		});

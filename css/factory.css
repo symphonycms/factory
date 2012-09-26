@@ -51,23 +51,77 @@ body {
 
 /*-----------------------------------------------------------------------------
 	Layouts:
-
+	
 	There are two kinds of general site layouts: centered and wide.
 	The centered layout is the default one and should be used by all
-	text focussed sites. The fluid version is conceived for sites like
-	xPathr that need the full window width to deplay their UI.
+	text focussed sites. The fluid version is conceived for special 
+	user interfaces like xPathr that need the full window width.
+	
+	The centered layout knows three fixed states and a fluid fallback for 
+	narrow windows and mobile devices: 
+	
+	- large (>= 1060px), 
+	- medium (>= 854px),
+	- small (>= 648px) and 
+	- fluid (< 648 px).
+	
+	If you want to exclude one of these states on your site, just add a 
+	`data-exclude-breakpoint` attribute with its name on the body element 
+	(multiple values need to be space-separated).
 -----------------------------------------------------------------------------*/
+
+/* Centered */
 
 .centered {
 	margin: 0 auto;
 	width: 1060px;
 }
 
-.fluid {
+/* Fluid */
+
+.wide {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0 50px;
 	width: 100%;
+}
+
+@media all and (max-width: 647px) {
+
+	body:not([data-exclude-breakpoint~=fluid]) .centered {
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0 50px;
+		width: 100%;
+	}
+
+}
+
+/* Small */
+@media all and (min-width: 648px) {
+
+	body:not([data-exclude-breakpoint~=small]) .centered {
+		width: 648px;
+	}
+
+}
+
+/* Medium */
+@media all and (min-width: 854px) {
+
+	body:not([data-exclude-breakpoint~=medium]) .centered {
+		width: 854px;
+	}
+
+}
+
+/* Large */
+@media all and (min-width: 1060px) {
+
+	body:not([data-exclude-breakpoint~=large]) .centered {
+		width: 1060px;
+	}
+
 }
 
 /*-----------------------------------------------------------------------------
