@@ -364,7 +364,7 @@
 					moduleUnit: 'px',
 					gutter: 30,
 					gutterUnit: 'px',
-					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1'],
+					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c2lr', 'g1'],
 					width: 648
 				},
 			
@@ -375,7 +375,7 @@
 					moduleUnit: 'px',
 					gutter: 30,
 					gutterUnit: 'px',
-					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1'],
+					grid: ['g1', 'c2lr', 'g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c2lr', 'g1'],
 					width: 854
 				},
 				
@@ -386,7 +386,7 @@
 					moduleUnit: 'px',
 					gutter: 30,
 					gutterUnit: 'px',
-					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c2lr', 'g1'],
+					grid: ['g1', 'c2lr', 'g1', 'c2lr', 'g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c2lr', 'g1'],
 					width: 1060
 				}
 			}		
