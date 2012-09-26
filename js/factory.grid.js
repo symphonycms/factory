@@ -17,16 +17,33 @@
 
 	var Grid = {
 	
-		elements: {},
+		elements: {
+			body: null,
+			grid: null,
+			gridContext: null,
+			baselineContext: null
+		},
 		
 		settings: {
+		
+			// Modules
 			module: 73,
 			moduleUnit: 'px',
+			
+			// Gutter
 			gutter: 30,
 			gutterUnit: 'px',
+			
+			// Optical alignment
 			opticalAlignment: 10,
 			opticalAlignmentUnit: 'px',
+			
+			// Grids
 			grid: [],
+			gridContext: '#site',
+			breakpoints: {},
+			
+			// Baselines
 			baseline: 2.4,
 			baselineUnit: 'rem',
 			baselineContext: '#site',
@@ -36,21 +53,46 @@
 		init: function(options) {
 			
 			// Apply settings
-			$.extend(Grid.settings, options);
+			Grid.set(options);
 		
 			// Cache elements
 			Grid.elements.body = $('body');
-			Grid.elements.grid = $('#grid');
+			Grid.elements.context = $(Grid.settings.gridContext);
 			Grid.elements.baseline = $(Grid.settings.baselineContext);
 			
-			// Create grid
+			// Load assets
 			Grid.loadAssets();
-			Grid.createGrid();
-			Grid.visualiseGrid();
+
+			// Create grid
+			Grid.create();
+			Grid.adapt();
+
+			// Create baselines
 			Grid.setBaselines();
 		},
 		
-		createGrid: function(options) {
+		set: function(options) {
+			$.extend(Grid.settings, options);
+		},
+		
+		loadAssets: function() {
+			var stylesheet = $('link[href="css/factory.grid.css"]');
+
+			// Load missing grid styles
+			if(stylesheet.length == 0) {
+				$('<link />', {
+					rel: 'stylesheet',
+					type: 'text/css',
+					href: 'css/factory.grid.css'
+				}).appendTo('head');			
+			}
+		},
+		
+	/*-------------------------------------------------------------------------
+		Grid
+	-------------------------------------------------------------------------*/
+		
+		create: function() {
 		
 			// Clear existing grid
 			Grid.clear();
@@ -62,10 +104,31 @@
 			}).appendTo(Grid.elements.body);
 		},
 		
-		visualiseGrid: function() {
+		adapt: function(event) {
+			var width = $(window).width(),
+				breakpoint;
+			
+			// Get breakpoint
+			$.each(Grid.settings.breakpoints, function(index, settings) {
+				if(width > index) {
+					breakpoint = settings;
+				}
+			});
+			
+			// Visualise
+			Grid.clear(true);
+			Grid.set(breakpoint);
+			Grid.visualise();
+		},
+		
+		visualise: function() {
 			var module = $('<div class="module" />'),
 				gutter = $('<div class="gutter" />'),
-				alignment = $('<div class="alignment" />');
+				alignment = $('<div class="alignment" />'),
+				size = Grid.elements.context.width();
+			
+			// Set grid width
+			Grid.elements.grid.width(size);
 			
 			// Add columns and gutter
 			$.each(Grid.settings.grid, function addColumn(index, element) {
@@ -106,6 +169,25 @@
 			});
 		},
 		
+		clear: function(columns) {
+			if(Grid.elements.grid != null) {
+				
+				// Clear columns
+				if(columns === true) {
+					Grid.elements.grid.empty();
+				}
+				
+				// Clear grid
+				else {
+					Grid.elements.grid.remove();							
+				}
+			}
+		},
+		
+	/*-------------------------------------------------------------------------
+		Baselines
+	-------------------------------------------------------------------------*/
+				
 		setBaselines: function() {
 			Grid.elements.baseline.css({			
 				'background-position': '0 0, 0 ' + (Grid.settings.baseline / 2) + Grid.settings.baselineUnit,
@@ -118,20 +200,37 @@
 			}
 		},
 		
-		clear: function() {
-			Grid.elements.grid.remove();
-		},
-		
-		loadAssets: function() {
-			var stylesheet = $('link[href="css/factory.grid.css"]');
-
-			// Load missing grid styles
-			if(stylesheet.length == 0) {
-				$('<link />', {
-					rel: 'stylesheet',
-					type: 'text/css',
-					href: 'css/factory.grid.css'
-				}).appendTo('head');			
+	/*-------------------------------------------------------------------------
+		Toggle components
+	-------------------------------------------------------------------------*/
+			
+		toggle: function(event) {
+			var grid;
+			
+			// Make sure that no additional keys are pressed
+			if(event.metaKey !== true && event.altKey !== true && event.shiftKey !== true && event.ctrlKey !== true) {
+			
+				// Show/hide labels, shortcut = l
+				if(event.which == 76) {
+					grid = true;
+					Grid.toggleLabels();	
+				}
+			
+				// Show/hide columns, shortcut = c
+				if(event.which == 67) {
+					grid = true;
+					Grid.toggleColumns();	
+				}
+			
+				// Show/hide baselines, shortcut = b
+				if(event.which == 66) {
+					Grid.toggleBaselines();	
+				}
+			
+				// Show/hide grid, shortcut = g
+				if(event.which == 71 || grid === true) {
+					Grid.toggleGrid(grid);	
+				}
 			}
 		},
 	
@@ -162,8 +261,37 @@
 		toggleColumns: function(show) {
 			Grid.elements.body.toggleClass('show-columns', show);
 			Factory.storeSetting('columns', Grid.elements.body.is('.show-columns'));
-		}
-				
+		},
+		
+	/*-------------------------------------------------------------------------
+		Restore components
+	-------------------------------------------------------------------------*/
+		
+		restore: function() {
+			var restore;
+		
+			// Labels
+			if(Factory.loadSetting('labels') === true) {
+				restore = true;
+				Grid.toggleLabels();		
+			}
+		
+			// Columns
+			if(Factory.loadSetting('columns') === true) {
+				restore = true;
+				Grid.toggleColumns();		
+			}
+		
+			// Baselines
+			if(Factory.loadSetting('baselines') === true) {
+				Grid.toggleBaselines();		
+			}
+		
+			// Restore grid, if it was loaded before
+			if(Factory.loadSetting('grid') === true || restore === true) {
+				Grid.toggleGrid(restore);		
+			}
+		}					
 	};
 
 /*-----------------------------------------------------------------------------
@@ -174,64 +302,33 @@
 		
 		// Create grid
 		Grid.init({
-			grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c2lr', 'g1']
-		});
-	
-		// Toggle grid
-		$(document).on('keydown.factory', function toggle(event) {
-			var grid;
+			breakpoints: {
 			
-			// Make sure that no additional keys are pressed
-			if(event.metaKey !== true && event.altKey !== true && event.shiftKey !== true && event.ctrlKey !== true) {
+				// Small
+				0: {
+					grid: ['g1', 'c2lr', 'g1', 'c2lr', 'g1', 'c2lr', 'g1']
+				},
 			
-				// Show/hide labels, shortcut = l
-				if(event.which == 76) {
-					grid = true;
-					Grid.toggleLabels();	
+				// Medium
+				854: {
+					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1'],
+				},
+				
+				// Large
+				1060: {
+					grid: ['g1', 'c2lr', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c1l', 'g1', 'c1r', 'g1', 'c2lr', 'g1'],
 				}
-			
-				// Show/hide columns, shortcut = c
-				if(event.which == 67) {
-					grid = true;
-					Grid.toggleColumns();	
-				}
-			
-				// Show/hide baselines, shortcut = b
-				if(event.which == 66) {
-					Grid.toggleBaselines();	
-				}
-			
-				// Show/hide grid, shortcut = g
-				if(event.which == 71 || grid === true) {
-					Grid.toggleGrid(grid);	
-				}
-			}
+			}		
 		});
 		
 		// Restore grid, if it was loaded before
-		var restore;
+		Grid.restore();		
 	
-		// Labels
-		if(Factory.loadSetting('labels') === true) {
-			restore = true;
-			Grid.toggleLabels();		
-		}
-	
-		// Columns
-		if(Factory.loadSetting('columns') === true) {
-			restore = true;
-			Grid.toggleColumns();		
-		}
-	
-		// Baselines
-		if(Factory.loadSetting('baselines') === true) {
-			Grid.toggleBaselines();		
-		}
-	
-		// Restore grid, if it was loaded before
-		if(Factory.loadSetting('grid') === true || restore === true) {
-			Grid.toggleGrid(restore);		
-		}
+		// Toggle grid
+		$(document).on('keydown.factory', Grid.toggle);
+		
+		// Adapt grid
+		$(window).on('resize.factory', Grid.adapt);
 	});
 	
 })(jQuery.noConflict());
