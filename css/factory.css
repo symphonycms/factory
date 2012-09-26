@@ -66,7 +66,7 @@ body {
 	- fluid (< 648 px).
 	
 	If you want to exclude one of these states on your site, just add a 
-	`data-exclude-breakpoint` attribute with its name on the body element 
+	`data-exclude-state` attribute with its name on the body element 
 	(multiple values need to be space-separated).
 -----------------------------------------------------------------------------*/
 
@@ -88,7 +88,7 @@ body {
 
 @media all and (max-width: 647px) {
 
-	body:not([data-exclude-breakpoint~=fluid]) .centered {
+	body:not([data-exclude-state~=fluid]) .centered {
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		padding: 0 50px;
@@ -100,7 +100,7 @@ body {
 /* Small */
 @media all and (min-width: 648px) {
 
-	body:not([data-exclude-breakpoint~=small]) .centered {
+	body:not([data-exclude-state~=small]) .centered {
 		width: 648px;
 	}
 
@@ -109,7 +109,7 @@ body {
 /* Medium */
 @media all and (min-width: 854px) {
 
-	body:not([data-exclude-breakpoint~=medium]) .centered {
+	body:not([data-exclude-state~=medium]) .centered {
 		width: 854px;
 	}
 
@@ -118,7 +118,7 @@ body {
 /* Large */
 @media all and (min-width: 1060px) {
 
-	body:not([data-exclude-breakpoint~=large]) .centered {
+	body:not([data-exclude-state~=large]) .centered {
 		width: 1060px;
 	}
 

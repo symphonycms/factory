@@ -108,7 +108,7 @@
 		
 		adapt: function(event) {
 			var width = $(window).width(),
-				excluded = Grid.elements.body.attr('data-exclude-breakpoint') || '',
+				excluded = Grid.elements.body.attr('data-exclude-state') || '',
 				breakpoint, size;
 			
 			// Get breakpoint
