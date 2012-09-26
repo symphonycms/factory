@@ -403,7 +403,7 @@ h5 {
 
 /* Main site header */
 
-header.main {
+header.site {
 	border-bottom: 1px solid #CFCFCF;
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
 	height: 8.4rem;
@@ -412,8 +412,8 @@ header.main {
 	position: relative;
 }
 
-header.main:before,
-header.main:after {
+header.site:before,
+header.site:after {
 	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
 	background: -moz-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
 	background: -ms-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
@@ -428,7 +428,7 @@ header.main:after {
 	width: 20px;
 }
 
-header.main:after {
+header.site:after {
 	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
 	background: -moz-linear-gradient(left, rgba(251, 253, 251, 0) 0%,rgba(251, 253, 251, 1) 100%);
 	background: -ms-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
@@ -438,17 +438,17 @@ header.main:after {
 	right: 0;
 }
 
-header.main nav {
+header.site nav {
 	float: right;
 	margin-right: -10px;
 	margin-top: 4.1rem;
 }
 
-header.main nav a.active {
+header.site nav a.active {
 	font-weight: 700
 }
 
-header.main nav a {
+header.site nav a {
 	border: 1px solid transparent;
 	color: #000;
 	float: left;
@@ -458,50 +458,50 @@ header.main nav a {
 	text-decoration: none;
 }
 
-header.main nav a:hover {
+header.site nav a:hover {
 	color: #B20B4F
 }
 
-header.main h1 {
+header.site h1 {
 	background: url(../img/logo.png) 0 1px no-repeat;
 	float: left;
 	text-rendering: optimizeLegibility;
 }
 
-header.main h1 span {
+header.site h1 span {
 	float: left;
 	height: 35px;
 	text-indent: -1000em;
 	width: 203px;
 }
 
-/* Subheader */
+/* page header */
 
-header.sub {
+header.page {
 	margin: 3.1rem 30px 0;
 	max-width: 796px;
 }
 
-header.sub h2 {
+header.page h2 {
 	margin: 0 6px 2.8rem 0;
 	display: inline-block;
 }
 
-header.sub h2.with-separator:after {
+header.page h2.with-separator:after {
 	content: "\00B7";
 	font-weight: 600;
 	padding-left: 10px;
 	color: #B20B4F;
 }
 
-header.sub p {
+header.page p {
 	display: inline-block;
 	font-size: 2.6rem;
 	font-weight: 300;
 	line-height: 3.6rem;
 }
 
-header.sub .tag {
+header.page .tag {
 	background: #92C44D;
 	border: 1px solid #92C44D;
 	border-radius: 2px;
@@ -850,7 +850,7 @@ footer .tools {
 
 /* Entry options */
 
-header.sub .tools {
+header.page .tools {
 	position: absolute;
 	right: 20px;
 	top: 0.5rem;
