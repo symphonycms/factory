@@ -40,7 +40,8 @@
 			opticalAlignmentUnit: 'px',
 			
 			/**
-			 * The grid array defines columns and gutter using the following schemes.
+			 * The grid array defines columns and gutter of the current breakpoint 
+			 * using the following schemes.
 			 * 
 			 * To define gutter: 
 			 * - g1 (one module wide)
@@ -54,8 +55,15 @@
 			 */
 			grid: [],
 			gridContext: '#site',
+			
+			/**
+			 * Breakpoints contains different grid settings with the minimum needed 
+			 * window width as index and the settings as value
+			 */
 			breakpoints: {},
 			breakpointCurrent: 0,
+			
+			// Grid width
 			width: 0,
 			
 			// Baselines
