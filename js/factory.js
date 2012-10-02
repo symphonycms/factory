@@ -32,23 +32,13 @@ var Factory;
 	/*-------------------------------------------------------------------------
 		Network
 	-------------------------------------------------------------------------*/
-	
-		toggleNetwork: function() {
-			Factory.elements.drawer.slideToggle('fast', function() {
-			
-				// Store state
-				Factory.storeSetting('network.opened', Factory.elements.drawer.is(':visible'));
-			});
+		
+		showNetwork: function(event) {
+			Factory.elements.drawer.stop(true).delay(500).slideDown('fast');
 		},
 		
-		// If network drawer has been open last time, reopen it
-		restoreNetworkState: function() {
-			if(Factory.loadSetting('network.opened') === true){
-				Factory.elements.drawer.show();
-				
-				// Store state
-				Factory.storeSetting('network.opened', true);
-			}
+		hideNetwork: function(event) {
+			Factory.elements.drawer.stop(true).slideUp('fast');
 		},
 		
 	/*-------------------------------------------------------------------------
@@ -89,17 +79,10 @@ var Factory;
 		Factory.init();
 	
 		// Toggle network
-		$('#network').on('click.factory', function toggleNetwork(event) {
-			var target = $(event.target);
-			
-			if(!target.is('a')) {
-				event.preventDefault();
-				Factory.toggleNetwork();
-			}
-		});
-		
-		// Get network state
-		Factory.restoreNetworkState();
+		$('#network')
+			.on('mouseenter.factory', Factory.showNetwork)
+			.on('mouseleave.factory', Factory.hideNetwork);
+
 	});
 	
 })(jQuery.noConflict());
