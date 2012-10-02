@@ -741,6 +741,10 @@ code {
 	text-transform: uppercase;
 }
 
+.sidebar ul {
+	margin-left: 0;
+}
+
 .sidebar > ul:first-child {
 	margin-top: 1.8rem;
 }
@@ -1251,6 +1255,10 @@ pre[data-line] {
 	font-size: 1.3rem;
 }
 
+#network .drawer ul {
+	margin-left: 0;
+}
+
 #network .drawer ::selection,
 #network .drawer ::-moz-selection {
 	background: rgba(0, 0, 0, 0.1)
@@ -1336,4 +1344,5 @@ pre[data-line] {
 
 #network .column.user ul {
 	padding-left: 0;
+	margin-left: 0;
 }
