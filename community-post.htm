@@ -229,12 +229,15 @@
 					<!-- Comment -->
 					<article id="position-4" class="comment">
 						<footer class="author">
-							<img alt="Gravatar" src="http://www.gravatar.com/avatar/ff533b1963301f6203dd28d52ae39487?s=81" width="81" height="81" />
-							<strong>#4</strong> <a href="#" rel="author">Allen</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 12:58 pm</time>:
+							<img alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=81" width="81" height="81" />
+							<strong>#10</strong> <a href="#" rel="author">nickdunn</a> answered <time datetime="2012-08-17T12:56" class="relative">on 18 Aug 12, 5:21 am</time>:
 						</footer>
 
 						<!-- Response -->
-						<p>Really really really (really) excited for this project. Really.</p>
+						<blockquote>
+							<p>Are there plans to drop the extensions-section of this site in favour of the symphonyextensions.com?</p>
+						</blockquote>
+						<p>Yep! Once <a href="http://getsymphony.com/discuss/thread/91734/">Symphony Factory</a> is complete and the extensions site inherits the new styling, it will be more rightly integrated. The current extensions repository on this site will eventually disappear. Perhaps in the interim, like the Issues page, it should at least link out, or pull in the lates extensions via the API?</p>
 					</article>
 					
 					<!-- Comment -->
@@ -251,23 +254,51 @@
 					<!-- Comment -->
 					<article id="position-6" class="comment">
 						<footer class="author">
-							<img alt="Gravatar" src="http://www.gravatar.com/avatar/1b32fae892ca31c0f0c46eb7c7cc3964?s=81" width="81" height="81" />
-							<strong>#6</strong> <a href="#" rel="author">eKoeS</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 1:36 pm</time>:
+							<img alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=81" width="81" height="81" />
+							<strong>#10</strong> <a href="#" rel="author">nickdunn</a> answered <time datetime="2012-08-17T12:56" class="relative">on 18 Aug 12, 5:21 am</time>:
 						</footer>
 
 						<!-- Response -->
-						<p>Great stuff, can't wait for it to become real! </p>
+						<p>So some common themes:</p>
+						<ul>
+							<li>a personal bookmarks/favourites list for keeping track of the extensions you use regularly (which could also help factor in "popularity" on the site)</li>
+							<li>RSS feeds for new extensions, for extension updates and for articles (and a combined feed)</li>
+							<li>search isn't up to scratch (likely because I'm using <a href="http://symphony-cms.com/download/extensions/view/46162/">half-ass search</a>, to be replaced with <a href="http://symphonyextensions.com/extensions/elasticsearch/">proper search</a> soon)</li>
+						</ul>
+						<blockquote>
+							<p>and a feed for individual extensions</p>
+						</blockquote>
+						<p>This isn't something I want to implement. Extension-specific updates should be gleaned by either watching the project on Github or by using the Extension Status extension.</p>
 					</article>
 					
 					<!-- Comment -->
 					<article id="position-7" class="comment">
 						<footer class="author">
-							<img alt="Gravatar" src="http://www.gravatar.com/avatar/172ac896352143f531fb27b7ad6ea358?s=81" width="81" height="81" />
-							<strong>#7</strong> <a href="#" rel="author">Lewis</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 2:59 pm</time>:
+							<img alt="Gravatar" src="http://www.gravatar.com/avatar/bac24b344b3f93a2a675c4c0ae6137d1?s=81" width="81" height="81" />
+							<strong>#7</strong> <a href="#" rel="author">bauhouse</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 2:59 pm</time>:
 						</footer>
 
 						<!-- Response -->
-						<p>Love the mockup! I too am really looking forward to this project!</p>
+						<p>I can confirm the bug. @brendo, that does make a difference. But that also means that if you are tracking the <code>install.sql</code> in a git repository, the order of the SQL statements changes from <a href="https://github.com/symphonycms/symphony-2/blob/master/install.sql#L21">the existing file</a>.</p>
+						<p>This retains the existing order:</p>
+						<div class="code-block">
+							<pre>$tables = array(
+						    'sym_authors',
+						    'sym_sessions',
+						    'sym_cache',
+						    'sym_entries',
+						    'sym_extensions',
+						    'sym_extensions_delegates',
+						    'sym_fields',
+						    'sym_fields_%',
+						    'sym_forgotpass',
+						    'sym_pages',
+						    'sym_pages_types',
+						    'sym_sections',
+						    'sym_sections_association'
+						);
+							</pre>
+						</div>
 					</article>
 					
 					<!-- Comment -->
