@@ -731,7 +731,9 @@ code {
 
 article.comment {
 	position: relative;
-	min-height: 90px;
+	
+	/* @todo: this is highly experimental and only adjusted for expected behavior in Safari. */
+	min-height: 69px;
 	margin: 0 -10px;
 	padding: 0 10px;
 }
@@ -741,13 +743,17 @@ article.comment:not(:first-of-type) {
 }
 
 article.comment footer {
-	margin: 0 100px 1.2rem -10px;
+	margin: 0 100px 0 -10px;
 	padding: 0.6rem 10px;
-	border-bottom: 1px solid #e2e4e2;
+/*	border-bottom: 1px solid #e2e4e2;*/
 	width: 588px;
+	color: #9b9b9b;
+/*	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 1.1rem;*/
 }
 
-article.comment footer:before {
+/*article.comment footer:before {
 	content: "";
 	width: 10px;
 	height: 10px;
@@ -762,7 +768,7 @@ article.comment footer:before {
 	transform: rotate(45deg);
 	border-top: 1px solid #e2e4e2;
 	border-left: 1px solid #e2e4e2;
-}
+}*/
 
 article.comment footer strong {
 	background: #282828;
@@ -771,19 +777,28 @@ article.comment footer strong {
 	font-weight: 300;
 	padding: 2px 7px 2px 5px;
 	margin: 0 5px 0 -10px;
+	
+	display: none;
 }
 
 article.comment footer a[rel=author] {
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 1.3rem;
+	padding-right: 3px;
 }
 
 article.comment footer.author img {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
 	position: absolute;
-	top: 1rem;
-	right: 10px;
+	top: -1px;
+	right: 0;
 }
+
+#position-1 .comment footer.author img {
+	top: 1rem;
+}
+
 
 /*-----------------------------------------------------------------------------
 	Sidebar:
