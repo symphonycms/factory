@@ -42,7 +42,19 @@ var Factory;
 		},
 		
 	/*-------------------------------------------------------------------------
-		Network
+		Users
+	-------------------------------------------------------------------------*/
+		
+		linkUsers: function() {
+			var context = $(this);
+			
+			context.html(context.html().replace(/@([A-Za-z0-9-_]+)/g, function(username, name) {
+				return '<a href="http://getsymphony.com/get-involved/member/' + name + '" class="user">' + username + '</a>';
+			}));
+		},
+		
+	/*-------------------------------------------------------------------------
+		Date and Time
 	-------------------------------------------------------------------------*/
 		
 		getRelativeTime: function() {
@@ -140,6 +152,9 @@ var Factory;
 			
 		// Set relative time
 		$('time.relative').each(Factory.getRelativeTime);
+		
+		// Users
+		$('.content p').each(Factory.linkUsers);
 	});
 	
 })(jQuery.noConflict());
