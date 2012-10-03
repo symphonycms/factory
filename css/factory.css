@@ -271,8 +271,24 @@ body {
 	Style definitions for form elements.
 -----------------------------------------------------------------------------*/
 
-input[type=password],
-input[type=text],
+form {
+	border: none;
+	margin: 2.4rem -10px 0;
+	padding: 0;
+}
+
+fieldset {
+	background: #F5F5F3;
+	border-radius: 2px;
+	border: 1px solid #C4C4C2;
+	margin: 2.4rem 0 0;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+button,
 textarea,
 select[multiple] {
 	border: 1px solid rgba(0, 0, 0, 0.25);
@@ -287,10 +303,13 @@ select[multiple] {
 	width: 100%;
 }
 
-input[type=password]:active,
-input[type=password]:focus,
-input[type=text]:active,
-input[type=text]:focus,
+input[type=submit],
+button {
+	width: auto;
+}
+
+input:not([type=checkbox]):not([type=radio]):active,
+input:not([type=checkbox]):not([type=radio]):focus,
 textarea:active,
 textarea:focus,
 select[multiple]:active,
@@ -304,7 +323,7 @@ select[multiple] {
 	font-size: 1em;
 }
 
-input[type=text] {
+input:not([type=checkbox]):not([type=radio]) {
 	height: 24px;
 }
 
@@ -336,7 +355,7 @@ input[type=submit] {
 }
 
 select,
-input[type="reset"],
+input[type=reset],
 input[type=button],
 input[type=submit],
 textarea,
@@ -346,12 +365,16 @@ fieldset {
 }
 
 button::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
 select::-moz-focus-inner,
-input[type="file"] > input[type="button"]::-moz-focus-inner {
+input[type=file] > input[type=button]::-moz-focus-inner {
 	border: none;
+}
+
+a.return {
+	float: left;
 }
 
 /*-----------------------------------------------------------------------------
@@ -601,7 +624,7 @@ ul li {
 	position: relative;
 }
 
-ul li::before {
+ul li:before {
 	content: "·";
 	position: absolute;
 	left: 0;
@@ -862,7 +885,7 @@ article.comment footer.author img {
 	padding-left: 0;
 }
 
-.tools li::before {
+.tools li:before {
 	content: none;
 }
 
@@ -910,13 +933,14 @@ header.page .tools {
 /* Pagination */
 
 .tools.pagination {
-	/* This is needed to remove whitespace between the nested links */
 	float: left;
-	font-size: 0;
-	margin: 0 -10px;
+	margin: 2.4rem -10px;
 	padding: 0;
 	position: relative;
-	width: 816px;
+	width: 814px;
+
+	/* This is needed to remove whitespace between the nested links */
+	font-size: 0;
 }
 
 .tools.pagination > a {
@@ -1173,7 +1197,7 @@ pre[data-line] {
 	border-bottom: 2px solid #d9d9d9;
 }
 
-#network::after {
+#network:after {
 	content: none;
 	display: block;
 	clear: both;
@@ -1189,7 +1213,7 @@ pre[data-line] {
 	cursor: pointer;
 }
 
-#network ul li::before {
+#network ul li:before {
 	content: none;
 }
 
