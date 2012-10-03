@@ -704,27 +704,62 @@ code {
 	padding: 0;
 }
 
-/* Footers */
+/* Comments */
 
-.entries article footer {
-	float: right;
-	width: 184px;
+article.comment {
+	position: relative;
+	min-height: 90px;
+	margin: 0 -10px;
+	padding: 0 10px;
 }
 
-.entries article footer strong {
-	display: block;
-	font-weight: 700;
+article.comment:not(:first-of-type) {
+	border-top: 1px solid #bbbfbb;
 }
 
-.entries article footer img {
+article.comment footer {
+	margin: 0 100px 1.2rem -10px;
+	padding: 0.6rem 10px;
+	border-bottom: 1px solid #e2e4e2;
+	width: 588px;
+}
+
+article.comment footer:before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 3.1rem;
+	left: 20px;
+	background: #FBFDFB;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-top: 1px solid #e2e4e2;
+	border-left: 1px solid #e2e4e2;
+}
+
+article.comment footer strong {
+	background: #282828;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: 300;
+	padding: 2px 7px 2px 5px;
+	margin: 0 5px 0 -10px;
+}
+
+article.comment footer a[rel=author] {
+	font-weight: 600;
+}
+
+article.comment footer.author img {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
-	margin-right: -10px;
-}
-
-.entries article footer p {
-	margin: 1.2rem 0 0.5rem;
-	text-align: right;
+	position: absolute;
+	top: 1rem;
+	right: 10px;
 }
 
 /*-----------------------------------------------------------------------------
