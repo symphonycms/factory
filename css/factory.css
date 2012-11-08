@@ -500,8 +500,7 @@ header.site h1 {
 }
 
 .svg header.site h1 {
-	background-image: url('../img/logo.svg');
-	background-size: 100% 100%;
+	background-image: url(../img/logo.svg);
 }
 
 header.site h1 span {
