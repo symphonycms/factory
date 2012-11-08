@@ -494,9 +494,14 @@ header.site nav a:hover {
 }
 
 header.site h1 {
-	background: url(../img/logo.png) 0 1px no-repeat;
+	background: url(../img/logo.png) -1px 0 no-repeat;
 	float: left;
 	text-rendering: optimizeLegibility;
+}
+
+.svg header.site h1 {
+	background-image: url('../img/logo.svg');
+	background-size: 100% 100%;
 }
 
 header.site h1 span {
