@@ -27,7 +27,7 @@
 			<div class="column content overview">
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Who's online: how did you hear about Symphony?</a></h3>
+						<h3><a href="community-post.xml">Who's online: how did you hear about Symphony?</a></h3>
 						<p class="dimmed">Discussion by <a href="#">bauhouse</a></p>
 					</header>
 					<div class="meta column one">
@@ -40,7 +40,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Symphony 2.3 development notes</a></h3>
+						<h3><a href="community-post.xml">Symphony 2.3 development notes</a></h3>
 						<p class="dimmed">Discussion by <a href="#">brendo</a></p>
 					</header>
 					<div class="meta column one">
@@ -53,7 +53,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Hackathon 2.3 podcast</a></h3>
+						<h3><a href="community-post.xml">Hackathon 2.3 podcast</a></h3>
 						<p class="dimmed">Blog by <a href="#">Allen</a></p>
 					</header>
 					<div class="meta column one">
@@ -66,7 +66,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Happy March 26th! #symphonycms 2.3 beta 3 is ready for&#8230;</a></h3>
+						<h3><a href="community-post.xml">Happy March 26th! #symphonycms 2.3 beta 3 is ready for&#8230;</a></h3>
 						<p class="dimmed">Tweet by <a href="#">@symphonycms</a></p>
 					</header>
 					<div class="meta column one">
@@ -77,7 +77,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Moxie Cinema</a></h3>
+						<h3><a href="community-post.xml">Moxie Cinema</a></h3>
 						<p class="dimmed">Showcase by <a href="#">fawx</a></p>
 					</header>
 					<div class="meta column one">
@@ -88,7 +88,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Who's online: how did you hear about Symphony?</a></h3>
+						<h3><a href="community-post.xml">Who's online: how did you hear about Symphony?</a></h3>
 						<p class="dimmed">Discussion by <a href="#">bauhouse</a></p>
 					</header>
 					<div class="meta column one">
@@ -99,7 +99,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Symphony 2.3 development notes</a></h3>
+						<h3><a href="community-post.xml">Symphony 2.3 development notes</a></h3>
 						<p class="dimmed">Discussion by <a href="#">brendo</a></p>
 					</header>
 					<div class="meta column one">
@@ -110,7 +110,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Hackathon 2.3 podcast</a></h3>
+						<h3><a href="community-post.xml">Hackathon 2.3 podcast</a></h3>
 						<p class="dimmed">Blog by <a href="#">Allen</a></p>
 					</header>
 					<div class="meta column one">
@@ -121,7 +121,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Happy March 26th! #symphonycms 2.3 beta 3 is ready for&#8230;</a></h3>
+						<h3><a href="community-post.xml">Happy March 26th! #symphonycms 2.3 beta 3 is ready for&#8230;</a></h3>
 						<p class="dimmed">Tweet by <a href="#">@symphonycms</a></p>
 					</header>
 					<div class="meta column one">
@@ -132,7 +132,7 @@
 				</article>
 				<article class="field justified">
 					<header class="column two-plus">
-						<h3><a href="community-post.htm">Moxie Cinema</a></h3>
+						<h3><a href="community-post.xml">Moxie Cinema</a></h3>
 						<p class="dimmed">Showcase by <a href="#">fawx</a></p>
 					</header>
 					<div class="meta column one">
