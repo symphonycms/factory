@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="factory/docs.xsl" ?>
+<data>
+	<title id="About">Introduction</title>
+	<content>
+		
+		<!-- Description -->
+		<div class="field">
+			<div class="column sidebar">
+				<ul>
+					<li>
+						<a href="">Fork on Github</a></li>
+					<li>
+						<a href="">Download</a></li>
+					<li>
+						<a href="">Contribute</a>
+					</li>
+				</ul>				
+			</div>
+			<div class="column content language-markup">
+				<p class="introduction">Symphony Factory is an easy-to-use HTML, CSS and JavaScript framework to create websites for the Symphony Network with a unified design. It is freely available for all Symphony Network sites.</p>
+				<p>Text</p>
+				<h4>Repository</h4>
+				<pre class="three"><code class="highlight">git@github.com:symphonycms/factory.git</code></pre>
+				<h4>Issues and Feature Requests</h4>
+				<p>Please post issues and feature request in the <a href="https://github.com/symphonycms/factory/issues">Github issue tracker</a> of the project.</p>
+				<h4>Symphony Community Licence</h4>
+				<p>Copyright 2012 Symphony Community</p>
+				<p>Symphony Factory is free to use, free of charge for all Symphony Network sites (MIT style). <br />It may not be used in contexts other than the Symphony Network.</p>
+				<p>Symphony Factory was created by <a href="http://hananils.de">Johanna and Nils Hörrmann</a> and kindly <a href="http://pledgie.com/campaigns/18062">funded by the Symphony Community</a>.</p>
+			</div>
+		</div>
+		
+		<!-- Features -->
+		<div class="field">
+			<h2>Factory Features</h2>
+			<div class="column one">
+				<h3>Grids</h3>
+				<img src="img/factory_grids.png" width="176" height="96" alt="Grids" />
+				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p>
+					<a href="grids.htm">More about the grid.</a>
+				</p>
+			</div>
+			<div class="column one">
+				<h3>Layouts</h3>
+				<img src="img/factory_layouts.png" width="176" height="96" alt="Layouts" />
+				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p>
+					<a href="layouts.htm">More about the layouts.</a>
+				</p>
+			</div>
+			<div class="column one">
+				<h3>Snippets</h3>
+				<img src="img/factory_snippets.png" width="176" height="96" alt="Snippets" />
+				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p>
+					<a href="snippets.htm">More about the snippets.</a>
+				</p>
+			</div>
+			<div class="column one">
+				<h3>Typography</h3>
+				<img src="img/factory_typography.png" width="176" height="96" alt="Typography" />
+				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p>
+					<a href="typography.htm">More on the typography.</a>
+				</p>
+			</div>
+			<div class="column one">
+				<h3>Network</h3>
+				<img src="img/factory_network.png" width="176" height="96" alt="Network" />
+				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p>
+					<a href="network.htm">More about the network.</a>
+				</p>
+			</div>
+		</div>
+	</content>
+</data>

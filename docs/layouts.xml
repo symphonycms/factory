@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="factory/docs.xsl" ?>
+<data>
+	<title>Layouts</title>
+	<content>
+		
+		<!-- Introduction -->
+		<div class="field">
+			<header>
+				<h2>Introduction to Factory's basic markup</h2>
+			</header>
+			<p class="column five">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
+		</div>
+		
+		<!-- HTML -->
+		<div class="field">
+			<h3>HTML Skeleton</h3>
+			<div class="column sidebar">
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+			</div>
+			<div class="column content language-markup">
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;UTF-8&quot;&gt;
+	&lt;title&gt;Site title&lt;/title&gt;
+	&lt;link href=&#x27;http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#x27; rel=&#x27;stylesheet&#x27; type=&#x27;text/css&#x27;&gt;
+	&lt;link media=&quot;screen&quot; href=&quot;css/prism.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+	&lt;link media=&quot;screen&quot; href=&quot;css/factory.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/modernizr.js&quot;&gt;&lt;/script&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/prism.js&quot;&gt;&lt;/script&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/factory.js&quot;&gt;&lt;/script&gt;
+	&lt;script type=&quot;text/javascript&quot; src=&quot;js/factory.grid.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+	&lt;!-- Symphony Network toolbar--&gt;
+	&lt;aside id=&quot;network&quot;&gt;&lt;/aside&gt;
+
+	&lt;!-- Your site --&gt;
+	&lt;div id=&quot;site&quot;&gt;&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			</div>
+		</div>
+		
+		<!-- Network -->
+		<div class="field">
+			<h3>Network Toolbar</h3>
+			<div class="column sidebar">
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+			</div>
+			<div class="column content language-markup">
+				<pre><code></code></pre>
+			</div>
+		</div>
+		
+		<!-- Site header -->
+		<div class="field">
+			<h3>Site Header</h3>
+			<div class="column sidebar">
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+			</div>
+			<div class="column content language-markup">
+				<pre><code></code></pre>
+			</div>
+		</div>
+		
+		<!-- Fields -->
+		<div class="field">
+			<h3>Content fields</h3>
+			<div class="column sidebar">
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+			</div>
+			<div class="column content language-markup">
+				<pre><code></code></pre>
+			</div>
+		</div>
+		
+		<!-- Columns -->
+		<div class="field">
+			<h3>Columns</h3>
+			<div class="column sidebar">
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+			</div>
+			<div class="column content language-markup">
+				<pre><code></code></pre>
+			</div>
+		</div>
+	</content>
+</data>
