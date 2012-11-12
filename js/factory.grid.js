@@ -99,14 +99,14 @@
 		},
 		
 		loadAssets: function() {
-			var stylesheet = $('link[href="css/factory.grid.css"]');
+			var stylesheets = $('link[href*="css"]');
 
 			// Load missing grid styles
-			if(stylesheet.length == 0) {
+			if(stylesheets.filter('[href*="factory.grid.css"]').length == 0) {
 				$('<link />', {
 					rel: 'stylesheet',
 					type: 'text/css',
-					href: 'css/factory.grid.css'
+					href: stylesheets.filter('[href*="factory.css"]').attr('href').split('/css/')[0] + '/css/factory.grid.css'
 				}).appendTo('head');			
 			}
 		},
