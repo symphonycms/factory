@@ -5,15 +5,15 @@
 	<content>
 		
 		<!-- Introduction -->
-		<div class="field">
+		<section class="field">
 			<header>
-				<h2>Introduction to Factory's basic markup</h2>
+				<h2>Introduction to Layouts</h2>
 			</header>
 			<p class="column five">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
-		</div>
+		</section>
 		
 		<!-- HTML -->
-		<div class="field">
+		<section class="field">
 			<h3>HTML Skeleton</h3>
 			<div class="column sidebar">
 				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
@@ -25,7 +25,7 @@
 		<meta charset="UTF-8">
 		<title>Site title</title>
 		
-		<!-- Webfonts -->
+		<!-- Webfonts, see http://symphonycms.github.com/factory/docs/typography.xml -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 		
 		<!-- Styles for code highlighting -->
@@ -47,7 +47,7 @@
 	</head>
 	<body>
 	
-		<!-- Symphony Network toolbar, see below -->
+		<!-- Symphony Network toolbar, see http://symphonycms.github.com/factory/docs/layouts.xml#chapter_network -->
 		<aside id="network"></aside>
 	
 		<!-- Site content, see below -->
@@ -55,12 +55,12 @@
 	</body>
 </html>]]></code></pre>
 			</div>
-		</div>
+		</section>
 		
 		<!-- Network -->
 		<section>
 			<header>
-				<h2>Network</h2>
+				<h2 id="chapter_network">Network</h2>
 			</header>
 			
 			<!-- XSL -->
