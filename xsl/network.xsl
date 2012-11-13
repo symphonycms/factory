@@ -8,7 +8,7 @@
 		<header class="field">
 			<div class="centered">
 				<h1 class="column one">
-					<a href="index.htm">Symphony Network</a>
+					<a href="{$config/root}/docs/about.xml">Symphony Network</a>
 				</h1>
 				<nav class="column three">
 					<a href="community.htm">Community</a>
