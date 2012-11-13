@@ -27,6 +27,11 @@ var Factory;
 			Factory.elements.network = $('#network');
 			Factory.elements.networkToggle = Factory.elements.network.find('header h1');
 			Factory.elements.drawer = Factory.elements.network.find('div.drawer');
+			Factory.elements.site = $('#site');
+			Factory.elements.siteHeader = Factory.elements.site.find('> header');
+			Factory.elements.siteTitle = Factory.elements.siteHeader.find('h1');
+			Factory.elements.siteNav = Factory.elements.siteHeader.find('nav');
+			Factory.elements.siteNavItem = Factory.elements.siteNav.find('a');
 		},
 		
 	/*-------------------------------------------------------------------------
@@ -41,6 +46,38 @@ var Factory;
 			Factory.elements.drawer.stop(true).slideUp('fast');
 		},
 		
+	/*-------------------------------------------------------------------------
+		Site navigation
+	-------------------------------------------------------------------------*/
+	
+		navWidth: null,
+		
+		adjustNavigation: function(event) {
+			
+			// Store navigation width
+			if(Factory.navWidth === null) {
+				Factory.navWidth = Factory.elements.siteNav.width();
+			}
+
+			// Get available space		
+			var space = Factory.elements.siteHeader.width() - Factory.elements.siteTitle.width() - Factory.navWidth;
+			
+			// Collapse navigation
+			if(space < 10) {
+				Factory.elements.siteHeader.addClass('collapsed');
+			}
+			
+			// Expand navigation
+			else {
+				Factory.elements.siteHeader.removeClass('collapsed');
+				Factory.elements.siteNav.removeClass('open');
+			}
+		},
+		
+		toggleNavigation: function(event) {
+			Factory.elements.siteNav.toggleClass('open');
+		},
+
 	/*-------------------------------------------------------------------------
 		Users
 	-------------------------------------------------------------------------*/
@@ -146,9 +183,12 @@ var Factory;
 		Factory.init();
 	
 		// Toggle network
-		$('#network')
-			.on('mouseenter.factory', Factory.showNetwork)
-			.on('mouseleave.factory', Factory.hideNetwork);
+		Factory.elements.network.on('mouseenter.factory', Factory.showNetwork);
+		Factory.elements.network.on('mouseleave.factory', Factory.hideNetwork);
+	
+		// Site navigation
+		$(window).on('resize.factory', Factory.adjustNavigation).trigger('resize.factory');
+		Factory.elements.siteNav.on('click.factory', Factory.toggleNavigation);
 			
 		// Set relative time
 		$('time.relative').each(Factory.getRelativeTime);
