@@ -50,13 +50,15 @@ var Factory;
 		Site navigation
 	-------------------------------------------------------------------------*/
 	
-		navWidth: null,
+		navWidth: 0,
 		
 		adjustNavigation: function(event) {
 			
 			// Store navigation width
-			if(Factory.navWidth === null) {
-				Factory.navWidth = Factory.elements.siteNav.width();
+			if(Factory.navWidth == 0) {
+				Factory.elements.siteNavItem.each(function() {
+					Factory.navWidth += $(this).outerWidth();
+				});
 			}
 
 			// Get available space		

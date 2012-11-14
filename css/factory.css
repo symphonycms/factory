@@ -459,9 +459,8 @@ article {
 header.site {
 	border-bottom: 1px solid #CFCFCF;
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
-	height: 8.4rem;
 	margin-bottom: 2.4rem;
-	padding: 0 30px;
+	padding: 3.2rem 30px 1.2rem;
 	position: relative;
 }
 
@@ -491,73 +490,12 @@ header.site:after {
 	right: 0;
 }
 
-header.site nav {
-	float: right;
-	margin-right: -10px;
-	margin-top: 4.1rem;
-}
-
-header.site.collapsed {
-	height: auto;
-	float: left;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-header.site.collapsed nav {
-	float: left;
-	clear: both;
-	display: block;
-	margin: 1.2rem 0 0 -11px;
-	width: 100%;
-	height: auto;
-	position: relative;
-}
-
-header.site.collapsed nav:before {
-	content: "\2630";
-	font-size: 2.8rem;
-	line-height: 1;
-	padding-left: 5px;
-	position: absolute;
-	top: -4.9rem;
-	right: -11px;
-}
-
-header.site.collapsed nav.open {
-	margin-bottom: 1.2rem;
-}
-
-header.site.collapsed nav a {
-	display: none;
-}
-
-header.site.collapsed nav.open a {
-	display: block;
-}
-
-header.site nav a.active {
-	font-weight: 700
-}
-
-header.site nav a {
-	border: 1px solid transparent;
-	color: #000;
-	float: left;
-	font-size: 1.5rem;
-	margin: 0 0 0 2px;
-	padding: 0 9px;
-	text-decoration: none;
-}
-
-header.site nav a:hover {
-	color: #B20B4F
-}
-
 header.site h1 {
 	background: url(../img/logo.png) -1px 0 no-repeat;
 	float: left;
 	text-rendering: optimizeLegibility;
+	margin: 0 40px 0 0;
+	white-space: nowrap;
 }
 
 .svg header.site h1 {
@@ -571,7 +509,69 @@ header.site h1 span {
 	width: 203px;
 }
 
-/* page header */
+header.site nav {
+	text-align: right;
+	margin-right: -10px;
+	padding: 1rem 0 0.6rem;
+	line-height: 1.5;
+	clear: none;
+}
+
+.js header.site nav {
+	height: 2.4rem;
+	text-overflow: clip;
+	white-space: nowrap;
+}
+
+header.site nav a {
+	border: 1px solid transparent;
+	color: #000;
+	font-size: 1.5rem;
+	padding: 0 9px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+header.site nav a.active {
+	font-weight: 700;
+}
+
+header.site nav a:hover {
+	color: #B20B4F;
+}
+
+/* Collapsed site header */
+
+header.site.collapsed nav {
+	clear: left;
+	text-align: left;
+	margin-left: -9px;
+	padding: 0;
+	height: 0;
+	text-overflow: normal;
+	white-space: normal;
+	padding: 0;
+	overflow: hidden;
+}
+
+header.site.collapsed nav:before {
+	content: "\2630";
+	font-size: 2.9rem;
+	line-height: 1;
+	padding-left: 5px;
+	position: absolute;
+	top: 3.4rem;
+	right: 30px;
+}
+
+header.site.collapsed nav.open {
+	padding: .6rem 0 0.6rem;
+	min-height: 2.4rem;
+	height: auto;
+	overflow: visible;
+}
+
+/* Page header */
 
 header.page {
 	margin: 2.9rem 30px 0;
