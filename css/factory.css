@@ -1327,10 +1327,10 @@ pre[data-line] {
 	background-color: #282828;
 	color: #fff;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	height: 3.6rem;
+	min-height: 3.6rem;
 	margin: 0;
 	overflow: hidden;
-	padding: 0;
+	padding: 1rem 0 0.5rem;
 }
 
 #network header div.centered {
@@ -1338,9 +1338,10 @@ pre[data-line] {
 }
 
 #network header h1 {
-	padding: 0;
+	padding: 0 0 0.5rem;
 	overflow: visible;
-	line-height: 3rem;
+	line-height: 1;
+	font-size: 1rem;
 }
 
 #network header h1 a {
@@ -1351,16 +1352,13 @@ pre[data-line] {
 	white-space: nowrap;
 }
 
-#network header nav {
-	margin-top: 0.5rem;
-}
-
 #network header nav a {
 	color: rgba(255, 255,255, 0.7);
-	float: left;
-	line-height: 3rem;
+	line-height: 1;
 	font-size: 1.4rem;
 	font-weight: 300;
+	float: left;
+	padding-bottom: 0.5rem;
 }
 
 #network header nav a:hover {
@@ -1371,7 +1369,7 @@ pre[data-line] {
 #network header nav a:not(:last-of-type):hover:after {
 	content: "\00B7";
 	color: rgba(255, 255,255, 0.7);
-	margin: 0.5em;
+	margin: 0 0.5em;
 }
 
 /* Drawer */
@@ -1466,7 +1464,7 @@ pre[data-line] {
 	font-family: 'Open Sans', sans-serif;
 	position: absolute;
 	right: 20px;
-	top: 0;
+	top: -1rem;
 	width: 36px;
 }
 
