@@ -3,6 +3,11 @@
 <data>
 	<title>Styles</title>
 	<content>
-
+		<section class="field">
+			<h3>Notes</h3>
+			<ul>
+				<li>Symphony Factory uses three <code>ids</code> to namespace/group the CSS: #network, #site and #footer. Only #site should be manipulate/extended by network sites.</li>
+			</ul>
+		</section>
 	</content>
 </data>
