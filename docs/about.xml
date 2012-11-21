@@ -32,8 +32,7 @@
 		</div>
 		
 		<!-- Features -->
-		<div class="field">
-			<h2>Factory Features</h2>
+		<div class="field tiles">
 			<div class="column one">
 				<h3>Layouts</h3>
 				<img src="img/factory_grids.png" width="176" height="96" alt="Grids" />
