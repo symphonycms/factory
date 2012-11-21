@@ -1287,6 +1287,16 @@ pre[data-line] {
 }
 
 /*-----------------------------------------------------------------------------
+	Site:
+
+	Style definitions for the site area.
+-----------------------------------------------------------------------------*/
+
+#site {
+	position: relative;
+}
+
+/*-----------------------------------------------------------------------------
 	Network:
 
 	Style definitions for the network area.
@@ -1515,6 +1525,45 @@ pre[data-line] {
 #network .column.user ul {
 	padding-left: 0;
 	margin-left: 0;
+}
+
+/*-----------------------------------------------------------------------------
+	Footer:
+
+	Style definitions for the footer.
+-----------------------------------------------------------------------------*/
+
+#footer {
+	background: #282828;
+	width: 100%;
+	clear: both;
+	color: #fff;
+	overflow: hidden;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#footer p {
+	float: left;
+}
+
+#footer p.footer-links {
+	float: right;	
+}
+
+#footer a[class^=logo]:before {
+	font-family: Entypo;
+	font-size: 2rem;
+}
+
+#footer a.logo-github:before {
+	content: "\F300";
+}
+
+#footer a.logo-twitter:before {
+	content: "\F315";
 }
 
 /*-----------------------------------------------------------------------------
