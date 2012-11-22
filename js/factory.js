@@ -26,24 +26,35 @@ var Factory;
 			Factory.elements.body = $('body');
 			Factory.elements.network = $('#network');
 			Factory.elements.networkToggle = Factory.elements.network.find('header h1');
-			Factory.elements.drawer = Factory.elements.network.find('div.drawer');
+			Factory.elements.drawer = Factory.elements.network.find('.network-drawer');
 			Factory.elements.site = $('#site');
 			Factory.elements.siteHeader = Factory.elements.site.find('> header');
 			Factory.elements.siteTitle = Factory.elements.siteHeader.find('h1');
 			Factory.elements.siteNav = Factory.elements.siteHeader.find('nav');
 			Factory.elements.siteNavItem = Factory.elements.siteNav.find('a');
+			
+			// Init network
+			Factory.initNetwork();
 		},
 		
 	/*-------------------------------------------------------------------------
 		Network
 	-------------------------------------------------------------------------*/
-		
+				
+		initNetwork: function() {
+			Factory.elements.network.height(Factory.elements.network.css('min-height'));
+		},
+
 		showNetwork: function(event) {
-			Factory.elements.drawer.stop(true).delay(500).slideDown('fast');
+			Factory.elements.network.stop(true).delay(500).animate({
+				height: Factory.elements.network[0].scrollHeight
+			}, 'fast');
 		},
 		
 		hideNetwork: function(event) {
-			Factory.elements.drawer.stop(true).slideUp('fast');
+			Factory.elements.network.stop(true).animate({
+				height: Factory.elements.network.css('min-height')
+			}, 'fast');
 		},
 		
 	/*-------------------------------------------------------------------------

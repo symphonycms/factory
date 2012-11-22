@@ -5,30 +5,30 @@
 	<aside id="network">
 	
 		<!-- Main navigation -->
-		<header class="field">
+		<header class="network-toolbar field collapsed">
 			<div class="centered">
 				<h1 class="column one">
 					<a href="{$config/root}/docs/about.xml">Symphony Network</a>
 				</h1>
-				<nav class="column three">
+				<nav class="network-nav column">
 					<a href="community.htm">Community</a>
 					<a href="documentation.htm">Documentation</a>
 					<a href="extensions.htm">Extensions</a>
 					<a href="ninjas.htm">Ninjas</a>
 					<a href="xpathr.htm">xPathr</a>
 				</nav>
-				<div id="user" class="one">
-					<img src="http://gravatar.com/avatar/76a76733a9f16e46f0d8c88b5beac523?s=36" width="36" height="36" alt="Allen Chang" />
+				<div id="user" class="network-profile">
+					<img src="{$config/root}/img/user.png" width="36" height="36" alt="Allen Chang" />
 					<p>Allen Chang <strong>+15</strong></p>
 				</div>
 			</div>
 		</header>
 		
 		<!-- Site switcher -->
-		<div class="field centered drawer">
+		<div class="field centered network-drawer">
 		
 			<!-- Symphony ressources -->
-			<div class="column  two">
+			<div class="column two">
 				<h2>About Symphony</h2>
 				<p>Symphony is an open source content management system for your websites and webapps. It makes complex things simple.</p>
 				<div class="get-symphony">
