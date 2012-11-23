@@ -1457,6 +1457,16 @@ pre[data-line] {
 .network-nav {
 	width: auto;
 	padding: 0.5rem 50px 0.5rem 0;
+	position: relative;
+}
+
+.network-nav::before {
+	content: "\2630";
+	position: absolute;
+	top: -3rem;
+	left: 206px;
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .network-nav a {
