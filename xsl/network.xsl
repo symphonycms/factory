@@ -18,7 +18,9 @@
 					<a href="xpathr.htm">xPathr</a>
 				</nav>
 				<div id="user" class="network-user">
-					<img src="{$config/root}/img/user.png" width="36" height="36" alt="Allen Chang" />
+					<a href="http://getsymphony.com/get-involved/member/Allen/">
+						<img src="{$config/root}/img/user.png" width="35" height="35" alt="Allen Chang" />
+					</a>
 					<p>
 						<a href="http://getsymphony.com/get-involved/currently-online/" class="network-visitors">15</a>
 						<xsl:text> + </xsl:text>
@@ -344,18 +346,18 @@
 		<div class="field centered network-drawer">
 		
 			<!-- Symphony ressources -->
-			<div class="column three">
+			<div class="column three medium-two">
 				<h2>About Symphony</h2>
 				<p>Symphony is an open source content management system for your websites and webapps. It makes complex things simple.</p>
 				<div class="get-symphony">
-					<a href="#">Get Symphony 2.3.0</a>
-					<a href="#" class="icon fork">Git</a>
-					<a href="#" class="icon download">Download</a>
+					<a href="https://github.com/symphonycms/symphony-2">Get Symphony 2.3.0</a>
+					<a href="https://github.com/symphonycms/symphony-2" class="icon-fork">Fork<span class="medium-hide"> on Github</span></a>
+					<a href="https://github.com/symphonycms/symphony-2/archive/master.zip" class="icon-download"><span class="medium-hide">Download </span>ZIP</a>
 				</div>
 			</div>
 			
 			<!-- Symphony in other languages -->
-			<div class="column one">
+			<div class="column one small-two">
 				<h2>Regions</h2>
 				<ul>
 					<li>

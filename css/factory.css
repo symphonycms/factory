@@ -1403,7 +1403,7 @@ pre[data-line] {
 	background-color: #b20b4f;
 	border-bottom: 2px solid #d9d9d9;
 	overflow: hidden;
-	max-height: 3.6rem;
+	max-height: 3.5rem;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
 	-ms-transition: all 0.25s ease-in-out;
@@ -1412,7 +1412,7 @@ pre[data-line] {
 }
 
 .network-wrapper:hover {
-	max-height: 30rem;
+	max-height: 60rem;
 	-webkit-transition: all 0.25s ease-in-out 0.5s;
 	-moz-transition: all 0.25s ease-in-out 0.5s;
 	-ms-transition: all 0.25s ease-in-out 0.5s;
@@ -1430,14 +1430,14 @@ pre[data-line] {
 
 .network-toolbar {
 	background-color: #282828;
-	background-image: -webkit-linear-gradient(top, #282828 3.6rem, #A00947 3.7rem);
-	background-image: -moz-linear-gradient(top, #282828 3.6rem, #A00947 3.7rem);
-	background-image: -ms-linear-gradient(top, #282828 3.6rem, #A00947 3.7rem);
-	background-image: -o-linear-gradient(top, #282828 3.6rem, #A00947 3.7rem);
-	background-image: linear-gradient(top, #282828 3.6rem, #A00947 3.7rem);
+	background-image: -webkit-linear-gradient(top, #282828 3.5rem, #575757 3.5rem, #383838 3.6rem, #383838 6.7rem, #575757 6.7rem);
+	background-image: -moz-linear-gradient(top, #282828 3.5rem, #383838 3.6rem);
+	background-image: -ms-linear-gradient(top, #282828 3.5rem, #383838 3.6rem);
+	background-image: -o-linear-gradient(top, #282828 3.5rem, #383838 3.6rem);
+	background-image: linear-gradient(top, #282828 3.5rem, #383838 3.6rem);
 	color: #fff;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	min-height: 3.6rem;
+	min-height: 3.5rem;
 }
 
 .network-toolbar .centered {
@@ -1447,13 +1447,13 @@ pre[data-line] {
 .network-toolbar h1 {
 	padding: 1rem 0;
 	overflow: visible;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: 600;
 	letter-spacing: 0.075em;
 	text-transform: uppercase;
 	white-space: nowrap;
 	position: relative;
-	line-height: 1.5rem;
+	line-height: 1.4rem;
 }
 
 .network-toolbar a {
@@ -1463,35 +1463,36 @@ pre[data-line] {
 	-ms-transition: color 0.2s ease-in-out;
 	-o-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
-	line-height: 1;
 }
 
 /* Network navigation */
 
 .network-nav {
 	width: auto;
-	padding: 0.5rem 50px 0.5rem 0;
+	padding: 0.5rem 36px 0.5rem 0;
 	position: relative;
-	line-height: 1.5rem;
+	line-height: 1.4rem;
 }
 
 .network-nav::before {
 	content: "\2630";
 	position: absolute;
-	top: -2.6rem;
+	top: -2.5rem;
 	left: 206px;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	color: rgba(255, 255, 255, 0.7);
 }
 
 .network-nav a {
 	color: rgba(255, 255,255, 0.7);
-	line-height: 1.5rem;
+	line-height: 1.4rem;
 	font-size: 1.4rem;
 	font-weight: 300;
 	float: left;
 	display: inline-block;
 	padding: 0.5rem 0;
+	
+/*	background: red;*/
 }
 
 .network-nav a:hover {
@@ -1510,7 +1511,6 @@ pre[data-line] {
 	position: absolute;
 	right: 30px;
 	top: 0;
-	overflow: hidden;
 	white-space: nowrap;
 }
 
@@ -1522,9 +1522,9 @@ pre[data-line] {
 	float: right;
 	display: block;
 	font-size: 1.4rem;
+	line-height: 1.4rem;
 	font-weight: 300;
-	padding: 0.5rem 10px 0 0 ;
-/*	line-height: 3rem;*/
+	padding: 1rem 10px 0 0 ;
 	color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1540,8 +1540,8 @@ pre[data-line] {
 	margin-left: 7px;
 }
 
-.network-user.collapsed {
-	width: 3.6rem;
+.network-user.collapsed p {
+	display: none;
 }
 
 /* Profile */
@@ -1631,13 +1631,16 @@ pre[data-line] {
 .network-drawer .get-symphony {
 	background: #A00947;
 	margin: 0 0 0 -10px;
-	padding: 1rem 0 1rem 10px;
+	padding: 1rem 10px;
 	border-radius: 2px;
 	font-weight: 300;
 	float: left;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 402px;
+	width: 100%;
+	-webkit-transition: background 0.2s ease-in-out;
+	-moz-transition: background 0.2s ease-in-out;
+	-ms-transition: background 0.2s ease-in-out;
+	-o-transition: background 0.2s ease-in-out;
+	transition: background 0.2s ease-in-out;
 }
 
 .network-drawer .get-symphony:hover {
@@ -1710,17 +1713,18 @@ pre[data-line] {
 	     url('fonts/entypo.svg#svgEntypo') format('svg');
 }
 
-.icon::before {
+.icon-fork::before,
+.icon-download::before {
 	font-family: "Entypo";
 	font-size: 34px;
 	float: left;
 	margin-right: 5px;
 }
 
-.icon.download::before {
-	content: "\E778";
+.icon-fork::before {
+	content: "\1F569";
 }
 
-.icon.fork::before {
-	content: "\1F569";
+.icon-download::before {
+	content: "\E778";
 }
