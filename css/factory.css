@@ -1436,7 +1436,7 @@ pre[data-line] {
 	background-image: -o-linear-gradient(top, #282828 3.5rem, #575757 3.5rem, #383838 3.6rem, #383838 6.7rem, #575757 6.7rem);
 	background-image: linear-gradient(top, #282828 3.5rem, #575757 3.5rem, #383838 3.6rem, #383838 6.7rem, #575757 6.7rem);
 	background-position: top;
-	background-size: 100% 6.7rem;
+	background-size: 100% 6.8rem;
 	color: #fff;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
 	min-height: 3.5rem;
