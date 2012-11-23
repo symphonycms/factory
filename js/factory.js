@@ -48,18 +48,18 @@ var Factory;
 					
 			// Store user profile width
 			if(Factory.userWidth == 0) {
-				Factory.userWidth = Factory.elements.networkUser.find('p').outerWidth() + Factory.elements.networkUserImg.width();
+				Factory.userWidth = Factory.elements.networkUser.find('p').outerWidth();
 			}
 		
-			var space = Factory.elements.network.innerWidth() - Factory.elements.networkLogo.width() - Factory.userWidth;
+			var space = Factory.elements.network.innerWidth() - Factory.elements.networkLogo.outerWidth() - Factory.userWidth;
 						
 			// Substract navigation width, if it's not wrapping
 			if(Factory.elements.networkToolbar.height() <= Factory.elements.networkUserImg.height()) {
-				space = space - Factory.elements.networkNav.width();
+				space = space - Factory.elements.networkNav.outerWidth();
 			}
 			
 			// Collapse user details
-			if(space < Factory.userWidth) {
+			if(space < Factory.userWidth + 10) {
 				Factory.elements.networkUser.addClass('collapsed');
 			}
 			
