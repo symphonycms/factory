@@ -32,29 +32,6 @@ var Factory;
 			Factory.elements.siteTitle = Factory.elements.siteHeader.find('h1');
 			Factory.elements.siteNav = Factory.elements.siteHeader.find('nav');
 			Factory.elements.siteNavItem = Factory.elements.siteNav.find('a');
-			
-			// Init network
-			Factory.initNetwork();
-		},
-		
-	/*-------------------------------------------------------------------------
-		Network
-	-------------------------------------------------------------------------*/
-				
-		initNetwork: function() {
-			Factory.elements.network.height(Factory.elements.network.css('min-height'));
-		},
-
-		showNetwork: function(event) {
-			Factory.elements.network.stop(true).delay(500).animate({
-				height: Factory.elements.network[0].scrollHeight
-			}, 'fast');
-		},
-		
-		hideNetwork: function(event) {
-			Factory.elements.network.stop(true).animate({
-				height: Factory.elements.network.css('min-height')
-			}, 'fast');
 		},
 		
 	/*-------------------------------------------------------------------------
@@ -194,10 +171,6 @@ var Factory;
 
 	$(document).on('ready.factory', function ready() {
 		Factory.init();
-	
-		// Toggle network
-		Factory.elements.network.on('mouseenter.factory', Factory.showNetwork);
-		Factory.elements.network.on('mouseleave.factory', Factory.hideNetwork);
 	
 		// Site navigation
 		$(window).on('resize.factory', Factory.adjustNavigation).trigger('resize.factory');

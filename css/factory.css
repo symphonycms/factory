@@ -364,19 +364,21 @@ body {
 -----------------------------------------------------------------------------*/
 
 form {
-	border: none;
+/*	border: none;
 	margin: 2.4rem -10px 0;
-	padding: 0;
+	padding: 0;*/
 }
 
 fieldset {
-	background: #F5F5F3;
+	padding: 0;
+	border: none;
+/*	background: #F5F5F3;
 	border-radius: 2px;
 	border: 1px solid #C4C4C2;
 	margin: 2.4rem 0 0;
 	width: 100%;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	box-sizing: border-box;*/
 }
 
 input:not([type=checkbox]):not([type=radio]),
@@ -1384,14 +1386,28 @@ pre[data-line] {
 	Style definitions for the network area.
 -----------------------------------------------------------------------------*/
 
-#network {
+.network-wrapper {
 	background-color: #b20b4f;
 	border-bottom: 2px solid #d9d9d9;
 	overflow: hidden;
-	min-height: 3.6rem;
+	max-height: 3.6rem;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
 
-#network::after {
+.network-wrapper:hover {
+	max-height: 30rem;
+	-webkit-transition: all 0.25s ease-in-out 0.5s;
+	-moz-transition: all 0.25s ease-in-out 0.5s;
+	-ms-transition: all 0.25s ease-in-out 0.5s;
+	-o-transition: all 0.25s ease-in-out 0.5s;
+	transition: all 0.25s ease-in-out 0.5s;
+}
+
+.network-wrapper::after {
 	content: none;
 	display: block;
 	clear: both;
@@ -1425,16 +1441,6 @@ pre[data-line] {
 	text-transform: uppercase;
 	white-space: nowrap;
 	position: relative;
-}
-
-.network-toolbar h1::before {
-	content: "\E764";
-	font-family: Entypo;
-	font-weight: normal;
-	position: absolute;
-	left: -15px;
-	top: 1.2rem;
-	color: rgba(255, 255, 255, 0.7);
 }
 
 .network-toolbar:hover h1::before {
@@ -1472,9 +1478,9 @@ pre[data-line] {
 	margin: 0 0.5em;
 }
 
-/* User profile */
+/* User */
 
-.network-profile {
+.network-user {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: rgba(255, 255, 255, 0.85);
@@ -1489,25 +1495,25 @@ pre[data-line] {
 	top: 0;
 }
 
-.network-profile p {
+.network-user p {
 	display: none;
 }
 
-.network-profile img {
+.network-user img {
 	float: none;
 }
 
-.network-profile.expanded {
+.network-user.expanded {
 	background: #141414;
 	width: 196px;
 }
 
-.network-profile.expanded img {
+.network-user.expanded img {
 	float: left;
 	margin-right: none;
 }
 
-.network-profile.expanded p {
+.network-user.expanded p {
 	display: block;
 	font-size: 1.4rem;
 	font-weight: 300;
@@ -1515,17 +1521,41 @@ pre[data-line] {
 	line-height: 3rem;
 }
 
-.network-profile.expanded p strong {
+.network-user.expanded p strong {
 	font-weight: 300;
 	float: right;
 	padding-right: 10px;
+}
+
+/* Profile */
+
+.network-profile {
+	border-bottom: 2px solid #A00947;
+	display: none;
 }
 
 /* Drawer */
 
 .network-drawer {
 	font-family: 'Open Sans', sans-serif;
-	height: 190px;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
+	opacity: 0.5;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+.network-wrapper:hover .network-drawer {
+	margin-top: 0;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-in-out 0.5s;
+	-moz-transition: all 0.3s ease-in-out 0.5s;
+	-ms-transition: all 0.3s ease-in-out 0.5s;
+	-o-transition: all 0.3s ease-in-out 0.5s;
+	transition: all 0.3s ease-in-out 0.5s;
 }
 
 .network-drawer::after {
@@ -1608,27 +1638,6 @@ pre[data-line] {
 	padding: 0;
 	color: #fff;
 	float: left;
-}
-
-/* Profile */
-
-#network .column.user {
-	background: rgba(0, 0, 0, 0.1);
-	height: 100%;
-	margin: 0 -10px 0 20px;
-	padding-top: 18px;
-	padding-left: 10px;
-	width: 196px;
-}
-
-#network .column.user h2 {
-	border-color: rgba(0, 0, 0, 0.1);
-	margin-right: 0;
-}
-
-#network .column.user ul {
-	padding-left: 0;
-	margin-left: 0;
 }
 
 /*-----------------------------------------------------------------------------
