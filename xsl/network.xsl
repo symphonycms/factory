@@ -7,7 +7,7 @@
 		<!-- Main navigation -->
 		<header class="network-toolbar field collapsed">
 			<div class="centered">
-				<h1 class="column one">
+				<h1 class="network-logo column one">
 					<a href="{$config/root}/docs/about.xml">Symphony Network</a>
 				</h1>
 				<nav class="network-nav column">
@@ -19,7 +19,11 @@
 				</nav>
 				<div id="user" class="network-user">
 					<img src="{$config/root}/img/user.png" width="36" height="36" alt="Allen Chang" />
-					<p>Allen Chang <strong>+15</strong></p>
+					<p>
+						<a href="http://getsymphony.com/get-involved/currently-online/" class="network-visitors">15</a>
+						<xsl:text> + </xsl:text>
+						<a href="http://getsymphony.com/get-involved/member/Allen/" class="network-username">Allen Chang</a>
+					</p>
 				</div>
 			</div>
 		</header>

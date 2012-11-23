@@ -25,13 +25,48 @@ var Factory;
 			// Cache elements
 			Factory.elements.body = $('body');
 			Factory.elements.network = $('#network');
-			Factory.elements.networkToggle = Factory.elements.network.find('header h1');
+			Factory.elements.networkToolbar = Factory.elements.network.find('.network-toolbar');
+			Factory.elements.networkLogo = Factory.elements.networkToolbar.find('.network-logo');
+			Factory.elements.networkNav = Factory.elements.network.find('.network-nav');			
+			Factory.elements.networkUser = Factory.elements.network.find('.network-user');			
+			Factory.elements.networkUserImg = Factory.elements.networkUser.find('img');			
 			Factory.elements.drawer = Factory.elements.network.find('.network-drawer');
 			Factory.elements.site = $('#site');
 			Factory.elements.siteHeader = Factory.elements.site.find('> header');
 			Factory.elements.siteTitle = Factory.elements.siteHeader.find('h1');
 			Factory.elements.siteNav = Factory.elements.siteHeader.find('nav');
 			Factory.elements.siteNavItem = Factory.elements.siteNav.find('a');
+		},
+
+	/*-------------------------------------------------------------------------
+		Network user
+	-------------------------------------------------------------------------*/
+	
+		userWidth: 0,
+	
+		adjustNetworkUser: function(event) {
+					
+			// Store user profile width
+			if(Factory.userWidth == 0) {
+				Factory.userWidth = Factory.elements.networkUser.find('p').outerWidth() + Factory.elements.networkUserImg.width();
+			}
+		
+			var space = Factory.elements.network.innerWidth() - Factory.elements.networkLogo.width() - Factory.userWidth;
+						
+			// Substract navigation width, if it's not wrapping
+			if(Factory.elements.networkToolbar.height() <= Factory.elements.networkUserImg.height()) {
+				space = space - Factory.elements.networkNav.width();
+			}
+			
+			// Collapse user details
+			if(space < Factory.userWidth) {
+				Factory.elements.networkUser.addClass('collapsed');
+			}
+			
+			// Expand user details
+			else {
+				Factory.elements.networkUser.removeClass('collapsed');
+			}
 		},
 		
 	/*-------------------------------------------------------------------------
@@ -171,6 +206,8 @@ var Factory;
 
 	$(document).on('ready.factory', function ready() {
 		Factory.init();
+
+		$(window).on('resize.factory', Factory.adjustNetworkUser).trigger('resize.factory');
 	
 		// Site navigation
 		$(window).on('resize.factory', Factory.adjustNavigation).trigger('resize.factory');

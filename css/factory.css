@@ -1434,13 +1434,13 @@ pre[data-line] {
 .network-toolbar h1 {
 	padding: 1rem 0;
 	overflow: visible;
-	line-height: 1.5rem;
 	font-size: 1.5rem;
 	font-weight: 600;
 	letter-spacing: 0.075em;
 	text-transform: uppercase;
 	white-space: nowrap;
 	position: relative;
+	line-height: 1.5rem;
 }
 
 .network-toolbar a {
@@ -1450,14 +1450,16 @@ pre[data-line] {
 	-ms-transition: color 0.2s ease-in-out;
 	-o-transition: color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out;
+	line-height: 1;
 }
 
 /* Network navigation */
 
 .network-nav {
 	width: auto;
-	padding: 0.5rem 50px 0.5rem 0;
+	padding: 1rem 50px 0.5rem 0;
 	position: relative;
+	line-height: 1.5rem;
 }
 
 .network-nav::before {
@@ -1476,7 +1478,7 @@ pre[data-line] {
 	font-weight: 300;
 	float: left;
 	display: inline-block;
-	padding: 0.5rem 0;
+	padding: 0 0 0.5rem;
 }
 
 .network-nav a:hover {
@@ -1492,49 +1494,41 @@ pre[data-line] {
 /* User */
 
 .network-user {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	color: rgba(255, 255, 255, 0.85);
-	cursor: pointer;
-	font-family: 'Open Sans', sans-serif;
-	width: 3.6rem;
-	height: 3.6rem;
-	display: block;
 	position: absolute;
-	right: 20px;
+	right: 30px;
 	top: 0;
-}
-
-.network-user p {
-	display: none;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .network-user img {
-	float: none;
+	float: right;
 }
 
-.network-user.expanded {
-	background: #141414;
-	width: 196px;
-}
-
-.network-user.expanded img {
-	float: left;
-	margin-right: none;
-}
-
-.network-user.expanded p {
+.network-user p {
+	float: right;
 	display: block;
 	font-size: 1.4rem;
 	font-weight: 300;
-	padding: 0.5rem 0 0 46px;
-	line-height: 3rem;
+	padding: 0.5rem 10px 0 0 ;
+/*	line-height: 3rem;*/
+	color: rgba(255, 255, 255, 0.7);
 }
 
-.network-user.expanded p strong {
-	font-weight: 300;
-	float: right;
-	padding-right: 10px;
+.network-user a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.network-user a:hover {
+	color: #fff;
+}
+
+.network-user .network-visitors {
+	margin-left: 7px;
+}
+
+.network-user.collapsed {
+	width: 3.6rem;
 }
 
 /* Profile */
