@@ -225,12 +225,17 @@ body {
 }
 
 /**
- * Adjusted column sizes based on the layout mode 
+ * Adjusted column sizes based on the layout mode, 
+ * columns can also be hidden in the given mode
  */
 
 /* Small */
 
 @media all and (min-width: 648px) and (max-width: 853px) {
+	
+	.small-hide {
+		display: none;
+	}
 
 	.small-one {
 		width: 176px;
@@ -257,6 +262,10 @@ body {
 /* Medium */
 
 @media all and (min-width: 854px) and (max-width: 1059px) {
+	
+	.medium-hide {
+		display: none;
+	}
 
 	.medium-one {
 		width: 176px;
@@ -283,6 +292,10 @@ body {
 /* Large */
 
 @media all and (min-width: 1060px) {
+	
+	.large-hide {
+		display: none;
+	}
 
 	.large-one {
 		width: 176px;
