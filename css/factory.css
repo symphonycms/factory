@@ -225,6 +225,89 @@ body {
 }
 
 /**
+ * Adjusted column sizes based on the layout mode 
+ */
+
+/* Small */
+
+@media all and (min-width: 648px) and (max-width: 853px) {
+
+	.small-one {
+		width: 176px;
+	}
+	
+	.small-two {
+		width: 382px;
+	}
+	
+	.small-three {
+		width: 588px;
+	}
+	
+	.small-four {
+		width: 793px;
+	}
+	
+	.small-five {
+		width: 1000px;
+	}
+
+}
+
+/* Medium */
+
+@media all and (min-width: 854px) and (max-width: 1059px) {
+
+	.medium-one {
+		width: 176px;
+	}
+	
+	.medium-two {
+		width: 382px;
+	}
+	
+	.medium-three {
+		width: 588px;
+	}
+	
+	.medium-four {
+		width: 793px;
+	}
+	
+	.medium-five {
+		width: 1000px;
+	}
+
+}
+
+/* Large */
+
+@media all and (min-width: 1060px) {
+
+	.large-one {
+		width: 176px;
+	}
+	
+	.large-two {
+		width: 382px;
+	}
+	
+	.large-three {
+		width: 588px;
+	}
+	
+	.large-four {
+		width: 793px;
+	}
+	
+	.large-five {
+		width: 1000px;
+	}
+
+}
+
+
+/**
  * Columns by width with one additional module:
  * useful for deliberately breaking the grid by adding half a column
  */
