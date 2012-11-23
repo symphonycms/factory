@@ -1443,12 +1443,13 @@ pre[data-line] {
 	position: relative;
 }
 
-.network-toolbar:hover h1::before {
-	color: #fff;
-}
-
 .network-toolbar a {
 	color: #fff;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
 }
 
 /* Network navigation */
@@ -1488,7 +1489,6 @@ pre[data-line] {
 	font-family: 'Open Sans', sans-serif;
 	width: 3.6rem;
 	height: 3.6rem;
-/*	float: right;*/
 	display: block;
 	position: absolute;
 	right: 20px;
@@ -1539,7 +1539,7 @@ pre[data-line] {
 .network-drawer {
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 2.5rem;
-	margin-bottom: 2.5rem;
+	margin-bottom: 0;
 	opacity: 0.5;
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
@@ -1550,6 +1550,7 @@ pre[data-line] {
 
 .network-wrapper:hover .network-drawer {
 	margin-top: 0;
+	margin-bottom: 2.5rem;
 	opacity: 1;
 	-webkit-transition: all 0.3s ease-in-out 0.5s;
 	-moz-transition: all 0.3s ease-in-out 0.5s;
