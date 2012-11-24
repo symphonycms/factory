@@ -1426,6 +1426,11 @@ pre[data-line] {
 	clear: both;
 }
 
+.network-wrapper ::selection,
+.network-wrapper ::-moz-selection {
+	background: rgba(255, 255, 255, 0.2);
+}
+
 /* Network toolbar */
 
 .network-toolbar {
