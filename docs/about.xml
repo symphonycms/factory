@@ -32,46 +32,45 @@
 		</div>
 		
 		<!-- Features -->
-		<div class="field">
-			<h2>Factory Features</h2>
+		<div class="field tiles">
 			<div class="column one">
-				<h3>Grids</h3>
+				<h3>Layouts</h3>
 				<img src="img/factory_grids.png" width="176" height="96" alt="Grids" />
 				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				<p>
-					<a href="grids.htm">More about the grid.</a>
-				</p>
-			</div>
-			<div class="column one">
-				<h3>Layouts</h3>
-				<img src="img/factory_layouts.png" width="176" height="96" alt="Layouts" />
-				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-				<p>
-					<a href="layouts.htm">More about the layouts.</a>
+					<a href="grids.htm">More about layouts.</a>
 				</p>
 			</div>
 			<div class="column one">
 				<h3>Snippets</h3>
+				<img src="img/factory_layouts.png" width="176" height="96" alt="Layouts" />
+				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p>
+					<a href="layouts.htm">More about snippets.</a>
+				</p>
+			</div>
+			<div class="column one">
+				<h3>Styles</h3>
 				<img src="img/factory_snippets.png" width="176" height="96" alt="Snippets" />
 				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				<p>
-					<a href="snippets.htm">More about the snippets.</a>
+					<a href="snippets.htm">More about styles.</a>
 				</p>
 			</div>
 			<div class="column one">
-				<h3>Typography</h3>
+				<h3>Scripts</h3>
 				<img src="img/factory_typography.png" width="176" height="96" alt="Typography" />
 				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				<p>
-					<a href="typography.htm">More on the typography.</a>
+					<a href="typography.htm">More about scripts.</a>
 				</p>
 			</div>
 			<div class="column one">
-				<h3>Network</h3>
+				<h3>Examples</h3>
 				<img src="img/factory_network.png" width="176" height="96" alt="Network" />
 				<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				<p>
-					<a href="network.htm">More about the network.</a>
+					<a href="network.htm">See some examples.</a>
 				</p>
 			</div>
 		</div>

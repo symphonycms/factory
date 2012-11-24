@@ -63,6 +63,15 @@
 				<!-- Content -->
 				<xsl:copy-of select="data/content/*" />
 			</div>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="field centered">
+					<p><strong>Symphony</strong> is your personally tailored content management framework <br /><a href="http://getsymphony.com">International Site</a> · <a href="">Requirements</a> · <a href="">MIT Licence</a></p>
+					<p class="footer-links">
+						<a href="http://github.com/symphonycms" class="logo-github">Github</a> <a href="http://twitter.com/symphonycms" class="logo-twitter">Twitter</a></p>
+				</div>
+			</footer>
 		</body>
 	</html>
 </xsl:template>

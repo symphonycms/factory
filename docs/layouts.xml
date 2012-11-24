@@ -5,69 +5,129 @@
 	<content>
 		
 		<!-- Introduction -->
-		<div class="field">
+		<section>
 			<header>
-				<h2>Introduction to Factory's basic markup</h2>
+				<h2>Introduction to Layouts</h2>
 			</header>
 			<p class="column five">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
-		</div>
+			
+			<!-- Grid -->
+			<div class="field">
+				<h3>Grid System</h3>
+				<div class="column sidebar">
+					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				</div>
+				<div class="column content">
+				
+				</div>
+			</div>
+			
+			<!-- Fluid -->
+			<div class="field">
+				<h3>Fluid Layout</h3>
+				<div class="column sidebar">
+					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				</div>
+				<div class="column content">
+				
+				</div>
+			</div>
+			
+			<!-- Small -->
+			<div class="field">
+				<h3>Small Layout</h3>
+				<div class="column sidebar">
+					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				</div>
+				<div class="column content">
+				
+				</div>
+			</div>
+			
+			<!-- Medium -->
+			<div class="field">
+				<h3>Medium Layout</h3>
+				<div class="column sidebar">
+					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				</div>
+				<div class="column content">
+					Test
+				</div>
+			</div>
+			
+			<!-- Large -->
+			<div class="field">
+				<h3>Large Layout</h3>
+				<div class="column sidebar">
+					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				</div>
+				<div class="column content">
+					Test
+				</div>
+			</div>
+		</section>
 		
 		<!-- HTML -->
-		<div class="field">
-			<h3>HTML Skeleton</h3>
-			<div class="column sidebar">
-				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+		<section>
+			<header>
+				<h2>Basic Markup</h2>
+			</header>
+			<div class="field">
+				<h3>HTML Skeleton</h3>
+				<div class="column sidebar">
+					<p class="annotation">Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>				
+				</div>
+				<div class="column content language-markup">
+					<pre><code><![CDATA[<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+			<title>Site title</title>
+			
+			<!-- Webfonts, see http://symphonycms.github.com/factory/docs/typography.xml -->
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+			
+			<!-- Styles for code highlighting -->
+			<link media="screen" href="css/prism.css" type="text/css" rel="stylesheet" />
+			
+			<!-- Main Factory styles -->
+			<link media="screen" href="css/factory.css" type="text/css" rel="stylesheet" />
+			
+			<!-- JavaScript libraries -->
+			<script type="text/javascript" src="js/jquery.js"></script>
+			<script type="text/javascript" src="js/modernizr.js"></script>
+			<script type="text/javascript" src="js/prism.js"></script>
+			
+			<!-- Main Factory scripts -->
+			<script type="text/javascript" src="js/factory.js"></script>
+			
+			<!-- Include this during development to make use of the visual grid -->
+			<script type="text/javascript" src="js/factory.grid.js"></script>
+		</head>
+		<body>
+		
+			<!-- Symphony Network toolbar, see http://symphonycms.github.com/factory/docs/layouts.xml#chapter_network -->
+			<aside id="network"></aside>
+		
+			<!-- Site content, see below -->
+			<div id="site"></div>
+		</body>
+	</html>]]></code></pre>
+				</div>
 			</div>
-			<div class="column content language-markup">
-				<pre><code><![CDATA[<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Site title</title>
-		
-		<!-- Webfonts -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-		
-		<!-- Styles for code highlighting -->
-		<link media="screen" href="css/prism.css" type="text/css" rel="stylesheet" />
-		
-		<!-- Main Factory styles -->
-		<link media="screen" href="css/factory.css" type="text/css" rel="stylesheet" />
-		
-		<!-- JavaScript libraries -->
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/modernizr.js"></script>
-		<script type="text/javascript" src="js/prism.js"></script>
-		
-		<!-- Main Factory scripts -->
-		<script type="text/javascript" src="js/factory.js"></script>
-		
-		<!-- Include this during development to make use of the visual grid -->
-		<script type="text/javascript" src="js/factory.grid.js"></script>
-	</head>
-	<body>
-	
-		<!-- Symphony Network toolbar, see below -->
-		<aside id="network"></aside>
-	
-		<!-- Site content, see below -->
-		<div id="site"></div>
-	</body>
-</html>]]></code></pre>
-			</div>
-		</div>
+		</section>
 		
 		<!-- Network -->
 		<section>
 			<header>
-				<h2>Network</h2>
+				<h2 id="chapter_network">Network</h2>
 			</header>
 			
 			<!-- XSL -->
 			<div class="field">
 				<h3>Including the Toolbar</h3>
 				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 				</div>
 				<div class="column content language-markup">
 					<pre><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
@@ -87,7 +147,7 @@
 			<div class="field">
 				<h3>Toolbar Output</h3>
 				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 				</div>
 				<div class="column content language-markup">
 					<pre><code><![CDATA[<aside id="network">
@@ -161,7 +221,7 @@
 			<div class="field">
 				<h3>Site Header</h3>
 				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 				</div>
 				<div class="column content language-markup">
 					<pre><code><![CDATA[<header class="site">
@@ -185,7 +245,7 @@
 			<div class="field">
 				<h3>Content fields</h3>
 				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 				</div>
 				<div class="column content language-markup">
 					<pre><code></code></pre>
@@ -196,7 +256,7 @@
 			<div class="field">
 				<h3>Columns</h3>
 				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 				</div>
 				<div class="column content language-markup">
 					<pre><code></code></pre>

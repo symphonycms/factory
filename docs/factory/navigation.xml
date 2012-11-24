@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
 	<nav href="about.xml">About</nav>
-	<nav href="grid.xml">Grid</nav>
 	<nav href="layouts.xml">Layouts</nav>
 	<nav href="snippets.xml">Snippets</nav>
-	<nav href="forms.xml">Forms</nav>
-	<nav href="typography.xml">Typography</nav>
-	<nav href="network.xml">Network</nav>
+	<nav href="styles.xml">Styles</nav>
+	<nav href="scripts.xml">Scripts</nav>
 	<nav href="examples.xml">Examples</nav>
 </data>
