@@ -1411,6 +1411,7 @@ pre[data-line] {
 	transition: all 0.25s ease-in-out;
 }
 
+.network-wrapper.open,
 .network-wrapper:hover {
 	max-height: 60rem;
 	-webkit-transition: all 0.25s ease-in-out 0.5s;
