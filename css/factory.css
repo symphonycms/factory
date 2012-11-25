@@ -638,7 +638,7 @@ header.site nav a:hover {
 
 /* Collapsed site header */
 
-header.site.collapsed nav {
+header.site.action-collapse nav {
 	clear: left;
 	text-align: left;
 	margin-left: -9px;
@@ -650,7 +650,7 @@ header.site.collapsed nav {
 	overflow: hidden;
 }
 
-header.site.collapsed nav::before {
+header.site.action-collapse nav::before {
 	content: "\2630";
 	font-size: 2.9rem;
 	line-height: 1;
@@ -660,7 +660,7 @@ header.site.collapsed nav::before {
 	right: 30px;
 }
 
-header.site.collapsed nav.open {
+header.site.action-collapse nav.action-open {
 	padding: .6rem 0 0.6rem;
 	min-height: 2.4rem;
 	height: auto;
@@ -1411,7 +1411,7 @@ pre[data-line] {
 	transition: all 0.25s ease-in-out;
 }
 
-.network-wrapper.open,
+.network-wrapper.action-open,
 .network-wrapper:hover {
 	max-height: 60rem;
 	-webkit-transition: all 0.25s ease-in-out 0.5s;
@@ -1548,7 +1548,7 @@ pre[data-line] {
 	margin-left: 7px;
 }
 
-.network-user.collapsed p {
+.network-user.action-collapse p {
 	display: none;
 }
 
@@ -1572,7 +1572,7 @@ pre[data-line] {
 	transition: all 0.25s ease-in-out;
 }
 
-.network-wrapper.open .network-drawer
+.network-wrapper.action-open .network-drawer,
 .network-wrapper:hover .network-drawer {
 	margin-top: 0;
 	margin-bottom: 2.5rem;

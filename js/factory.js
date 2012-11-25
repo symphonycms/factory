@@ -47,7 +47,7 @@ var Factory;
 	-------------------------------------------------------------------------*/
 	
 		toggleNetwork: function(event) {
-			Factory.elements.network.toggleClass('open');
+			Factory.elements.network.toggleClass('action-open');
 		},
 
 	/*-------------------------------------------------------------------------
@@ -72,12 +72,12 @@ var Factory;
 			
 			// Collapse user details
 			if(space < Factory.userWidth + 10) {
-				Factory.elements.networkUser.addClass('collapsed');
+				Factory.elements.networkUser.addClass('action-collapse');
 			}
 			
 			// Expand user details
 			else {
-				Factory.elements.networkUser.removeClass('collapsed');
+				Factory.elements.networkUser.removeClass('action-collapse');
 			}
 		},
 
@@ -109,18 +109,18 @@ var Factory;
 			
 			// Collapse navigation
 			if(space < 10) {
-				Factory.elements.siteHeader.addClass('collapsed');
+				Factory.elements.siteHeader.addClass('action-collapse');
 			}
 			
 			// Expand navigation
 			else {
-				Factory.elements.siteHeader.removeClass('collapsed');
-				Factory.elements.siteNav.removeClass('open');
+				Factory.elements.siteHeader.removeClass('action-collapse');
+				Factory.elements.siteNav.removeClass('action-open');
 			}
 		},
 		
 		toggleNavigation: function(event) {
-			Factory.elements.siteNav.toggleClass('open');
+			Factory.elements.siteNav.toggleClass('action-open');
 		},
 
 	/*-------------------------------------------------------------------------

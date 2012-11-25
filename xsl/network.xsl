@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="network">
-	<aside id="network" class="network-wrapper">
+	<aside id="network" class="network-wrapper action-open">
 	
 		<!-- Main navigation -->
 		<header class="network-toolbar field collapsed">
