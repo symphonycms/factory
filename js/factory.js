@@ -30,12 +30,16 @@ var Factory;
 			Factory.elements.networkNav = Factory.elements.network.find('.network-nav');			
 			Factory.elements.networkUser = Factory.elements.network.find('.network-user');			
 			Factory.elements.networkUserImg = Factory.elements.networkUser.find('img');			
-			Factory.elements.drawer = Factory.elements.network.find('.network-drawer');
+			Factory.elements.networkProfile = Factory.elements.network.find('.network-profile');
+			Factory.elements.networkDrawer = Factory.elements.network.find('.network-drawer');
 			Factory.elements.site = $('#site');
 			Factory.elements.siteHeader = Factory.elements.site.find('> header');
 			Factory.elements.siteTitle = Factory.elements.siteHeader.find('h1');
 			Factory.elements.siteNav = Factory.elements.siteHeader.find('nav');
 			Factory.elements.siteNavItem = Factory.elements.siteNav.find('a');
+			
+			// Init profile
+			Factory.initNetworkProfile();
 		},
 
 	/*-------------------------------------------------------------------------
@@ -76,7 +80,15 @@ var Factory;
 				Factory.elements.networkUser.removeClass('collapsed');
 			}
 		},
-		
+
+	/*-------------------------------------------------------------------------
+		Network profile
+	-------------------------------------------------------------------------*/
+	
+		initNetworkProfile: function() {
+//			Factory.elements.networkProfile.hide();
+		},
+
 	/*-------------------------------------------------------------------------
 		Site navigation
 	-------------------------------------------------------------------------*/
