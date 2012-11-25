@@ -39,6 +39,14 @@ var Factory;
 		},
 
 	/*-------------------------------------------------------------------------
+		Network toggling
+	-------------------------------------------------------------------------*/
+	
+		toggleNetwork: function(event) {
+			Factory.elements.network.toggleClass('open');
+		},
+
+	/*-------------------------------------------------------------------------
 		Network user
 	-------------------------------------------------------------------------*/
 	
@@ -208,6 +216,9 @@ var Factory;
 		Factory.init();
 
 		$(window).on('resize.factory', Factory.adjustNetworkUser).trigger('resize.factory');
+		
+		// Network
+		Factory.elements.network.on('touchstart.factory', Factory.toggleNetwork);
 	
 		// Site navigation
 		$(window).on('resize.factory', Factory.adjustNavigation).trigger('resize.factory');

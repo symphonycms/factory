@@ -1572,6 +1572,7 @@ pre[data-line] {
 	transition: all 0.25s ease-in-out;
 }
 
+.network-wrapper.open .network-drawer
 .network-wrapper:hover .network-drawer {
 	margin-top: 0;
 	margin-bottom: 2.5rem;
