@@ -53,12 +53,10 @@
 				</fieldset>
 				<fieldset class="column two small-one">
 					<label for="form-bio">Bio</label>
-					<textarea rows="9" name="fields[bio]">Cras mattis consectetur purus sit amet fermentum.</textarea>
+					<textarea rows="7" name="fields[bio]">Cras mattis consectetur purus sit amet fermentum.</textarea>
+					<a class="button" href="../../member/Nils/">Cancel</a>
+					<input id="submit-profile" class="button" type="submit" name="action[members-edit]" value="Submit Changes" />
 				</fieldset>
-				<div id="submission">
-					<input id="submit" type="submit" name="action[members-edit]" value="Submit Changes" />
-					<a id="cancel" href="../../member/Nils/">Cancel and go back</a>
-				</div>
 			</form>
 		</div>
 		
