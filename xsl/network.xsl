@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template name="network">
-	<aside id="network" class="network-wrapper action-open">
+	<aside id="network" class="network-wrapper">
 	
 		<!-- Main navigation -->
 		<header class="network-toolbar field collapsed">
@@ -24,7 +24,7 @@
 					<p>
 						<a href="http://getsymphony.com/get-involved/currently-online/" class="network-visitors">15</a>
 						<xsl:text> + </xsl:text>
-						<a href="http://getsymphony.com/get-involved/member/Allen/" class="network-username">Allen Chang</a>
+						<a class="network-username">Allen Chang</a>
 					</p>
 				</div>
 			</div>
@@ -35,27 +35,31 @@
 			<form class="centered">
 				
 				<!-- Gravatar -->
-				<div class="column one">
-					<img src="{$config/root}/img/user.png" width="176" height="176" alt="Allen Chang" />
-					<p>Change at <a href="http://gravatar.com">Gravatar</a>.</p>
+				<div class="network-gravatar column one">
+					<img src="{$config/root}/img/user.png" width="174" height="174" alt="Allen Chang" />
+					<p>Change your avatar at <a href="http://gravatar.com">Gravatar</a>.</p>
 				</div>
 				
 				<!-- Information -->
 				<fieldset class="column one large-two">
-					<label for="form-name">Name</label>
-					<input id="form-name" type="text" name="fields[name]" value="Allen Chang" />
-					<label for="form-email-address">Email (Private)</label>
-					<input id="form-email-address" type="text" name="fields[email-address]" value="team@getsymphony.com" />
-					<label for="form-city">Location</label>
-					<input id="form-city" type="text" name="fields[location]" value="Symphony Land" />
-					<label for="form-website">Website</label>
-					<input id="form-website" type="text" name="fields[website]" value="http://getsymphony.com" />
+					<label for="profile-username" class="restricted">Username</label>
+					<input id="profile-username" type="text" name="fields[username]" value="Allen" readonly="readonly" />
+					<label for="profile-name">Name</label>
+					<input id="profile-name" type="text" name="fields[name]" value="Allen Chang" />
+					<label for="profile-email-address">Email (Private)</label>
+					<input id="profile-email-address" type="text" name="fields[email-address]" value="team@getsymphony.com" />
+					<label for="profile-city">Location</label>
+					<input id="profile-city" type="text" name="fields[location]" value="Symphony Land" />
 				</fieldset>
 				<fieldset class="column two small-one">
-					<label for="form-bio">Bio</label>
+					<label for="profile-website">Website</label>
+					<input id="profile-website" type="text" name="fields[website]" value="http://getsymphony.com" />
+					<label for="profile-bio">Bio</label>
 					<textarea rows="7" name="fields[bio]">Cras mattis consectetur purus sit amet fermentum.</textarea>
-					<a class="button" href="../../member/Nils/">Cancel</a>
-					<input id="submit-profile" class="button" type="submit" name="action[members-edit]" value="Submit Changes" />
+					<div class="profile-controls">
+						<button id="submit-profile" class="button-save" type="submit" name="action[members-edit]">Save Profile</button>
+						<a class="button-cancel" href="../../member/Nils/">Cancel</a>
+					</div>
 				</fieldset>
 			</form>
 		</div>

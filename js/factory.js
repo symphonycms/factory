@@ -29,6 +29,7 @@ var Factory;
 			Factory.elements.networkLogo = Factory.elements.networkToolbar.find('.network-logo');
 			Factory.elements.networkNav = Factory.elements.network.find('.network-nav');			
 			Factory.elements.networkUser = Factory.elements.network.find('.network-user');			
+			Factory.elements.networkUsername = Factory.elements.network.find('.network-username');			
 			Factory.elements.networkUserImg = Factory.elements.networkUser.find('img');			
 			Factory.elements.networkProfile = Factory.elements.network.find('.network-profile');
 			Factory.elements.networkDrawer = Factory.elements.network.find('.network-drawer');
@@ -86,7 +87,13 @@ var Factory;
 	-------------------------------------------------------------------------*/
 	
 		initNetworkProfile: function() {
-//			Factory.elements.networkProfile.hide();
+			Factory.elements.networkProfile.addClass('action-profile-hide');
+			Factory.elements.networkUsername.on('click.factory', Factory.toggleNetworkProfile);
+		},
+		
+		toggleNetworkProfile: function(event) {
+			Factory.elements.network.toggleClass('action-profile-open');
+			Factory.elements.networkProfile.addClass('action-profile-animate').toggleClass('action-profile-hide');
 		},
 
 	/*-------------------------------------------------------------------------
