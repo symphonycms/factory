@@ -201,6 +201,7 @@ input, select, textarea {
 .column.content {
 	float: right;
 	width: 794px;
+	margin-right: 30px;
 }
 
 /* Columns by width */
