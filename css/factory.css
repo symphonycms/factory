@@ -530,7 +530,7 @@ h3 {
 h4 {
 	font-size: 1.8rem;
 	font-weight: 400;
-	margin: 1.8rem 0 0.6rem;
+	margin: 2.2rem 0 0.6rem;
 	padding: 0;
 	max-width: 592px;
 }
@@ -553,16 +553,18 @@ article {
 
 /* Main site header */
 
-header.site {
+.site-header {
 	border-bottom: 1px solid #CFCFCF;
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
 	margin-bottom: 2.4rem;
 	padding: 3.2rem 30px 1.2rem;
 	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
-header.site::before,
-header.site::after {
+.site-header::before,
+.site-header::after {
 	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
 	background: -moz-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
 	background: -ms-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
@@ -577,7 +579,7 @@ header.site::after {
 	width: 20px;
 }
 
-header.site::after {
+.site-header::after {
 	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
 	background: -moz-linear-gradient(left, rgba(251, 253, 251, 0) 0%,rgba(251, 253, 251, 1) 100%);
 	background: -ms-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
@@ -587,7 +589,7 @@ header.site::after {
 	right: 0;
 }
 
-header.site h1 {
+.site-header h1 {
 	background: url(../img/logo.png) -1px 0 no-repeat;
 	float: left;
 	text-rendering: optimizeLegibility;
@@ -595,18 +597,18 @@ header.site h1 {
 	white-space: nowrap;
 }
 
-.svg header.site h1 {
+.svg .site-header h1 {
 	background-image: url(../img/logo.svg);
 }
 
-header.site h1 span {
+.site-header h1 span {
 	float: left;
 	height: 35px;
 	text-indent: -1000em;
 	width: 203px;
 }
 
-header.site nav {
+.site-header nav {
 	text-align: right;
 	margin-right: -10px;
 	padding: 1rem 0 0.6rem;
@@ -614,13 +616,13 @@ header.site nav {
 	clear: none;
 }
 
-.js header.site nav {
+.js .site-header nav {
 	height: 2.4rem;
 	text-overflow: clip;
 	white-space: nowrap;
 }
 
-header.site nav a {
+.site-header nav a {
 	border: 1px solid transparent;
 	color: #000;
 	font-size: 1.5rem;
@@ -629,17 +631,17 @@ header.site nav a {
 	display: inline-block;
 }
 
-header.site nav a.active {
+.site-header nav a.active {
 	font-weight: 700;
 }
 
-header.site nav a:hover {
+.site-header nav a:hover {
 	color: #B20B4F;
 }
 
 /* Collapsed site header */
 
-header.site.action-collapse nav {
+.site-header.action-collapse nav {
 	clear: left;
 	text-align: left;
 	margin-left: -9px;
@@ -651,7 +653,7 @@ header.site.action-collapse nav {
 	overflow: hidden;
 }
 
-header.site.action-collapse nav::before {
+.site-header.action-collapse nav::before {
 	content: "\2630";
 	font-size: 2.9rem;
 	line-height: 1;
@@ -661,7 +663,7 @@ header.site.action-collapse nav::before {
 	right: 30px;
 }
 
-header.site.action-collapse nav.action-open {
+.site-header.action-collapse nav.action-open {
 	padding: .6rem 0 0.6rem;
 	min-height: 2.4rem;
 	height: auto;
@@ -1878,12 +1880,29 @@ pre[data-line] {
 }
 
 /*-----------------------------------------------------------------------------
+	Tiles:
+
+	Styling for additional information in a fixed grid.
+-----------------------------------------------------------------------------*/
+
+.tiles {
+	border-top: 1px solid #B6B6B6;
+	border-bottom: 1px solid #B6B6B6;
+}
+
+.tiles h3 {
+	font-size: 2.2rem;
+	font-weight: 300;
+	border-bottom: 1px solid #A8A8A8;
+}
+
+/*-----------------------------------------------------------------------------
 	Footer:
 
 	Style definitions for the footer.
 -----------------------------------------------------------------------------*/
 
-#footer {
+.network-footer {
 	background: #282828;
 	width: 100%;
 	clear: both;
@@ -1891,28 +1910,28 @@ pre[data-line] {
 	overflow: hidden;
 }
 
-#footer a {
+.network-footer a {
 	color: #fff;
 }
 
-#footer p {
+.network-footer p {
 	float: left;
 }
 
-#footer p.footer-links {
+.network-footer p.footer-links {
 	float: right;	
 }
 
-#footer a[class^=logo]::before {
+.network-footer a[class^=logo]::before {
 	font-family: Entypo;
 	font-size: 2rem;
 }
 
-#footer a.logo-github::before {
+.network-footer a.logo-github::before {
 	content: "\F300";
 }
 
-#footer a.logo-twitter::before {
+.network-footer a.logo-twitter::before {
 	content: "\F315";
 }
 
