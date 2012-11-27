@@ -205,6 +205,14 @@ input, select, textarea {
 	margin-right: 30px;
 }
 
+@media all and (max-width: 1059px) {
+
+	.column.content {
+		width: 588px;
+	}
+
+}
+
 /* Columns by width */
 
 .one {
