@@ -76,6 +76,7 @@ input, select, textarea {
 .centered {
 	margin: 0 auto;
 	width: 100%;
+	position: relative;
 }
 
 /* Fluid */
@@ -370,6 +371,50 @@ input, select, textarea {
 		width: auto;
 	}
 
+}
+
+/*-----------------------------------------------------------------------------
+	Tiles:
+
+	Styling for additional information in a fixed grid.
+-----------------------------------------------------------------------------*/
+
+.tiles {
+	border-bottom: 1px solid #B6B6B6;
+	margin-top: 2.7rem; /* to do: fix this – tiles should automatically fit to the grid */
+	margin-bottom: 8rem;
+	padding-left: 30px;
+	background-image: -webkit-linear-gradient(#B6B6B6 0.1rem, transparent 0.1rem);
+	background-size: 100% 32.3rem;
+	overflow: hidden;
+}
+
+.tiles .tile {
+	border-right: 1px solid #B6B6B6;
+	padding: 0 14px 0 15px;
+	float: left;
+	height: 32.3rem;
+	clear: none;
+}
+
+.tiles .tile::before {
+	content: "";
+	display: block;
+	background: #FBFDFB;
+	width: 1px;
+	height: 32.2rem;
+	position: absolute;
+	right: 30px;
+	margin-top: 0.1rem;
+}
+
+.tiles h3 {
+	font-size: 2.2rem;
+	font-weight: 300;
+	border-bottom: 1px solid #A8A8A8;
+	padding-bottom: 1.3rem;
+	margin-top: 2.2rem;
+	margin-bottom: 1.8rem;
 }
 
 /*-----------------------------------------------------------------------------
@@ -733,7 +778,7 @@ footer.author.bottom em {
 -----------------------------------------------------------------------------*/
 
 p {
-	margin: 0 30px 1.2rem;
+	margin: 0 0 1.2rem;
 	max-width: 556px;
 	padding: 0;
 }
@@ -1878,23 +1923,6 @@ pre[data-line] {
 	padding: 0;
 	color: #fff;
 	float: left;
-}
-
-/*-----------------------------------------------------------------------------
-	Tiles:
-
-	Styling for additional information in a fixed grid.
------------------------------------------------------------------------------*/
-
-.tiles {
-	border-top: 1px solid #B6B6B6;
-	border-bottom: 1px solid #B6B6B6;
-}
-
-.tiles h3 {
-	font-size: 2.2rem;
-	font-weight: 300;
-	border-bottom: 1px solid #A8A8A8;
 }
 
 /*-----------------------------------------------------------------------------

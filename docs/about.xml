@@ -32,44 +32,44 @@
 		</div>
 		
 		<!-- Features -->
-		<div class="field tiles">
+		<aside class="field tiles">
 			<div class="centered">
-				<div class="column one">
+				<article class="tile one">
 					<h3>Layouts</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="layouts.xml">More about layouts.</a>
 					</p>
-				</div>
-				<div class="column one">
+				</article>
+				<article class="tile one">
 					<h3>Snippets</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="snippets.xml">More about snippets.</a>
 					</p>
-				</div>
-				<div class="column one">
+				</article>
+				<article class="tile one">
 					<h3>Styles</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="styles.xml">More about styles.</a>
 					</p>
-				</div>
-				<div class="column one">
+				</article>
+				<article class="tile one">
 					<h3>Scripts</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="scripts.xml">More about scripts.</a>
 					</p>
-				</div>
-				<div class="column one">
+				</article>
+				<article class="tile one">
 					<h3>Examples</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="examples.xml">See some examples.</a>
 					</p>
-				</div>
+				</article>
 			</div>
-		</div>
+		</aside>
 	</content>
 </data>
