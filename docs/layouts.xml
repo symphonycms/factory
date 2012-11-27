@@ -5,7 +5,7 @@
 	<content>
 		
 		<!-- Introduction -->
-		<section>
+		<section class="centered">
 			<header>
 				<h2>Introduction to Layouts</h2>
 			</header>
@@ -68,7 +68,7 @@
 		</section>
 		
 		<!-- HTML -->
-		<section>
+		<section class="centered">
 			<header>
 				<h2>Basic Markup</h2>
 			</header>
@@ -118,7 +118,7 @@
 		</section>
 		
 		<!-- Network -->
-		<section>
+		<section class="centered">
 			<header>
 				<h2 id="chapter_network">Network</h2>
 			</header>
@@ -212,7 +212,7 @@
 		</section>
 		
 		<!-- Content -->
-		<section>
+		<section class="centered">
 			<header>
 				<h2>Content</h2>
 			</header>

@@ -32,16 +32,10 @@
 			<xsl:call-template name="network" />
 		
 			<!-- Current page -->
-			<div id="site" class="centered">
-				<xsl:attribute name="class">
-					<xsl:choose>
-						<xsl:when test="data/content/@mode = 'wide'">wide</xsl:when>
-						<xsl:otherwise>centered</xsl:otherwise>
-					</xsl:choose>
-				</xsl:attribute>
+			<div id="site">
 				
 				<!-- Current header -->
-				<header class="site">
+				<header class="site-header centered">
 					<h1>
 						<span>Symphony</span>
 						<xsl:text> </xsl:text>
@@ -65,7 +59,7 @@
 			</div>
 			
 			<!-- Footer -->
-			<footer id="footer">
+			<footer id="footer" class="network-footer">
 				<div class="field centered">
 					<p><strong>Symphony</strong> is your personally tailored content management framework <br /><a href="http://getsymphony.com">International Site</a> · <a href="">Requirements</a> · <a href="">MIT Licence</a></p>
 					<p class="footer-links">
