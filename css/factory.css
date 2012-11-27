@@ -1588,6 +1588,7 @@ pre[data-line] {
 
 .network-user img {
 	float: right;
+	border: none;
 }
 
 .network-user p {
