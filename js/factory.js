@@ -89,10 +89,23 @@ var Factory;
 		initNetworkProfile: function() {
 			Factory.elements.networkProfile.addClass('action-profile-hide');
 			Factory.elements.networkUsername.on('click.factory', Factory.toggleNetworkProfile);
+			Factory.elements.networkUserImg.on('click.factory', Factory.toggleNetworkProfile);
 		},
 		
 		toggleNetworkProfile: function(event) {
-			Factory.elements.network.toggleClass('action-profile-open');
+			event.preventDefault();
+			event.stopPropagation();
+			
+			// Remove CSS transition delay when closing the profile 
+			if(Factory.elements.network.is('.action-profile-open')) {
+				Factory.elements.network.addClass('action-profile-hide');
+				setTimeout(function() {
+					Factory.elements.network.removeClass('action-profile-hide');
+				}, 500);
+			}
+			
+			// Toggle profile
+			Factory.elements.network.toggleClass('action-profile-open');		
 			Factory.elements.networkProfile.addClass('action-profile-animate').toggleClass('action-profile-hide');
 		},
 

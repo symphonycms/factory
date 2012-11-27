@@ -1417,7 +1417,6 @@ pre[data-line] {
 	height: auto;
 }
 
-/*.network-wrapper.action-profile-open,*/
 .network-wrapper:hover {
 	max-height: 60rem;
 	-webkit-transition: max-height 0.25s ease-in-out 0.5s;
@@ -1551,6 +1550,7 @@ pre[data-line] {
 
 .network-user a {
 	color: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
 }
 
 .network-user a:hover {
@@ -1643,6 +1643,10 @@ pre[data-line] {
 	border-radius: 2px;
 	border-bottom-color: #88083C;
 	outline: none;
+}
+
+.network-profile input[readonly] {
+	color: rgba(255, 255, 255, 0.6);
 }
 
 /* Controls */
@@ -1769,6 +1773,17 @@ pre[data-line] {
 	max-height: 0;
 	margin-top: 0;
 	margin-bottom: 0;
+	-webkit-transition-delay: 0;
+	-moz-transition-delay: 0;
+	-ms-transition-delay: 0;
+	-o-transition-delay: 0;
+	transition-delay: 0;
+}
+
+.network-wrapper.action-profile-hide:hover .network-drawer {
+	margin-top: 0;
+	margin-bottom: 2.5rem;
+	opacity: 1;
 	-webkit-transition-delay: 0;
 	-moz-transition-delay: 0;
 	-ms-transition-delay: 0;
