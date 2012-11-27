@@ -385,6 +385,10 @@ input, select, textarea {
 	margin-bottom: 8rem;
 	padding-left: 30px;
 	background-image: -webkit-linear-gradient(#B6B6B6 0.1rem, transparent 0.1rem);
+	background-image: -moz-linear-gradient(#B6B6B6 0.1rem, transparent 0.1rem);
+	background-image: -ms-linear-gradient(#B6B6B6 0.1rem, transparent 0.1rem);
+	background-image: -o-linear-gradient(#B6B6B6 0.1rem, transparent 0.1rem);
+	background-image: linear-gradient(#B6B6B6 0.1rem, transparent 0.1rem);
 	background-size: 100% 32.3rem;
 	overflow: hidden;
 }
