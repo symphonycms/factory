@@ -38,6 +38,7 @@ input, select, textarea {
 	margin: 0;
 	overflow-y: scroll;
 	padding: 0;
+	color: #282828;
 }
 
 /* Behaviours */
