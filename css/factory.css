@@ -1495,6 +1495,15 @@ pre[data-line] {
 	transition: max-height 0.1s ease-in-out 0;
 }
 
+/* Small layout */
+@media all and (min-width: 648px) and (max-width: 853px) {
+
+	.network-wrapper.action-profile-open {
+		max-height: 30.3rem;
+	}
+
+}
+
 .network-wrapper::after {
 	content: none;
 	display: block;
