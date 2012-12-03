@@ -20,6 +20,7 @@
 			<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
 			<link media="screen" href="{$config/root}/css/prism.css" type="text/css" rel="stylesheet" />
 			<link media="screen" href="{$config/root}/css/factory.css" type="text/css" rel="stylesheet" />
+			<link media="screen" href="{$config/root}/css/factory.docs.css" type="text/css" rel="stylesheet" />
 			<script type="text/javascript" src="{$config/root}/js/jquery.js"></script>
 			<script type="text/javascript" src="{$config/root}/js/modernizr.js"></script>
 			<script type="text/javascript" src="{$config/root}/js/prism.js"></script>
