@@ -34,6 +34,8 @@
 		<!-- Features -->
 		<aside class="field tiles">
 			<div class="centered">
+			
+				<!-- Layouts -->
 				<article class="tile one">
 					<h3>Layouts</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -41,6 +43,9 @@
 						<a href="layouts.xml">More about layouts.</a>
 					</p>
 				</article>
+				<article class="tile one" id="about-layouts">&#128240;</article>
+				
+				<!-- Snippets -->
 				<article class="tile one">
 					<h3>Snippets</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -48,6 +53,9 @@
 						<a href="snippets.xml">More about snippets.</a>
 					</p>
 				</article>
+				<article class="tile one" id="about-layouts">&#127748;</article>
+				
+				<!-- Styles -->
 				<article class="tile one">
 					<h3>Styles</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -55,6 +63,9 @@
 						<a href="styles.xml">More about styles.</a>
 					</p>
 				</article>
+				<article class="tile one" id="about-layouts">&#9998;</article>
+				
+				<!-- Scripts -->
 				<article class="tile one">
 					<h3>Scripts</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -62,6 +73,9 @@
 						<a href="scripts.xml">More about scripts.</a>
 					</p>
 				</article>
+				<article class="tile one" id="about-layouts">&#128640;</article>
+				
+				<!-- Examples -->
 				<article class="tile one">
 					<h3>Examples</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -69,6 +83,7 @@
 						<a href="examples.xml">See some examples.</a>
 					</p>
 				</article>
+				<article class="tile one" id="about-layouts">&#59272;</article>
 			</div>
 		</aside>
 	</content>

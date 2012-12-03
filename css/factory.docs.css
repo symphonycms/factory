@@ -6,3 +6,16 @@
  *
  * Custom styling for the Factory docs.
  */
+
+#about-layouts,
+#about-snippets,
+#about-styles,
+#about-scripts,
+#about-examples {
+	background: #B20B4F;
+	font-family: Entypo;
+	font-size: 30rem;
+	color: #88083C;
+	text-align: center;
+	line-height: 33rem;
+}
