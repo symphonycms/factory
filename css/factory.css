@@ -1990,28 +1990,52 @@ pre[data-line] {
 
 #footer {
 	background: #282828;
+	background-image: -webkit-linear-gradient(#FBFDFB 1.3rem, #ccc 1.3rem, #ccc 1.5rem, #282828 1.5rem);
+	background-image: -moz-linear-gradient(#FBFDFB 1.3rem, #ccc 1.3rem, #ccc 1.5rem, #282828 1.5rem);
+	background-image: -ms-linear-gradient(#FBFDFB 1.3rem, #ccc 1.3rem, #ccc 1.5rem, #282828 1.5rem);
+	background-image: -o-linear-gradient(#FBFDFB 1.3rem, #ccc 1.3rem, #ccc 1.5rem, #282828 1.5rem);
+	background-image: linear-gradient(#FBFDFB 1.3rem, #ccc 1.3rem, #ccc 1.5rem, #282828 1.5rem);
 	width: 100%;
-	height: 13rem;
+	height: 11.5rem;
 	clear: both;
 	color: #fff;
-	overflow: hidden;
-	border-top: 2px solid #ccc;
 	font-weight: 300;	
+	overflow: hidden;
+}
+
+#footer.sticky {
+	position: fixed;
+	bottom: 0;
 }
 
 #footer .footer-community,
 #footer .footer-links {
 	position: absolute;
-	bottom: 20px;
+	top: 3.8rem;
 	left: 30px;
 }
 
 #footer .footer-links {
 	left: auto;
 	right: 30px;
+	text-align: right;
+}
+
+#footer strong {
+	font-weight: 400;
+	display: block;
 }
 
 #footer a {
+	color: rgba(255, 255, 255, 0.7);
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out;
+	-o-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+
+#footer a:hover {
 	color: #fff;
 }
 
@@ -2030,8 +2054,8 @@ pre[data-line] {
 
 #footer .footer-factory {
 	position: relative;
-	margin-left: 470px;
-	bottom: -2.5rem;
+	margin-left: 450px;
+	top: 15px;
 	width: 140px;
 	height: 140px;
 	border-radius: 70px;
@@ -2059,13 +2083,13 @@ pre[data-line] {
 
 #footer .footer-factory:hover::before {
 	border-color: #88083C;
-	box-shadow: inset 0 0 1px rgba(200, 200, 200, 0.5), 0 0 10px #111111;
+/*	box-shadow: inset 0 0 1px rgba(200, 200, 200, 0.5), 0 0 10px #111111;*/
 }
 
 #footer .footer-factory em {
 	background: url(../img/factory.png) -185px -12px no-repeat;
-	width: 140px;
-	height: 140px;
+	width: 141px;
+	height: 141px;
 	text-indent: -1000em;
 	display: block;
 	border-radius: 70px;
