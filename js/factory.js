@@ -38,7 +38,8 @@ var Factory;
 			Factory.elements.siteTitle = Factory.elements.siteHeader.find('h1');
 			Factory.elements.siteNav = Factory.elements.siteHeader.find('nav');
 			Factory.elements.siteNavItem = Factory.elements.siteNav.find('a');
-			
+			Factory.elements.footer = $('#footer');
+						
 			// Init profile
 			Factory.initNetworkProfile();
 		},
@@ -107,6 +108,16 @@ var Factory;
 			// Toggle profile
 			Factory.elements.network.toggleClass('action-profile-open');		
 			Factory.elements.networkProfile.addClass('action-profile-animate').toggleClass('action-profile-hide');
+		},
+
+	/*-------------------------------------------------------------------------
+		Site
+	-------------------------------------------------------------------------*/
+	
+		adjustSiteHeight: function(event) {
+			var min = $(window).height() - Factory.elements.networkToolbar.height() - Factory.elements.footer.height();
+			console.log($(window).height(), Factory.elements.networkToolbar.height(), Factory.elements.footer.height(), min);
+			Factory.elements.site.css('min-height', min);
 		},
 
 	/*-------------------------------------------------------------------------
@@ -247,7 +258,11 @@ var Factory;
 	$(document).on('ready.factory', function ready() {
 		Factory.init();
 
-		$(window).on('resize.factory', Factory.adjustNetworkUser).trigger('resize.factory');
+		// Resizing
+		$(window)
+			.on('resize.factory', Factory.adjustNetworkUser)
+			.on('resize.factory', Factory.adjustSiteHeight)
+			.trigger('resize.factory');
 		
 		// Network
 		Factory.elements.network.on('touchstart.factory', Factory.toggleNetwork);

@@ -23,14 +23,9 @@
 -----------------------------------------------------------------------------*/
 
 html {
-	height: 100%;
 
 	/* This makes 1rem equal 10px */
 	font-size: 62.5%;
-}
-
-body {
-	min-height: 100%;
 }
 
 body,
@@ -44,12 +39,6 @@ input, select, textarea {
 	overflow-y: scroll;
 	padding: 0;
 	color: #282828;
-}
-
-#site {
-	min-height: 100%;
-	margin-bottom: 150px;
-	position: relative;
 }
 
 /* Behaviours */
@@ -1968,13 +1957,12 @@ pre[data-line] {
 #footer {
 	background: #282828;
 	width: 100%;
-	height: 150px;
+	height: 13rem;
 	clear: both;
 	color: #fff;
 	overflow: hidden;
-	position: absolute;
-	bottom: 0;
 	border-top: 2px solid #ccc;
+	font-weight: 300;	
 }
 
 #footer .footer-community,
@@ -2009,7 +1997,7 @@ pre[data-line] {
 #footer .footer-factory {
 	position: relative;
 	margin-left: 470px;
-	bottom: -45px;
+	bottom: -2.5rem;
 	width: 140px;
 	height: 140px;
 	border-radius: 70px;
