@@ -23,9 +23,14 @@
 -----------------------------------------------------------------------------*/
 
 html {
+	height: 100%;
 
-	/* This makes 1rem eqal 10px */
+	/* This makes 1rem equal 10px */
 	font-size: 62.5%;
+}
+
+body {
+	min-height: 100%;
 }
 
 body,
@@ -39,6 +44,12 @@ input, select, textarea {
 	overflow-y: scroll;
 	padding: 0;
 	color: #282828;
+}
+
+#site {
+	min-height: 100%;
+	margin-bottom: 150px;
+	position: relative;
 }
 
 /* Behaviours */
@@ -1954,37 +1965,125 @@ pre[data-line] {
 	Style definitions for the footer.
 -----------------------------------------------------------------------------*/
 
-.network-footer {
+#footer {
 	background: #282828;
 	width: 100%;
+	height: 150px;
 	clear: both;
 	color: #fff;
 	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	border-top: 2px solid #ccc;
 }
 
-.network-footer a {
+#footer .footer-community,
+#footer .footer-links {
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+}
+
+#footer .footer-links {
+	left: auto;
+	right: 30px;
+}
+
+#footer a {
 	color: #fff;
 }
 
-.network-footer p {
-	float: left;
-}
-
-.network-footer p.footer-links {
-	float: right;	
-}
-
-.network-footer a[class^=logo]::before {
+#footer a[class^=logo]::before {
 	font-family: Entypo;
 	font-size: 2rem;
 }
 
-.network-footer a.logo-github::before {
+#footer a.logo-github::before {
 	content: "\F300";
 }
 
-.network-footer a.logo-twitter::before {
+#footer a.logo-twitter::before {
 	content: "\F315";
+}
+
+#footer .footer-factory {
+	position: relative;
+	margin-left: 470px;
+	bottom: -45px;
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+	background: #ccc url(../img/factory.png) -15px -12px no-repeat;
+	box-shadow: inset 0 0 25px #000;
+}
+
+#footer .footer-factory::before {
+	content: "";
+	display: block;
+	width: 141px;
+	height: 141px;
+	border-radius: 85px;
+	border: 15px solid #1e1e1e;
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	box-shadow: inset 0 0 1px rgba(200, 200, 200, 0.5);
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+#footer .footer-factory:hover::before {
+	border-color: #88083C;
+	box-shadow: inset 0 0 1px rgba(200, 200, 200, 0.5), 0 0 10px #111111;
+}
+
+#footer .footer-factory em {
+	background: url(../img/factory.png) -185px -12px no-repeat;
+	width: 140px;
+	height: 140px;
+	text-indent: -1000em;
+	display: block;
+	border-radius: 70px;
+	opacity: 1;
+	box-shadow: inset 0 0 25px #000;
+}
+
+#footer .footer-factory:hover em {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+#footer .footer-factory a {
+	background: url(../img/factory-claim.svg) 0 0 no-repeat;
+	display: block;
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	text-indent: -1000em;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+	opacity: 0.3;
+}
+
+#footer .footer-factory:hover a {
+	opacity: 1;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	transform: rotate(10deg);
 }
 
 /*-----------------------------------------------------------------------------
