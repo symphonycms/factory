@@ -17,6 +17,7 @@
 	background-image: -ms-linear-gradient(#eee 1px, transparent 1px), -ms-linear-gradient(#faf5dc 1px, transparent 1px);
 	background-image: -o-linear-gradient(#eee 1px, transparent 1px), -o-linear-gradient(#faf5dc 1px, transparent 1px);
 	background-image: linear-gradient(#eee 1px, transparent 1px), linear-gradient(#faf5dc 1px, transparent 1px);
+	overflow-x: hidden;
 }
 
 .show-baselines.full-width {
