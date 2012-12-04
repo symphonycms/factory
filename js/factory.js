@@ -115,8 +115,7 @@ var Factory;
 	-------------------------------------------------------------------------*/
 	
 		adjustSiteHeight: function(event) {
-			var min = $(window).height() - Factory.elements.networkToolbar.height() - Factory.elements.footer.height();
-			console.log($(window).height(), Factory.elements.networkToolbar.height(), Factory.elements.footer.height(), min);
+			var min = $(window).height() - Factory.elements.networkToolbar.outerHeight() - Factory.elements.footer.outerHeight() - parseInt(Factory.elements.site.find(':last-child()').css('margin-bottom'));
 			Factory.elements.site.css('min-height', min);
 		},
 
