@@ -6,10 +6,10 @@
 		
 		<!-- Introduction -->
 		<section class="centered">
-			<header>
+			<header class="push-one">
 				<h2>Introduction to Layouts</h2>
 			</header>
-			<p class="column five">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
+			<p class="column five push-one">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
 			
 			<!-- Grid -->
 			<div class="field">
