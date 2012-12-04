@@ -115,8 +115,20 @@ var Factory;
 	-------------------------------------------------------------------------*/
 	
 		adjustSiteHeight: function(event) {
-			var min = $(window).height() - Factory.elements.networkToolbar.outerHeight() - Factory.elements.footer.outerHeight() - parseInt(Factory.elements.site.find(':last-child()').css('margin-bottom'));
-			Factory.elements.site.css('min-height', min);
+			var windowHeight = $(window).height(),
+				siteHeight = Factory.elements.site.outerHeight() + parseInt(Factory.elements.site.find(':last-child()').css('margin-bottom')),
+				windowHeight = windowHeight - Factory.elements.networkToolbar.outerHeight() - siteHeight,
+				contentHeight = Factory.elements.network.innerHeight() + siteHeight;
+			
+			// Make footer sticky
+			if(windowHeight > Factory.elements.footer.outerHeight() && windowHeight > contentHeight) {
+				Factory.elements.footer.addClass('sticky');
+			}
+			
+			// Let footer flow
+			else {
+				Factory.elements.footer.removeClass('sticky');
+			}
 		},
 
 	/*-------------------------------------------------------------------------

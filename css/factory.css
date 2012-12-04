@@ -1965,6 +1965,11 @@ pre[data-line] {
 	font-weight: 300;	
 }
 
+#footer.sticky {
+	position: fixed;
+	bottom: 0;
+}
+
 #footer .footer-community,
 #footer .footer-links {
 	position: absolute;
