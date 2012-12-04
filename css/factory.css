@@ -2132,6 +2132,18 @@ pre[data-line] {
 	transform: rotate(10deg);
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+	#footer .footer-factory {
+		background: #ccc url(../img/factory@2x.png) -30px -24px no-repeat;
+	}
+	
+	#footer .footer-factory em {
+		background: url(../img/factory@2x.png) -360px -24px no-repeat;
+	}
+
+}
+
 /*-----------------------------------------------------------------------------
 	Fonts and icons:
 -----------------------------------------------------------------------------*/
