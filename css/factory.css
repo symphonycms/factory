@@ -1957,10 +1957,9 @@ pre[data-line] {
 #footer {
 	background: #282828;
 	width: 100%;
-	height: 13rem;
+	height: 10rem;
 	clear: both;
 	color: #fff;
-	overflow: hidden;
 	border-top: 2px solid #ccc;
 	font-weight: 300;	
 }
@@ -1973,16 +1972,31 @@ pre[data-line] {
 #footer .footer-community,
 #footer .footer-links {
 	position: absolute;
-	bottom: 20px;
+	top: 2.5rem;
 	left: 30px;
 }
 
 #footer .footer-links {
 	left: auto;
 	right: 30px;
+	text-align: right;
+}
+
+#footer strong {
+	font-weight: 400;
+	display: block;
 }
 
 #footer a {
+	color: rgba(255, 255, 255, 0.7);
+	-webkit-transition: color 0.25s ease-in-out;
+	-moz-transition: color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out;
+	-o-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+
+#footer a:hover {
 	color: #fff;
 }
 
@@ -2001,8 +2015,8 @@ pre[data-line] {
 
 #footer .footer-factory {
 	position: relative;
-	margin-left: 470px;
-	bottom: -2.5rem;
+	margin-left: 450px;
+	bottom: 0;
 	width: 140px;
 	height: 140px;
 	border-radius: 70px;
@@ -2030,7 +2044,7 @@ pre[data-line] {
 
 #footer .footer-factory:hover::before {
 	border-color: #88083C;
-	box-shadow: inset 0 0 1px rgba(200, 200, 200, 0.5), 0 0 10px #111111;
+/*	box-shadow: inset 0 0 1px rgba(200, 200, 200, 0.5), 0 0 10px #111111;*/
 }
 
 #footer .footer-factory em {
