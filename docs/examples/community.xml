@@ -24,18 +24,18 @@
 					<li>Register an Event</li>
 				</ul>				
 			</div>
-			<div class="column content overview">
-				<article class="field justified">
-					<header class="column two-plus">
-						<h3><a href="community-post.xml">Who's online: how did you hear about Symphony?</a></h3>
+			<div class="column content">
+				<article class="entry-overview justified">
+					<header class="entry-header">
+						<h3>
+							<a href="community-post.xml">Who's online: how did you hear about Symphony?</a>
+						</h3>
 						<p class="dimmed">Discussion by <a href="#">bauhouse</a></p>
 					</header>
-					<div class="meta column one">
-						<p><time datetime="2012-03-20T07:00">20 Mar 2012</time></p>
-						<p><a href="#">creativedutchmen</a></p>
-					</div>
-					<p class="response column module">
-						<a href="#">212 <em class="tag">&#8201;17</em></a>
+					<p class="entry-meta">
+						<time datetime="2012-03-20T07:00">20 Mar 2012</time>
+						<a href="#">creativedutchmen</a>
+						<a href="#" class="entry-count">212 <em class="entry-difference">&#8201;17</em></a>
 					</p>
 				</article>
 				<article class="field justified">
