@@ -331,46 +331,6 @@ input, select, textarea {
 
 }
 
-
-/**
- * Columns by width with one additional module:
- * useful for deliberately breaking the grid by adding half a column
- */
- 
-.one-plus {
-	width: 279px;
-}
-
-.two-plus {
-	width: 485px;
-}
-
-.three-plus {
-	width: 690px;
-}
-
-.four-plus {
-	width: 896px;
-}
-
-/* Columns by proportion */
-
-.half {
-	width: 484px;
-}
-
-.two .half {
-	width: 176px;
-}
-
-.three .half {
-	width: 279px;
-}
-
-.four .half {
-	width: 382px;
-}
-
 /* Linearise columns in fluid layout */
 
 @media all and (max-width: 647px) {
@@ -381,34 +341,6 @@ input, select, textarea {
 	}
 
 }
-
-
-/**
- * Manual column shift by column count
- */
-
-
-.push-one {
-	margin-left: 236px;
-}
-
-.push-two {
-	margin-left: 442px;
-}
-
-.push-three {
-	margin-left: 648px;
-}
-
-.push-four {
-	margin-left: 853px;
-}
-
-.push-five {
-	margin-left: 1060px;
-}
-
-
 
 /*-----------------------------------------------------------------------------
 	Tiles:
