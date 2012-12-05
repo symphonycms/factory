@@ -33,7 +33,7 @@
 						<p class="dimmed">Discussion by <a href="#">bauhouse</a></p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">20 Mar 2012</time>
+						<time class="relative" datetime="2012-12-05T07:00">5 Dec 2012</time>
 						<a href="#">creativedutchmen</a>
 						<a href="#" class="entry-count">212 <em class="entry-difference">17</em></a>
 					</p>
@@ -44,7 +44,7 @@
 						<p class="dimmed">Discussion by <a href="#">brendo</a></p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">19 Mar 2012</time>
+						<time class="relative" datetime="2012-03-20T07:00">19 Mar 2012</time>
 						<a href="#">Henry</a>
 						<a href="#" class="entry-count">15 <em class="entry-difference">&#8201;5</em></a>
 					</p>
@@ -55,7 +55,7 @@
 						<p class="dimmed">Blog by <a href="#">Allen</a></p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">17 Mar 2012</time>
+						<time class="relative" datetime="2012-03-20T07:00">17 Mar 2012</time>
 						<a href="#">nickdunn</a>
 						<a href="#" class="entry-count">17 <em class="entry-difference">&#8201;7</em></a>
 					</p>
@@ -63,11 +63,11 @@
 				<article class="entry-overview justified">
 					<header class="entry-header">
 						<h3><a href="community-post.xml">Happy March 26th! #symphonycms 2.3 beta 3 is ready for&#8230;</a></h3>
-						<p class="dimmed">Tweet by <a href="#">@symphonycms</a></p>
+						<p class="dimmed">Tweet</p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">13 Jul 2011</time>
-						<a href="#">at 13:12</a>
+						<time class="relative" datetime="2012-03-20T07:00">13 Jul 2011</time>
+						<a href="#">symphonycms</a>
 						<a href="#" class="entry-count">23</a>
 					</p>
 				</article>
@@ -77,7 +77,7 @@
 						<p class="dimmed">Showcase by <a href="#">fawx</a></p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">13 Jul 2011</time>
+						<time class="relative" datetime="2012-03-20T07:00">13 Jul 2011</time>
 						<a href="#">creativedutchmen</a>
 						<a href="#" class="entry-count">38</a>
 					</p>
@@ -88,7 +88,7 @@
 						<p class="dimmed">Discussion by <a href="#">bauhouse</a></p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">20 Mar 2012</time>
+						<time class="relative" datetime="2012-03-20T07:00">20 Mar 2012</time>
 						<a href="#">creativedutchmen</a>
 						<a href="#" class="entry-count">212</a>
 					</p>
@@ -99,7 +99,7 @@
 						<p class="dimmed">Discussion by <a href="#">brendo</a></p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">19 Mar 2012</time>
+						<time class="relative" datetime="2012-03-20T07:00">19 Mar 2012</time>
 						<a href="#">Henry</a>
 						<a href="#" class="entry-count">15</a>
 					</p>
@@ -110,7 +110,7 @@
 						<p class="dimmed">Blog by <a href="#">Allen</a></p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">17 Mar 2012</time>
+						<time class="relative" datetime="2012-03-20T07:00">17 Mar 2012</time>
 						<a href="#">nickdunn</a>
 						<a href="#" class="entry-count">36</a>
 					</p>
@@ -118,11 +118,11 @@
 				<article class="entry-overview justified">
 					<header class="entry-header">
 						<h3><a href="community-post.xml">Happy March 26th! #symphonycms 2.3 beta 3 is ready for&#8230;</a></h3>
-						<p class="dimmed">Tweet by <a href="#">@symphonycms</a></p>
+						<p class="dimmed">Tweet</p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">13 Jul 2011</time>
-						<a href="#">at 13:12</a>
+						<time class="relative" datetime="2012-03-20T07:00">13 Jul 2011</time>
+						<a href="#">symphonycms</a>
 						<a href="#" class="entry-count">21</a>
 					</p>
 				</article>
@@ -132,7 +132,7 @@
 						<p class="dimmed">Showcase by <a href="#">fawx</a></p>
 					</header>
 					<p class="entry-meta">
-						<time datetime="2012-03-20T07:00">13 Jul 2011</time>
+						<time class="relative" datetime="2012-03-20T07:00">13 Jul 2011</time>
 						<a href="#">creativedutchmen</a>
 						<a href="#" class="entry-count">112</a>
 					</p>
