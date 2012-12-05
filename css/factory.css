@@ -1416,6 +1416,7 @@ pre[data-line] {
 	font-size: 3.6rem;
 	font-weight: 300;
 	line-height: 5.6rem;
+	margin-right: 0.8rem;
 }
 
 #site .entry-difference {
@@ -1426,7 +1427,7 @@ pre[data-line] {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.8rem;
-	margin: 0 0 0 0.4rem;
+	margin: 0 -0.8rem 0 0.4rem;
 	padding: 0.5rem 10px 0.4rem 0.8rem;
 	white-space: nowrap;
 	display: inline-block;
