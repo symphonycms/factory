@@ -788,60 +788,6 @@ footer .tools {
 	top: 0.5rem;
 }
 
-/* Pagination */
-
-.tools.pagination {
-	float: left;
-	margin: 2.4rem -10px;
-	padding: 0;
-	position: relative;
-	width: 814px;
-
-	/* This is needed to remove whitespace between the nested links */
-	font-size: 0;
-}
-
-.tools.pagination > a {
-	border: none;
-	float: left;
-}
-
-.tools.pagination > a:last-of-type {
-	float: right;
-}
-
-.tools.pagination a:not([href]) {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.tools.pagination a.ellipsis {
-	margin-left: 30px;
-}
-
-.tools.pagination a.ellipsis::before {
-	border-right: 1px solid rgba(0, 0, 0, 0.2);
-	color: rgba(0, 0, 0, 0.3);
-	content: "\00B7\00B7\00B7";
-	margin-left: -30px;
-	padding-right: 10px;
-	position: absolute;
-}
-
-.tools.pagination div.pages {
-	left: 50%;
-	margin-left: -250px;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	width: 500px;
-}
-
-/* Pagination in overview */
-
-.overview .tools.pagination {
-	margin-top: 1.8rem;
-}
-
 /*-----------------------------------------------------------------------------
 	Network:
 
