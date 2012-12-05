@@ -19,7 +19,10 @@
 	
   # Units
 	
-	Use `rem` for vertical and `px` for horizontal units.
+	`rem` are used for vertical and `px` for horizontal measures. 
+	While `rem` help creating a scalable vertical rhythm, 
+	`px` should simplify the process of working with images.
+	This may change in the future.
 -----------------------------------------------------------------------------*/
 
 html {
@@ -58,19 +61,16 @@ input, select, textarea {
 	The centered layout is the default one and should be used by all
 	text focussed sites. The fluid version is conceived for special 
 	user interfaces like xPathr that need the full window width.
-	
-	The centered layout knows three fixed states and a fluid fallback for 
-	narrow windows and mobile devices: 
-	
-	- large (>= 1060px), 
-	- medium (>= 854px),
-	- small (>= 648px) and 
-	- fluid (< 648 px).
-	
-	If you want to exclude one of these states on your site, just add a 
-	`data-exclude-state` attribute with its name on the body element 
-	(multiple values need to be space-separated).
 -----------------------------------------------------------------------------*/
+
+/* Wide */
+
+.wide {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 50px;
+	width: 100%;
+}
 
 /* Centered */
 
@@ -78,15 +78,6 @@ input, select, textarea {
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
-}
-
-/* Fluid */
-
-.wide {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0 50px;
-	width: 100%;
 }
 
 @media all and (max-width: 647px) {
@@ -99,7 +90,7 @@ input, select, textarea {
 
 }
 
-/* Small */
+/* Centered: small width */
 
 @media all and (min-width: 648px) {
 
@@ -109,7 +100,7 @@ input, select, textarea {
 
 }
 
-/* Medium */
+/* Centered: medium width */
 
 @media all and (min-width: 854px) {
 
@@ -119,7 +110,7 @@ input, select, textarea {
 
 }
 
-/* Large */
+/* Centered: large width */
 
 @media all and (min-width: 1060px) {
 
@@ -130,11 +121,41 @@ input, select, textarea {
 }
 
 /*-----------------------------------------------------------------------------
-	Grids:
+	Grid, fields and columns:
+	
+	Symphony Factory is built upon an adaptive grid system that is based 
+	on 73px wide modules with a gutter of 30px. Depending on the window/screen
+	width, it offers four different layouts:
+	
+	- a basic fluid layout for the smallest screen sizes,
+	- a small layout (3 columns wide)
+	- a medium layout (4 columns wide) and
+	- a large layout (5 columns wide)
+	
+	If you want to exclude one of these layout states on your site, just add a 
+	`data-exclude-state` attribute on the body with the space-separated names  
+	(fluid, small, medium, large).
 
-	Grid layouts should be grouped in fields. There are one main layout types:
-	fields with and without sidebar, see column definitions by function.
+	A site should always be structured by fields that group the content columns.
+	Fields can be nested and justified (which allows borders and lines to break
+	the element by a few pixels for optical alignment).
+	
+	Columns can either be defined by width (one, two, three, four, five) or by 
+	function (sidebar or content). A column width can be adjusted based on the 
+	layout context: the class `.medium-one` will override all other width 
+	definitions when displaying the medium layout. This is helpful to adjust 
+	content display responsively. The fluid layout linearises all columns.
+	
+	All columns are floated and it's up to the developer to make sure that 
+	their widths sum up to the full page width per row if this is desired. 
+	The widths .four and .five are not meant to display running text, 
+	they should be used for tables and images.
+	
+	If you'd like to nest columns inside a column, make sure to wrap those
+	columns with another .field element.
 -----------------------------------------------------------------------------*/
+
+/* Fields */
 
 .field {
 	-moz-box-sizing: border-box;
@@ -149,49 +170,24 @@ input, select, textarea {
 	display: block;
 }
 
-/* Nested fields */
-
 .field .field {
 	margin-left: -30px;
 	padding-right: 0;
 }
 
-/* Justified fields, e. g. fields with a centered border at the bottom or top */
-
 .field.justified {
 	margin-left: -10px;
 	margin-right: -10px;
+	padding-left: 10px;
 }
 
-/*-----------------------------------------------------------------------------
-	Columns:
-
-	There are three different categories of columns:
-	columns by function, by width and by proportion.
-
-	All columns are floated and it's up to the developer to make sure that
-	the column widths sum up to the full page width per row.
-	The column widths .three, .four, .five are not meant to display text,
-	they should be used for tables and images.
-	
-	If you'd like to nest columns inside a column, make sure to wrap those
-	columns with another .field element.
------------------------------------------------------------------------------*/
+/* Columns */
 
 .column {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
 	margin: 0 0 0 30px;
-/*	position: relative;*/
-}
-
-.field.justified .column:first-child {
-	margin-left: 10px;
-}
-
-.module {
-	width: 73px;
 }
 
 /* Columns by function */
@@ -236,16 +232,13 @@ input, select, textarea {
 	width: 1000px;
 }
 
-/**
- * Adjusted column sizes based on the layout mode, 
- * columns can also be hidden in the given mode
- */
-
-/* Small */
+/* Columns by width in small layout */
 
 @media all and (min-width: 648px) and (max-width: 853px) {
 	
 	.small-hide {
+	
+		/* Hide this column in small layout */
 		display: none;
 	}
 
@@ -271,11 +264,13 @@ input, select, textarea {
 
 }
 
-/* Medium */
+/* Columns by width in medium layout */
 
 @media all and (min-width: 854px) and (max-width: 1059px) {
 	
 	.medium-hide {
+
+		/* Hide this column in medium layout */
 		display: none;
 	}
 
@@ -301,11 +296,13 @@ input, select, textarea {
 
 }
 
-/* Large */
+/* Columns by width in large layout */
 
 @media all and (min-width: 1060px) {
 	
 	.large-hide {
+
+		/* Hide this column in large layout */
 		display: none;
 	}
 
@@ -331,11 +328,19 @@ input, select, textarea {
 
 }
 
-/* Linearise columns in fluid layout */
+/* Columns by width in fluid layout */
 
 @media all and (max-width: 647px) {
 
+	#site .fluid-hide {
+
+		/* Hide this column in fluid layout */
+		display: none;
+	}
+	
 	#site .column {
+
+		/* Linearise columns */
 		float: none;
 		width: auto;
 	}
