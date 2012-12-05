@@ -44,6 +44,23 @@ input, select, textarea {
 	color: #282828;
 }
 
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #B20B4F;
+}
+
+img {
+	display: block;
+}
+
+code {
+	font: 12px/1.5 Monaco, Consolas, 'Andale Mono', monospace;
+}
+
 /* Behaviours */
 
 .hidden {
@@ -512,7 +529,7 @@ pre[data-line] {
 	Style definitions for form elements.
 -----------------------------------------------------------------------------*/
 
-
+	/* to do: needs to be defined, see Network profile for reference */
 
 /*-----------------------------------------------------------------------------
 	Content elements:
@@ -588,22 +605,6 @@ ul li > ul {
 	margin: 0 0 0 15px;
 }
 
-a {
-	color: #000;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #B20B4F;
-}
-
-img {
-	display: block;
-}
-
-code {
-	font: 12px/1.5 Monaco, Consolas, 'Andale Mono', monospace;
-}
 
 /*-----------------------------------------------------------------------------
 	Articles:
@@ -1673,7 +1674,6 @@ footer .tools {
 	font-weight: 400;
 	color: #9b9b9b;
 	font-size: 1.3rem;
-	
 }
 
 #site .author-info:last-child em {
