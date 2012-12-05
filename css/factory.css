@@ -1343,19 +1343,9 @@ pre[data-line] {
 }
 
 /*-----------------------------------------------------------------------------
-	Site:
-
-	Style definitions for the site area.
------------------------------------------------------------------------------*/
-
-#site {
-	position: relative;
-}
-
-/*-----------------------------------------------------------------------------
 	Network:
 
-	Style definitions for the network area.
+	This should not be altered in the site specific styles of a site.
 -----------------------------------------------------------------------------*/
 
 #network {
@@ -1380,24 +1370,6 @@ pre[data-line] {
 	transition: max-height 0.25s ease-in-out 0.5s;
 }
 
-#network.action-profile-open {
- 	max-height: 27rem;
-	-webkit-transition: max-height 0.1s ease-in-out 0;
-	-moz-transition: max-height 0.1s ease-in-out 0;
-	-ms-transition: max-height 0.1s ease-in-out 0;
-	-o-transition: max-height 0.1s ease-in-out 0;
-	transition: max-height 0.1s ease-in-out 0;
-}
-
-/* Small layout */
-@media all and (min-width: 648px) and (max-width: 853px) {
-
-	#network.action-profile-open {
-		max-height: 30.3rem;
-	}
-
-}
-
 #network::after {
 	content: none;
 	display: block;
@@ -1407,6 +1379,26 @@ pre[data-line] {
 #network ::selection,
 #network ::-moz-selection {
 	background: rgba(255, 255, 255, 0.2);
+}
+
+/* Profile interactions */
+
+#network.action-profile-open {
+ 	max-height: 27rem;
+	-webkit-transition: max-height 0.1s ease-in-out 0;
+	-moz-transition: max-height 0.1s ease-in-out 0;
+	-ms-transition: max-height 0.1s ease-in-out 0;
+	-o-transition: max-height 0.1s ease-in-out 0;
+	transition: max-height 0.1s ease-in-out 0;
+}
+
+@media all and (min-width: 648px) and (max-width: 853px) {
+
+	/* In the small layout, the toolbar spans two lines */
+	#network.action-profile-open {
+		max-height: 30.3rem;
+	}
+
 }
 
 /* Network toolbar */
@@ -1831,10 +1823,21 @@ pre[data-line] {
 #network .get-symphony [class^=icon]::before {
 	font-size: 34px;	
 }
+
+/*-----------------------------------------------------------------------------
+	Site:
+
+	Additional styles for the current site should be added in a separate file.
+-----------------------------------------------------------------------------*/
+
+#site {
+	position: relative;
+}
+
 /*-----------------------------------------------------------------------------
 	Footer:
 
-	Style definitions for the footer.
+	This should not be altered in the site specific styles of a site.
 -----------------------------------------------------------------------------*/
 
 #footer {
@@ -1865,7 +1868,7 @@ pre[data-line] {
 	top: 3.8rem;
 	left: 30px;
 	
-	/* Make sure font smoothing doesn't change when the Factory is animated */
+	/* Make sure font smoothing in Webkit doesn't change when the Factory artwork is animated */
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -1905,6 +1908,8 @@ pre[data-line] {
 #footer a.logo-twitter::before {
 	content: "\F315";
 }
+
+/* Factory artwork */
 
 #footer .footer-factory {
 	position: relative;
@@ -2005,6 +2010,8 @@ pre[data-line] {
 	transform: rotate(10deg);
 }
 
+/* Factory artwork for high-resolution displays */
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
 	#footer .footer-factory {
@@ -2016,4 +2023,3 @@ pre[data-line] {
 	}
 
 }
-
