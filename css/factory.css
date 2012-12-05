@@ -562,177 +562,6 @@ pre[data-line] {
 	/* to do: needs to be defined, see Network profile for reference */
 
 /*-----------------------------------------------------------------------------
-	Articles:
-	
-	to do: this needs to be reorganised, abstracted and integrated with
-	the main site style definitions.
------------------------------------------------------------------------------*/
-
-#site .entry-overview {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	height: 5.4rem;
-	padding-top: 0.64rem;
-}
-
-#site .entry-header {
-	float: left;
-}
-
-#site .entry-header h3 {
-	font-size: 1.5rem;
-	font-weight: 500;
-	line-height: inherit;
-	margin: 0;
-}
-
-#site .entry-header p {
-	margin-bottom: 0;
-}
-
-#site .entry-meta {
-	float: right;
-	width: 289px;
-	margin: 0 0 0 30px;
-	position: relative;
-}
-
-#site .entry-meta a {
-	display: block;
-}
-
-#site .entry-count {
-	position: absolute;
-	top: 0;
-	right: 0;
-	font-size: 3.6rem;
-	font-weight: 300;
-	line-height: 4.3rem;
-}
-
-#site .entry-difference {
-	background: #282828;
-	border-radius: 2px;
-	color: #fff;
-	float: right;
-	font-size: 1.8rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 1.8rem;
-	margin: 0.8rem 3px 0 0.4rem; /* 3px right margin to correct optical alignment from above */
-	padding: 0.5rem 10px 0.4rem 0.8rem;
-	white-space: nowrap;
-}
-
-#site .entry-difference::before {
-	content: "+";
-	font-size: 1.3rem;
-	font-weight: 400;
-	vertical-align: 10%;
-}
-
-
-/* Overview */
-
-#site .overview article {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	height: 6rem;
-	padding-top: 0.64rem;
-}
-
-#site .overview article:last-of-type {
-	border-bottom: none;
-}
-
-#site .overview article h3 {
-	font-size: 1.5rem;
-	font-weight: 500;
-	line-height: inherit;
-	margin: 0;
-}
-
-#site .overview article p {
-	margin-bottom: 0;
-}
-
-#site .overview article .response {
-	font-size: 3.6rem;
-	font-weight: 300;
-	line-height: 4.3rem;
-	overflow: visible;
-	position: relative;
-	text-align: right;
-	margin-left: 23px; /* actually this should equal 20px, 3 extra pixels for optical alignment */
-}
-
-#site .overview article .response .tag {
-	background: #282828;
-	border-radius: 2px;
-	color: #fff;
-	float: right;
-	font-size: 1.8rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 1.8rem;
-	margin: 0.8rem 3px 0 0.4rem; /* 3px right margin to correct optical alignment from above */
-	padding: 0.5rem 10px 0.4rem 0.8rem;
-	white-space: nowrap;
-}
-
-#site .overview article .response .tag::before {
-	content: "+";
-	font-size: 1.3rem;
-	font-weight: 400;
-	vertical-align: 10%;
-}
-
-#site .overview article .response a {
-	display: block;
-	position: absolute;
-	right: -10px;
-	top: 0.6rem;
-	width: 150px;
-}
-
-/* Entries */
-
-#site .entries article header {
-	padding: 0;
-}
-
-/* Comments */
-
-#site article.comment {
-	position: relative;
-	
-	/* @todo: this is highly experimental and only adjusted for expected behavior in Safari. */
-	min-height: 69px;
-	margin: 0 -10px;
-	padding: 0 10px;
-}
-
-#site article.comment:not(:first-of-type) {
-	border-top: 1px solid #bbbfbb;
-}
-
-#site article.comment footer {
-	margin: 0 100px 0 -10px;
-	padding: 0.6rem 10px;
-	width: 588px;
-	color: #9b9b9b;
-}
-
-#site article.comment footer strong {
-	background: #282828;
-	border-radius: 2px;
-	color: #fff;
-	font-weight: 300;
-	padding: 2px 7px 2px 5px;
-	margin: 0 5px 0 -10px;
-	
-	display: none;
-}
-
-/*-----------------------------------------------------------------------------
 	Network:
 
 	This should not be altered in the site specific styles of a site.
@@ -1546,6 +1375,72 @@ pre[data-line] {
 	margin-top: 1.4rem;
 }
 
+/* Entry overview */
+
+#site .entry-overview {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	height: 5.3rem;
+	padding-top: 0.64rem;
+}
+
+#site .entry-header {
+	float: left;
+}
+
+#site .entry-header h3 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: inherit;
+	margin: 0;
+}
+
+#site .entry-header p {
+	margin-bottom: 0;
+}
+
+#site .entry-meta {
+	float: right;
+	width: 289px;
+	margin: 0 0 0 30px;
+	position: relative;
+}
+
+#site .entry-meta a {
+	display: block;
+}
+
+#site .entry-count {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 3.6rem;
+	font-weight: 300;
+	line-height: 5.6rem;
+}
+
+#site .entry-difference {
+	background: #282828;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 1.8rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0 0 0 0.4rem;
+	padding: 0.5rem 10px 0.4rem 0.8rem;
+	white-space: nowrap;
+	display: inline-block;
+	top: -0.7rem;
+	position: relative;
+}
+
+#site .entry-difference::before {
+	content: "+";
+	font-size: 1.3rem;
+	font-weight: 400;
+	vertical-align: 10%;
+}
+
 /* Tools */
 /* to do: this needs to be aligned with the general button styling, see Network profile for reference */
 
@@ -1815,4 +1710,39 @@ pre[data-line] {
 		background: url(../img/factory@2x.png) -360px -24px no-repeat;
 	}
 
+}
+
+/*-----------------------------------------------------------------------------
+	Creative chaos:
+	
+	to do: this needs to be reorganised, abstracted and integrated with
+	the main site style definitions.
+-----------------------------------------------------------------------------*/
+
+/* Entries */
+
+#site .entries article header {
+	padding: 0;
+}
+
+/* Comments */
+
+#site article.comment {
+	position: relative;
+	
+	/* @todo: this is highly experimental and only adjusted for expected behavior in Safari. */
+	min-height: 69px;
+	margin: 0 -10px;
+	padding: 0 10px;
+}
+
+#site article.comment:not(:first-of-type) {
+	border-top: 1px solid #bbbfbb;
+}
+
+#site article.comment footer {
+	margin: 0 100px 0 -10px;
+	padding: 0.6rem 10px;
+	width: 588px;
+	color: #9b9b9b;
 }
