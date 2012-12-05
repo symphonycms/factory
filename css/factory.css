@@ -61,6 +61,34 @@ code {
 	font: 12px/1.5 Monaco, Consolas, 'Andale Mono', monospace;
 }
 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+	margin: 0 0 1.2rem 3rem;
+	padding: 0;
+}
+
+ul li {
+	padding-left: 13px;
+	position: relative;
+}
+
+ul li::before {
+	content: "·";
+	position: absolute;
+	left: 0;
+	font-weight: 800;
+}
+
+ul li > ul {
+	margin: 0 0 0 15px;
+}
+
 /* Behaviours */
 
 .hidden {
@@ -545,33 +573,6 @@ header p {
 	margin-right: 0;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-}
-
-ul {
-	list-style: none;
-	margin: 0 0 1.2rem 3rem;
-	padding: 0;
-}
-
-ul li {
-	padding-left: 13px;
-	position: relative;
-}
-
-ul li::before {
-	content: "·";
-	position: absolute;
-	left: 0;
-	font-weight: 800;
-}
-
-ul li > ul {
-	margin: 0 0 0 15px;
-}
 
 
 /*-----------------------------------------------------------------------------
