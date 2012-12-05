@@ -537,38 +537,6 @@ pre[data-line] {
 	General definitions for paragraphs and other content elements.
 -----------------------------------------------------------------------------*/
 
-p {
-	margin: 0 0 1.2rem;
-	max-width: 556px;
-	padding: 0;
-}
-
-p.introduction {
-	font-size: 2.2rem;
-	font-weight: 300;
-	line-height: 3.6rem;
-	margin: 0.8rem 0 1rem;
-	max-width: 592px;
-}
-
-p[data-pullquote] {
-
-	/* It seems like any definition is needed here so that the following pseudo element works as expected */
-	position: inherit;
-}
-
-p[data-pullquote]::before {
-	content: attr(data-pullquote);
-	display: block;
-	float: right;
-	font-size: 2rem;
-	font-weight: 300;
-	color: #888;
-	line-height: 3rem;
-	margin-right: -238px;
-	padding: 0 0 2rem 35px;
-	width: 309px;
-}
 
 /* is this the wrong spot for this? */
 .column p,
@@ -1566,6 +1534,41 @@ footer .tools {
 	padding: 0 10px;
 	position: relative;
 	top: -0.5rem;
+}
+
+/* Paragraphs */
+
+#site p {
+	margin: 0 0 1.2rem;
+	max-width: 556px;
+	padding: 0;
+}
+
+#site p.introduction {
+	font-size: 2.2rem;
+	font-weight: 300;
+	line-height: 3.6rem;
+	margin: 0.8rem 0 1rem;
+	max-width: 592px;
+}
+
+#site p[data-pullquote] {
+
+	/* It seems like a definition is needed here so that the following pseudo element works as expected */
+	position: inherit;
+}
+
+#site p[data-pullquote]::before {
+	content: attr(data-pullquote);
+	display: block;
+	float: right;
+	font-size: 2rem;
+	font-weight: 300;
+	color: #888;
+	line-height: 3rem;
+	margin-right: -238px;
+	padding: 0 0 2rem 35px;
+	width: 309px;
 }
 
 /* Sidebar */
