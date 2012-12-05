@@ -6,7 +6,7 @@
 		
 		<!-- Field with sidebar -->
 		<div class="field centered">
-			<header class="page">
+			<header class="page-header">
 				<h2 class="with-separator">Symphony Factory</h2>
 				<p>72 Replies <em class="tag">Open</em></p>
 				<ul class="tools">

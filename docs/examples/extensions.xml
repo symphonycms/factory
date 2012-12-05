@@ -4,7 +4,7 @@
 	<title id="Examples">Extensions</title>
 	<content>
 		<section>
-			<header class="page">
+			<header class="page-header">
 				<h2>Date and Time</h2>
 				<p>3.0.6 <em class="tag">Released</em></p>
 <!--					<p class="author">by <a href="#">Büro für Web- und Textgestaltung</a>, <a href="#">Nils Hörrmann</a></p>
