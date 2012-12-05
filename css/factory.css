@@ -396,6 +396,35 @@ input, select, textarea {
 }
 
 /*-----------------------------------------------------------------------------
+	Icons:
+	
+	Symphony Factory uses Entypo pictograms by Daniel Bruce – www.entypo.com
+-----------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'Entypo';
+	src: url('fonts/entypo.eot');
+	src: url('fonts/entypo.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/entypo.woff') format('woff'),
+	     url('fonts/entypo.ttf') format('truetype'),
+	     url('fonts/entypo.svg#svgEntypo') format('svg');
+}
+
+[class^=icon]::before {
+	font-family: "Entypo";
+	float: left;
+	margin-right: 5px;
+}
+
+.icon-fork::before {
+	content: "\1F569";
+}
+
+.icon-download::before {
+	content: "\E778";
+}
+
+/*-----------------------------------------------------------------------------
 	Forms:
 
 	Style definitions for form elements.
@@ -1766,7 +1795,7 @@ pre[data-line] {
 
 /* Get Symphony */
 
-#network .network-drawer .get-symphony {
+#network .get-symphony {
 	background: #A00947;
 	margin: 0 0 0 -10px;
 	padding: 1rem 10px;
@@ -1781,17 +1810,17 @@ pre[data-line] {
 	transition: background 0.2s ease-in-out;
 }
 
-#network .network-drawer .get-symphony:hover {
+#network .get-symphony:hover {
 	background: #88083c;
 }
 
-#network .network-drawer .get-symphony a {
+#network .get-symphony a {
 	float: right;
 	border-left: 1px solid rgba(0, 0, 0, 0.15);
 	padding: 0.2rem 10px 0;
 }
 
-#network .network-drawer .get-symphony a:first-child {
+#network .get-symphony a:first-child {
 	font-size: 1.8rem;
 	border-left: none;
 	padding: 0;
@@ -1799,6 +1828,9 @@ pre[data-line] {
 	float: left;
 }
 
+#network .get-symphony [class^=icon]::before {
+	font-size: 34px;	
+}
 /*-----------------------------------------------------------------------------
 	Footer:
 
@@ -1985,31 +2017,3 @@ pre[data-line] {
 
 }
 
-/*-----------------------------------------------------------------------------
-	Fonts and icons:
------------------------------------------------------------------------------*/
-
-@font-face {
-	font-family: 'Entypo';
-	src: url('fonts/entypo.eot');
-	src: url('fonts/entypo.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/entypo.woff') format('woff'),
-	     url('fonts/entypo.ttf') format('truetype'),
-	     url('fonts/entypo.svg#svgEntypo') format('svg');
-}
-
-.icon-fork::before,
-.icon-download::before {
-	font-family: "Entypo";
-	font-size: 34px;
-	float: left;
-	margin-right: 5px;
-}
-
-.icon-fork::before {
-	content: "\1F569";
-}
-
-.icon-download::before {
-	content: "\E778";
-}
