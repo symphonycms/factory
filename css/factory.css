@@ -430,6 +430,83 @@ input, select, textarea {
 }
 
 /*-----------------------------------------------------------------------------
+	Code:
+	
+	Syntax highlighting class will override the default Prism definitions.
+	Thus the Prism styles should be included first.
+-----------------------------------------------------------------------------*/
+
+pre {
+	overflow: auto;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	text-shadow: none;
+}
+
+pre[class*="language-"] {
+	margin: .5em -10px;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #F5F5F5;
+}
+
+pre[data-line] {
+	padding: 1em 0 1em 20px;
+}
+
+/* Tokens */
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #a6a6a6;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+	color: #A00947;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string {
+	color: #737373;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #0080a0;
+}
+
+/* Line highlighting */
+
+.line-highlight {
+	background: rgba(0, 0, 0, 0.03);
+}
+
+.line-highlight::before,
+.line-highlight[data-end]::after {
+	padding: 0 .5em;
+	margin-left: -7px;
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.5);
+	font: normal 1rem/1.5rem 'Open Sans', sans-serif;
+	text-align: left;
+	vertical-align: 0;
+	border-radius: 0;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+/*-----------------------------------------------------------------------------
 	Forms:
 
 	Style definitions for form elements.
@@ -455,124 +532,6 @@ article {
 	clear: both;
 }
 
-/* Main site header */
-
-.site-header {
-	border-bottom: 1px solid #CFCFCF;
-	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
-	margin-bottom: 2.4rem;
-	padding: 3.2rem 30px 1.2rem;
-	position: relative;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
-
-.site-header::before,
-.site-header::after {
-	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	background: -moz-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	background: -ms-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	background: -o-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	background: linear-gradient(to right, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	bottom: -3px;
-	content: "";
-	display: block;
-	height: 5px;
-	left: 0;
-	position: absolute;
-	width: 20px;
-}
-
-.site-header::after {
-	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
-	background: -moz-linear-gradient(left, rgba(251, 253, 251, 0) 0%,rgba(251, 253, 251, 1) 100%);
-	background: -ms-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
-	background: -o-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
-	background: linear-gradient(to right, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
-	left: auto;
-	right: 0;
-}
-
-.site-header h1 {
-	background: url(../img/logo.png) -1px 0 no-repeat;
-	float: left;
-	text-rendering: optimizeLegibility;
-	margin: 0 40px 0 0;
-	white-space: nowrap;
-}
-
-.svg .site-header h1 {
-	background-image: url(../img/logo.svg);
-}
-
-.site-header h1 span {
-	float: left;
-	height: 35px;
-	text-indent: -1000em;
-	width: 203px;
-}
-
-.site-header nav {
-	text-align: right;
-	margin-right: -10px;
-	padding: 1rem 0 0.6rem;
-	line-height: 1.5;
-	clear: none;
-}
-
-.js .site-header nav {
-	height: 2.4rem;
-	text-overflow: clip;
-	white-space: nowrap;
-}
-
-.site-header nav a {
-	border: 1px solid transparent;
-	color: #000;
-	font-size: 1.5rem;
-	padding: 0 9px;
-	text-decoration: none;
-	display: inline-block;
-}
-
-.site-header nav a.active {
-	font-weight: 700;
-}
-
-.site-header nav a:hover {
-	color: #B20B4F;
-}
-
-/* Collapsed site header */
-
-.site-header.action-collapse nav {
-	clear: left;
-	text-align: left;
-	margin-left: -9px;
-	padding: 0;
-	height: 0;
-	text-overflow: normal;
-	white-space: normal;
-	padding: 0;
-	overflow: hidden;
-}
-
-.site-header.action-collapse nav::before {
-	content: "\2630";
-	font-size: 2.9rem;
-	line-height: 1;
-	padding-left: 5px;
-	position: absolute;
-	top: 3.4rem;
-	right: 30px;
-}
-
-.site-header.action-collapse nav.action-open {
-	padding: .6rem 0 0.6rem;
-	min-height: 2.4rem;
-	height: auto;
-	overflow: visible;
-}
 
 /* Page header */
 
@@ -1086,94 +1045,6 @@ header.page .tools {
 
 .overview .tools.pagination {
 	margin-top: 1.8rem;
-}
-
-/*-----------------------------------------------------------------------------
-	Code:
------------------------------------------------------------------------------*/
-
-pre {
-	overflow: auto;
-}
-
-.source code {
-	background: #fff;
-	border: 1px solid #E6E6E5;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: inline-block;
-	height: 2.5rem;
-	white-space: nowrap;
-}
-
-/*-----------------------------------------------------------------------------
-	Syntax highlighting:
-
-	These styles adjusts the default Prims styles.
------------------------------------------------------------------------------*/
-
-code[class*="language-"],
-pre[class*="language-"] {
-	text-shadow: none;
-}
-
-pre[class*="language-"] {
-	margin: .5em -10px;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #F5F5F5;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: #a6a6a6;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number {
-	color: #A00947;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string {
-	color: #737373;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #0080a0;
-}
-
-pre[data-line] {
-	padding: 1em 0 1em 20px;
-}
-
-/* Highlighting */
-
-.line-highlight {
-	background: rgba(0, 0, 0, 0.03);
-}
-
-.line-highlight::before,
-.line-highlight[data-end]::after {
-	padding: 0 .5em;
-	margin-left: -7px;
-	background-color: transparent;
-	color: rgba(0, 0, 0, 0.5);
-	font: normal 1rem/1.5rem 'Open Sans', sans-serif;
-	text-align: left;
-	vertical-align: 0;
-	border-radius: 0;
-	text-shadow: none;
-	box-shadow: none;
 }
 
 /*-----------------------------------------------------------------------------
@@ -1708,6 +1579,125 @@ pre[data-line] {
 
 #site h5 {
 	/* to do */
+}
+
+/* Site Header */
+
+#site .site-header {
+	border-bottom: 1px solid #CFCFCF;
+	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
+	margin-bottom: 2.4rem;
+	padding: 3.2rem 30px 1.2rem;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#site .site-header::before,
+#site .site-header::after {
+	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	background: -moz-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	background: -ms-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	background: -o-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	background: linear-gradient(to right, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	bottom: -3px;
+	content: "";
+	display: block;
+	height: 5px;
+	left: 0;
+	position: absolute;
+	width: 20px;
+}
+
+#site .site-header::after {
+	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
+	background: -moz-linear-gradient(left, rgba(251, 253, 251, 0) 0%,rgba(251, 253, 251, 1) 100%);
+	background: -ms-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
+	background: -o-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
+	background: linear-gradient(to right, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
+	left: auto;
+	right: 0;
+}
+
+#site .site-header h1 {
+	background: url(../img/logo.png) -1px 0 no-repeat;
+	float: left;
+	text-rendering: optimizeLegibility;
+	margin: 0 40px 0 0;
+	white-space: nowrap;
+}
+
+.svg #site .site-header h1 {
+	background-image: url(../img/logo.svg);
+}
+
+#site .site-header h1 span {
+	float: left;
+	height: 35px;
+	text-indent: -1000em;
+	width: 203px;
+}
+
+#site .site-header nav {
+	text-align: right;
+	margin-right: -10px;
+	padding: 1rem 0 0.6rem;
+	line-height: 1.5;
+	clear: none;
+}
+
+.js #site .site-header nav {
+	height: 2.4rem;
+	text-overflow: clip;
+	white-space: nowrap;
+}
+
+#site .site-header nav a {
+	border: 1px solid transparent;
+	color: #000;
+	font-size: 1.5rem;
+	padding: 0 9px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#site .site-header nav a.active {
+	font-weight: 700;
+}
+
+#site .site-header nav a:hover {
+	color: #B20B4F;
+}
+
+/* Collapsed site header */
+
+#site .site-header.action-collapse nav {
+	clear: left;
+	text-align: left;
+	margin-left: -9px;
+	padding: 0;
+	height: 0;
+	text-overflow: normal;
+	white-space: normal;
+	padding: 0;
+	overflow: hidden;
+}
+
+#site .site-header.action-collapse nav::before {
+	content: "\2630";
+	font-size: 2.9rem;
+	line-height: 1;
+	padding-left: 5px;
+	position: absolute;
+	top: 3.4rem;
+	right: 30px;
+}
+
+#site .site-header.action-collapse nav.action-open {
+	padding: .6rem 0 0.6rem;
+	min-height: 2.4rem;
+	height: auto;
+	overflow: visible;
 }
 
 /*-----------------------------------------------------------------------------
