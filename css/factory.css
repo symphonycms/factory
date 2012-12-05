@@ -560,52 +560,36 @@ pre[data-line] {
 	/* to do: needs to be defined, see Network profile for reference */
 
 /*-----------------------------------------------------------------------------
-	Content elements:
-	
-	General definitions for paragraphs and other content elements.
------------------------------------------------------------------------------*/
-
-
-/* is this the wrong spot for this? */
-.column p,
-header p {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-
-
-/*-----------------------------------------------------------------------------
 	Articles:
 	
-	Articles can be used for entry overviews (like the community discussions)
-	and for the entry display itself.
+	to do: this needs to be reorganised, abstracted and integrated with
+	the main site style definitions.
 -----------------------------------------------------------------------------*/
 
 /* Overview */
 
-.overview article {
+#site .overview article {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	height: 6rem;
 	padding-top: 0.64rem;
 }
 
-.overview article:last-of-type {
+#site .overview article:last-of-type {
 	border-bottom: none;
 }
 
-.overview article h3 {
+#site .overview article h3 {
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: inherit;
 	margin: 0;
 }
 
-.overview article p {
+#site .overview article p {
 	margin-bottom: 0;
 }
 
-.overview article .response {
+#site .overview article .response {
 	font-size: 3.6rem;
 	font-weight: 300;
 	line-height: 4.3rem;
@@ -615,7 +599,7 @@ header p {
 	margin-left: 23px; /* actually this should equal 20px, 3 extra pixels for optical alignment */
 }
 
-.overview article .response .tag {
+#site .overview article .response .tag {
 	background: #282828;
 	border-radius: 2px;
 	color: #fff;
@@ -629,14 +613,14 @@ header p {
 	white-space: nowrap;
 }
 
-.overview article .response .tag::before {
+#site .overview article .response .tag::before {
 	content: "+";
 	font-size: 1.3rem;
 	font-weight: 400;
 	vertical-align: 10%;
 }
 
-.overview article .response a {
+#site .overview article .response a {
 	display: block;
 	position: absolute;
 	right: -10px;
@@ -646,13 +630,13 @@ header p {
 
 /* Entries */
 
-.entries article header {
+#site .entries article header {
 	padding: 0;
 }
 
 /* Comments */
 
-article.comment {
+#site article.comment {
 	position: relative;
 	
 	/* @todo: this is highly experimental and only adjusted for expected behavior in Safari. */
@@ -661,39 +645,18 @@ article.comment {
 	padding: 0 10px;
 }
 
-article.comment:not(:first-of-type) {
+#site article.comment:not(:first-of-type) {
 	border-top: 1px solid #bbbfbb;
 }
 
-article.comment footer {
+#site article.comment footer {
 	margin: 0 100px 0 -10px;
 	padding: 0.6rem 10px;
-/*	border-bottom: 1px solid #e2e4e2;*/
 	width: 588px;
 	color: #9b9b9b;
-/*	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-size: 1.1rem;*/
 }
 
-/*article.comment footer::before {
-	content: "";
-	width: 10px;
-	height: 10px;
-	position: absolute;
-	top: 3.1rem;
-	left: 20px;
-	background: #FBFDFB;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	border-top: 1px solid #e2e4e2;
-	border-left: 1px solid #e2e4e2;
-}*/
-
-article.comment footer strong {
+#site article.comment footer strong {
 	background: #282828;
 	border-radius: 2px;
 	color: #fff;
