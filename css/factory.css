@@ -515,38 +515,6 @@ pre[data-line] {
 
 
 /*-----------------------------------------------------------------------------
-	Headers:
-
-	Style definitions for page headlines and headers.
------------------------------------------------------------------------------*/
-
-header {
-	margin: 0 0 0 30px;
-}
-
-
-/* Sections */
-
-section,
-article {
-	clear: both;
-}
-
-footer.author.bottom {
-	font-size: 1.3rem;
-	font-weight: 400;
-	color: #9b9b9b;
-	font-size: 1.3rem;
-	
-}
-
-footer.author.bottom em {
-	color: #9b9b9b;
-	color: #555;
-	font-style: normal;
-}
-
-/*-----------------------------------------------------------------------------
 	Content elements:
 	
 	General definitions for paragraphs and other content elements.
@@ -764,24 +732,6 @@ article.comment footer strong {
 	margin: 0 5px 0 -10px;
 	
 	display: none;
-}
-
-article.comment footer a[rel=author] {
-	font-weight: 700;
-	font-size: 1.3rem;
-	padding-right: 3px;
-}
-
-article.comment footer.author img {
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 2px;
-	position: absolute;
-	top: -1px;
-	right: 0;
-}
-
-#position-1 .comment footer.author img {
-	top: 1rem;
 }
 
 
@@ -1699,6 +1649,37 @@ footer .tools {
 
 #site .sidebar > aside:first-child {
 	margin-top: 1.4rem;
+}
+
+/* Authors */
+/* to do: the styling of this content area needs to be revised */
+
+#site .author-info a[rel=author] {
+	font-weight: 700;
+	font-size: 1.3rem;
+	padding-right: 3px;
+}
+
+#site .author-info img {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	position: absolute;
+	top: -1px;
+	right: 0;
+}
+
+#site .author-info:last-child {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #9b9b9b;
+	font-size: 1.3rem;
+	
+}
+
+#site .author-info:last-child em {
+	color: #9b9b9b;
+	color: #555;
+	font-style: normal;
 }
 
 /*-----------------------------------------------------------------------------

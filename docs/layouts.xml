@@ -6,7 +6,7 @@
 		
 		<!-- Introduction -->
 		<section class="centered">
-			<header class="push-one">
+			<header class="page-header">
 				<h2>Introduction to Layouts</h2>
 			</header>
 			<p class="column five push-one">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
@@ -69,7 +69,7 @@
 		
 		<!-- HTML -->
 		<section class="centered">
-			<header>
+			<header class="page-header">
 				<h2>Basic Markup</h2>
 			</header>
 			<div class="field">
@@ -119,7 +119,7 @@
 		
 		<!-- Network -->
 		<section class="centered">
-			<header>
+			<header class="page-header">
 				<h2 id="chapter_network">Network</h2>
 			</header>
 			
@@ -213,7 +213,7 @@
 		
 		<!-- Content -->
 		<section class="centered">
-			<header>
+			<header class="page-header">
 				<h2>Content</h2>
 			</header>
 			
