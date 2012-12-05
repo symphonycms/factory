@@ -11,11 +11,11 @@
 					<a href="{$config/root}/docs/about.xml">Symphony Network</a>
 				</h1>
 				<nav class="network-nav column">
-					<a href="{$config/root}/docs/about.xml">Community</a>
-					<a href="{$config/root}/docs/about.xml">Documentation</a>
-					<a href="{$config/root}/docs/about.xml">Extensions</a>
-					<a href="{$config/root}/docs/about.xml">Ninjas</a>
-					<a href="{$config/root}/docs/about.xml">xPathr</a>
+					<a href="{$config/root}/docs/examples/community.xml">Community</a>
+					<a href="{$config/root}/docs/examples/documentation.xml">Documentation</a>
+					<a href="{$config/root}/docs/examples/extensions.xml">Extensions</a>
+					<a href="{$config/root}/docs/examples/ninjas.xml">Ninjas</a>
+					<a href="{$config/root}/docs/examples/xpathr.xml">xPathr</a>
 				</nav>
 				<div id="user" class="network-user">
 					<a href="http://getsymphony.com/get-involved/member/Allen/">

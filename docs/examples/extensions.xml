@@ -13,7 +13,7 @@
 			</header>	
 					
 			<!-- Version and Compatibility -->
-			<div class="field data">
+			<div class="field data centered">
 				<h3 class="column sidebar pinned">
 					<span class="label">Symphony Version</span> <span class="hidden">and</span> <span class="label">Compatibility</span>
 				</h3>

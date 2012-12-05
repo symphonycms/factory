@@ -5,7 +5,7 @@
 	<content>
 		
 		<!-- Field with sidebar -->
-		<div class="field">
+		<div class="field centered">
 			<header class="page">
 				<h2 class="with-separator">Symphony Factory</h2>
 				<p>72 Replies <em class="tag">Open</em></p>

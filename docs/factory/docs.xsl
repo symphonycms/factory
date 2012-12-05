@@ -36,7 +36,13 @@
 			<div id="site">
 				
 				<!-- Current header -->
-				<header class="site-header centered">
+				<header>
+					<xsl:attribute name="class">
+						<xsl:choose>
+							<xsl:when test="data/title = 'xPathr'">site-header wide</xsl:when>
+							<xsl:otherwise>site-header centered</xsl:otherwise>
+						</xsl:choose>
+					</xsl:attribute>
 					<h1>
 						<span>Symphony</span>
 						<xsl:text> </xsl:text>
