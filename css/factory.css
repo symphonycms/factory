@@ -1630,6 +1630,7 @@ article.comment footer strong {
 	position: absolute;
 	top: 3.8rem;
 	left: 30px;
+	margin: 0;
 	
 	/* Make sure font smoothing in Webkit doesn't change when the Factory artwork is animated */
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -1676,7 +1677,7 @@ article.comment footer strong {
 
 #footer .footer-factory {
 	position: relative;
-	margin-left: 450px;
+	margin: 0 0 0 450px;
 	top: 1.7rem;
 	width: 140px;
 	height: 140px;
