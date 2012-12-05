@@ -350,7 +350,12 @@ input, select, textarea {
 /*-----------------------------------------------------------------------------
 	Tiles:
 
-	Styling for additional information in a fixed grid.
+	Tiles are a special set of fixed height columns on a full width 
+	backsplash. They are meant to used for additional content or short 
+	feature descriptions.
+	
+	Tiles can be sizes by using the width classes also used for columns 
+	(one, two, three, four, five).
 -----------------------------------------------------------------------------*/
 
 .tiles {
