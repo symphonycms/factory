@@ -1329,7 +1329,7 @@ pre[data-line] {
 	Style definitions for the network area.
 -----------------------------------------------------------------------------*/
 
-.network-wrapper {
+#network {
 	background-color: #b20b4f;
 	border-bottom: 2px solid #d9d9d9;
 	overflow: hidden;
@@ -1342,7 +1342,7 @@ pre[data-line] {
 	height: auto;
 }
 
-.network-wrapper:hover {
+#network:hover {
 	max-height: 60rem;
 	-webkit-transition: max-height 0.25s ease-in-out 0.5s;
 	-moz-transition: max-height 0.25s ease-in-out 0.5s;
@@ -1351,7 +1351,7 @@ pre[data-line] {
 	transition: max-height 0.25s ease-in-out 0.5s;
 }
 
-.network-wrapper.action-profile-open {
+#network.action-profile-open {
  	max-height: 27rem;
 	-webkit-transition: max-height 0.1s ease-in-out 0;
 	-moz-transition: max-height 0.1s ease-in-out 0;
@@ -1363,26 +1363,26 @@ pre[data-line] {
 /* Small layout */
 @media all and (min-width: 648px) and (max-width: 853px) {
 
-	.network-wrapper.action-profile-open {
+	#network.action-profile-open {
 		max-height: 30.3rem;
 	}
 
 }
 
-.network-wrapper::after {
+#network::after {
 	content: none;
 	display: block;
 	clear: both;
 }
 
-.network-wrapper ::selection,
-.network-wrapper ::-moz-selection {
+#network ::selection,
+#network ::-moz-selection {
 	background: rgba(255, 255, 255, 0.2);
 }
 
 /* Network toolbar */
 
-.network-toolbar {
+#network .network-toolbar {
 	background-color: #282828;
 	background-image: -webkit-linear-gradient(top, #282828 3.5rem, #575757 3.5rem, #383838 3.6rem, #383838 6.7rem, #575757 6.7rem);
 	background-image: -moz-linear-gradient(top, #282828 3.5rem, #575757 3.5rem, #383838 3.6rem, #383838 6.7rem, #575757 6.7rem);
@@ -1397,11 +1397,11 @@ pre[data-line] {
 	margin: 0;
 }
 
-.network-toolbar .centered {
+#network .network-toolbar .centered {
 	position: relative;
 }
 
-.network-toolbar h1 {
+#network .network-toolbar h1 {
 	padding: 1rem 0;
 	overflow: visible;
 	font-size: 1.4rem;
@@ -1413,7 +1413,7 @@ pre[data-line] {
 	line-height: 1.4rem;
 }
 
-.network-toolbar a {
+#network .network-toolbar a {
 	color: #fff;
 	-webkit-transition: color 0.2s ease-in-out;
 	-moz-transition: color 0.2s ease-in-out;
@@ -1424,14 +1424,14 @@ pre[data-line] {
 
 /* Network navigation */
 
-.network-nav {
+#network .network-nav {
 	width: auto;
 	padding: 0.5rem 36px 0.5rem 0;
 	position: relative;
 	line-height: 1.4rem;
 }
 
-.network-nav::before {
+#network .network-nav::before {
 	content: "\2630";
 	position: absolute;
 	top: -2.5rem;
@@ -1440,7 +1440,7 @@ pre[data-line] {
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.network-nav a {
+#network .network-nav a {
 	color: rgba(255, 255,255, 0.7);
 	line-height: 1.4rem;
 	font-size: 1.4rem;
@@ -1450,11 +1450,11 @@ pre[data-line] {
 	padding: 0.5rem 0;
 }
 
-.network-nav a:hover {
+#network .network-nav a:hover {
 	color: #fff;
 }
 
-.network-nav a:not(:last-of-type)::after {
+#network .network-nav a:not(:last-of-type)::after {
 	content: "\00B7";
 	color: rgba(255, 255,255, 0.7);
 	margin: 0 0.5em;
@@ -1462,19 +1462,19 @@ pre[data-line] {
 
 /* User */
 
-.network-user {
+#network .network-user {
 	position: absolute;
 	right: 30px;
 	top: 0;
 	white-space: nowrap;
 }
 
-.network-user img {
+#network .network-user img {
 	float: right;
 	border: none;
 }
 
-.network-user p {
+#network .network-user p {
 	float: right;
 	display: block;
 	font-size: 1.4rem;
@@ -1484,37 +1484,37 @@ pre[data-line] {
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.network-user a {
+#network .network-user a {
 	color: rgba(255, 255, 255, 0.7);
 	cursor: pointer;
 }
 
-.network-user a:hover {
+#network .network-user a:hover {
 	color: #fff;
 }
 
-.network-user .network-visitors {
+#network .network-user .network-visitors {
 	margin-left: 7px;
 }
 
-.network-user.action-collapse p {
+#network .network-user.action-collapse p {
 	display: none;
 }
 
 /* Profile */
 
-.network-profile {
+#network .network-profile {
 	padding: 2.4rem 0;
 	max-height: 24rem;
 	overflow: hidden;
 }
 
-.network-profile.action-profile-hide {
+#network .network-profile.action-profile-hide {
 	max-height: 0;
 	padding: 0;
 }
 
-.network-profile.action-profile-animate {
+#network .network-profile.action-profile-animate {
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
 	-ms-transition: all 0.25s ease-in-out;
@@ -1522,12 +1522,12 @@ pre[data-line] {
 	transition: all 0.25s ease-in-out;
 }
 
-.network-profile fieldset {
+#network .network-profile fieldset {
 	padding: 0;
 	border: none;
 }
 
-.network-profile label {
+#network .network-profile label {
 	font-size: 1.2rem;
 	font-weight: 400;
 	letter-spacing: 0.1em;
@@ -1538,7 +1538,7 @@ pre[data-line] {
 	position: relative;
 }
 
-.network-profile label.restricted::after {
+#network .network-profile label.restricted::after {
 	content: "\1F512";
 	font-family: Entypo;
 	color: rgba(0, 0, 0, 0.3);
@@ -1549,8 +1549,8 @@ pre[data-line] {
 	display: block;
 }
 
-.network-profile input[type=text],
-.network-profile textarea {
+#network .network-profile input[type=text],
+#network .network-profile textarea {
 	background: rgba(0, 0, 0, 0.025);
 	border: none;
 	border-bottom: 1px solid #A00947;
@@ -1564,34 +1564,34 @@ pre[data-line] {
 	font-weight: 300;
 }
 
-.network-profile textarea {
+#network .network-profile textarea {
 	height: 7.1rem;
 	line-height: 2.4rem;
 }
 
-.network-profile input[type=text]:active,
-.network-profile input[type=text]:focus,
-.network-profile input[type=text]:not([readonly]):hover,
-.network-profile textarea:active,
-.network-profile textarea:focus,
-.network-profile textarea:hover  {
+#network .network-profile input[type=text]:active,
+#network .network-profile input[type=text]:focus,
+#network .network-profile input[type=text]:not([readonly]):hover,
+#network .network-profile textarea:active,
+#network .network-profile textarea:focus,
+#network .network-profile textarea:hover  {
 	background: #A00947;
 	border-radius: 2px;
 	border-bottom-color: #88083C;
 	outline: none;
 }
 
-.network-profile input[readonly] {
+#network .network-profile input[readonly] {
 	color: rgba(255, 255, 255, 0.6);
 }
 
 /* Controls */
 
-.network-profile .profile-controls {
+#network .network-profile .profile-controls {
 	margin-right: -10px;
 }
 
-.network-profile [class^=button] {
+#network .network-profile [class^=button] {
 	margin: 1.2rem 0 0 10px;
 	padding: 0 10px;
 	height: 2.6rem;
@@ -1613,7 +1613,7 @@ pre[data-line] {
 	box-shadow: inset 0 -1px 0 rgba(210, 101, 145, 0.2);
 }
 
-.network-profile [class^=button]:hover {
+#network .network-profile [class^=button]:hover {
 	border-color: #700731;
 	background-image: -webkit-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
 	background-image: -moz-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
@@ -1623,32 +1623,19 @@ pre[data-line] {
 	cursor: pointer;
 }
 
-/*.network-profile .button-save {
-	background: #007fb4;
-	background-image: -webkit-linear-gradient(top, rgba(21, 175, 239, 0.5) 0%, #007fb4 95%);
-	background-image: -moz-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
-	background-image: -ms-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);	
-	background-image: -o-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
-	background-image: linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
-	box-shadow: inset 0 -1px 0 rgba(210, 101, 145, 0.2);
-	box-shadow: none;
-	color: #003247;
-	border-color: #0073a2;
-}*/
-
 /* Gravatar */
 
-.network-profile .network-gravatar {
+#network .network-profile .network-gravatar {
 	position: relative;
 	margin-top: 0.6rem;
 }
 
-.network-profile .network-gravatar img {
+#network .network-profile .network-gravatar img {
 	border: 1px solid #88083C;
 	display: block;
 }
 
-.network-profile .network-gravatar p {
+#network .network-profile .network-gravatar p {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1669,18 +1656,18 @@ pre[data-line] {
 	transition: opacity 0.25s ease-in-out;
 }
 
-.network-profile .network-gravatar:hover p {
+#network .network-profile .network-gravatar:hover p {
 	opacity: 1;
 }
 
-.network-profile .network-gravatar a {
+#network .network-profile .network-gravatar a {
 	color: #fff;
 	text-decoration: underline;
 }
 
 /* Drawer */
 
-.network-drawer {
+#network .network-drawer {
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 2.5rem;
 	margin-bottom: 0;
@@ -1694,7 +1681,7 @@ pre[data-line] {
 	max-height: 50rem;
 }
 
-.network-wrapper:not(.action-profile-open):hover .network-drawer {
+#network:not(.action-profile-open):hover .network-drawer {
 	margin-top: 0;
 	margin-bottom: 2.5rem;
 	opacity: 1;
@@ -1705,7 +1692,7 @@ pre[data-line] {
 	transition: all 0.3s ease-in-out 0.5s;
 }
 
-.network-wrapper.action-profile-open .network-drawer {
+#network.action-profile-open .network-drawer {
 	max-height: 0;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -1716,7 +1703,7 @@ pre[data-line] {
 	transition-delay: 0;
 }
 
-.network-wrapper.action-profile-hide:hover .network-drawer {
+#network.action-profile-hide:hover .network-drawer {
 	margin-top: 0;
 	margin-bottom: 2.5rem;
 	opacity: 1;
@@ -1727,19 +1714,18 @@ pre[data-line] {
 	transition-delay: 0;
 }
 
-.network-drawer::after {
+#network .network-drawer::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.network-drawer > .column {
+#network .network-drawer > .column {
 	margin-top: 18px;
 }
 
-.network-drawer h2 {
+#network .network-drawer h2 {
 	border-bottom: 1px solid #9E0A46;
-/*	color: #d96f90;*/
 	color: #350318;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
 	font-size: 1.2rem;
@@ -1752,35 +1738,35 @@ pre[data-line] {
 	line-height: 2.4rem;
 }
 
-.network-drawer p {
+#network .network-drawer p {
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.network-drawer a {
+#network .network-drawer a {
 	font-size: 1.3rem;
 	color: #fff;
 }
 
-.network-drawer ul {
+#network .network-drawer ul {
 	margin-left: 0;
 }
 
-.network-drawer li::before {
+#network .network-drawer li::before {
 	content: none;
 }
 
-.network-drawer li {
+#network .network-drawer li {
 	padding-left: 0;
 }
 
-.network-drawer ::selection,
-.network-drawer ::-moz-selection {
+#network .network-drawer ::selection,
+#network .network-drawer ::-moz-selection {
 	background: rgba(0, 0, 0, 0.1)
 }
 
 /* Get Symphony */
 
-.network-drawer .get-symphony {
+#network .network-drawer .get-symphony {
 	background: #A00947;
 	margin: 0 0 0 -10px;
 	padding: 1rem 10px;
@@ -1795,17 +1781,17 @@ pre[data-line] {
 	transition: background 0.2s ease-in-out;
 }
 
-.network-drawer .get-symphony:hover {
+#network .network-drawer .get-symphony:hover {
 	background: #88083c;
 }
 
-.network-drawer .get-symphony a {
+#network .network-drawer .get-symphony a {
 	float: right;
 	border-left: 1px solid rgba(0, 0, 0, 0.15);
 	padding: 0.2rem 10px 0;
 }
 
-.network-drawer .get-symphony a:first-child {
+#network .network-drawer .get-symphony a:first-child {
 	font-size: 1.8rem;
 	border-left: none;
 	padding: 0;
