@@ -493,10 +493,11 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] {
-	margin: .5em -10px;
+	margin: 0 -10px 0.8rem;
+	padding: 1.5rem 10px;
 }
 
-:not(pre) > code[class*="language-"],
+:not(pre) > code[class*="language-"], 
 pre[class*="language-"] {
 	background: #F5F5F5;
 }
@@ -1249,6 +1250,13 @@ pre[data-line] {
 	padding: 0 10px;
 	position: relative;
 	top: -0.5rem;
+}
+
+/* Groups */
+
+#site section,
+#site article {
+	margin-bottom: 4rem;
 }
 
 /* Paragraphs */
