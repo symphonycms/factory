@@ -1259,14 +1259,6 @@ pre[data-line] {
 	padding: 0;
 }
 
-#site p.introduction {
-	font-size: 2.2rem;
-	font-weight: 300;
-	line-height: 3.6rem;
-	margin: 0 0 1rem;
-	max-width: 592px;
-}
-
 #site p[data-pullquote] {
 
 	/* It seems like a definition is needed here so that the following pseudo element works as expected */
@@ -1286,6 +1278,50 @@ pre[data-line] {
 	width: 309px;
 }
 
+/* Highlighting */
+
+#site .content-introduction {
+	font-size: 2.2rem;
+	font-weight: 300;
+	line-height: 3.6rem;
+	margin: 0 0 1rem;
+	max-width: 592px;
+}
+
+#site .content-annotation {
+	color: #666;
+}
+
+#site .content-annotation::after {
+	content: '\E766';
+	font-family: Entypo;
+	font-size: 2rem;
+	position: absolute;
+	top: 0;
+	right: -5px;
+}
+
+/* Push content over sidebar */
+
+@media all and (min-width: 854px) {
+
+	#site .content-pushaside {
+		position: relative;
+		left: -206px;
+		width: 793px;
+	}
+
+}
+
+@media all and (min-width: 1060px) {
+
+	#site .content-pushaside {
+		width: 1000px;
+	}
+
+}
+
+
 /* Sidebar */
 /* to do: these styles need to be cleared out */
 
@@ -1295,19 +1331,6 @@ pre[data-line] {
 	letter-spacing: 0.1em;
 	margin-top: 0.6rem;
 	text-transform: uppercase;
-}
-
-#site .sidebar p.annotation {
-	color: #666;
-}
-
-#site .sidebar p.annotation::after {
-	content: '\E766';
-	font-family: Entypo;
-	font-size: 2rem;
-	position: absolute;
-	top: 0;
-	right: -5px;
 }
 
 #site .sidebar ul {

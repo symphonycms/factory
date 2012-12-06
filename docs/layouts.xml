@@ -8,27 +8,27 @@
 		<section class="field centered language-markup">
 			<div class="column content">
 				<h2>Introduction to Layouts</h2>
-				<p class="introduction">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
+				<p class="content-introduction">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
 
 				<!-- Grid -->
 				<h3>Grid System</h3>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 			
 				<!-- Fluid -->
 				<h4>Fluid Layout</h4>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 			
 				<!-- Small -->
 				<h4>Small Layout</h4>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 			
 				<!-- Medium -->
 				<h4>Medium Layout</h4>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 
 				<!-- Large -->
 				<h4>Large Layout</h4>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 			</div>
 		</section>
 		
@@ -37,8 +37,8 @@
 			<div class="column content">
 				<h2>Basic Markup</h2>
 				<h3>HTML Skeleton</h3>
-				<p class="annotation">Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>				
-				<pre><code><![CDATA[<!DOCTYPE html>
+				<p class="content-annotation">Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>				
+				<pre class="content-pushaside justified"><code><![CDATA[<!DOCTYPE html>
 	<html>
 		<head>
 			<meta charset="UTF-8">
@@ -83,8 +83,8 @@
 			
 				<!-- XSL -->
 				<h3>Including the Toolbar</h3>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				<pre><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<pre class="content-pushaside justified"><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
 	<xsl:import href="xsl/network.xsl" />
@@ -97,8 +97,8 @@
 			
 				<!-- Result -->
 				<h3>Toolbar Output</h3>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				<pre><code><![CDATA[<aside id="network">
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<pre class="content-pushaside justified"><code><![CDATA[<aside id="network">
 	<header class="field">
 		<div class="centered">
 			<h1 class="column one">
@@ -165,8 +165,8 @@
 			
 				<!-- Header -->
 				<h3>Site Header</h3>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				<pre><code><![CDATA[<header class="site">
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<pre class="content-pushaside justified"><code><![CDATA[<header class="site">
 	
 	<!-- Site title -->
 	<h1>
@@ -183,13 +183,13 @@
 
 				<!-- Fields -->
 				<h3>Content fields</h3>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				<pre><code></code></pre>
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<pre class="content-pushaside justified"><code></code></pre>
 			
 				<!-- Columns -->
 				<h3>Columns</h3>
-				<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				<pre><code></code></pre>
+				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<pre class="content-pushaside justified"><code></code></pre>
 			</div>
 		</section>
 	</content>

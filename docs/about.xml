@@ -18,7 +18,7 @@
 				</ul>				
 			</div>
 			<div class="column content language-markup">
-				<p class="introduction">Symphony Factory is an easy-to-use HTML, CSS and JavaScript framework to create websites for the Symphony Network with a unified design. It is freely available for all Symphony Network sites.</p>
+				<p class="content-introduction">Symphony Factory is an easy-to-use HTML, CSS and JavaScript framework to create websites for the Symphony Network with a unified design. It is freely available for all Symphony Network sites.</p>
 				<p>Text</p>
 				<h4>Repository</h4>
 				<pre class="three"><code class="highlight">git@github.com:symphonycms/factory.git</code></pre>
