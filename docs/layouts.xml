@@ -36,8 +36,12 @@
 		<section class="field centered language-markup">
 			<div class="column content">
 				<h2>Basic Markup</h2>
+				<p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 				<h3>HTML Skeleton</h3>
-				<p class="content-annotation">Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>				
+				<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
 				<pre class="content-pushaside justified"><code><![CDATA[<!DOCTYPE html>
 	<html>
 		<head>
@@ -83,7 +87,9 @@
 			
 				<!-- XSL -->
 				<h3>Including the Toolbar</h3>
-				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
 				<pre class="content-pushaside justified"><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
@@ -97,7 +103,9 @@
 			
 				<!-- Result -->
 				<h3>Toolbar Output</h3>
-				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
 				<pre class="content-pushaside justified"><code><![CDATA[<aside id="network">
 	<header class="field">
 		<div class="centered">
@@ -165,7 +173,9 @@
 			
 				<!-- Header -->
 				<h3>Site Header</h3>
-				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
 				<pre class="content-pushaside justified"><code><![CDATA[<header class="site">
 	
 	<!-- Site title -->
@@ -183,12 +193,16 @@
 
 				<!-- Fields -->
 				<h3>Content fields</h3>
-				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
 				<pre class="content-pushaside justified"><code></code></pre>
 			
 				<!-- Columns -->
 				<h3>Columns</h3>
-				<p class="content-annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
 				<pre class="content-pushaside justified"><code></code></pre>
 			</div>
 		</section>

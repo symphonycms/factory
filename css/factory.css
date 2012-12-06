@@ -1306,16 +1306,39 @@ pre[data-line] {
 }
 
 #site .content-annotation {
-	color: #666;
+	height: 1.8rem;
+	overflow: visible;
+	position: relative;
 }
 
-#site .content-annotation::after {
-	content: '\E766';
-	font-family: Entypo;
-	font-size: 2rem;
+#site .content-annotation p {
+	color: #666;
+	border-bottom: 1px solid #CECECE;
+	width: 176px;
+	padding: 0.5rem 10px;
+	background: #FBFDFB;
 	position: absolute;
-	top: 0;
-	right: -5px;
+	right: -10px;
+	bottom: 1.2rem;
+}
+
+#site .content-annotation p::before,
+#site .content-annotation p::after {
+	content: " ";
+	display: block;
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #CECECE;
+	position: absolute;
+	bottom: -6px;
+	left: 40px;
+}
+
+#site .content-annotation p::after {
+	border-top: 6px solid #FBFDFB;
+	bottom: -5px;
 }
 
 /* Push content over sidebar */
