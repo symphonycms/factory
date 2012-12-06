@@ -1067,33 +1067,28 @@ pre[data-line] {
 }
 
 #site h2 {
-	font-size: 3rem;
+	font-size: 2.6rem;
 	font-weight: 400;
 	line-height: 3.6rem;
 	margin: 0;
+	padding: 2rem 0 1.2rem;
 }
 
 #site h3 {
 	font-size: 2.2rem;
 	font-weight: 400;
-	margin: 2.5rem 0 1.1rem;
+	margin: 4.8rem 0 1.1rem;
 	padding: 0;
 	max-width: 592px;
-
-	/* @todo: needs a smaller line-height - might not work for the introduction though */
 	line-height: 3.6rem;
 }
 
 #site h4 {
-	font-size: 1.8rem;
-	font-weight: 400;
-	margin: 2.2rem 0 0.6rem;
+	font-size: 2rem;
+	font-weight: 300;
+	margin: 3.3rem 0 1.5rem;
 	padding: 0;
 	max-width: 592px;
-}
-
-#site h5 {
-	/* to do */
 }
 
 /* Site Header */
@@ -1218,12 +1213,12 @@ pre[data-line] {
 /* Page headers */
 
 #site .page-header {
-	margin: 2.9rem 30px 0;
+	margin: 2.9rem 0 0;
 	max-width: 796px;
 }
 
 #site .page-header h2 {
-	margin: 0 6px 3rem 0;
+	margin: 0 0 3rem;
 	display: inline-block;
 }
 
@@ -1268,7 +1263,7 @@ pre[data-line] {
 	font-size: 2.2rem;
 	font-weight: 300;
 	line-height: 3.6rem;
-	margin: 0.8rem 0 1rem;
+	margin: 0 0 1rem;
 	max-width: 592px;
 }
 
@@ -1427,7 +1422,7 @@ pre[data-line] {
 	font-style: normal;
 	font-weight: 300;
 	line-height: 1.8rem;
-	margin: 0 -0.8rem 0 0.4rem;
+	margin: 0 -0.8rem 0 0;
 	padding: 0.5rem 10px 0.4rem 0.8rem;
 	white-space: nowrap;
 	display: inline-block;
