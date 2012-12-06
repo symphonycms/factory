@@ -1104,6 +1104,15 @@ pre[data-line] {
 	-moz-box-sizing: border-box;
 }
 
+@media (min-device-height: 1050px) {
+
+	#site .site-header {
+		padding-top: 4.4rem;
+		padding-bottom: 2.4rem;
+	}
+	
+}
+
 #site .site-header::before,
 #site .site-header::after {
 	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
