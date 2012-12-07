@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
+<xsl:import href="ninja.xsl" />
 <xsl:import href="../../xsl/network.xsl" />
 <xsl:import href="../../xsl/footer.xsl" />
 
@@ -63,13 +64,18 @@
 				</header>
 
 				<!-- Content -->
-				<xsl:copy-of select="data/content/*" />
+				<xsl:apply-templates select="data/content/*" mode="ninja" />
 			</div>
 			
 			<!-- Footer -->
 			<xsl:call-template name="footer" />
 		</body>
 	</html>
+</xsl:template>
+
+<!-- Images -->
+<xsl:template match="img" mode="ninja" priority="1">
+	<img src="{$config/root}{@src}" width="{@width}" height="{@height}" alt="{@alt}" />
 </xsl:template>
 
 <!-- Navigation -->

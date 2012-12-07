@@ -225,7 +225,6 @@ ul li > ul {
 .justified {
 	margin-left: -10px;
 	margin-right: -10px;
-	padding-left: 10px;
 }
 
 /* Columns */
@@ -236,6 +235,10 @@ ul li > ul {
 	float: left;
 	margin: 0 0 0 30px;
 }
+
+.justified .column:first-child {
+	margin-left: 10px;
+} 
 
 /* Columns by function */
 
@@ -552,6 +555,21 @@ pre[data-line] {
 	border-radius: 0;
 	text-shadow: none;
 	box-shadow: none;
+}
+
+/*-----------------------------------------------------------------------------
+	Media:
+
+	Style definitions for form elements.
+-----------------------------------------------------------------------------*/
+
+.content-media {
+	width: 100%;
+}
+
+.image-resize img {
+	width: 100%;
+	height: auto;
 }
 
 /*-----------------------------------------------------------------------------

@@ -8,7 +8,44 @@
 		<section class="field centered language-markup">
 			<div class="column content">
 				<h2>Introduction to Layouts</h2>
-				<p class="content-introduction">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
+				<p class="content-introduction">Symphony Factory offers a flexible layout system to build network sites that adapt to the visitor's window or screen size. Starting with a fluid version, the design expands in three steps to a five column layout that can be individually filled with content blocks.</p>
+
+				<h3>Using the Grid</h3>
+				<p>Factory is based on a fixed width grid and offers four different layout states:</p>
+				<ul>
+					<li>a basic fluid layout for screen widths up to <code>647px</code>,</li>
+					<li>a small layout with 3 base columns for window widths up to <code>853px</code></li>
+					<li>a medium layout with 4 base columns for window widths up to <code>1060px</code> and</li>
+					<li>a large layout with five base columns for all wider window widths.</li>
+				</ul>
+
+				<div class="content-annotation">
+					<p>The grid in made of <code>73px</code> wide modules with a gutter of <code>30px</code>.</p>
+				</div>
+				<div class="content-media image-resize justified">
+					<img src="/docs/img/factory_grid.png" width="814" height="458" alt="Symphony Factory grid" />
+				</div>
+
+				<p>Because each network site needs individual solutions, Factory offers a simple way to exclude states by adding a <code>data-exclude-state</code> attribute with a space-separated list of states to the <code>body</code> of a page, either <code>fluid</code>, <code>small</code>, <code>medium</code> or <code>large</code>. For example:</p>
+				<pre><code><![CDATA[<body data-exclude-state="fluid small"></body>]]></code></pre>
+				
+				<h4>Fields</h4>
+				<p>A site should always be structured by fields that group the content columns. This could either be <code>div</code>, <code>section</code>, <code>article</code> or other appropriate block elements with the class <code>.field</code>. Fields can either be centered using the class <code>.centered</code> or use the full window width by using the class <code>.wide</code>. Fields can be nested and justified where the latter enlarges their width by <code>10px</code> on each side to allow horizontal lines, images or code blocks to better align optically.</p>
+				
+				<h4>Columns</h4>
+				<p>Columns can either be defined by width (one, two, three, four, five) or by 
+				function (sidebar or content). A column width can be adjusted based on the 
+				layout context: the class <code>.medium-one</code> will override all other width 
+				definitions when displaying the medium layout. This is helpful to adjust 
+				content display responsively. The fluid layout linearises all columns.</p>
+				
+				<p>All columns are floated and it&#8217;s up to the developer to make sure that 
+				their widths sum up to the full page width per row if this is desired. 
+				The widths .four and .five are not meant to display running text, 
+				they should be used for tables and images.</p>
+				
+				<p>If you&#8217;d like to nest columns inside a column, make sure to wrap those
+				columns with another .field element.</p>
 
 				<!-- Grid -->
 				<h3>Grid System</h3>
