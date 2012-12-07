@@ -1235,6 +1235,14 @@ pre[data-line] {
 	right: 30px;
 }
 
+@media (min-device-height: 1050px) {
+
+	#site .site-header.action-collapse nav::before {
+		top: 4.6rem;
+	}
+
+}
+
 #site .site-header.action-collapse nav.action-open {
 	padding: .6rem 0 0.6rem;
 	min-height: 2.4rem;
