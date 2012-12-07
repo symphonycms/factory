@@ -1306,7 +1306,7 @@ pre[data-line] {
 }
 
 #site .content-annotation {
-	height: 1.8rem;
+	margin-top: 1.8rem;
 	overflow: visible;
 	position: relative;
 }
@@ -1314,12 +1314,8 @@ pre[data-line] {
 #site .content-annotation p {
 	color: #666;
 	border-bottom: 1px solid #CECECE;
-	width: 176px;
-	padding: 0.5rem 10px;
 	background: #FBFDFB;
-	position: absolute;
-	right: -10px;
-	bottom: 1.2rem;
+	padding: 0.5rem 0;
 }
 
 #site .content-annotation p::before,
@@ -1339,6 +1335,22 @@ pre[data-line] {
 #site .content-annotation p::after {
 	border-top: 6px solid #FBFDFB;
 	bottom: -5px;
+}
+
+@media all and (min-width: 1060px) {
+
+	#site .content-annotation {
+		height: 0;
+	}
+
+	#site .content-annotation p {
+		position: absolute;
+		right: -10px;
+		bottom: 1.2rem;
+		width: 176px;
+		padding: 0.5rem 10px;
+	}
+
 }
 
 /* Push content over sidebar */
