@@ -1481,6 +1481,7 @@ pre[data-line] {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	height: 5.3rem;
 	padding-top: 0.64rem;
+	margin-bottom: 0;
 }
 
 #site .entry-header {
