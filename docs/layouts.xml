@@ -5,80 +5,44 @@
 	<content>
 		
 		<!-- Introduction -->
-		<section class="centered">
-			<header class="push-one">
+		<section class="field centered language-markup">
+			<div class="column content">
 				<h2>Introduction to Layouts</h2>
-			</header>
-			<p class="column five push-one">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
-			
-			<!-- Grid -->
-			<div class="field">
+				<p class="content-introduction">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum.</p>
+
+				<!-- Grid -->
 				<h3>Grid System</h3>
-				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content">
-				
-				</div>
-			</div>
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 			
-			<!-- Fluid -->
-			<div class="field">
-				<h3>Fluid Layout</h3>
-				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content">
-				
-				</div>
-			</div>
+				<!-- Fluid -->
+				<h4>Fluid Layout</h4>
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 			
-			<!-- Small -->
-			<div class="field">
-				<h3>Small Layout</h3>
-				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content">
-				
-				</div>
-			</div>
+				<!-- Small -->
+				<h4>Small Layout</h4>
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 			
-			<!-- Medium -->
-			<div class="field">
-				<h3>Medium Layout</h3>
-				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content">
-					Test
-				</div>
-			</div>
-			
-			<!-- Large -->
-			<div class="field">
-				<h3>Large Layout</h3>
-				<div class="column sidebar">
-					<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content">
-					Test
-				</div>
+				<!-- Medium -->
+				<h4>Medium Layout</h4>
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
+
+				<!-- Large -->
+				<h4>Large Layout</h4>
+				<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
 			</div>
 		</section>
 		
 		<!-- HTML -->
-		<section class="centered">
-			<header>
+		<section class="field centered language-markup">
+			<div class="column content">
 				<h2>Basic Markup</h2>
-			</header>
-			<div class="field">
+				<p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 				<h3>HTML Skeleton</h3>
-				<div class="column sidebar">
-					<p class="annotation">Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>				
-				</div>
-				<div class="column content language-markup">
-					<pre><code><![CDATA[<!DOCTYPE html>
+				<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
+				<pre class="content-pushaside justified"><code><![CDATA[<!DOCTYPE html>
 	<html>
 		<head>
 			<meta charset="UTF-8">
@@ -113,24 +77,20 @@
 			<div id="site"></div>
 		</body>
 	</html>]]></code></pre>
-				</div>
 			</div>
 		</section>
 		
 		<!-- Network -->
-		<section class="centered">
-			<header>
+		<section class="field centered language-markup">
+			<div class="column content">
 				<h2 id="chapter_network">Network</h2>
-			</header>
 			
-			<!-- XSL -->
-			<div class="field">
+				<!-- XSL -->
 				<h3>Including the Toolbar</h3>
-				<div class="column sidebar">
-					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content language-markup">
-					<pre><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
+				<pre class="content-pushaside justified"><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
 	<xsl:import href="xsl/network.xsl" />
@@ -140,17 +100,13 @@
 	</xsl:template>
 
 </xsl:stylesheet>]]></code></pre>
-				</div>
-			</div>
 			
-			<!-- Result -->
-			<div class="field">
+				<!-- Result -->
 				<h3>Toolbar Output</h3>
-				<div class="column sidebar">
-					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content language-markup">
-					<pre><code><![CDATA[<aside id="network">
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
+				<pre class="content-pushaside justified"><code><![CDATA[<aside id="network">
 	<header class="field">
 		<div class="centered">
 			<h1 class="column one">
@@ -207,24 +163,20 @@
 		</div>
 	</div>
 </aside>]]></code></pre>
-				</div>
 			</div>
 		</section>
 		
 		<!-- Content -->
-		<section class="centered">
-			<header>
+		<section class="field centered language-markup">
+			<div class="column content">
 				<h2>Content</h2>
-			</header>
 			
-			<!-- Header -->
-			<div class="field">
+				<!-- Header -->
 				<h3>Site Header</h3>
-				<div class="column sidebar">
-					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content language-markup">
-					<pre><code><![CDATA[<header class="site">
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
+				<pre class="content-pushaside justified"><code><![CDATA[<header class="site">
 	
 	<!-- Site title -->
 	<h1>
@@ -238,29 +190,20 @@
 		<a href="link-c">Link C</a>
 	</nav>
 </header>]]></code></pre>
-				</div>
-			</div>
 
-			<!-- Fields -->
-			<div class="field">
+				<!-- Fields -->
 				<h3>Content fields</h3>
-				<div class="column sidebar">
-					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content language-markup">
-					<pre><code></code></pre>
-				</div>
-			</div>
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
+				<pre class="content-pushaside justified"><code></code></pre>
 			
-			<!-- Columns -->
-			<div class="field">
+				<!-- Columns -->
 				<h3>Columns</h3>
-				<div class="column sidebar">
-					<p class="annotation">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>				
-				</div>
-				<div class="column content language-markup">
-					<pre><code></code></pre>
-				</div>
+				<div class="content-annotation">
+					<p>Factory's markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
+				</div>			
+				<pre class="content-pushaside justified"><code></code></pre>
 			</div>
 		</section>
 	</content>

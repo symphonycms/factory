@@ -6,7 +6,7 @@
 
 		<!-- Field with sidebar -->
 		<div class="field centered">
-			<header class="page">
+			<header class="page-header">
 				<h2 class="with-separator">John Porter</h2>
 				<p>United Kingdom</p>
 			</header>
@@ -70,7 +70,7 @@
 				</ul>
 				<h3 id="What-are-your-favorite-Symphony-CMS-extensions-and-why">What are your favorite Symphony CMS extensions and why?</h3>
 				<p>There are so many to choose from. It's like asking me what my top 5 albums are, it all depends. What I find is that I regularly trawl through the list to see what's out there and where I can fit it into a project. There are some absolute corkers of extensions out there from very complex huge ones to some single file extensions that are all as great and infinitely useful. My favourite though, is the <a href="http://github.com/symphonists/url_router">URL Router</a>, created by Rob Philp and adopted by myself and the Symphonists community. It adds so much power into the design patterns of a site/application, with some very simple processes.</p>
-				<footer class="author bottom">
+				<footer class="author-info">
 					<p>Interview by <em>Mark Lewis</em> on May 15, 2012</p>
 				</footer>
 			</div>

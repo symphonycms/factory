@@ -19,7 +19,10 @@
 	
   # Units
 	
-	Use `rem` for vertical and `px` for horizontal units.
+	`rem` are used for vertical and `px` for horizontal measures. 
+	While `rem` help creating a scalable vertical rhythm, 
+	`px` should simplify the process of working with images.
+	This may change in the future.
 -----------------------------------------------------------------------------*/
 
 html {
@@ -41,6 +44,51 @@ input, select, textarea {
 	color: #282828;
 }
 
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #B20B4F;
+}
+
+img {
+	display: block;
+}
+
+code {
+	font: 1.3rem/2.4rem Monaco, Consolas, 'Andale Mono', monospace;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+	margin: 0 0 1.2rem 3rem;
+	padding: 0;
+}
+
+ul li {
+	padding-left: 13px;
+	position: relative;
+}
+
+ul li::before {
+	content: "·";
+	position: absolute;
+	left: 0;
+	font-weight: 800;
+}
+
+ul li > ul {
+	margin: 0 0 0 15px;
+}
+
 /* Behaviours */
 
 .hidden {
@@ -58,19 +106,16 @@ input, select, textarea {
 	The centered layout is the default one and should be used by all
 	text focussed sites. The fluid version is conceived for special 
 	user interfaces like xPathr that need the full window width.
-	
-	The centered layout knows three fixed states and a fluid fallback for 
-	narrow windows and mobile devices: 
-	
-	- large (>= 1060px), 
-	- medium (>= 854px),
-	- small (>= 648px) and 
-	- fluid (< 648 px).
-	
-	If you want to exclude one of these states on your site, just add a 
-	`data-exclude-state` attribute with its name on the body element 
-	(multiple values need to be space-separated).
 -----------------------------------------------------------------------------*/
+
+/* Wide */
+
+.wide {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 50px;
+	width: 100%;
+}
 
 /* Centered */
 
@@ -78,15 +123,6 @@ input, select, textarea {
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
-}
-
-/* Fluid */
-
-.wide {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0 50px;
-	width: 100%;
 }
 
 @media all and (max-width: 647px) {
@@ -99,7 +135,7 @@ input, select, textarea {
 
 }
 
-/* Small */
+/* Centered: small width */
 
 @media all and (min-width: 648px) {
 
@@ -109,7 +145,7 @@ input, select, textarea {
 
 }
 
-/* Medium */
+/* Centered: medium width */
 
 @media all and (min-width: 854px) {
 
@@ -119,7 +155,7 @@ input, select, textarea {
 
 }
 
-/* Large */
+/* Centered: large width */
 
 @media all and (min-width: 1060px) {
 
@@ -130,11 +166,41 @@ input, select, textarea {
 }
 
 /*-----------------------------------------------------------------------------
-	Grids:
+	Grid, fields and columns:
+	
+	Symphony Factory is built upon an adaptive grid system that is based 
+	on 73px wide modules with a gutter of 30px. Depending on the window/screen
+	width, it offers four different layouts:
+	
+	- a basic fluid layout for the smallest screen sizes,
+	- a small layout (3 columns wide)
+	- a medium layout (4 columns wide) and
+	- a large layout (5 columns wide)
+	
+	If you want to exclude one of these layout states on your site, just add a 
+	`data-exclude-state` attribute on the body with the space-separated names  
+	(fluid, small, medium, large).
 
-	Grid layouts should be grouped in fields. There are one main layout types:
-	fields with and without sidebar, see column definitions by function.
+	A site should always be structured by fields that group the content columns.
+	Fields can be nested and justified (which allows borders and lines to break
+	the element by a few pixels for optical alignment).
+	
+	Columns can either be defined by width (one, two, three, four, five) or by 
+	function (sidebar or content). A column width can be adjusted based on the 
+	layout context: the class `.medium-one` will override all other width 
+	definitions when displaying the medium layout. This is helpful to adjust 
+	content display responsively. The fluid layout linearises all columns.
+	
+	All columns are floated and it's up to the developer to make sure that 
+	their widths sum up to the full page width per row if this is desired. 
+	The widths .four and .five are not meant to display running text, 
+	they should be used for tables and images.
+	
+	If you'd like to nest columns inside a column, make sure to wrap those
+	columns with another .field element.
 -----------------------------------------------------------------------------*/
+
+/* Fields */
 
 .field {
 	-moz-box-sizing: border-box;
@@ -149,49 +215,26 @@ input, select, textarea {
 	display: block;
 }
 
-/* Nested fields */
-
 .field .field {
 	margin-left: -30px;
 	padding-right: 0;
 }
 
-/* Justified fields, e. g. fields with a centered border at the bottom or top */
+/* Optical alignment */
 
-.field.justified {
+.justified {
 	margin-left: -10px;
 	margin-right: -10px;
+	padding-left: 10px;
 }
 
-/*-----------------------------------------------------------------------------
-	Columns:
-
-	There are three different categories of columns:
-	columns by function, by width and by proportion.
-
-	All columns are floated and it's up to the developer to make sure that
-	the column widths sum up to the full page width per row.
-	The column widths .three, .four, .five are not meant to display text,
-	they should be used for tables and images.
-	
-	If you'd like to nest columns inside a column, make sure to wrap those
-	columns with another .field element.
------------------------------------------------------------------------------*/
+/* Columns */
 
 .column {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
 	margin: 0 0 0 30px;
-/*	position: relative;*/
-}
-
-.field.justified .column:first-child {
-	margin-left: 10px;
-}
-
-.module {
-	width: 73px;
 }
 
 /* Columns by function */
@@ -236,16 +279,13 @@ input, select, textarea {
 	width: 1000px;
 }
 
-/**
- * Adjusted column sizes based on the layout mode, 
- * columns can also be hidden in the given mode
- */
-
-/* Small */
+/* Columns by width in small layout */
 
 @media all and (min-width: 648px) and (max-width: 853px) {
 	
 	.small-hide {
+	
+		/* Hide this column in small layout */
 		display: none;
 	}
 
@@ -271,11 +311,13 @@ input, select, textarea {
 
 }
 
-/* Medium */
+/* Columns by width in medium layout */
 
 @media all and (min-width: 854px) and (max-width: 1059px) {
 	
 	.medium-hide {
+
+		/* Hide this column in medium layout */
 		display: none;
 	}
 
@@ -301,11 +343,13 @@ input, select, textarea {
 
 }
 
-/* Large */
+/* Columns by width in large layout */
 
 @media all and (min-width: 1060px) {
 	
 	.large-hide {
+
+		/* Hide this column in large layout */
 		display: none;
 	}
 
@@ -331,89 +375,34 @@ input, select, textarea {
 
 }
 
-
-/**
- * Columns by width with one additional module:
- * useful for deliberately breaking the grid by adding half a column
- */
- 
-.one-plus {
-	width: 279px;
-}
-
-.two-plus {
-	width: 485px;
-}
-
-.three-plus {
-	width: 690px;
-}
-
-.four-plus {
-	width: 896px;
-}
-
-/* Columns by proportion */
-
-.half {
-	width: 484px;
-}
-
-.two .half {
-	width: 176px;
-}
-
-.three .half {
-	width: 279px;
-}
-
-.four .half {
-	width: 382px;
-}
-
-/* Linearise columns in fluid layout */
+/* Columns by width in fluid layout */
 
 @media all and (max-width: 647px) {
 
+	#site .fluid-hide {
+
+		/* Hide this column in fluid layout */
+		display: none;
+	}
+	
 	#site .column {
+
+		/* Linearise columns */
 		float: none;
 		width: auto;
 	}
 
 }
 
-
-/**
- * Manual column shift by column count
- */
-
-
-.push-one {
-	margin-left: 236px;
-}
-
-.push-two {
-	margin-left: 442px;
-}
-
-.push-three {
-	margin-left: 648px;
-}
-
-.push-four {
-	margin-left: 853px;
-}
-
-.push-five {
-	margin-left: 1060px;
-}
-
-
-
 /*-----------------------------------------------------------------------------
 	Tiles:
 
-	Styling for additional information in a fixed grid.
+	Tiles are a special set of fixed height columns on a full width 
+	backsplash. They are meant to used for additional content or short 
+	feature descriptions.
+	
+	Tiles can be sizes by using the width classes also used for columns 
+	(one, two, three, four, five).
 -----------------------------------------------------------------------------*/
 
 .tiles {
@@ -459,964 +448,44 @@ input, select, textarea {
 }
 
 /*-----------------------------------------------------------------------------
-	Forms:
-
-	Style definitions for form elements.
+	Icons:
+	
+	Symphony Factory uses Entypo pictograms by Daniel Bruce – www.entypo.com
 -----------------------------------------------------------------------------*/
 
-form {
-/*	border: none;
-	margin: 2.4rem -10px 0;
-	padding: 0;*/
+@font-face {
+	font-family: 'Entypo';
+	src: url('fonts/entypo.eot');
+	src: url('fonts/entypo.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/entypo.woff') format('woff'),
+	     url('fonts/entypo.ttf') format('truetype'),
+	     url('fonts/entypo.svg#svgEntypo') format('svg');
 }
 
-fieldset {
-/*	padding: 0;
-	border: none;*/
-/*	background: #F5F5F3;
-	border-radius: 2px;
-	border: 1px solid #C4C4C2;
-	margin: 2.4rem 0 0;
-	width: 100%;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;*/
-}
-
-/*input:not([type=checkbox]):not([type=radio]),
-button,
-textarea,
-select[multiple] {
-	border: 1px solid rgba(0, 0, 0, 0.25);
-	border-radius: 2px;
-	-moz-box-sizing: border-box;
-	box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
-	box-sizing: border-box;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
-	margin-top: 2px;
-	padding: 3px 5px;
-	width: 100%;
-}
-
-input[type=submit],
-button {
-	width: auto;
-}
-
-input:not([type=checkbox]):not([type=radio]):active,
-input:not([type=checkbox]):not([type=radio]):focus,
-textarea:active,
-textarea:focus,
-select[multiple]:active,
-select[multiple]:focus {
-	border-color: rgba(0, 0, 0, 0.4);
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-	outline: none;
-}
-
-select[multiple] {
-	font-size: 1em;
-}
-
-input:not([type=checkbox]):not([type=radio]) {
-	height: 24px;
-}
-
-select {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: block;
-	margin-top: 2px;
-	width: 100%;
-}
-
-select[multiple] {
-	height: 10em;
-	padding: 0;
-	width: 100%;
-}
-
-input[size],
-input[type=radio],
-input[type=checkbox] {
-	display: inline;
+[class^=icon]::before {
+	font-family: "Entypo";
+	float: left;
 	margin-right: 5px;
-	width: auto;
 }
 
-button,
-input[type=submit] {
-	font-family: 'Open Sans', sans-serif;
+.icon-fork::before {
+	content: "\1F569";
 }
 
-select,
-input[type=reset],
-input[type=button],
-input[type=submit],
-textarea,
-option,
-fieldset {
-	outline: 0;
-}
-
-button::-moz-focus-inner,
-input[type=reset]::-moz-focus-inner,
-input[type=button]::-moz-focus-inner,
-input[type=submit]::-moz-focus-inner,
-select::-moz-focus-inner,
-input[type=file] > input[type=button]::-moz-focus-inner {
-	border: none;
-}
-
-a.return {
-	float: left;
-}*/
-
-/*-----------------------------------------------------------------------------
-	Headers:
-
-	Style definitions for page headlines and headers.
------------------------------------------------------------------------------*/
-
-header {
-	margin: 0 0 0 30px;
-}
-
-h1 {
-	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	font-size: 2.6rem;
-	font-weight: 300;
-	letter-spacing: 0.05em;
-	line-height: 2.6rem;
-	margin: 3.2rem 0 0;
-	padding-top: 0.5rem;
-	text-transform: uppercase;
-}
-
-h2 {
-	font-size: 3rem;
-	font-weight: 400;
-	line-height: 3.6rem;
-	margin: 0;
-}
-
-/* @todo: needs a smaller line-height - might not work for the introduction though */
-h3 {
-	font-size: 2.2rem;
-	font-weight: 400;
-	line-height: 3.6rem;
-	margin: 2.5rem 0 1.1rem;
-	padding: 0;
-	max-width: 592px;
-}
-
-/* @todo: is this still correct? */
-.field > h3 {
-	margin-left: 30px;
-}
-
-.column.entries > h3:first-child {
-	margin-top: 0.9rem;
-}
-
-h4 {
-	font-size: 1.8rem;
-	font-weight: 400;
-	margin: 2.2rem 0 0.6rem;
-	padding: 0;
-	max-width: 592px;
-}
-
-/* @todo: needs more adjusting 
-h5 {
-	font-size: 1.5rem;
-	font-weight: 600;
-	margin: 0;
-	padding: 0;
-	max-width: 592px;
-}
-
-/* Sections */
-
-section,
-article {
-	clear: both;
-}
-
-/* Main site header */
-
-.site-header {
-	border-bottom: 1px solid #CFCFCF;
-	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
-	margin-bottom: 2.4rem;
-	padding: 3.2rem 30px 1.2rem;
-	position: relative;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
-
-.site-header::before,
-.site-header::after {
-	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	background: -moz-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	background: -ms-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	background: -o-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	background: linear-gradient(to right, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
-	bottom: -3px;
-	content: "";
-	display: block;
-	height: 5px;
-	left: 0;
-	position: absolute;
-	width: 20px;
-}
-
-.site-header::after {
-	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
-	background: -moz-linear-gradient(left, rgba(251, 253, 251, 0) 0%,rgba(251, 253, 251, 1) 100%);
-	background: -ms-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
-	background: -o-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
-	background: linear-gradient(to right, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
-	left: auto;
-	right: 0;
-}
-
-.site-header h1 {
-	background: url(../img/logo.png) -1px 0 no-repeat;
-	float: left;
-	text-rendering: optimizeLegibility;
-	margin: 0 40px 0 0;
-	white-space: nowrap;
-}
-
-.svg .site-header h1 {
-	background-image: url(../img/logo.svg);
-}
-
-.site-header h1 span {
-	float: left;
-	height: 35px;
-	text-indent: -1000em;
-	width: 203px;
-}
-
-.site-header nav {
-	text-align: right;
-	margin-right: -10px;
-	padding: 1rem 0 0.6rem;
-	line-height: 1.5;
-	clear: none;
-}
-
-.js .site-header nav {
-	height: 2.4rem;
-	text-overflow: clip;
-	white-space: nowrap;
-}
-
-.site-header nav a {
-	border: 1px solid transparent;
-	color: #000;
-	font-size: 1.5rem;
-	padding: 0 9px;
-	text-decoration: none;
-	display: inline-block;
-}
-
-.site-header nav a.active {
-	font-weight: 700;
-}
-
-.site-header nav a:hover {
-	color: #B20B4F;
-}
-
-/* Collapsed site header */
-
-.site-header.action-collapse nav {
-	clear: left;
-	text-align: left;
-	margin-left: -9px;
-	padding: 0;
-	height: 0;
-	text-overflow: normal;
-	white-space: normal;
-	padding: 0;
-	overflow: hidden;
-}
-
-.site-header.action-collapse nav::before {
-	content: "\2630";
-	font-size: 2.9rem;
-	line-height: 1;
-	padding-left: 5px;
-	position: absolute;
-	top: 3.4rem;
-	right: 30px;
-}
-
-.site-header.action-collapse nav.action-open {
-	padding: .6rem 0 0.6rem;
-	min-height: 2.4rem;
-	height: auto;
-	overflow: visible;
-}
-
-/* Page header */
-
-header.page {
-	margin: 2.9rem 30px 0;
-	max-width: 796px;
-}
-
-header.page h2 {
-	margin: 0 6px 3rem 0;
-	display: inline-block;
-}
-
-header.page h2.with-separator::after {
-	content: "\00B7";
-	font-weight: 600;
-	padding-left: 10px;
-	color: #B20B4F;
-}
-
-header.page p {
-	display: inline-block;
-	font-size: 3rem;
-	font-weight: 300;
-	line-height: 3.6rem;
-}
-
-header.page .tag {
-	background: #92C44D;
-	border: 1px solid #92C44D;
-	border-radius: 2px;
-	color: #fff;
-	display: inline-block;
-	font-size: 1.3rem;
-	font-style: normal;
-	line-height: 2.4rem;
-	margin-left: 5px;
-	padding: 0 10px;
-	position: relative;
-	top: -0.5rem;
-}
-
-footer.author.bottom {
-	font-size: 1.3rem;
-	font-weight: 400;
-	color: #9b9b9b;
-	font-size: 1.3rem;
-	
-}
-
-footer.author.bottom em {
-	color: #9b9b9b;
-	color: #555;
-	font-style: normal;
-}
-
-/*-----------------------------------------------------------------------------
-	Content elements:
-	
-	General definitions for paragraphs and other content elements.
------------------------------------------------------------------------------*/
-
-p {
-	margin: 0 0 1.2rem;
-	max-width: 556px;
-	padding: 0;
-}
-
-p.introduction {
-	font-size: 2.2rem;
-	font-weight: 300;
-	line-height: 3.6rem;
-	margin: 0.8rem 0 1rem;
-	max-width: 592px;
-}
-
-p[data-pullquote] {
-
-	/* It seems like any definition is needed here so that the following pseudo element works as expected */
-	position: inherit;
-}
-
-p[data-pullquote]::before {
-	content: attr(data-pullquote);
-	display: block;
-	float: right;
-	font-size: 2rem;
-	font-weight: 300;
-	color: #888;
-	line-height: 3rem;
-	margin-right: -238px;
-	padding: 0 0 2rem 35px;
-	width: 309px;
-}
-
-/* is this the wrong spot for this? */
-.column p,
-header p {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	width: 100%;
-}
-
-ul {
-	list-style: none;
-	margin: 0 0 1.2rem 3rem;
-	padding: 0;
-}
-
-ul li {
-	padding-left: 13px;
-	position: relative;
-}
-
-ul li::before {
-	content: "·";
-	position: absolute;
-	left: 0;
-	font-weight: 800;
-}
-
-ul li > ul {
-	margin: 0 0 0 15px;
-}
-
-a {
-	color: #000;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #B20B4F;
-}
-
-img {
-	display: block;
-}
-
-code {
-	font: 12px/1.5 Monaco, Consolas, 'Andale Mono', monospace;
-}
-
-/*-----------------------------------------------------------------------------
-	Articles:
-	
-	Articles can be used for entry overviews (like the community discussions)
-	and for the entry display itself.
------------------------------------------------------------------------------*/
-
-/* Overview */
-
-.overview article {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	height: 6rem;
-	padding-top: 0.64rem;
-}
-
-.overview article:last-of-type {
-	border-bottom: none;
-}
-
-.overview article h3 {
-	font-size: 1.5rem;
-	font-weight: 500;
-	line-height: inherit;
-	margin: 0;
-}
-
-.overview article p {
-	margin-bottom: 0;
-}
-
-.overview article .response {
-	font-size: 3.6rem;
-	font-weight: 300;
-	line-height: 4.3rem;
-	overflow: visible;
-	position: relative;
-	text-align: right;
-	margin-left: 23px; /* actually this should equal 20px, 3 extra pixels for optical alignment */
-}
-
-.overview article .response .tag {
-	background: #282828;
-	border-radius: 2px;
-	color: #fff;
-	float: right;
-	font-size: 1.8rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 1.8rem;
-	margin: 0.8rem 3px 0 0.4rem; /* 3px right margin to correct optical alignment from above */
-	padding: 0.5rem 10px 0.4rem 0.8rem;
-	white-space: nowrap;
-}
-
-.overview article .response .tag::before {
-	content: "+";
-	font-size: 1.3rem;
-	font-weight: 400;
-	vertical-align: 10%;
-}
-
-.overview article .response a {
-	display: block;
-	position: absolute;
-	right: -10px;
-	top: 0.6rem;
-	width: 150px;
-}
-
-/* Entries */
-
-.entries article header {
-	padding: 0;
-}
-
-/* Comments */
-
-article.comment {
-	position: relative;
-	
-	/* @todo: this is highly experimental and only adjusted for expected behavior in Safari. */
-	min-height: 69px;
-	margin: 0 -10px;
-	padding: 0 10px;
-}
-
-article.comment:not(:first-of-type) {
-	border-top: 1px solid #bbbfbb;
-}
-
-article.comment footer {
-	margin: 0 100px 0 -10px;
-	padding: 0.6rem 10px;
-/*	border-bottom: 1px solid #e2e4e2;*/
-	width: 588px;
-	color: #9b9b9b;
-/*	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-size: 1.1rem;*/
-}
-
-/*article.comment footer::before {
-	content: "";
-	width: 10px;
-	height: 10px;
-	position: absolute;
-	top: 3.1rem;
-	left: 20px;
-	background: #FBFDFB;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	border-top: 1px solid #e2e4e2;
-	border-left: 1px solid #e2e4e2;
-}*/
-
-article.comment footer strong {
-	background: #282828;
-	border-radius: 2px;
-	color: #fff;
-	font-weight: 300;
-	padding: 2px 7px 2px 5px;
-	margin: 0 5px 0 -10px;
-	
-	display: none;
-}
-
-article.comment footer a[rel=author] {
-	font-weight: 700;
-	font-size: 1.3rem;
-	padding-right: 3px;
-}
-
-article.comment footer.author img {
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 2px;
-	position: absolute;
-	top: -1px;
-	right: 0;
-}
-
-#position-1 .comment footer.author img {
-	top: 1rem;
-}
-
-
-/*-----------------------------------------------------------------------------
-	Sidebar:
-	
-	Styling for elements used inside sidebar columns.
------------------------------------------------------------------------------*/
-
-.sidebar h3 {
-	font-size: 1.3rem;
-	font-weight: 600;
-	letter-spacing: 0.1em;
-	margin-top: 0.6rem;
-	text-transform: uppercase;
-}
-
-.sidebar p.annotation {
-	color: #666;
-}
-
-.sidebar p.annotation::after {
-	content: '\E766';
-	font-family: Entypo;
-	font-size: 2rem;
-	position: absolute;
-	top: 0;
-	right: -5px;
-}
-
-.sidebar ul {
-	margin-left: 0;
-}
-
-.sidebar > ul:first-child {
-	margin-top: 1.8rem;
-}
-
-.sidebar ul li {
-	font-size: 1.3rem;
-	margin-left: -10px;
-	
-/* @todo: next definitions good for li's consisting of more than one line (interview questions) - not so much for regular sidebar nav */
-	margin-bottom: 1rem;
-	line-height: 2rem;
-	
-}
-
-.sidebar ul li::before {
-	content: none;
-}
-
-.sidebar ul li.selected,
-.sidebar ul li:hover {
-	background: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.075);
-	border-radius: 2px;
-}
-
-.sidebar ul li.selected::after {
-	color: rgba(0, 0, 0, 0.7);
-	content: "\2713";
-	float: right;
-	padding-right: 5px;
-}
-
-.sidebar input {
-	box-sizing: border-box;
-	margin-left: -10px;
-	padding-left: 8px;
-	width: 187px;
-}
-
-/* Asides */
-
-.sidebar aside {
-	padding: 0 0 2rem;
-	margin-left: -10px;
-}
-
-.sidebar aside p {
-	background: #e8e8e8;
-	color: #555;
-	padding: 0.6rem 10px 0.6rem;
-	line-height: 2rem;
-	font-size: 1.2rem;
-}
-
-.sidebar > aside:first-child {
-	margin-top: 1.4rem;
-}
-
-/*-----------------------------------------------------------------------------
-	Users:
------------------------------------------------------------------------------*/
-
-a.user {
-	font-weight: 600;
-}
-
-/*-----------------------------------------------------------------------------
-	Toolbars:
-	
-	Toolbars should be used for entry interactions and paginations
------------------------------------------------------------------------------*/
-
-.tools {
-	background: #f5f5f3;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 2px;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.tools:hover {
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.tools li {
-	float: left;
-	list-style: none;
-	padding-left: 0;
-}
-
-.tools li::before {
-	content: none;
-}
-
-.tools a[href]:hover {
-	background: #fff;
-}
-
-.tools a.selected {
-	background: #282828;
-	color: #fff;
-	margin-bottom: -1px;
-	margin-top: -1px;
-	padding-bottom: 1px;
-	padding-top: 1px;
-}
-
-.tools > a:last-child,
-.tools li:last-child a {
-	border-right: none;
-}
-
-.tools a {
-	border-right: 1px solid rgba(0, 0, 0, 0.2);
-	display: inline-block;
-	font-size: 1.3rem;
-	padding: 0 10px;
-}
-
-/* Tools in footers */
-
-footer .tools {
-	float: right;
-	margin-right: -10px;
-	position: relative;
-}
-
-/* Entry options */
-
-header.page .tools {
-	position: absolute;
-	right: 20px;
-	top: 0.5rem;
-}
-
-/* Pagination */
-
-.tools.pagination {
-	float: left;
-	margin: 2.4rem -10px;
-	padding: 0;
-	position: relative;
-	width: 814px;
-
-	/* This is needed to remove whitespace between the nested links */
-	font-size: 0;
-}
-
-.tools.pagination > a {
-	border: none;
-	float: left;
-}
-
-.tools.pagination > a:last-of-type {
-	float: right;
-}
-
-.tools.pagination a:not([href]) {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.tools.pagination a.ellipsis {
-	margin-left: 30px;
-}
-
-.tools.pagination a.ellipsis::before {
-	border-right: 1px solid rgba(0, 0, 0, 0.2);
-	color: rgba(0, 0, 0, 0.3);
-	content: "\00B7\00B7\00B7";
-	margin-left: -30px;
-	padding-right: 10px;
-	position: absolute;
-}
-
-.tools.pagination div.pages {
-	left: 50%;
-	margin-left: -250px;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	width: 500px;
-}
-
-/* Pagination in overview */
-
-.overview .tools.pagination {
-	margin-top: 1.8rem;
-}
-
-/*-----------------------------------------------------------------------------
-	Tables:
------------------------------------------------------------------------------*/
-
-/* Data tables */
-
-.data {
-	background: #F5F5F5;
-	border-left: 1px solid #E6E6E5;
-	border-radius: 2px;
-	border-right: 1px solid #E6E6E5;
-	margin: 0 10px;
-	padding-right: 0;
-}
-
-.data:first-of-type {
-	border-top: 1px solid #E6E6E5;
-}
-
-.data .column.pinned {
-	width: 214px;
-}
-
-.data .column.scroll {
-	margin: 0;
-	overflow-x: scroll;
-	width: 804px;
-}
-
-.data:last-of-type {
-	border-bottom: 1px solid #E6E6E5;
-}
-
-.data h3.pinned {
-	border-right: 1px solid rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, 0.6);
-	display: block;
-	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
-	font-size: 1.4rem;
-	font-size: 1.4rem;
-	font-weight: normal;
-	font-weight: normal;
-	margin: 0;
-	min-height: 3rem;
-	padding: 0;
-	padding: 0 0 0 9px;
-}
-
-.data table th {
-	font-weight: normal;
-	text-align: left;
-}
-
-.data table tr {
-	background: #fff;
-	height: 30px;
-}
-
-.data table a {
-	color: #fff;
-	text-decoration: none;
-}
-
-.data .label {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: block;
-	height: 3rem;
-}
-
-/* Compatibility table */
-
-table.compatibility td.compatible {
-	background: rgba(146, 196, 77, 0.7);
-	color: rgba(255, 255, 255, 0.7);
-}
-
-table.compatibility td.compatible:nth-last-child(4) {
-	background: rgba(146, 196, 77, 0.75);
-	color: rgba(255, 255, 255, 0.75);
-}
-
-table.compatibility td.compatible:nth-last-child(3) {
-	background: rgba(146, 196, 77, 0.8);
-	color: rgba(255, 255, 255, 0.8);
-}
-
-table.compatibility td.compatible:nth-last-child(4) a {
-	color: rgba(255, 255, 255, 0.75);
-}
-
-table.compatibility td.compatible:nth-last-child(2) {
-	background: rgba(146, 196, 77, 0.9);
-	color: rgba(255, 255, 255, 0.9);
-}
-
-table.compatibility td.compatible:nth-last-child(3) a {
-	color: rgba(255, 255, 255, 0.8);
-}
-
-table.compatibility td.compatible:last-child {
-	background: rgba(146, 196, 77, 1);
-	color: rgba(255, 255, 255, 1);
-}
-
-table.compatibility td.compatible:nth-last-child(2) a {
-	color: rgba(255, 255, 255, 0.9);
-}
-
-table.compatibility td.compatible:last-child a {
-	color: rgba(255, 255, 255, 1);
-}
-
-table.compatibility td.compatible a {
-	color: rgba(255, 255, 255, 0.7);
+.icon-download::before {
+	content: "\E778";
 }
 
 /*-----------------------------------------------------------------------------
 	Code:
+	
+	Syntax highlighting class will override the default Prism definitions.
+	Thus the Prism styles should be included first.
 -----------------------------------------------------------------------------*/
 
 pre {
 	overflow: auto;
 }
-
-.source code {
-	background: #fff;
-	border: 1px solid #E6E6E5;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: inline-block;
-	height: 2.5rem;
-	white-space: nowrap;
-}
-
-/*-----------------------------------------------------------------------------
-	Syntax highlighting:
-
-	These styles adjusts the default Prims styles.
------------------------------------------------------------------------------*/
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -1424,13 +493,20 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] {
-	margin: .5em -10px;
+	margin: 0 -10px 0.8rem;
+	padding: 1.5rem 10px;
 }
 
-:not(pre) > code[class*="language-"],
+:not(pre) > code[class*="language-"], 
 pre[class*="language-"] {
 	background: #F5F5F5;
 }
+
+pre[data-line] {
+	padding: 1em 0 1em 20px;
+}
+
+/* Tokens */
 
 .token.comment,
 .token.prolog,
@@ -1458,11 +534,7 @@ pre[class*="language-"] {
 	color: #0080a0;
 }
 
-pre[data-line] {
-	padding: 1em 0 1em 20px;
-}
-
-/* Highlighting */
+/* Line highlighting */
 
 .line-highlight {
 	background: rgba(0, 0, 0, 0.03);
@@ -1483,22 +555,20 @@ pre[data-line] {
 }
 
 /*-----------------------------------------------------------------------------
-	Site:
+	Forms:
 
-	Style definitions for the site area.
+	Style definitions for form elements.
 -----------------------------------------------------------------------------*/
 
-#site {
-	position: relative;
-}
+	/* to do: needs to be defined, see Network profile for reference */
 
 /*-----------------------------------------------------------------------------
 	Network:
 
-	Style definitions for the network area.
+	This should not be altered in the site specific styles of a site.
 -----------------------------------------------------------------------------*/
 
-.network-wrapper {
+#network {
 	background-color: #b20b4f;
 	border-bottom: 2px solid #d9d9d9;
 	overflow: hidden;
@@ -1511,7 +581,7 @@ pre[data-line] {
 	height: auto;
 }
 
-.network-wrapper:hover {
+#network:hover {
 	max-height: 60rem;
 	-webkit-transition: max-height 0.25s ease-in-out 0.5s;
 	-moz-transition: max-height 0.25s ease-in-out 0.5s;
@@ -1520,7 +590,20 @@ pre[data-line] {
 	transition: max-height 0.25s ease-in-out 0.5s;
 }
 
-.network-wrapper.action-profile-open {
+#network::after {
+	content: none;
+	display: block;
+	clear: both;
+}
+
+#network ::selection,
+#network ::-moz-selection {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+/* Profile interactions */
+
+#network.action-profile-open {
  	max-height: 27rem;
 	-webkit-transition: max-height 0.1s ease-in-out 0;
 	-moz-transition: max-height 0.1s ease-in-out 0;
@@ -1529,29 +612,18 @@ pre[data-line] {
 	transition: max-height 0.1s ease-in-out 0;
 }
 
-/* Small layout */
 @media all and (min-width: 648px) and (max-width: 853px) {
 
-	.network-wrapper.action-profile-open {
+	/* In the small layout, the toolbar spans two lines */
+	#network.action-profile-open {
 		max-height: 30.3rem;
 	}
 
 }
 
-.network-wrapper::after {
-	content: none;
-	display: block;
-	clear: both;
-}
-
-.network-wrapper ::selection,
-.network-wrapper ::-moz-selection {
-	background: rgba(255, 255, 255, 0.2);
-}
-
 /* Network toolbar */
 
-.network-toolbar {
+#network .network-toolbar {
 	background-color: #282828;
 	background-image: -webkit-linear-gradient(top, #282828 3.5rem, #575757 3.5rem, #383838 3.6rem, #383838 6.7rem, #575757 6.7rem);
 	background-image: -moz-linear-gradient(top, #282828 3.5rem, #575757 3.5rem, #383838 3.6rem, #383838 6.7rem, #575757 6.7rem);
@@ -1566,11 +638,11 @@ pre[data-line] {
 	margin: 0;
 }
 
-.network-toolbar .centered {
+#network .network-toolbar .centered {
 	position: relative;
 }
 
-.network-toolbar h1 {
+#network .network-toolbar h1 {
 	padding: 1rem 0;
 	overflow: visible;
 	font-size: 1.4rem;
@@ -1582,7 +654,7 @@ pre[data-line] {
 	line-height: 1.4rem;
 }
 
-.network-toolbar a {
+#network .network-toolbar a {
 	color: #fff;
 	-webkit-transition: color 0.2s ease-in-out;
 	-moz-transition: color 0.2s ease-in-out;
@@ -1593,14 +665,14 @@ pre[data-line] {
 
 /* Network navigation */
 
-.network-nav {
+#network .network-nav {
 	width: auto;
 	padding: 0.5rem 36px 0.5rem 0;
 	position: relative;
 	line-height: 1.4rem;
 }
 
-.network-nav::before {
+#network .network-nav::before {
 	content: "\2630";
 	position: absolute;
 	top: -2.5rem;
@@ -1609,7 +681,7 @@ pre[data-line] {
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.network-nav a {
+#network .network-nav a {
 	color: rgba(255, 255,255, 0.7);
 	line-height: 1.4rem;
 	font-size: 1.4rem;
@@ -1619,11 +691,11 @@ pre[data-line] {
 	padding: 0.5rem 0;
 }
 
-.network-nav a:hover {
+#network .network-nav a:hover {
 	color: #fff;
 }
 
-.network-nav a:not(:last-of-type)::after {
+#network .network-nav a:not(:last-of-type)::after {
 	content: "\00B7";
 	color: rgba(255, 255,255, 0.7);
 	margin: 0 0.5em;
@@ -1631,59 +703,60 @@ pre[data-line] {
 
 /* User */
 
-.network-user {
+#network .network-user {
 	position: absolute;
 	right: 30px;
 	top: 0;
 	white-space: nowrap;
 }
 
-.network-user img {
+#network .network-user img {
 	float: right;
 	border: none;
 }
 
-.network-user p {
+#network .network-user p {
 	float: right;
 	display: block;
 	font-size: 1.4rem;
 	line-height: 1.4rem;
 	font-weight: 300;
 	padding: 1rem 10px 0 0 ;
+	margin: 0;
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.network-user a {
+#network .network-user a {
 	color: rgba(255, 255, 255, 0.7);
 	cursor: pointer;
 }
 
-.network-user a:hover {
+#network .network-user a:hover {
 	color: #fff;
 }
 
-.network-user .network-visitors {
+#network .network-user .network-visitors {
 	margin-left: 7px;
 }
 
-.network-user.action-collapse p {
+#network .network-user.action-collapse p {
 	display: none;
 }
 
 /* Profile */
 
-.network-profile {
+#network .network-profile {
 	padding: 2.4rem 0;
 	max-height: 24rem;
 	overflow: hidden;
 }
 
-.network-profile.action-profile-hide {
+#network .network-profile.action-profile-hide {
 	max-height: 0;
 	padding: 0;
 }
 
-.network-profile.action-profile-animate {
+#network .network-profile.action-profile-animate {
 	-webkit-transition: all 0.25s ease-in-out;
 	-moz-transition: all 0.25s ease-in-out;
 	-ms-transition: all 0.25s ease-in-out;
@@ -1691,12 +764,12 @@ pre[data-line] {
 	transition: all 0.25s ease-in-out;
 }
 
-.network-profile fieldset {
+#network .network-profile fieldset {
 	padding: 0;
 	border: none;
 }
 
-.network-profile label {
+#network .network-profile label {
 	font-size: 1.2rem;
 	font-weight: 400;
 	letter-spacing: 0.1em;
@@ -1707,7 +780,7 @@ pre[data-line] {
 	position: relative;
 }
 
-.network-profile label.restricted::after {
+#network .network-profile label.restricted::after {
 	content: "\1F512";
 	font-family: Entypo;
 	color: rgba(0, 0, 0, 0.3);
@@ -1718,8 +791,8 @@ pre[data-line] {
 	display: block;
 }
 
-.network-profile input[type=text],
-.network-profile textarea {
+#network .network-profile input[type=text],
+#network .network-profile textarea {
 	background: rgba(0, 0, 0, 0.025);
 	border: none;
 	border-bottom: 1px solid #A00947;
@@ -1733,34 +806,34 @@ pre[data-line] {
 	font-weight: 300;
 }
 
-.network-profile textarea {
+#network .network-profile textarea {
 	height: 7.1rem;
 	line-height: 2.4rem;
 }
 
-.network-profile input[type=text]:active,
-.network-profile input[type=text]:focus,
-.network-profile input[type=text]:not([readonly]):hover,
-.network-profile textarea:active,
-.network-profile textarea:focus,
-.network-profile textarea:hover  {
+#network .network-profile input[type=text]:active,
+#network .network-profile input[type=text]:focus,
+#network .network-profile input[type=text]:not([readonly]):hover,
+#network .network-profile textarea:active,
+#network .network-profile textarea:focus,
+#network .network-profile textarea:hover  {
 	background: #A00947;
 	border-radius: 2px;
 	border-bottom-color: #88083C;
 	outline: none;
 }
 
-.network-profile input[readonly] {
+#network .network-profile input[readonly] {
 	color: rgba(255, 255, 255, 0.6);
 }
 
 /* Controls */
 
-.network-profile .profile-controls {
+#network .network-profile .profile-controls {
 	margin-right: -10px;
 }
 
-.network-profile [class^=button] {
+#network .network-profile [class^=button] {
 	margin: 1.2rem 0 0 10px;
 	padding: 0 10px;
 	height: 2.6rem;
@@ -1782,7 +855,7 @@ pre[data-line] {
 	box-shadow: inset 0 -1px 0 rgba(210, 101, 145, 0.2);
 }
 
-.network-profile [class^=button]:hover {
+#network .network-profile [class^=button]:hover {
 	border-color: #700731;
 	background-image: -webkit-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
 	background-image: -moz-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
@@ -1792,32 +865,19 @@ pre[data-line] {
 	cursor: pointer;
 }
 
-/*.network-profile .button-save {
-	background: #007fb4;
-	background-image: -webkit-linear-gradient(top, rgba(21, 175, 239, 0.5) 0%, #007fb4 95%);
-	background-image: -moz-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
-	background-image: -ms-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);	
-	background-image: -o-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
-	background-image: linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
-	box-shadow: inset 0 -1px 0 rgba(210, 101, 145, 0.2);
-	box-shadow: none;
-	color: #003247;
-	border-color: #0073a2;
-}*/
-
 /* Gravatar */
 
-.network-profile .network-gravatar {
+#network .network-profile .network-gravatar {
 	position: relative;
 	margin-top: 0.6rem;
 }
 
-.network-profile .network-gravatar img {
+#network .network-profile .network-gravatar img {
 	border: 1px solid #88083C;
 	display: block;
 }
 
-.network-profile .network-gravatar p {
+#network .network-profile .network-gravatar p {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1838,18 +898,18 @@ pre[data-line] {
 	transition: opacity 0.25s ease-in-out;
 }
 
-.network-profile .network-gravatar:hover p {
+#network .network-profile .network-gravatar:hover p {
 	opacity: 1;
 }
 
-.network-profile .network-gravatar a {
+#network .network-profile .network-gravatar a {
 	color: #fff;
 	text-decoration: underline;
 }
 
 /* Drawer */
 
-.network-drawer {
+#network .network-drawer {
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 2.5rem;
 	margin-bottom: 0;
@@ -1863,7 +923,7 @@ pre[data-line] {
 	max-height: 50rem;
 }
 
-.network-wrapper:not(.action-profile-open):hover .network-drawer {
+#network:not(.action-profile-open):hover .network-drawer {
 	margin-top: 0;
 	margin-bottom: 2.5rem;
 	opacity: 1;
@@ -1874,7 +934,7 @@ pre[data-line] {
 	transition: all 0.3s ease-in-out 0.5s;
 }
 
-.network-wrapper.action-profile-open .network-drawer {
+#network.action-profile-open .network-drawer {
 	max-height: 0;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -1885,7 +945,7 @@ pre[data-line] {
 	transition-delay: 0;
 }
 
-.network-wrapper.action-profile-hide:hover .network-drawer {
+#network.action-profile-hide:hover .network-drawer {
 	margin-top: 0;
 	margin-bottom: 2.5rem;
 	opacity: 1;
@@ -1896,19 +956,18 @@ pre[data-line] {
 	transition-delay: 0;
 }
 
-.network-drawer::after {
+#network .network-drawer::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.network-drawer > .column {
+#network .network-drawer > .column {
 	margin-top: 18px;
 }
 
-.network-drawer h2 {
+#network .network-drawer h2 {
 	border-bottom: 1px solid #9E0A46;
-/*	color: #d96f90;*/
 	color: #350318;
 	font-family: 'Open Sans', 'PT Sans Caption', sans-serif;
 	font-size: 1.2rem;
@@ -1921,35 +980,35 @@ pre[data-line] {
 	line-height: 2.4rem;
 }
 
-.network-drawer p {
+#network .network-drawer p {
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.network-drawer a {
+#network .network-drawer a {
 	font-size: 1.3rem;
 	color: #fff;
 }
 
-.network-drawer ul {
+#network .network-drawer ul {
 	margin-left: 0;
 }
 
-.network-drawer li::before {
+#network .network-drawer li::before {
 	content: none;
 }
 
-.network-drawer li {
+#network .network-drawer li {
 	padding-left: 0;
 }
 
-.network-drawer ::selection,
-.network-drawer ::-moz-selection {
+#network .network-drawer ::selection,
+#network .network-drawer ::-moz-selection {
 	background: rgba(0, 0, 0, 0.1)
 }
 
 /* Get Symphony */
 
-.network-drawer .get-symphony {
+#network .get-symphony {
 	background: #A00947;
 	margin: 0 0 0 -10px;
 	padding: 1rem 10px;
@@ -1964,17 +1023,17 @@ pre[data-line] {
 	transition: background 0.2s ease-in-out;
 }
 
-.network-drawer .get-symphony:hover {
+#network .get-symphony:hover {
 	background: #88083c;
 }
 
-.network-drawer .get-symphony a {
+#network .get-symphony a {
 	float: right;
 	border-left: 1px solid rgba(0, 0, 0, 0.15);
 	padding: 0.2rem 10px 0;
 }
 
-.network-drawer .get-symphony a:first-child {
+#network .get-symphony a:first-child {
 	font-size: 1.8rem;
 	border-left: none;
 	padding: 0;
@@ -1982,10 +1041,561 @@ pre[data-line] {
 	float: left;
 }
 
+#network .get-symphony [class^=icon]::before {
+	font-size: 34px;	
+}
+
+/*-----------------------------------------------------------------------------
+	Site:
+
+	Additional styles for the current site should be added in a separate file.
+-----------------------------------------------------------------------------*/
+
+#site {
+	position: relative;
+}
+
+/* Headlines */
+
+#site h1 {
+	font-size: 2.6rem;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	line-height: 2.6rem;
+	margin: 0;
+	padding-top: 0.5rem;
+	text-transform: uppercase;
+}
+
+#site h2 {
+	font-size: 2.6rem;
+	font-weight: 400;
+	line-height: 3.6rem;
+	margin: 0;
+	padding: 2rem 0 1.2rem;
+}
+
+#site h3 {
+	font-size: 2.2rem;
+	font-weight: 400;
+	margin: 4.8rem 0 1.1rem;
+	padding: 0;
+	max-width: 592px;
+	line-height: 3.6rem;
+}
+
+#site h4 {
+	font-size: 2rem;
+	font-weight: 300;
+	margin: 3.3rem 0 1.5rem;
+	padding: 0;
+	max-width: 592px;
+}
+
+/* Site Header */
+
+#site .site-header {
+	border-bottom: 1px solid #CFCFCF;
+	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
+	margin-bottom: 2.4rem;
+	padding: 3.2rem 30px 1.2rem;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+@media (min-device-height: 1050px) {
+
+	#site .site-header {
+		padding-top: 4.4rem;
+		padding-bottom: 2.4rem;
+	}
+	
+}
+
+#site .site-header::before,
+#site .site-header::after {
+	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	background: -moz-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	background: -ms-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	background: -o-linear-gradient(left, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	background: linear-gradient(to right, rgba(251, 253, 251, 1) 0%, rgba(251, 253, 251, 0) 100%);
+	bottom: -3px;
+	content: "";
+	display: block;
+	height: 5px;
+	left: 0;
+	position: absolute;
+	width: 20px;
+}
+
+#site .site-header::after {
+	background: -webkit-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
+	background: -moz-linear-gradient(left, rgba(251, 253, 251, 0) 0%,rgba(251, 253, 251, 1) 100%);
+	background: -ms-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
+	background: -o-linear-gradient(left, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
+	background: linear-gradient(to right, rgba(251, 253, 251, 0) 0%, rgba(251, 253, 251, 1) 100%);
+	left: auto;
+	right: 0;
+}
+
+#site .site-header h1 {
+	background: url(../img/logo.png) -1px 0 no-repeat;
+	float: left;
+	text-rendering: optimizeLegibility;
+	margin: 0 40px 0 0;
+	white-space: nowrap;
+}
+
+.svg #site .site-header h1 {
+	background-image: url(../img/logo.svg);
+}
+
+#site .site-header h1 span {
+	float: left;
+	height: 35px;
+	text-indent: -1000em;
+	width: 203px;
+}
+
+#site .site-header nav {
+	text-align: right;
+	margin-right: -10px;
+	padding: 1rem 0 0.6rem;
+	line-height: 1.5;
+	clear: none;
+}
+
+.js #site .site-header nav {
+	height: 2.4rem;
+	text-overflow: clip;
+	white-space: nowrap;
+}
+
+#site .site-header nav a {
+	border: 1px solid transparent;
+	color: #000;
+	font-size: 1.5rem;
+	padding: 0 9px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#site .site-header nav a.active {
+	font-weight: 700;
+}
+
+#site .site-header nav a:hover {
+	color: #B20B4F;
+}
+
+/* Collapsed site header */
+
+#site .site-header.action-collapse nav {
+	clear: left;
+	text-align: left;
+	margin-left: -9px;
+	padding: 0;
+	height: 0;
+	text-overflow: normal;
+	white-space: normal;
+	padding: 0;
+	overflow: hidden;
+}
+
+#site .site-header.action-collapse nav::before {
+	content: "\2630";
+	font-size: 2.9rem;
+	line-height: 1;
+	padding-left: 5px;
+	position: absolute;
+	top: 3.4rem;
+	right: 30px;
+}
+
+#site .site-header.action-collapse nav.action-open {
+	padding: .6rem 0 0.6rem;
+	min-height: 2.4rem;
+	height: auto;
+	overflow: visible;
+}
+
+/* Page headers */
+
+#site .page-header {
+	margin: 2.9rem 0 0;
+	max-width: 796px;
+}
+
+#site .page-header h2 {
+	margin: 0 0 3rem;
+	display: inline-block;
+}
+
+#site .page-header h2.with-separator::after {
+	content: "\00B7";
+	font-weight: 600;
+	padding-left: 10px;
+	color: #B20B4F;
+}
+
+#site .page-header p {
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 300;
+	line-height: 3.6rem;
+}
+
+#site .page-header .tag {
+	background: #92C44D;
+	border: 1px solid #92C44D;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.3rem;
+	font-style: normal;
+	line-height: 2.4rem;
+	margin-left: 5px;
+	padding: 0 10px;
+	position: relative;
+	top: -0.5rem;
+}
+
+/* Groups */
+
+#site section,
+#site article {
+	margin-bottom: 4rem;
+}
+
+/* Paragraphs */
+
+#site p {
+	margin: 0 0 1.2rem;
+	max-width: 556px;
+	padding: 0;
+}
+
+#site p[data-pullquote] {
+
+	/* It seems like a definition is needed here so that the following pseudo element works as expected */
+	position: inherit;
+}
+
+#site p[data-pullquote]::before {
+	content: attr(data-pullquote);
+	display: block;
+	float: right;
+	font-size: 2rem;
+	font-weight: 300;
+	color: #888;
+	line-height: 3rem;
+	margin-right: -238px;
+	padding: 0 0 2rem 35px;
+	width: 309px;
+}
+
+/* Highlighting */
+
+#site .content-introduction {
+	font-size: 2.2rem;
+	font-weight: 300;
+	line-height: 3.6rem;
+	margin: 0 0 1rem;
+	max-width: 592px;
+}
+
+#site .content-annotation {
+	margin-top: 1.8rem;
+	overflow: visible;
+	position: relative;
+}
+
+#site .content-annotation p {
+	color: #666;
+	border-bottom: 1px solid #CECECE;
+	background: #FBFDFB;
+	padding: 0.5rem 0;
+}
+
+#site .content-annotation p::before,
+#site .content-annotation p::after {
+	content: " ";
+	display: block;
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #CECECE;
+	position: absolute;
+	bottom: -6px;
+	left: 40px;
+}
+
+#site .content-annotation p::after {
+	border-top: 6px solid #FBFDFB;
+	bottom: -5px;
+}
+
+@media all and (min-width: 1060px) {
+
+	#site .content-annotation {
+		height: 0;
+	}
+
+	#site .content-annotation p {
+		position: absolute;
+		right: -10px;
+		bottom: 1.2rem;
+		width: 176px;
+		padding: 0.5rem 10px;
+	}
+
+}
+
+/* Push content over sidebar */
+
+@media all and (min-width: 854px) {
+
+	#site .content-pushaside {
+		position: relative;
+		left: -206px;
+		width: 793px;
+	}
+
+}
+
+@media all and (min-width: 1060px) {
+
+	#site .content-pushaside {
+		width: 1000px;
+	}
+
+}
+
+
+/* Sidebar */
+/* to do: these styles need to be cleared out */
+
+#site .sidebar h3 {
+	font-size: 1.3rem;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	margin-top: 0.6rem;
+	text-transform: uppercase;
+}
+
+#site .sidebar ul {
+	margin-left: 0;
+}
+
+#site .sidebar > ul:first-child {
+	margin-top: 1.8rem;
+}
+
+#site .sidebar ul li {
+	font-size: 1.3rem;
+	margin-left: -10px;
+	
+	/* @todo: next definitions good for li's consisting of more than one line (interview questions) - not so much for regular sidebar nav */
+	margin-bottom: 1rem;
+	line-height: 2rem;
+	
+}
+
+#site .sidebar ul li::before {
+	content: none;
+}
+
+#site .sidebar ul li.selected,
+#site .sidebar ul li:hover {
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.075);
+	border-radius: 2px;
+}
+
+#site .sidebar ul li.selected::after {
+	color: rgba(0, 0, 0, 0.7);
+	content: "\2713";
+	float: right;
+	padding-right: 5px;
+}
+
+#site .sidebar input {
+	box-sizing: border-box;
+	margin-left: -10px;
+	padding-left: 8px;
+	width: 187px;
+}
+
+#site .sidebar aside {
+	padding: 0 0 2rem;
+	margin-left: -10px;
+}
+
+#site .sidebar aside p {
+	background: #e8e8e8;
+	color: #555;
+	padding: 0.6rem 10px 0.6rem;
+	line-height: 2rem;
+	font-size: 1.2rem;
+}
+
+#site .sidebar > aside:first-child {
+	margin-top: 1.4rem;
+}
+
+/* Entry overview */
+
+#site .entry-overview {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	height: 5.3rem;
+	padding-top: 0.64rem;
+}
+
+#site .entry-header {
+	float: left;
+}
+
+#site .entry-header h3 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: inherit;
+	margin: 0;
+}
+
+#site .entry-header p {
+	margin-bottom: 0;
+}
+
+#site .entry-meta {
+	float: right;
+	width: 289px;
+	margin: 0 0 0 30px;
+	position: relative;
+}
+
+#site .entry-meta a {
+	display: block;
+}
+
+#site .entry-count {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 3.6rem;
+	font-weight: 300;
+	line-height: 5.6rem;
+	margin-right: 0.8rem;
+}
+
+#site .entry-difference {
+	background: #282828;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 1.8rem;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.8rem;
+	margin: 0 -0.8rem 0 0;
+	padding: 0.5rem 10px 0.4rem 0.8rem;
+	white-space: nowrap;
+	display: inline-block;
+	top: -0.7rem;
+	position: relative;
+}
+
+#site .entry-difference::before {
+	content: "+";
+	font-size: 1.3rem;
+	font-weight: 400;
+	vertical-align: 10%;
+}
+
+/* Tools */
+/* to do: this needs to be aligned with the general button styling, see Network profile for reference */
+
+#site .tools {
+	background: #f5f5f3;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#site .tools:hover {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#site .tools li {
+	float: left;
+	list-style: none;
+	padding-left: 0;
+}
+
+#site .tools li::before {
+	content: none;
+}
+
+#site .tools a[href]:hover {
+	background: #fff;
+}
+
+#site .tools a.selected {
+	background: #282828;
+	color: #fff;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+#site .tools > a:last-child,
+#site .tools li:last-child a {
+	border-right: none;
+}
+
+#site .tools a {
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	font-size: 1.3rem;
+	padding: 0 10px;
+}
+
+/* Authors */
+/* to do: the styling of this content area needs to be revised */
+
+#site .author-info a[rel=author] {
+	font-weight: 700;
+	font-size: 1.3rem;
+	padding-right: 3px;
+}
+
+#site .author-info img {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	position: absolute;
+	top: -1px;
+	right: 0;
+}
+
+#site .author-info:last-child {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #9b9b9b;
+	font-size: 1.3rem;
+}
+
+#site .author-info:last-child em {
+	color: #9b9b9b;
+	color: #555;
+	font-style: normal;
+}
+
 /*-----------------------------------------------------------------------------
 	Footer:
 
-	Style definitions for the footer.
+	This should not be altered in the site specific styles of a site.
 -----------------------------------------------------------------------------*/
 
 #footer {
@@ -2015,8 +1625,9 @@ pre[data-line] {
 	position: absolute;
 	top: 3.8rem;
 	left: 30px;
+	margin: 0;
 	
-	/* Make sure font smoothing doesn't change when the Factory is animated */
+	/* Make sure font smoothing in Webkit doesn't change when the Factory artwork is animated */
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -2057,15 +1668,17 @@ pre[data-line] {
 	content: "\F315";
 }
 
+/* Factory artwork */
+
 #footer .footer-factory {
 	position: relative;
-	margin-left: 450px;
+	margin: 0 0 0 450px;
 	top: 1.7rem;
 	width: 140px;
 	height: 140px;
 	border-radius: 70px;
 	background: #ccc url(../img/factory.png) -15px -12px no-repeat;
-	box-shadow: inset 0 0 25px #000;
+	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.7);
 	z-index: 10;
 }
 
@@ -2079,7 +1692,7 @@ pre[data-line] {
 	position: absolute;
 	top: -15px;
 	left: -15px;
-	box-shadow: inset 0 0 1px rgba(200, 200, 200, 0.5);
+	box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.7);
 	-webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
 	-ms-transition: all 0.3s ease-in;
@@ -2117,16 +1730,16 @@ pre[data-line] {
 	display: block;
 	border-radius: 70px;
 	opacity: 1;
-	box-shadow: inset 0 0 25px #000;
-}
-
-#footer .footer-factory:hover em {
-	opacity: 0;
+	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.7);
 	-webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
 	-ms-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
+}
+
+#footer .footer-factory:hover em {
+	opacity: 0;
 }
 
 #footer .footer-factory a {
@@ -2143,7 +1756,7 @@ pre[data-line] {
 	-ms-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
-	opacity: 0.3;
+	opacity: 0.5;
 	z-index: 12;
 }
 
@@ -2155,6 +1768,8 @@ pre[data-line] {
 	-o-transform: rotate(10deg);
 	transform: rotate(10deg);
 }
+
+/* Factory artwork for high-resolution displays */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -2169,30 +1784,36 @@ pre[data-line] {
 }
 
 /*-----------------------------------------------------------------------------
-	Fonts and icons:
+	Creative chaos:
+	
+	to do: this needs to be reorganised, abstracted and integrated with
+	the main site style definitions.
 -----------------------------------------------------------------------------*/
 
-@font-face {
-	font-family: 'Entypo';
-	src: url('fonts/entypo.eot');
-	src: url('fonts/entypo.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/entypo.woff') format('woff'),
-	     url('fonts/entypo.ttf') format('truetype'),
-	     url('fonts/entypo.svg#svgEntypo') format('svg');
+/* Entries */
+
+#site .entries article header {
+	padding: 0;
 }
 
-.icon-fork::before,
-.icon-download::before {
-	font-family: "Entypo";
-	font-size: 34px;
-	float: left;
-	margin-right: 5px;
+/* Comments */
+
+#site article.comment {
+	position: relative;
+	
+	/* @todo: this is highly experimental and only adjusted for expected behavior in Safari. */
+	min-height: 69px;
+	margin: 0 -10px;
+	padding: 0 10px;
 }
 
-.icon-fork::before {
-	content: "\1F569";
+#site article.comment:not(:first-of-type) {
+	border-top: 1px solid #bbbfbb;
 }
 
-.icon-download::before {
-	content: "\E778";
+#site article.comment footer {
+	margin: 0 100px 0 -10px;
+	padding: 0.6rem 10px;
+	width: 588px;
+	color: #9b9b9b;
 }

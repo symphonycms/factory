@@ -200,32 +200,29 @@ var Factory;
 			if(time < 1) {
 				return 'just now';
 			}
-			if(time < 2) {
-				return 'a minute ago';
-			}
 			if(time < 45) {
 				return time + 'minutes ago';
 			}
 			if(time < 90) {
-				return 'about 1 hour ago';
+				return '1 hour ago';
 			}
 			if(time < 1440) {
-				return 'about' + Math.floor(time / 60) + ' hours ago';
+				return Math.floor(time / 60) + ' hours ago';
 			}
 			if(time < 2880) {
-				return '1 day about';
+				return '1 day ago';
 			}
 			if(time < 43200) {
 				return Math.floor(time / 1440) + ' days ago';
 			}
 			if(time < 86400) {
-				return 'about a month ago';
+				return 'a month ago';
 			}
 			if(time < 525960) {
 				return Math.floor(time / 43200) + ' months ago';
 			}
 			if(time < 1051199) {
-				return 'about a year ago';
+				return 'a year ago';
 			}
 			else {
 				return 'over ' + Math.floor(time / 525960) + ' years ago';
