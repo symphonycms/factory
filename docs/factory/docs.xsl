@@ -18,6 +18,7 @@
 <xsl:template match="/">
 	<html>
 		<head>
+			<meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, user-scalable=no" />
 			<title>Symphony Factory – <xsl:value-of select="data/title" /></title>
 			<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
 			<link media="screen" href="{$config/root}/css/prism.css" type="text/css" rel="stylesheet" />

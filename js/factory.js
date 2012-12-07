@@ -280,7 +280,7 @@ var Factory;
 
 		// Mobile phones
 		if(Factory.isPhone()) {
-			Factory.setViewport();		
+//			Factory.setViewport();		
 		}
 
 		// Resizing
