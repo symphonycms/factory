@@ -278,6 +278,11 @@ var Factory;
 	$(document).on('ready.factory', function ready() {
 		Factory.init();
 
+		// Mobile phones
+		if(Factory.isPhone()) {
+			Factory.setViewport();		
+		}
+
 		// Resizing
 		$(window)
 			.on('resize.factory', Factory.adjustNetworkUser)
@@ -296,11 +301,6 @@ var Factory;
 		
 		// Users
 		$('.content p').each(Factory.linkUsers);
-
-		// Mobile phones
-		if(Factory.isPhone()) {
-			Factory.setViewport();		
-		}
 	});
 	
 })(jQuery.noConflict());
