@@ -563,11 +563,15 @@ pre[data-line] {
 	Style definitions for form elements.
 -----------------------------------------------------------------------------*/
 
-.content-media {
-	width: 100%;
+[class^=content-media] {
+	margin-bottom: 2.4rem;
 }
 
-.image-resize img {
+.content-media-crop {
+	overflow: hidden;
+}
+
+.content-media-resize img {
 	width: 100%;
 	height: auto;
 }
