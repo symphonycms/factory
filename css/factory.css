@@ -64,13 +64,12 @@ code {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-	width: 100%;
 }
 
 ul {
 	list-style: none;
-	margin: 0 0 1.2rem 3rem;
 	padding: 0;
+	margin: 0;
 }
 
 ul li {
@@ -560,11 +559,12 @@ pre[data-line] {
 /*-----------------------------------------------------------------------------
 	Media:
 
-	Style definitions for form elements.
+	Style definitions for media elements.
 -----------------------------------------------------------------------------*/
 
 [class^=content-media] {
 	margin-bottom: 2.4rem;
+	position: relative;
 }
 
 .content-media-crop {
@@ -575,6 +575,134 @@ pre[data-line] {
 	width: 100%;
 	height: auto;
 }
+
+/*-----------------------------------------------------------------------------
+	Compatibility:
+
+	Style definitions for compatibility information.
+-----------------------------------------------------------------------------*/
+
+#site .content-extension {
+	margin: 1rem 20px 0;
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	border-radius: 3px;
+	min-height: 8.8rem;
+}
+
+#site .content-extension-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 196px;
+	height: 12rem;
+	z-index: 10;
+	border-right: 1px solid rgba(0, 0, 0, 0.25);
+	background-image: -webkit-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
+	background-image: -moz-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
+	background-image: -ms-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);	
+	background-image: -o-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
+	background-image: linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2), 2px 0 10px rgba(100, 100, 100, 0.1);
+	line-height: 3rem;
+	font-size: 1.2rem;
+	margin: 0;
+	padding: 0 0 0 10px;
+	font-weight: 400;
+}
+
+#site .content-extension-label li::before {
+	display: none;
+}
+
+#site .content-extension-compatibility {
+	margin-left: 206px;
+	overflow-x: auto;
+}
+
+#site .content-extension-compatibility table {
+	min-width: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#site .content-extension-compatibility th,
+#site .content-extension-compatibility td {
+	font-weight: 400;
+	text-align: left;
+	height: 3rem;
+	padding: 0 10px;
+}
+
+#site .content-extension-compatibility th {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#site .content-extension-compatibility td {
+	background: #92C44D;
+}
+
+#site .content-extension-compatibility .content-extension-major {
+	color: #000;
+}
+
+#site .content-extension-compatibility .content-extension-incompatible {
+	color: rgba(0, 0, 0, 0.5);
+	background: none;
+}
+
+#site .content-extension-compatibility a {
+	color: #fff;
+	font-weight: 300;
+}
+
+#site .content-extension-compatibility a[href] {
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+#site .content-extension-compatibility a[href]:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#site .content-extension-get {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid rgba(200, 200, 200, 0.5);
+	z-index: 20;
+	margin: 0;
+	padding: 0 0 0 10px;
+	font-size: 1.2rem;
+	font-weight: 400;
+	width: 196px;
+	line-height: 3rem;
+}
+
+#site .content-extension-git {
+	line-height: 2rem;
+	margin: 0.5rem 10px 0.5rem 217px;
+	padding: 0;
+	display: block;
+	outline: none;
+	white-space: nowrap;
+}
+
+#site .content-extension-submodule,
+#site .content-extension-submodule-active {
+	float: right;
+	font-family: Entypo;
+	font-size: 3rem;
+	line-height: 3rem;
+	margin-right: 10px;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+#site .content-extension-submodule-active {
+	color: #000;
+}
+
+
 
 /*-----------------------------------------------------------------------------
 	Forms:
@@ -1004,6 +1132,7 @@ pre[data-line] {
 
 #network .network-drawer p {
 	color: rgba(255, 255, 255, 0.7);
+	margin: 1.2rem 0;
 }
 
 #network .network-drawer a {
@@ -1012,7 +1141,7 @@ pre[data-line] {
 }
 
 #network .network-drawer ul {
-	margin-left: 0;
+	margin: 1.2rem 0;
 }
 
 #network .network-drawer li::before {
@@ -1253,34 +1382,27 @@ pre[data-line] {
 /* Page headers */
 
 #site .page-header {
-	margin: 2.9rem 0 0;
+	margin: 2.4rem 0 0 30px;
 	max-width: 796px;
 }
 
 #site .page-header h2 {
-	margin: 0 0 3rem;
+	margin: 0 8px 0 0;
 	display: inline-block;
-}
-
-#site .page-header h2.with-separator::after {
-	content: "\00B7";
-	font-weight: 600;
-	padding-left: 10px;
-	color: #B20B4F;
 }
 
 #site .page-header p {
 	display: inline-block;
-	font-size: 3rem;
+	font-size: 2.6rem;
 	font-weight: 300;
 	line-height: 3.6rem;
 }
 
-#site .page-header .tag {
-	background: #92C44D;
-	border: 1px solid #92C44D;
+#site .page-header-tag,
+#site .page-header-tag-released,
+#site .page-header-tag-deprecated {
+	background: #F5F5F5;
 	border-radius: 2px;
-	color: #fff;
 	display: inline-block;
 	font-size: 1.3rem;
 	font-style: normal;
@@ -1289,6 +1411,23 @@ pre[data-line] {
 	padding: 0 10px;
 	position: relative;
 	top: -0.5rem;
+}
+
+#site .page-header-tag-released {
+	background: #92C44D;
+	color: #fff;
+}
+
+#site .page-header-author {
+	position: absolute;
+	top: 2rem;
+	right: 30px;
+	text-align: right;
+}
+
+#site .page-header-author img {
+	float: left;
+	margin-left: 5px;
 }
 
 /* Groups */
@@ -1306,23 +1445,26 @@ pre[data-line] {
 	padding: 0;
 }
 
-#site p[data-pullquote] {
-
-	/* It seems like a definition is needed here so that the following pseudo element works as expected */
-	position: inherit;
-}
-
 #site p[data-pullquote]::before {
 	content: attr(data-pullquote);
-	display: block;
+	background: #282828;
+	display: inline-block;
 	float: right;
 	font-size: 2rem;
 	font-weight: 300;
 	color: #888;
-	line-height: 3rem;
+	line-height: 5rem;
 	margin-right: -238px;
+	margin-bottom: 1rem;
 	padding: 0 0 2rem 35px;
 	width: 309px;
+}
+
+/* Lists */
+
+ul,
+ol {
+	max-width: 556px;
 }
 
 /* Highlighting */
@@ -1403,7 +1545,6 @@ pre[data-line] {
 
 }
 
-
 /* Sidebar */
 /* to do: these styles need to be cleared out */
 
@@ -1415,7 +1556,7 @@ pre[data-line] {
 	text-transform: uppercase;
 }
 
-#site .sidebar ul {
+/*#site .sidebar ul {
 	margin-left: 0;
 }
 
@@ -1427,7 +1568,7 @@ pre[data-line] {
 	font-size: 1.3rem;
 	margin-left: -10px;
 	
-	/* @todo: next definitions good for li's consisting of more than one line (interview questions) - not so much for regular sidebar nav */
+	/* @todo: next definitions good for li's consisting of more than one line (interview questions) - not so much for regular sidebar nav *!/
 	margin-bottom: 1rem;
 	line-height: 2rem;
 	
@@ -1449,7 +1590,7 @@ pre[data-line] {
 	content: "\2713";
 	float: right;
 	padding-right: 5px;
-}
+}*/
 
 #site .sidebar input {
 	box-sizing: border-box;

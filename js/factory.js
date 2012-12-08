@@ -39,6 +39,8 @@ var Factory;
 			Factory.elements.siteNav = Factory.elements.siteHeader.find('nav');
 			Factory.elements.siteNavItem = Factory.elements.siteNav.find('a');
 			Factory.elements.footer = $('#footer');
+
+			Factory.elements.contentExtension = Factory.elements.site.find('.content-extension');
 						
 			// Init profile
 			Factory.initNetworkProfile();
@@ -164,6 +166,52 @@ var Factory;
 		toggleNavigation: function(event) {
 			Factory.elements.siteNav.toggleClass('action-open');
 		},
+		
+	/*-------------------------------------------------------------------------
+		Users
+	-------------------------------------------------------------------------*/
+
+		initExtension: function() {
+		
+			// Set scroll position
+			$(window).on('resize.factory', Factory.scrollExtensionCompatibilities);
+			Factory.scrollExtensionCompatibilities();
+			
+			// Add submodule git command
+			Factory.elements.contentExtensionGit = Factory.elements.contentExtension.find('.content-extension-git');
+			Factory.elements.contentExtensionGit.data('git', Factory.elements.contentExtensionGit.text());
+			$('<a class="content-extension-submodule">&#128193;</a>')
+				.insertBefore(Factory.elements.contentExtensionGit)
+				.on('click.factory', Factory.toggleExtensionSubmodule);
+				
+			// Select Git URL
+			Factory.elements.contentExtensionGit.on('focus.factory', Factory.selectExtensionGitURL);
+		},
+		
+		scrollExtensionCompatibilities: function() {
+			Factory.elements.contentExtension.find('.content-extension-compatibility')[0].scrollLeft = 1000;
+		},
+		
+		toggleExtensionSubmodule: function() {
+			$(this).toggleClass('content-extension-submodule-active');
+		
+			// Restore plain clone URL
+			if(Factory.elements.contentExtensionGit.text().substring(0, 13) == 'git submodule') {
+				Factory.elements.contentExtensionGit.text(Factory.elements.contentExtensionGit.data('git'));
+			}
+			
+			// Set submodule command
+			else {
+				Factory.elements.contentExtensionGit.text('git submodule add ' + Factory.elements.contentExtensionGit.data('git') + ' --recursive');
+			}
+			
+			Factory.elements.contentExtensionGit.trigger('focus.factory');
+		},
+		
+		selectExtensionGitURL: function() {
+			var selection = window.getSelection();
+			selection.selectAllChildren(Factory.elements.contentExtensionGit[0]);
+		},
 
 	/*-------------------------------------------------------------------------
 		Users
@@ -284,6 +332,11 @@ var Factory;
 		
 		// Users
 		$('.content p').each(Factory.linkUsers);
+		
+		// Compatibility table
+		if(Factory.elements.contentExtension.length > 0) {
+			Factory.initExtension();
+		}
 	});
 	
 })(jQuery.noConflict());
