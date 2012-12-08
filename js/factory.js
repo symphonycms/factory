@@ -230,18 +230,6 @@ var Factory;
 		},
 		
 	/*-------------------------------------------------------------------------
-		Devices
-	-------------------------------------------------------------------------*/
-	
-		isPhone: function() {
-			return /ipad|iphone|ipod|android|blackberry|windows phone/i.test(navigator.userAgent.toLowerCase());
-		},
-		
-		setViewport: function() {
-			$('<meta name="viewport" content="width=500" />').prependTo('head');
-		},
-		
-	/*-------------------------------------------------------------------------
 		Storage
 	-------------------------------------------------------------------------*/
 	
@@ -277,11 +265,6 @@ var Factory;
 
 	$(document).on('ready.factory', function ready() {
 		Factory.init();
-
-		// Mobile phones
-		if(Factory.isPhone()) {
-//			Factory.setViewport();		
-		}
 
 		// Resizing
 		$(window)
