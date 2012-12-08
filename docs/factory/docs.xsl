@@ -75,7 +75,7 @@
 </xsl:template>
 
 <!-- Images -->
-<xsl:template match="img" mode="ninja" priority="1">
+<xsl:template match="img[not(starts-with(@src, 'http://'))]" mode="ninja" priority="1">
 	<img src="{$config/root}{@src}" width="{@width}" height="{@height}" alt="{@alt}" />
 </xsl:template>
 
