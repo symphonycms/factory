@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../factory/docs.xsl" ?>
 <data>
-	<title id="Examples">Documentation</title>
+	<title id="Examples" mode="push">Documentation</title>
 	<content>
 	
 	</content>
