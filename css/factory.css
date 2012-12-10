@@ -1557,6 +1557,10 @@ ol {
 	margin-top: 1rem;
 }
 
+#site .sidebar-annotation {
+	color: #666;
+}
+
 #site .sidebar h3 {
 	font-size: 1.3rem;
 	font-weight: 600;
@@ -1565,69 +1569,11 @@ ol {
 	text-transform: uppercase;
 }
 
-#site .sidebar-annotation {
-	color: #666;
-}
-
-
-/*#site .sidebar ul {
-	margin-left: 0;
-}
-
-#site .sidebar > ul:first-child {
-	margin-top: 1.8rem;
-}
-
-#site .sidebar ul li {
-	font-size: 1.3rem;
-	margin-left: -10px;
-	
-	/* @todo: next definitions good for li's consisting of more than one line (interview questions) - not so much for regular sidebar nav *!/
-	margin-bottom: 1rem;
-	line-height: 2rem;
-	
-}
-
-#site .sidebar ul li::before {
-	content: none;
-}
-
-#site .sidebar ul li.selected,
-#site .sidebar ul li:hover {
-	background: #fff;
-	border: 1px solid rgba(0, 0, 0, 0.075);
-	border-radius: 2px;
-}
-
-#site .sidebar ul li.selected::after {
-	color: rgba(0, 0, 0, 0.7);
-	content: "\2713";
-	float: right;
-	padding-right: 5px;
-}*/
-
 #site .sidebar input {
 	box-sizing: border-box;
 	margin-left: -10px;
 	padding-left: 8px;
 	width: 187px;
-}
-
-#site .sidebar aside {
-	padding: 0 0 2rem;
-	margin-left: -10px;
-}
-
-#site .sidebar aside p {
-	background: #e8e8e8;
-	color: #555;
-	padding: 0.6rem 10px 0.6rem;
-	line-height: 2rem;
-	font-size: 1.2rem;
-}
-
-#site .sidebar > aside:first-child {
-	margin-top: 1.4rem;
 }
 
 /* Entry overview */
