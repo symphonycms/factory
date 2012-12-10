@@ -7,15 +7,11 @@
  * Custom styling for the Factory docs.
  */
 
-#about-layouts,
-#about-snippets,
-#about-styles,
-#about-scripts,
-#about-examples {
-	background: #B20B4F;
-	font-family: Entypo;
-	font-size: 30rem;
-	color: #88083C;
+#docs-column-example .column {
+	background: #E9F4ED;
+	height: 176px;
+	margin-bottom: 30px;
 	text-align: center;
-	line-height: 33rem;
+	padding: 30px;
+	border: 1px solid #D3EADE;
 }

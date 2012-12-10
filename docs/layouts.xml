@@ -77,6 +77,19 @@
 			</div>
 		</section>
 		
+		<!-- Column examples -->
+		<div id="docs-column-example" class="field centered">
+			<div class="column one">column sized <code>.one</code></div>
+			<div class="column two">column sized <code>.two</code></div>
+			<div class="column one">column sized <code>.one</code></div>
+			<div class="column one small-hide">column sized <code>.one.small-hide</code></div>
+			<div class="column two medium-hide">column sized <code>.two.medium-hide</code></div>
+			<div class="column three">column sized <code>.three</code></div>
+			<div class="column four small-threee">column sized <code>.four.small-three</code></div>
+			<div class="column one medium-hide small-hide">column sized <code>.one.medium-hide.small-hide</code></div>
+			<div class="column five medium-four small-three">column sized <code>.five.medium-four.small-three</code></div>
+		</div>
+		
 		<!-- HTML -->
 		<section class="field centered language-markup">
 			<div class="column content">
