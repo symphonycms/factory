@@ -14,7 +14,7 @@
 			<!-- Developer links -->
 			<p class="footer-links">
 				<strong>Plan, Play and Practice</strong>
-				<a href="">Requirements</a> · <a href="">MIT Licence</a> · <a href="http://github.com/symphonycms">Github</a>
+				<a href="https://github.com/symphonycms/symphony-2/blob/master/README.markdown">Requirements</a> · <a href="https://github.com/symphonycms/symphony-2/blob/master/LICENCE">MIT Licence</a> · <a href="http://github.com/symphonycms">Github</a>
 			</p>
 			
 			<!-- Factory artwork -->

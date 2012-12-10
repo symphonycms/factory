@@ -132,16 +132,12 @@
 			<footer id="footer"></footer>
 		</body>
 	</html>]]></code></pre>
-			</div>
-		</section>
-		
-		<!-- Network -->
-		<section class="field centered language-markup">
-			<div class="column content">
-				<h2 id="chapter_network">Network</h2>
-			
-				<!-- XSL -->
-				<h3>Including the Toolbar</h3>
+
+				<!-- Network -->
+				<h3>Network Toolbar</h3>
+				<p>The network toolbar is provided via an XSL template, the content will be dynamically fetched from the main Symphony server.</p>
+
+				<h4>XSL</h4>
 				<pre class="content-pushaside justified"><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
@@ -152,110 +148,149 @@
 	</xsl:template>
 
 </xsl:stylesheet>]]></code></pre>
-			
-				<!-- Result -->
-				<h3>Toolbar Output</h3>
-				<div class="content-annotation">
-					<p>Factory&#8217;s markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
-				</div>			
+
+				<h4>HTML Result</h4>
 				<pre class="content-pushaside justified"><code><![CDATA[<aside id="network">
-	<header class="field">
+
+	<!-- Network toolbar with the most important links -->
+	<header class="network-toolbar field collapsed">
 		<div class="centered">
-			<h1 class="column one">
-				<a href="index.htm">Symphony Network</a>
+			<h1 class="network-logo column one">
+				<a href="http://symphony/factory/docs/about.xml">Symphony Network</a>
 			</h1>
-			<nav class="column three">
-				<a href="community.htm">Community</a>
-				<a href="documentation.htm">Documentation</a>
-				<a href="extensions.htm">Extensions</a>
-				<a href="ninjas.htm">Ninjas</a>
-				<a href="xpathr.htm">xPathr</a>
+			<nav class="network-nav column">
+				<a href="http://symphony/factory/docs/examples/community.xml">Community</a>
+				<a href="http://symphony/factory/docs/examples/documentation.xml">Documentation</a>
+				<a href="http://symphony/factory/docs/examples/extensions.xml">Extensions</a>
+				<a href="http://symphony/factory/docs/examples/ninjas.xml">Ninjas</a>
+				<a href="http://symphony/factory/docs/examples/xpathr.xml">xPathr</a>
 			</nav>
-			<div id="user" class="one">
-				<img src="http://gravatar.com/avatar/76a76733a9f16e46f0d8c88b5beac523?s=36" width="36" height="36" alt="Allen Chang">
-				<p>Allen Chang <strong>+15</strong></p>
+			
+			<!-- The current user -->
+			<div id="user" class="network-user">
+				<a href="http://getsymphony.com/get-involved/member/Allen/">
+					<img src="http://symphony/factory/img/user.png" width="35" height="35" alt="Allen Chang">
+				</a>
+				<p>
+					<a href="http://getsymphony.com/get-involved/currently-online/" class="network-visitors">15</a> + <a class="network-username">Allen Chang</a>
+				</p>
 			</div>
 		</div>
 	</header>
-	<div class="field centered drawer" style="display: none;">
-		<div class="column two">
+	
+	<!-- Network profile of the current user or a registration form -->
+	<div class="field network-profile action-profile-hide">
+		<form class="centered">
+			<div class="network-gravatar column one">
+				<img src="http://symphony/factory/img/user.png" width="174" height="174" alt="Allen Chang">
+				<p>Change your avatar at <a href="http://gravatar.com">Gravatar</a>.</p>
+			</div>
+			<fieldset class="column one large-two">
+				<label for="profile-username" class="restricted">Username</label>
+				<input id="profile-username" type="text" name="fields[username]" value="Allen" readonly="">
+				<label for="profile-name">Name</label>
+				<input id="profile-name" type="text" name="fields[name]" value="Allen Chang">
+				<label for="profile-email-address">Email (Private)</label>
+				<input id="profile-email-address" type="text" name="fields[email-address]" value="team@getsymphony.com">
+				<label for="profile-city">Location</label>
+				<input id="profile-city" type="text" name="fields[location]" value="Symphony Land">
+			</fieldset>
+			<fieldset class="column two small-one">
+				<label for="profile-website">Website</label>
+				<input id="profile-website" type="text" name="fields[website]" value="http://getsymphony.com">
+				<label for="profile-bio">Bio</label>
+				<textarea rows="7" name="fields[bio]">Cras mattis consectetur purus sit amet fermentum.</textarea>
+				<div class="profile-controls">
+					<button id="submit-profile" class="button-save" type="submit" name="action[members-edit]">Save Profile</button>
+					<a class="button-cancel" href="../../member/Nils/">Cancel</a>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	
+	<!-- Network drawer with additional information and links -->
+	<div class="field centered network-drawer">
+		<div class="column three medium-two">
 			<h2>About Symphony</h2>
 			<p>Symphony is an open source content management system for your websites and webapps. It makes complex things simple.</p>
 			<div class="get-symphony">
-				<a href="#">Get Symphony 2.3.0</a>
-				<a href="#" class="icon fork">Git</a>
-				<a href="#" class="icon download">Download</a>
+				<a href="https://github.com/symphonycms/symphony-2">Get Symphony 2.3.0</a>
+				<a href="https://github.com/symphonycms/symphony-2" class="icon-fork">Fork<span class="medium-hide"> on Github</span></a>
+				<a href="https://github.com/symphonycms/symphony-2/archive/master.zip" class="icon-download"><span class="medium-hide">Download </span>ZIP</a>
 			</div>
 		</div>
-		<div class="column one">
+		<div class="column one small-two">
 			<h2>Regions</h2>
 			<ul>
-				<li><a href="#">Germany</a></li>
-				<li><a href="#">Italy</a></li>
-				<li><a href="#">Romania</a></li>
-				<li><a href="#">United Kingdom</a></li>
+				<li>
+					<a href="#">Germany</a>
+				</li>
+				<li>
+					<a href="#">Italy</a>
+				</li>
+				<li>
+					<a href="#">Romania</a>
+				</li>
+				<li>
+					<a href="#">United Kingdom</a>
+				</li>
 			</ul>
 		</div>
 		<div class="column one">
 			<h2>Services</h2>
 			<ul>
-				<li><a href="#">Github</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Vimeo</a></li>
-				<li><a href="#">Flickr</a></li>
-			</ul>
-		</div>
-		<div class="column one user">
-			<h2>Hi there!</h2>
-			<ul>
-				<li><a href="#">Your profile</a></li>
-				<li><a href="#">Change Password</a></li>
-				<li><a class="button" href="#">Logout</a></li>
+				<li>
+					<a href="#">Github</a>
+				</li>
+				<li>
+					<a href="#">Twitter</a>
+				</li>
+				<li>
+					<a href="#">Vimeo</a>
+				</li>
+				<li>
+					<a href="#">Flickr</a>
+				</li>
 			</ul>
 		</div>
 	</div>
 </aside>]]></code></pre>
-			</div>
-		</section>
 		
-		<!-- Content -->
-		<section class="field centered language-markup">
-			<div class="column content">
-				<h2>Content</h2>
+				<!-- Content -->
+				<h3>Content Area</h3>
+				<p>The content area is your playground. This is where your site lives.</p>
 			
-				<!-- Header -->
-				<h3>Site Header</h3>
-				<div class="content-annotation">
-					<p>Factory&#8217;s markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
-				</div>			
-				<pre class="content-pushaside justified"><code><![CDATA[<header class="site">
-	
-	<!-- Site title -->
-	<h1>
-		<span>Symphony</span> Site Name
-	</h1>
-	
-	<!-- Site navigation -->
-	<nav>
-		<a href="link-a">Link A</a>
-		<a href="link-b">Link B</a>
-		<a href="link-c">Link C</a>
-	</nav>
-</header>]]></code></pre>
+				<!-- Footer -->
+				<h3>Network Footer</h3>
+				<p>The network footer is – like the toolbar – provided via an XSL template, the content will be dynamically fetched from the main Symphony server.</p>
 
-				<!-- Fields -->
-				<h3>Content fields</h3>
-				<div class="content-annotation">
-					<p>Factory&#8217;s markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
-				</div>			
-				<pre class="content-pushaside justified"><code></code></pre>
-			
-				<!-- Columns -->
-				<h3>Columns</h3>
-				<div class="content-annotation">
-					<p>Factory&#8217;s markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
-				</div>			
-				<pre class="content-pushaside justified"><code></code></pre>
+				<h4>XSL</h4>
+				<pre class="content-pushaside justified"><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    
+	<xsl:import href="xsl/footer.xsl" />
+
+	<xsl:template match="/">
+		<xsl:call-template name="footer" />
+	</xsl:template>
+
+</xsl:stylesheet>]]></code></pre>
+
+				<h4>HTML Result</h4>
+				<pre class="content-pushaside justified"><code><![CDATA[<footer id="footer">
+	<div class="field centered">
+		<p class="footer-community">
+			<strong>© 2010–2012 The Symphony Community</strong>
+			<a href="http://getsymphony.com">International Site</a> · <a href="http://twitter.com/symphonycms">Twitter</a>
+		</p>
+		<p class="footer-links">
+			<strong>Plan, Play and Practice</strong>
+			<a href="https://github.com/symphonycms/symphony-2/blob/master/README.markdown">Requirements</a> · <a href="https://github.com/symphonycms/symphony-2/blob/master/LICENCE">MIT Licence</a> · <a href="http://github.com/symphonycms">Github</a>
+		</p>
+		<p class="footer-factory">
+			<em>Conducting sites since 2004</em>
+			<a href="http://getsymphony.com">Symphony Community</a></p>
+</div></footer>]]></code></pre>				
 			</div>
 		</section>
 	</content>
