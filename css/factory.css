@@ -1745,6 +1745,7 @@ ol {
 	overflow: hidden;
 	position: relative;
 	z-index: 10;
+	margin-top: 5rem;
 }
 
 #footer.sticky {
