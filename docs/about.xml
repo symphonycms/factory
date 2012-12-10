@@ -33,46 +33,46 @@
 		
 		<!-- Features -->
 <!--		<aside class="field tiles">
-			<div class="centered">
+			<div class="centered">-->
 			
-				<!-- Layouts --*>
-				<article class="tile one">
+				<!-- Layouts -->
+<!--				<article class="tile one">
 					<h3>Layouts</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="layouts.xml">More about layouts.</a>
 					</p>
-				</article>
+				</article>-->
 				
-				<!-- Snippets --*>
-				<article class="tile one">
+				<!-- Snippets -->
+<!--				<article class="tile one">
 					<h3>Snippets</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="snippets.xml">More about snippets.</a>
 					</p>
-				</article>
+				</article>-->
 				
-				<!-- Styles --*>
-				<article class="tile one">
+				<!-- Styles -->
+<!--				<article class="tile one">
 					<h3>Styles</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="styles.xml">More about styles.</a>
 					</p>
-				</article>
+				</article>-->
 				
-				<!-- Scripts --*>
-				<article class="tile one">
+				<!-- Scripts -->
+<!--				<article class="tile one">
 					<h3>Scripts</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
 						<a href="scripts.xml">More about scripts.</a>
 					</p>
-				</article>
+				</article>-->
 				
-				<!-- Examples --*>
-				<article class="tile one">
+				<!-- Examples -->
+<!--				<article class="tile one">
 					<h3>Examples</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 					<p>
