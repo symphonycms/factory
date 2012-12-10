@@ -122,18 +122,13 @@
 			<div class="column sidebar">
 				<ul class="sidebar-links">
 					<li class="icon-homepage">
-						<a href="http://symphony-cms.com/download/extensions/view/27338/">Homepage</a>
+						<a href="http://symphony-cms.com/download/extensions/view/27338/">Discussion</a>
 					</li>
 					<li class="icon-github">
-						<a href="https://github.com/hananils/datetime">Github</a>
-					</li>
-					<li class="icon-issues">
-						<a href="https://github.com/hananils/datetime/issues">15 open issues</a>
-					</li>
-					<li class="icon-languages">
-						<a href="https://github.com/hananils/datetime/blob/master/lang/lang.de.php">German</a>, <a href="https://github.com/hananils/datetime/blob/master/lang/lang.fr.php">French</a>, <a href="https://github.com/hananils/datetime/blob/master/lang/lang.it.php">Italian</a>, <a href="https://github.com/hananils/datetime/blob/master/lang/lang.no.php">Norwegian</a>, <a href="https://github.com/hananils/datetime/blob/master/lang/lang.ro.php">Romanian</a>
+						<a href="https://github.com/hananils/datetime">Github</a> (<a href="https://github.com/hananils/datetime/issues">15 Issues</a>)
 					</li>
 				</ul>
+				<p class="sidebar-extensions-lang">Available in English, German, French, Italian, Norwegian, Romanian.</p>
 			</div>
 			<div class="column content language-markup">
 				<p class="content-introduction">Date and Time provides advanced date and time management for Symphony. It offers an easy interface providing a calendar widget that helps creating multiple dates and date ranges. The field respects the system settings and displays date and time accordingly. Nevertheless, it is capable to read and understand <a href="http://www.php.net/manual/en/datetime.formats.php">relative date formats</a>.</p>
