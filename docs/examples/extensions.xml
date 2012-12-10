@@ -176,15 +176,15 @@
 				<p>Filters separated by comma will find all dates that match one of the given dates or ranges.<br/>Filters separated by <code>+</code> will only find dates that match all of the given dates or ranges.</p>
 				<p>This extensions accepts all relative dates known to <a href="http://www.php.net/manual/en/datetime.formats.php">PHP's DateTime class</a> for filtering. It also allows the creation of filter ranges with <code>to</code> or <code>earlier than</code> and <code>later than</code>.</p>
 				<h4>Example Data Source Output</h4>
-				<pre><code>&lt;date-and-time&gt;
-&lt;date timeline="1" type="range"&gt;
-&lt;start iso="2011-12-06T10:00:00+01:00" time="10:00" weekday="2" offset="+0100"&gt;2011-12-06&lt;/start&gt;
-&lt;end iso="2011-12-24T18:00:00+01:00" time="18:00" weekday="6" offset="+0100"&gt;2011-12-24&lt;/end&gt;
-&lt;/date&gt;
-&lt;date timeline="2" type="exact"&gt;
-&lt;start iso="2011-12-25T09:00:00+01:00" time="09:00" weekday="7" offset="+0100"&gt;2011-12-25&lt;/start&gt;
-&lt;/date&gt;
-&lt;/date-and-time&gt;</code></pre>
+				<pre><code><![CDATA[<date-and-time>
+	<date timeline="1" type="range">
+		<start iso="2011-12-06T10:00:00+01:00" time="10:00" weekday="2" offset="+0100">2011-12-06</start>
+		<end iso="2011-12-24T18:00:00+01:00" time="18:00" weekday="6" offset="+0100">2011-12-24</end>
+	</date>
+	<date timeline="2" type="exact">
+		<start iso="2011-12-25T09:00:00+01:00" time="09:00" weekday="7" offset="+0100">2011-12-25</start>
+	</date>
+</date-and-time>]]></code></pre>
 				<h3>Acknowledgement</h3>
 				<p>This extension is not a work of a single person, a lot of people tested it and <a href="https://github.com/hananils/datetime/contributors">contributed to it</a>. The initial layout of the date widget was inspired by Scott Hughes' <a href="http://symphony-cms.com/discuss/thread/103/">calendar mock-up for Symphony 2.0</a> and Rowan Lewis' <a href="https://github.com/rowan-lewis/calendaroverlay/">calendar overlay</a>.</p>
 			</div>
