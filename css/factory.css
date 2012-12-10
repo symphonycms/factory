@@ -1450,19 +1450,37 @@ pre[data-line] {
 	padding: 0;
 }
 
-#site p[data-pullquote]::before {
-	content: attr(data-pullquote);
-	background: #282828;
-	display: inline-block;
+/* Pull quotes */
+
+#site .content-pullquote {
+	width: 382px;
 	float: right;
+	margin: 0.4rem 0 1rem 30px;
+}
+
+#site .content-pullquote p {
+	display: inline;
 	font-size: 2rem;
 	font-weight: 300;
-	color: #888;
-	line-height: 5rem;
-	margin-right: -238px;
-	margin-bottom: 1rem;
-	padding: 0 0 2rem 35px;
-	width: 309px;
+}
+
+#site .content-pullquote p,
+#site .content-pullquote p > span {
+	position: relative;
+	right: 2.4rem;
+	line-height: 3.6rem;
+	padding: 0.1rem 0 0.4rem;
+	background: #282828;
+	color: #989898;
+}
+
+#site .content-pullquote span > span {
+	position: relative;
+	left: 1.2rem;
+}
+
+#site .content-pullquote p {
+	left: 2.4rem;
 }
 
 /* Lists */
