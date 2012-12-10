@@ -1665,7 +1665,7 @@ ol {
 /* Tools */
 /* to do: this needs to be aligned with the general button styling, see Network profile for reference */
 
-#site .tools {
+/*#site .tools {
 	background: #f5f5f3;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 2px;
@@ -1710,7 +1710,7 @@ ol {
 	display: inline-block;
 	font-size: 1.3rem;
 	padding: 0 10px;
-}
+}*/
 
 /* Authors */
 /* to do: the styling of this content area needs to be revised */
