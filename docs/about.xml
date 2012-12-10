@@ -43,7 +43,6 @@
 						<a href="layouts.xml">More about layouts.</a>
 					</p>
 				</article>
-				<article class="tile one" id="about-layouts">&#128240;</article>
 				
 				<!-- Snippets -->
 				<article class="tile one">
@@ -53,7 +52,6 @@
 						<a href="snippets.xml">More about snippets.</a>
 					</p>
 				</article>
-				<article class="tile one" id="about-layouts">&#127748;</article>
 				
 				<!-- Styles -->
 				<article class="tile one">
@@ -63,7 +61,6 @@
 						<a href="styles.xml">More about styles.</a>
 					</p>
 				</article>
-				<article class="tile one" id="about-layouts">&#9998;</article>
 				
 				<!-- Scripts -->
 				<article class="tile one">
@@ -73,7 +70,6 @@
 						<a href="scripts.xml">More about scripts.</a>
 					</p>
 				</article>
-				<article class="tile one" id="about-layouts">&#128640;</article>
 				
 				<!-- Examples -->
 				<article class="tile one">
@@ -83,7 +79,6 @@
 						<a href="examples.xml">See some examples.</a>
 					</p>
 				</article>
-				<article class="tile one" id="about-layouts">&#59272;</article>
 			</div>
 		</aside>
 	</content>
