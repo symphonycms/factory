@@ -94,44 +94,44 @@
 					<p>Symphony Factory bundles <a href="">styles</a> and <a href="">scripts</a>, some of them mandatory, others obligatory. This is the default HTML skeleton.</p>
 				</div>
 				<pre class="content-pushaside justified"><code><![CDATA[<!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-			<title>Site title</title>
-			
-			<!-- Webfonts, see http://symphonycms.github.com/factory/docs/typography.xml -->
-			<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-			
-			<!-- Styles for code highlighting -->
-			<link media="screen" href="css/prism.css" type="text/css" rel="stylesheet" />
-			
-			<!-- Main Factory styles -->
-			<link media="screen" href="css/factory.css" type="text/css" rel="stylesheet" />
-			
-			<!-- JavaScript libraries -->
-			<script type="text/javascript" src="js/jquery.js"></script>
-			<script type="text/javascript" src="js/modernizr.js"></script>
-			<script type="text/javascript" src="js/prism.js"></script>
-			
-			<!-- Main Factory scripts -->
-			<script type="text/javascript" src="js/factory.js"></script>
-			
-			<!-- Include this during development to make use of the visual grid -->
-			<script type="text/javascript" src="js/factory.grid.js"></script>
-		</head>
-		<body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>Site title</title>
 		
-			<!-- Network toolbar -->
-			<aside id="network"></aside>
+		<!-- Webfonts, see http://symphonycms.github.com/factory/docs/typography.xml -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 		
-			<!-- Site content -->
-			<div id="site"></div>
+		<!-- Styles for code highlighting -->
+		<link media="screen" href="css/prism.css" type="text/css" rel="stylesheet" />
 		
-			<!-- Network footer -->
-			<footer id="footer"></footer>
-		</body>
-	</html>]]></code></pre>
+		<!-- Main Factory styles -->
+		<link media="screen" href="css/factory.css" type="text/css" rel="stylesheet" />
+		
+		<!-- JavaScript libraries -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/prism.js"></script>
+		
+		<!-- Main Factory scripts -->
+		<script type="text/javascript" src="js/factory.js"></script>
+		
+		<!-- Include this during development to make use of the visual grid -->
+		<script type="text/javascript" src="js/factory.grid.js"></script>
+	</head>
+	<body>
+	
+		<!-- Network toolbar -->
+		<aside id="network"></aside>
+	
+		<!-- Site content -->
+		<div id="site"></div>
+	
+		<!-- Network footer -->
+		<footer id="footer"></footer>
+	</body>
+</html>]]></code></pre>
 
 				<!-- Network -->
 				<h3>Network Toolbar</h3>
@@ -306,7 +306,8 @@
 		<p class="footer-factory">
 			<em>Conducting sites since 2004</em>
 			<a href="http://getsymphony.com">Symphony Community</a></p>
-</div></footer>]]></code></pre>				
+	</div>
+</footer>]]></code></pre>				
 			</div>
 		</section>
 	</content>
