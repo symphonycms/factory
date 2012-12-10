@@ -230,50 +230,55 @@ var Factory;
 	-------------------------------------------------------------------------*/
 		
 		getRelativeTime: function() {
-			var time = $(this);
+			var time = $(this),
+				datetime = time.attr('datetime') || time.text();
 			
 			// Get relative time distance
-			time.text(Factory.parseTime(time.attr('datetime')));
+			time.text(Factory.parseTime(datetime));
 		},
 
-		parseTime: function(string) {
-			var from = Date.parse(string),
-				to = new Date().getTime(),
-				distance = to - from;
-
-			// Convert time to minutes
-			time = Math.floor(distance / 60000);
-
-			// Return relative time
-			if(time < 1) {
-				return 'just now';
-			}
-			if(time < 45) {
-				return time + 'minutes ago';
-			}
-			if(time < 90) {
-				return '1 hour ago';
-			}
-			if(time < 1440) {
-				return Math.floor(time / 60) + ' hours ago';
-			}
-			if(time < 2880) {
-				return '1 day ago';
-			}
-			if(time < 43200) {
-				return Math.floor(time / 1440) + ' days ago';
-			}
-			if(time < 86400) {
-				return 'a month ago';
-			}
-			if(time < 525960) {
-				return Math.floor(time / 43200) + ' months ago';
-			}
-			if(time < 1051199) {
-				return 'a year ago';
-			}
-			else {
-				return 'over ' + Math.floor(time / 525960) + ' years ago';
+		parseTime: function(datetime) {
+			var from = Date.parse(datetime);
+			
+			// Check date validity
+			if(!isNaN(from)) {
+				var	to = new Date().getTime(),
+					distance = to - from;
+	
+				// Convert time to minutes
+				time = Math.floor(distance / 60000);
+	
+				// Return relative time
+				if(time < 1) {
+					return 'just now';
+				}
+				if(time < 45) {
+					return time + 'minutes ago';
+				}
+				if(time < 90) {
+					return '1 hour ago';
+				}
+				if(time < 1440) {
+					return Math.floor(time / 60) + ' hours ago';
+				}
+				if(time < 2880) {
+					return '1 day ago';
+				}
+				if(time < 43200) {
+					return Math.floor(time / 1440) + ' days ago';
+				}
+				if(time < 86400) {
+					return 'a month ago';
+				}
+				if(time < 525960) {
+					return Math.floor(time / 43200) + ' months ago';
+				}
+				if(time < 1051199) {
+					return 'a year ago';
+				}
+				else {
+					return 'over ' + Math.floor(time / 525960) + ' years ago';
+				}
 			}
 		},
 		
