@@ -187,6 +187,135 @@
 </date-and-time>]]></code></pre>
 				<h3>Acknowledgement</h3>
 				<p>This extension is not a work of a single person, a lot of people tested it and <a href="https://github.com/hananils/datetime/contributors">contributed to it</a>. The initial layout of the date widget was inspired by Scott Hughes' <a href="http://symphony-cms.com/discuss/thread/103/">calendar mock-up for Symphony 2.0</a> and Rowan Lewis' <a href="https://github.com/rowan-lewis/calendaroverlay/">calendar overlay</a>.</p>
+				
+				<!-- Version history -->
+				<h2>Version history</h2>
+				<dl>
+					<dt>3.0.6 <time class="relative">17 August 2012</time></dt>
+					<dd>Fix language detection in Data Source</dd>
+					
+					<dt>3.0.5 <time class="relative">12 August 2012</time></dt>
+					<dd>Fix collapsing state storage</dd>
+					
+					<dt>3.0.4 <time class="relative">12 July 2012</time></dt>
+					<dd>Minor fixes and improvtime class="relative"ents.</dd>
+					
+					<dt>3.0.3 <time class="relative">10 May 2012</time></dt>
+					<dd>Updated German translation.</dd>
+					
+					<dt>3.0.2 <time class="relative">07 May 2012</time></dt>
+					<dd>Fixed probltime class="relative"s with Date and time class="relative" fields inside subsections.</dd>
+					
+					<dt>3.0.1 <time class="relative">07 May 2012</time></dt>
+					<dd>Rtime class="relative"oved accidentally bundled Stage submodule.</dd>
+					
+					<dt>3.0 <time class="relative">06 May 2012</time></dt>
+					<dd>Symphony 2.3 compatibility.</dd>
+					
+					<dd>Switched from Stage to Duplicator to generate the interface.</dd>
+					
+					<dd>Added inline help.</dd>
+					
+					<dd>Simplified layout for single date fields.</dd>
+					
+					<dt>2.4 <time class="relative">14 February 2012</time></dt>
+					<dd>Allow field to be required. (Thanks, Brendan!)</dd>
+					
+					<dd>Include languages for Date and time class="relative" Data Source in preferences.</dd>
+					
+					<dd>Added month and year selects.</dd>
+					
+					<dd>Fix time class="relative"line behaviour.</dd>
+					
+					<dd>General improvtime class="relative"ents. (Thanks, Brendan!)</dd>
+					
+					<dt>2.3.2 <time class="relative">17 January 2012</time></dt>
+					<dd>Updated forum link.</dd>
+					
+					<dt>2.3.1 <time class="relative">17 January 2012</time></dt>
+					<dd>Update meta informations.</dd>
+					
+					<dt>2.3 <time class="relative">17 January 2012</time></dt>
+					<dd>Moved extension and Stage submodule to new home.</dd>
+					
+					<dt>2.2.4 <time class="relative">13 Dectime class="relative"ber 2011</time></dt>
+					<dd>Updated `extension.meta.xml.</dd>
+					
+					<dt>2.2.3 <time class="relative">06 Dectime class="relative"ber 2011</time></dt>
+					<dd>Updated `extension.meta.xml.</dd>
+					
+					<dt>2.2.2 <time class="relative">06 Dectime class="relative"ber 2011</time></dt>
+					<dd>Updated readme.</dd>
+					
+					<dt>2.2.1 <time class="relative">06 Dectime class="relative"ber 2011</time></dt>
+					<dd>Updated basic extension information and extension.meta.xml.</dd>
+					
+					<dt>2.2 <time class="relative">03 Dectime class="relative"ber 2011</time></dt>
+					<dd>Added extension.meta.xml file.</dd>
+					
+					<dd>Fix time class="relative"zone issues.</dd>
+					
+					<dd>Improved parameter output.</dd>
+					
+					<dd>Improved Data Source sorting and grouping. (Thanks, Brendan and Nicolas!)</dd>
+					
+					<dd>General clean-up. (Thanks, Brendan!)</dd>
+					
+					<dt>2.1.1 <time class="relative">27 July 2011</time></dt>
+					<dd>Safari compatibility for keyboard interactions.</dd>
+					
+					<dt>2.1 <time class="relative">26 July 2011</time></dt>
+					<dd>Added French translation. (Thanks, Nicolas!)</dd>
+					
+					<dd>Added new extended filter mode. (Thanks, Nicolas!)</dd>
+					
+					<dd>Access end dates via tab key. (Thanks, Brendan!)</dd>
+					
+					<dt>2.0.1 <time class="relative">17 June 2011</time></dt>
+					<dd>Corrected version number.</dd>
+					
+					<dt>2.0 <time class="relative">16 June 2011</time></dt>
+					<dd>Impltime class="relative"ented Stage.</dd>
+					
+					<dd>Impltime class="relative"ented new calendar.</dd>
+					
+					<dd>Symphony 2.2 compatibility.</dd>
+					
+					<dd>General code clean-up.</dd>
+					
+					<dd>A lot of tiny bug fixes.</dd>
+					
+					<dt>1.5.1 <time class="relative">22 Novtime class="relative"ber 2010</time></dt>
+					<dd>Section Schtime class="relative"a compatibility. (Thanks, Brendan!)</dd>
+					
+					<dt>1.5 <time class="relative">10 Novtime class="relative"ber 2010</time></dt>
+					<dd>Added Norwegian translation. (Thanks, Frode!)</dd>
+					
+					<dd>Updated data source filtering. (Thanks, John!)</dd>
+					
+					<dt>1.4 <time class="relative">27 August 2010</time></dt>
+					<dd>Added Italian translation, improved date localisation. (Thanks, Simone!)</dd>
+					
+					<dt>1.3 <time class="relative">15 January 2010</time></dt>
+					<dd>Added German translation, improved date handling.</dd>
+					
+					<dd>Fixed a lot of bugs and overall improvtime class="relative"ents. (Thanks, Brendan!)</dd>
+					
+					<dt>1.2 <time class="relative">26 August 2009</time></dt>
+					<dd>Added support for data source grouping (calendar view).</dd>
+					
+					<dt>1.1 <time class="relative">25 August 2009</time></dt>
+					<dd>Added support for data source filtering.</dd>
+					
+					<dt>1.0.2 <time class="relative">24 August 2009</time></dt>
+					<dd>Minor bug fixes.</dd>
+					
+					<dt>1.0.1 <time class="relative">03 August 2009</time></dt>
+					<dd>Minor bug fixes.</dd>
+					
+					<dt>1.0  <time class="relative">21 August 2009</time></dt>
+					<dd>Initial release.</dd>
+				</dl>
 			</div>
 		</section>
 			
