@@ -32,10 +32,10 @@
 		</div>
 		
 		<!-- Features -->
-		<aside class="field tiles">
+<!--		<aside class="field tiles">
 			<div class="centered">
 			
-				<!-- Layouts -->
+				<!-- Layouts --*>
 				<article class="tile one">
 					<h3>Layouts</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -44,7 +44,7 @@
 					</p>
 				</article>
 				
-				<!-- Snippets -->
+				<!-- Snippets --*>
 				<article class="tile one">
 					<h3>Snippets</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -53,7 +53,7 @@
 					</p>
 				</article>
 				
-				<!-- Styles -->
+				<!-- Styles --*>
 				<article class="tile one">
 					<h3>Styles</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -62,7 +62,7 @@
 					</p>
 				</article>
 				
-				<!-- Scripts -->
+				<!-- Scripts --*>
 				<article class="tile one">
 					<h3>Scripts</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -71,7 +71,7 @@
 					</p>
 				</article>
 				
-				<!-- Examples -->
+				<!-- Examples --*>
 				<article class="tile one">
 					<h3>Examples</h3>
 					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -80,6 +80,6 @@
 					</p>
 				</article>
 			</div>
-		</aside>
+		</aside>-->
 	</content>
 </data>
