@@ -81,16 +81,23 @@
 		<section class="field centered language-markup">
 			<div class="column content">
 				<h2>Basic Markup</h2>
-				<p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				<h3>HTML Skeleton</h3>
-				<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+				<p>Symphony Factory uses HTML5 features and is compatible with all modern browsers. Internet Explorer support starts with version 9. If a site needs to be compatible with older browser versions, it's up to the developer to take care of this. Based on the user statistics of the existing network sites, this should only rarely be needed.</p>
+				<p>Factory consists of three main content areas:</p>
+				<ol>
+					<li>the network toolbar</li>
+					<li>the main site content</li>
+					<li>the network footer</li>
+				</ol>
+				<p>The first and the last area should look the same across all network sites and are provided as XSL templates within this framework.</p>
+
 				<div class="content-annotation">
-					<p>Factory&#8217;s markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
-				</div>			
+					<p>Symphony Factory bundles <a href="">styles</a> and <a href="">scripts</a>, some of them mandatory, others obligatory. This is the default HTML skeleton.</p>
+				</div>
 				<pre class="content-pushaside justified"><code><![CDATA[<!DOCTYPE html>
 	<html>
 		<head>
 			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 			<title>Site title</title>
 			
 			<!-- Webfonts, see http://symphonycms.github.com/factory/docs/typography.xml -->
@@ -115,11 +122,14 @@
 		</head>
 		<body>
 		
-			<!-- Symphony Network toolbar, see http://symphonycms.github.com/factory/docs/layouts.xml#chapter_network -->
+			<!-- Network toolbar -->
 			<aside id="network"></aside>
 		
-			<!-- Site content, see below -->
+			<!-- Site content -->
 			<div id="site"></div>
+		
+			<!-- Network footer -->
+			<footer id="footer"></footer>
 		</body>
 	</html>]]></code></pre>
 			</div>
@@ -132,9 +142,6 @@
 			
 				<!-- XSL -->
 				<h3>Including the Toolbar</h3>
-				<div class="content-annotation">
-					<p>Factory&#8217;s markup is using HTML5 standards and it thus compatible with all modern browsers. Internet Explorer support starts with version 9 – developers need to </p>	
-				</div>			
 				<pre class="content-pushaside justified"><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
