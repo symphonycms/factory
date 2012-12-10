@@ -128,7 +128,7 @@
 						<a href="https://github.com/hananils/datetime">Github</a> (<a href="https://github.com/hananils/datetime/issues">15 Issues</a>)
 					</li>
 				</ul>
-				<p class="sidebar-extensions-lang">Available in English, German, French, Italian, Norwegian, Romanian.</p>
+				<p class="sidebar-annotation">Available in English, German, French, Italian, Norwegian, Romanian.</p>
 			</div>
 			<div class="column content language-markup">
 				<p class="content-introduction">Date and Time provides advanced date and time management for Symphony. It offers an easy interface providing a calendar widget that helps creating multiple dates and date ranges. The field respects the system settings and displays date and time accordingly. Nevertheless, it is capable to read and understand <a href="http://www.php.net/manual/en/datetime.formats.php">relative date formats</a>.</p>

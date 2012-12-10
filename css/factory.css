@@ -588,7 +588,7 @@ pre[data-line] {
 -----------------------------------------------------------------------------*/
 
 #site .content-extension {
-	margin: 1rem 20px 0;
+	margin: 1.2rem 20px 0;
 	position: relative;
 	border: 1px solid rgba(0, 0, 0, 0.25);
 	overflow: hidden;
@@ -1553,6 +1553,10 @@ ol {
 /* Sidebar */
 /* to do: these styles need to be cleared out */
 
+#site .sidebar-links {
+	margin-top: 1rem;
+}
+
 #site .sidebar h3 {
 	font-size: 1.3rem;
 	font-weight: 600;
@@ -1560,6 +1564,11 @@ ol {
 	margin-top: 0.6rem;
 	text-transform: uppercase;
 }
+
+#site .sidebar-annotation {
+	color: #666;
+}
+
 
 /*#site .sidebar ul {
 	margin-left: 0;
