@@ -258,7 +258,23 @@
 		
 				<!-- Content -->
 				<h3>Content Area</h3>
-				<p>The content area is your playground. This is where your site lives.</p>
+				<p>The content area is your playground, this is where your site lives.</p>
+				
+				<h4>Creating a Page Header</h4>
+				<pre class="content-pushaside justified"><code><![CDATA[<div id="site">
+	<header class="site-header centered">
+		<h1><span>Symphony</span> Factory</h1>
+		<nav>
+			<a href="http://symphony/factory/docs/about.xml">About</a>
+			<a href="http://symphony/factory/docs/layouts.xml" class="active">Layouts</a>
+			<a href="http://symphony/factory/docs/snippets.xml">Snippets</a>
+			<a href="http://symphony/factory/docs/styles.xml">Styles</a>
+			<a href="http://symphony/factory/docs/scripts.xml">Scripts</a>
+			<a href="http://symphony/factory/docs/examples.xml">Examples</a>
+		</nav>
+	</header>				
+</div>]]></code></pre>
+				
 			
 				<!-- Footer -->
 				<h3>Network Footer</h3>
