@@ -1237,6 +1237,7 @@ pre[data-line] {
 	float: right;
 	border-left: 1px solid rgba(0, 0, 0, 0.15);
 	padding: 0.2rem 10px 0;
+	line-height: 3.4rem;
 }
 
 #network .get-symphony a:first-child {
@@ -1248,7 +1249,9 @@ pre[data-line] {
 }
 
 #network .get-symphony [class^=icon]::before {
-	font-size: 34px;	
+	font-size: 3.4rem;
+	vertical-align: top;
+	line-height: 3.4rem;
 }
 
 /*-----------------------------------------------------------------------------
