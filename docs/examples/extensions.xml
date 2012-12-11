@@ -6,7 +6,7 @@
 		<section class="field centered">
 			<header class="page-header">
 				<h2>Date and Time</h2>
-				<p>3.0.6 <em class="tag-released">Released</em><a class="tag" href="/extensions/?type=field-types">Field Types</a><a class="tag" href="/extensions/?type=interface">Interface</a></p>
+				<p>3.0.6 <em class="header-tag-released">Released</em><a class="header-tag" href="/extensions/?type=field-types">Field Types</a><a class="header-tag" href="/extensions/?type=interface">Interface</a></p>
 <!--				<p class="page-header-author">
 					<a href="#">
 						<img src="http://www.gravatar.com/avatar/8e28007b8f2e45f87b53258cf9891ed6?s=35&amp;d=http://symphony/factory/img/user.png" width="35" height="35"  alt="Büro für Web- und Textgestaltung" />

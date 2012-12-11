@@ -1470,10 +1470,10 @@ pre[data-line] {
 
 /* Tags */
 
-#site .tag,
-#site .tag-open,
-#site .tag-released,
-#site .tag-deprecated {
+#site .header-tag,
+#site .header-tag-open,
+#site .header-tag-released,
+#site .header-tag-deprecated {
 	background: #F5F5F5;
 	border: 1px solid #F5F5F5;
 	border-radius: 2px;
@@ -1487,8 +1487,8 @@ pre[data-line] {
 	top: -0.5rem;
 }
 
-#site .tag-open,
-#site .tag-released {
+#site .header-tag-open,
+#site .header-tag-released {
 	background: #92C44D;
 	border-color: #92C44D;
 	color: #fff;
