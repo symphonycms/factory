@@ -7,9 +7,9 @@
 		<!-- Field with sidebar -->
 		<div class="field centered">
 			<header class="page-header">
-				<h2 class="with-separator">Symphony Factory</h2>
-				<p>72 Replies <em class="tag">Open</em></p>
-				<ul class="tools">
+				<h2>Symphony Factory</h2>
+				<p>72 Replies <em class="tag-open">Open</em></p>
+				<ul class="button-set tools-right">
 					<li class="delete">
 						<a href="#">Delete</a>
 					</li>
@@ -76,7 +76,7 @@
 							</a>
 							<a href="#position-1">Comment #1</a>
 						</div>
-						<ul class="tools">
+						<ul class="button-set">
 							<li>
 								<a href="#">Edit</a>
 							</li>
@@ -336,7 +336,7 @@
 				</article>
 
 				<!-- Thread navigation -->
-				<nav class="tools pagination fixed">
+				<nav class="pagination">
 					<a>Previous</a>
 					<div class="pages">
 						<a href="#" class="selected">1</a>
@@ -353,13 +353,9 @@
 						<label for="comment">Comment</label>
 						<textarea id="comment" rows="10" name="fields[comment]"></textarea>
 						<label for="form-attachments">Attachments</label>
-						<div class="upload-value multiple">
-							<input id="form-attachments" type="file" name="attachments[0]" />
-							<a href="#" id="add-attachment">Add more +</a>
-						</div>
 					</fieldset>
 					<a class="return" href="http://getsymphony.com/discuss/">Cancel and go back</a>
-					<input id="submit" type="submit" name="action[forum-new-comment]" value="Comment" />
+					<input id="submit" class="button" type="submit" name="action[forum-new-comment]" value="Comment" />
 				</form>
 			</div>
 		</div>
