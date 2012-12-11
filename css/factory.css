@@ -732,17 +732,18 @@ pre[data-line] {
 	border-right: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.button-set li:hover {
-	background: #e8e8e8;
-	box-shadow: inset 0 0 2px rgba(100, 100, 100, 0.1);
-}
-
 .button-set li:last-of-type {
 	border-right: none;
 }
 
 .button-set li::before {
 	display: none;
+}
+
+.button:hover,
+.button-set li:hover {
+	background: #e8e8e8;
+	box-shadow: inset 0 0 2px rgba(100, 100, 100, 0.1);
 }
 
 .button,
@@ -755,6 +756,7 @@ pre[data-line] {
 .button:hover,
 .button-set a:hover {
 	color: #000;
+	cursor: pointer;
 }
 
 /* Tools */
