@@ -462,11 +462,12 @@ ul li > ul {
 
 @font-face {
 	font-family: 'Entypo';
-	src: url('fonts/entypo.eot');
+/*	src: url('fonts/entypo.eot');
 	src: url('fonts/entypo.eot?#iefix') format('embedded-opentype'),
 	     url('fonts/entypo.woff') format('woff'),
 	     url('fonts/entypo.ttf') format('truetype'),
-	     url('fonts/entypo.svg#svgEntypo') format('svg');
+	     url('fonts/entypo.svg#svgEntypo') format('svg');*/
+	src: url('fonts/entypo.woff') format('woff');
 }
 
 [class^=icon]::before {
