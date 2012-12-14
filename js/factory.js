@@ -172,14 +172,19 @@ var Factory;
 	-------------------------------------------------------------------------*/
 
 		initExtension: function() {
+			Factory.elements.contentExtensionGit = Factory.elements.contentExtension.find('.content-extension-git');
 		
 			// Set scroll position
 			$(window).on('resize.factory', Factory.scrollExtensionCompatibilities);
 			Factory.scrollExtensionCompatibilities();
 			
-			// Add submodule git command
-			Factory.elements.contentExtensionGit = Factory.elements.contentExtension.find('.content-extension-git');
-			Factory.elements.contentExtensionGit.data('git', Factory.elements.contentExtensionGit.text());
+			// Store git commands
+			var git = Factory.elements.contentExtensionGit.text(),
+				submodule = 'git submodule add ' + git + ' extensions/' + git.match(/\/([a-zA-Z0-9_]+).git/)[1] + ' --recursive';
+				
+			Factory.elements.contentExtensionGit.data('git', git).data('submodule', submodule);
+			
+			// Add command toggle
 			$('<a class="content-extension-submodule">&#128193;</a>')
 				.insertBefore(Factory.elements.contentExtensionGit)
 				.on('click.factory', Factory.toggleExtensionSubmodule);
@@ -202,7 +207,7 @@ var Factory;
 			
 			// Set submodule command
 			else {
-				Factory.elements.contentExtensionGit.text('git submodule add ' + Factory.elements.contentExtensionGit.data('git') + ' --recursive');
+				Factory.elements.contentExtensionGit.text(Factory.elements.contentExtensionGit.data('submodule'));
 			}
 			
 			Factory.elements.contentExtensionGit.trigger('focus.factory');
