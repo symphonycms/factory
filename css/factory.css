@@ -1977,7 +1977,8 @@ dd {
 
 #footer .footer-factory {
 	position: relative;
-	margin: 0 0 0 450px;
+	margin: 0 auto;
+	padding: 0 15px 0 0;
 	top: 1.7rem;
 	width: 140px;
 	height: 140px;
