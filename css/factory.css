@@ -1471,9 +1471,9 @@ pre[data-line] {
 /* Tags */
 
 #site .header-tag,
-#site .header-tag-open,
-#site .header-tag-released,
-#site .header-tag-deprecated {
+#site .header-tag-stop,
+#site .header-tag-wait,
+#site .header-tag-go {
 	background: #F5F5F5;
 	border: 1px solid #F5F5F5;
 	border-radius: 2px;
@@ -1487,10 +1487,41 @@ pre[data-line] {
 	top: -0.5rem;
 }
 
-#site .header-tag-open,
-#site .header-tag-released {
+#site .header-tag-stop {
+	background: #B20B4F;
+	border-color: #B20B4F;
+	color: #fff;
+}
+
+#site .header-tag-wait {
+	background: #f49e36;
+	border-color: #f49e36;
+	color: #fff;
+}
+
+#site .header-tag-go {
 	background: #92C44D;
 	border-color: #92C44D;
+	color: #fff;
+}
+
+#site a.header-tag,
+#site a.header-tag-stop,
+#site a.header-tag-wait,
+#site a.header-tag-go {
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+
+#site a.header-tag:hover,
+#site a.header-tag-stop:hover,
+#site a.header-tag-wait:hover,
+#site a.header-tag-go:hover {
+	background: #282828;
+	border-color: #282828;
 	color: #fff;
 }
 
