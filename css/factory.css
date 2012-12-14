@@ -778,12 +778,13 @@ pre[data-line] {
 .button-set a {
 	display: block;
 	padding: 0 10px;
-	color: #282828;	
+	color: #282828 !important;
+	background: none !important;
 }
 
 .button:hover,
 .button-set a:hover {
-	color: #000;
+	color: #000 !important;
 	cursor: pointer;
 }
 
