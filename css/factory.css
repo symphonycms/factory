@@ -1580,6 +1580,23 @@ ol {
 	max-width: 556px;
 }
 
+dl {
+	
+}
+
+dt {
+	margin-top: 1.2rem;
+}
+
+dt time {
+	color: rgba(0, 0, 0, 0.6);
+	margin-left: 1.2rem;
+}
+
+dd {
+	margin-left: 1.2rem;
+}
+
 /* Highlighting */
 
 #site .content-introduction {
