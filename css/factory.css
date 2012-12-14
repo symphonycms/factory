@@ -1517,7 +1517,8 @@ pre[data-line] {
 	background-image: linear-gradient(transparent 97%, #0080a0 97%);
 }
 
-#site .sidebar a {
+#site .sidebar a,
+#site a.dark {
 	color: #282828;
 	background-image: -webkit-linear-gradient(transparent 97%, #DCDDDC 97%);
 	background-image: -moz-linear-gradient(transparent 97%, #DCDDDC 97%);
@@ -1526,7 +1527,8 @@ pre[data-line] {
 	background-image: linear-gradient(transparent 97%, #DCDDDC 97%);
 }
 
-#site .sidebar a:hover {
+#site .sidebar a:hover,
+#site a.dark:hover {
 	background-image: -webkit-linear-gradient(transparent 97%, #282828 97%);
 	background-image: -moz-linear-gradient(transparent 97%, #282828 97%);
 	background-image: -ms-linear-gradient(transparent 97%, #282828 97%);
@@ -1829,11 +1831,8 @@ dd {
 	position: relative;
 }
 
-#site .entry-meta a {
-	display: block;
-}
-
-#site .entry-count {
+#site .entry-count,
+#site .entry-count:hover {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1841,6 +1840,8 @@ dd {
 	font-weight: 300;
 	line-height: 5.6rem;
 	margin-right: 0.8rem;
+	color: #282828;
+	background: none;
 }
 
 #site .entry-difference {
