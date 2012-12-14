@@ -224,6 +224,36 @@ var Factory;
 				return '<a href="http://getsymphony.com/get-involved/member/' + name + '" class="user">' + username + '</a>';
 			}));
 		},
+
+	/*-------------------------------------------------------------------------
+		Users
+	-------------------------------------------------------------------------*/
+		
+		initCollapsible: function() {
+			var item = $(this),
+				expand = item.attr('data-expand') || 'Expand',
+				collapse = item.attr('data-collapse') || 'Collapse';
+			
+			// Create toggle links
+			var toggle = $('<a />', {
+				class: 'collapsible-toggle',
+				text: collapse
+			}).insertAfter(item).on('click.factory', function() {
+				item.slideToggle();
+				if(toggle.text() == collapse) {
+					toggle.text(expand);
+				}
+				else {
+					toggle.text(collapse);
+				}
+			});
+			
+			// Collapsed
+			if(item.is('.collapsed')) {
+				toggle.text(expand);
+				item.hide();
+			}
+		},
 		
 	/*-------------------------------------------------------------------------
 		Date and Time
@@ -337,6 +367,9 @@ var Factory;
 		
 		// Users
 		$('.content p').each(Factory.linkUsers);
+		
+		// Collapsible items
+		$('.collapsible').each(Factory.initCollapsible);
 		
 		// Compatibility table
 		if(Factory.elements.contentExtension.length > 0) {

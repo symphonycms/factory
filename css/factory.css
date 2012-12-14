@@ -1629,12 +1629,13 @@ pre[data-line] {
 /* Lists */
 
 ul,
-ol {
+ol,
+dl {
 	max-width: 556px;
 }
 
 dt {
-	margin-top: 1.2rem;
+	padding-top: 1.2rem;
 }
 
 dt time {
