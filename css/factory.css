@@ -1480,38 +1480,38 @@ pre[data-line] {
 
 #site a {
 	color: #0080a0;
-	background-image: -webkit-linear-gradient(transparent 95%, #b8d8e0 95%);
-	background-image: -moz-linear-gradient(transparent 95%, #b8d8e0 95%);
-	background-image: -ms-linear-gradient(transparent 95%, #b8d8e0 95%);
-	background-image: -o-linear-gradient(transparent 95%, #b8d8e0 95%);
-	background-image: linear-gradient(transparent 95%, #b8d8e0 95%);
+	background-image: -webkit-linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-image: -moz-linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-image: -ms-linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-image: -o-linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-image: linear-gradient(transparent 97%, #b8d8e0 97%);
 	background-size: 100% 97%;
 	cursor: pointer;
 }
 
 #site a:hover {
-	background-image: -webkit-linear-gradient(transparent 95%, #0080a0 95%);
-	background-image: -moz-linear-gradient(transparent 95%, #0080a0 95%);
-	background-image: -ms-linear-gradient(transparent 95%, #0080a0 95%);
-	background-image: -o-linear-gradient(transparent 95%, #0080a0 95%);
-	background-image: linear-gradient(transparent 95%, #0080a0 95%);
+	background-image: -webkit-linear-gradient(transparent 97%, #0080a0 97%);
+	background-image: -moz-linear-gradient(transparent 97%, #0080a0 97%);
+	background-image: -ms-linear-gradient(transparent 97%, #0080a0 97%);
+	background-image: -o-linear-gradient(transparent 97%, #0080a0 97%);
+	background-image: linear-gradient(transparent 97%, #0080a0 97%);
 }
 
 #site .sidebar a {
 	color: #282828;
-	background-image: -webkit-linear-gradient(transparent 95%, #DCDDDC 95%);
-	background-image: -moz-linear-gradient(transparent 95%, #DCDDDC 95%);
-	background-image: -ms-linear-gradient(transparent 95%, #DCDDDC 95%);
-	background-image: -o-linear-gradient(transparent 95%, #DCDDDC 95%);
-	background-image: linear-gradient(transparent 95%, #DCDDDC 95%);
+	background-image: -webkit-linear-gradient(transparent 97%, #DCDDDC 97%);
+	background-image: -moz-linear-gradient(transparent 97%, #DCDDDC 97%);
+	background-image: -ms-linear-gradient(transparent 97%, #DCDDDC 97%);
+	background-image: -o-linear-gradient(transparent 97%, #DCDDDC 97%);
+	background-image: linear-gradient(transparent 97%, #DCDDDC 97%);
 }
 
 #site .sidebar a:hover {
-	background-image: -webkit-linear-gradient(transparent 95%, #282828 95%);
-	background-image: -moz-linear-gradient(transparent 95%, #282828 95%);
-	background-image: -ms-linear-gradient(transparent 95%, #282828 95%);
-	background-image: -o-linear-gradient(transparent 95%, #282828 95%);
-	background-image: linear-gradient(transparent 95%, #282828 95%);
+	background-image: -webkit-linear-gradient(transparent 97%, #282828 97%);
+	background-image: -moz-linear-gradient(transparent 97%, #282828 97%);
+	background-image: -ms-linear-gradient(transparent 97%, #282828 97%);
+	background-image: -o-linear-gradient(transparent 97%, #282828 97%);
+	background-image: linear-gradient(transparent 97%, #282828 97%);
 }
 
 /* Tags */
