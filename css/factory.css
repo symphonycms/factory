@@ -697,6 +697,7 @@ pre[data-line] {
 }
 
 #site .content-extension-submodule,
+#site .content-extension-submodule:hover,
 #site .content-extension-submodule-active {
 	float: right;
 	font-family: Entypo;
@@ -705,9 +706,11 @@ pre[data-line] {
 	margin-right: 10px;
 	cursor: pointer;
 	color: rgba(0, 0, 0, 0.3);
+	background: none;
 }
 
-#site .content-extension-submodule-active {
+#site .content-extension-submodule-active,
+#site .content-extension-submodule-active:hover {
 	color: #000;
 }
 
@@ -1388,6 +1391,7 @@ pre[data-line] {
 	padding: 0 9px;
 	text-decoration: none;
 	display: inline-block;
+	background: none;
 }
 
 #site .site-header nav a.active {
@@ -1472,8 +1476,45 @@ pre[data-line] {
 	margin-top: 2.5rem;
 }
 
-/* Tags */
+/* Links */
 
+#site a {
+	color: #0080a0;
+	background-image: -webkit-linear-gradient(transparent 95%, #b8d8e0 95%);
+	background-image: -moz-linear-gradient(transparent 95%, #b8d8e0 95%);
+	background-image: -ms-linear-gradient(transparent 95%, #b8d8e0 95%);
+	background-image: -o-linear-gradient(transparent 95%, #b8d8e0 95%);
+	background-image: linear-gradient(transparent 95%, #b8d8e0 95%);
+	background-size: 100% 97%;
+	cursor: pointer;
+}
+
+#site a:hover {
+	background-image: -webkit-linear-gradient(transparent 95%, #0080a0 95%);
+	background-image: -moz-linear-gradient(transparent 95%, #0080a0 95%);
+	background-image: -ms-linear-gradient(transparent 95%, #0080a0 95%);
+	background-image: -o-linear-gradient(transparent 95%, #0080a0 95%);
+	background-image: linear-gradient(transparent 95%, #0080a0 95%);
+}
+
+#site .sidebar a {
+	color: #282828;
+	background-image: -webkit-linear-gradient(transparent 95%, #DCDDDC 95%);
+	background-image: -moz-linear-gradient(transparent 95%, #DCDDDC 95%);
+	background-image: -ms-linear-gradient(transparent 95%, #DCDDDC 95%);
+	background-image: -o-linear-gradient(transparent 95%, #DCDDDC 95%);
+	background-image: linear-gradient(transparent 95%, #DCDDDC 95%);
+}
+
+#site .sidebar a:hover {
+	background-image: -webkit-linear-gradient(transparent 95%, #282828 95%);
+	background-image: -moz-linear-gradient(transparent 95%, #282828 95%);
+	background-image: -ms-linear-gradient(transparent 95%, #282828 95%);
+	background-image: -o-linear-gradient(transparent 95%, #282828 95%);
+	background-image: linear-gradient(transparent 95%, #282828 95%);
+}
+
+/* Tags */
 
 #site .content-tag,
 #site .header-tag,
@@ -1491,6 +1532,7 @@ pre[data-line] {
 	padding: 0 10px;
 	position: relative;
 	top: -0.5rem;
+	color: #000;
 }
 
 #site .content-tag {
