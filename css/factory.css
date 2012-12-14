@@ -248,12 +248,25 @@ ul li > ul {
 /* Columns by function */
 
 .column.sidebar {
-	width: 176px;
+	width: 186px;
+	margin: 0 0 2.4rem 20px;
+	padding-left: 10px;
+}
+
+@media all and (max-width: 854px) {
+
+	.column.sidebar {
+		width: auto;
+		margin-right: 20px;
+		float: none;
+	}
+
 }
 
 .column.content {
 	float: right;
 	width: 794px;
+	margin-left: 0;
 	margin-right: 30px;
 }
 
@@ -261,6 +274,14 @@ ul li > ul {
 
 	.column.content {
 		width: 588px;
+	}
+
+}
+
+@media all and (max-width: 647px) {
+
+	.column.content {
+		margin: 0 30px;
 	}
 
 }
@@ -1444,8 +1465,7 @@ pre[data-line] {
 /* Page headers */
 
 #site .page-header {
-	margin: 2.4rem 0 0 30px;
-/*	max-width: 796px;*/
+	margin: 2.4rem 30px 0;
 }
 
 #site .page-header h2 {
@@ -1728,9 +1748,17 @@ dd {
 /* Sidebar */
 /* to do: these styles need to be cleared out */
 
+#site .sidebar.infobox {
+	border-top: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+	padding: 0 10px 0;
+	margin-left: 20px;
+	margin-top: 0.2rem;
+}
+
 #site .sidebar-users {
 	overflow: hidden;
-	margin-bottom: 2.2rem;
+	margin: 2.2rem 0 2.1rem;
 }
 
 #site .sidebar-users li {
