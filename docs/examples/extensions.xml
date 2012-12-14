@@ -370,7 +370,7 @@
 		</section>
 			
 		<!-- Footer -->
-		<aside class="field tiles">
+<!--		<aside class="field tiles">
 			<div class="centered">
 				<div class="tile two">
 					<h3>Date Modified Field</h3>
@@ -385,6 +385,6 @@
 					<p>A field for hours, minutes, and seconds; filterable by value or range.</p>
 				</div>		
 			</div>
-		</aside>
+		</aside>-->
 	</content>
 </data>
