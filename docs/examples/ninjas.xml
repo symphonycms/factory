@@ -10,11 +10,11 @@
 				<h2 class="with-separator">John Porter</h2>
 				<p>United Kingdom</p>
 			</header>
-			<div class="column sidebar">
-				<aside>
-					<img src="http://symphonyninjas.com/workspace/assets/images/interviews/john-porter.jpg" width="186" height="230" title="John Porter" />
-					<p>John works as full time Symphony developer at Airlock</p>
-				</aside>
+			<div class="column sidebar infobox">
+				<img src="http://symphonyninjas.com/workspace/assets/images/interviews/john-porter.jpg" width="176" title="John Porter" />
+				<p class="sidebar-annotation">John works as full time Symphony developer at Airlock</p>
+			</div>
+			<div class="column content entries">
 				<ul>
 					<li>
 						<a href="#What-is-your-background-and-how-did-you-start-working-with-Symphony-CMS" title="What is your background and how did you start working with Symphony CMS?">What is your background and how did you start working with Symphony CMS?</a>
@@ -32,8 +32,6 @@
 						<a href="#What-are-your-favorite-Symphony-CMS-extensions-and-why" title="What are your favorite Symphony CMS extensions and why?">What are your favorite Symphony CMS extensions and why?</a>
 					</li>
 				</ul>				
-			</div>
-			<div class="column content entries">
 				<h3 id="What-is-your-background-and-how-did-you-start-working-with-Symphony-CMS">What is your background and how did you start working with Symphony CMS?</h3>
 				<p>I studied Art and Photography at college, and persued a career in Photography retouching some time after that, but web design and development was always something I aspired to do professionaly. I finally took the plunge into a career in web development while working at a large travel company, in another dept. I'd been studying up a lot then, and luckily got the job. It has hindered my life to no end, as I developed an unhealthy fixation on data accuracy.</p>
 				<p>It was doing that job that got me working with XML and then XSLT when I had to transform gigabytes of data from a behemoth of a publishing platform. This in turn got me working with Symphony CMS, which I found out about from <a href="http://designprojectx.com/">Design Project X</a>. I initially never really thought about designing websites with Symphony as I was using it mainly to store and deliver data.</p>
