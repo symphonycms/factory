@@ -116,9 +116,6 @@
 			</div>
 			<div class="column content language-markup">
 				<p class="content-introduction">Date and Time provides advanced date and time management for Symphony. It offers an easy interface providing a calendar widget that helps creating multiple dates and date ranges. The field respects the system settings and displays date and time accordingly. Nevertheless, it is capable to read and understand <a href="http://www.php.net/manual/en/datetime.formats.php">relative date formats</a>.</p>
-<!--				<div class="content-media-crop justified">
-					<img src="http://projekte.nilshoerrmann.de/extensions/datetime/datetime3.png" alt="Date and Time Field"/>
-				</div>-->
 				<h3>Installation</h3>
 				<p>Information about <a href="http://symphony-cms.com/learn/tasks/view/install-an-extension/">installing and updating extensions</a> can be found in the Symphony documentation at <a href="http://symphony-cms.com/learn/">http://symphony-cms.com/learn/</a>.</p>
 				<h4>Updating</h4>
