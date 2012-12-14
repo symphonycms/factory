@@ -1519,7 +1519,8 @@ pre[data-line] {
 }
 
 #site .sidebar a,
-#site a.dark {
+#site a.dark,
+#site a.user {
 	color: #282828;
 	background-image: -webkit-linear-gradient(transparent 97%, #DCDDDC 97%);
 	background-image: -moz-linear-gradient(transparent 97%, #DCDDDC 97%);
@@ -1529,12 +1530,17 @@ pre[data-line] {
 }
 
 #site .sidebar a:hover,
-#site a.dark:hover {
+#site a.dark:hover,
+#site a.user:hover {
 	background-image: -webkit-linear-gradient(transparent 97%, #282828 97%);
 	background-image: -moz-linear-gradient(transparent 97%, #282828 97%);
 	background-image: -ms-linear-gradient(transparent 97%, #282828 97%);
 	background-image: -o-linear-gradient(transparent 97%, #282828 97%);
 	background-image: linear-gradient(transparent 97%, #282828 97%);
+}
+
+#site a.user {
+	font-weight: 600;
 }
 
 /* Tags */
