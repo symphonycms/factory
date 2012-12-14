@@ -98,28 +98,20 @@
 		<!-- About the extension -->
 		<section class="field centered language-markup">
 			
-			<!-- Source -->
-<!--			<div class="field data source">
-				<h3 class="column pinned">Get Extension</h3>
-				<div class="column">
-					<p>
-						<span>Repository</span>
-						<code>git://github.com/hananils/datetime.git</code>
-					</p>
-					<p class="clone submodule">
-						<span>Submodule</span>
-						<code>git submodule add git://github.com/hananils/datetime.git extensions/datetime - -recursive</code>
-					</p>
-				</div>
-				<div class="column module">
-					<p>
-						<a href="https://github.com/hananils/datetime/tarball/master">.tar.gz</a>, <a href="https://github.com/hananils/datetime/zipball/master">.zip</a>
-					</p>
-				</div>
-			</div>-->
-			
 			<!-- About the extension -->
 			<div class="column sidebar">
+				<ul class="sidebar-users">
+					<li>
+						<a href="#">
+							<img src="http://www.gravatar.com/avatar/8e28007b8f2e45f87b53258cf9891ed6?s=36" width="36" height="36" alt="Büro für Web- und Textgestaltung" />
+						</a>						
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=36" width="36" height="36" alt="Nils Hörrmann" />
+						</a>						
+					</li>
+				</ul>
 				<ul class="sidebar-links">
 					<li class="icon-homepage">
 						<a href="http://symphony-cms.com/download/extensions/view/27338/">Discussion</a>
@@ -180,9 +172,9 @@
 				<!-- Version history -->
 				<h3>Release History</h3>
 				<h4>Version 3</h4>
-				<p>This major update introduces Symphony 2.3 compatibility and a new, simplified interface that is based on core duplicators.</p>
+				<p>This major update introduces Symphony 2.3 compatibility and a new, simplified interface that is based on core duplicators. It also includes general stability improvements.</p>
 				<dl class="collapsible" data-collapse="Hide release notes" data-expand="Show release notes">
-					<dt>3.0.6 <time class="relative">17 August 2012</time></dt>
+					<dt><var class="tag">3.0.6</var> <time class="relative">17 August 2012</time></dt>
 					<dd>Fix language detection in Data Source</dd>
 					
 					<dt>3.0.5 <time class="relative">12 August 2012</time></dt>
@@ -200,7 +192,7 @@
 					<dt>3.0.1 <time class="relative">07 May 2012</time></dt>
 					<dd>Removed accidentally bundled Stage submodule.</dd>
 					
-					<dt>3.0 <time class="relative">06 May 2012</time></dt>
+					<dt>3.0.0 <time class="relative">06 May 2012</time></dt>
 					<dd>Symphony 2.3 compatibility.</dd>
 					<dd>Switched from Stage to Duplicator to generate the interface.</dd>
 					<dd>Added inline help.</dd>
@@ -208,8 +200,9 @@
 				</dl>
 				
 				<h4>Version 2</h4>
+				<p>This major update introduces Symphony 2.2 compatibility and implements a new calendar and switches to Stage to provide a consistent look and feels with Subsection Manager. Please make sure that you initialise the Stage submodule.</p>
 				<dl class="collapsible collapsed" data-collapse="Hide release notes" data-expand="Show release notes">
-					<dt>2.4 <time class="relative">14 February 2012</time></dt>
+					<dt>2.4.0 <time class="relative">14 February 2012</time></dt>
 					<dd>Allow field to be required. (Thanks, Brendan!)</dd>
 					<dd>Include languages for Date and Time Data Source in preferences.</dd>
 					<dd>Added month and year selects.</dd>
@@ -222,7 +215,7 @@
 					<dt>2.3.1 <time class="relative">17 January 2012</time></dt>
 					<dd>Update meta informations.</dd>
 					
-					<dt>2.3 <time class="relative">17 January 2012</time></dt>
+					<dt>2.3.0 <time class="relative">17 January 2012</time></dt>
 					<dd>Moved extension and Stage submodule to new home.</dd>
 					
 					<dt>2.2.4 <time class="relative">13 December 2011</time></dt>
@@ -237,7 +230,7 @@
 					<dt>2.2.1 <time class="relative">06 December 2011</time></dt>
 					<dd>Updated basic extension information and <code>extension.meta.xml</code>.</dd>
 					
-					<dt>2.2 <time class="relative">03 December 2011</time></dt>
+					<dt>2.2.0 <time class="relative">03 December 2011</time></dt>
 					<dd>Added <code>extension.meta.xml</code> file.</dd>
 					<dd>Fix timezone issues.</dd>
 					<dd>Improved parameter output.</dd>
@@ -247,7 +240,7 @@
 					<dt>2.1.1 <time class="relative">27 July 2011</time></dt>
 					<dd>Safari compatibility for keyboard interactions.</dd>
 					
-					<dt>2.1 <time class="relative">26 July 2011</time></dt>
+					<dt>2.1.0 <time class="relative">26 July 2011</time></dt>
 					<dd>Added French translation. (Thanks, Nicolas!)</dd>
 					<dd>Added new extended filter mode. (Thanks, Nicolas!)</dd>
 					<dd>Access end dates via tab key. (Thanks, Brendan!)</dd>
@@ -255,7 +248,7 @@
 					<dt>2.0.1 <time class="relative">17 June 2011</time></dt>
 					<dd>Corrected version number.</dd>
 					
-					<dt>2.0 <time class="relative">16 June 2011</time></dt>
+					<dt>2.0.0 <time class="relative">16 June 2011</time></dt>
 					<dd>Implemented Stage.</dd>
 					<dd>Implemented new calendar.</dd>
 					<dd>Symphony 2.2 compatibility.</dd>
@@ -268,22 +261,21 @@
 					<dt>1.5.1 <time class="relative">22 November 2010</time></dt>
 					<dd>Section Schema compatibility. (Thanks, Brendan!)</dd>
 					
-					<dt>1.5 <time class="relative">10 November 2010</time></dt>
+					<dt>1.5.0 <time class="relative">10 November 2010</time></dt>
 					<dd>Added Norwegian translation. (Thanks, Frode!)</dd>
-					
 					<dd>Updated data source filtering. (Thanks, John!)</dd>
 					
-					<dt>1.4 <time class="relative">27 August 2010</time></dt>
+					<dt>1.4.0 <time class="relative">27 August 2010</time></dt>
 					<dd>Added Italian translation, improved date localisation. (Thanks, Simone!)</dd>
 					
-					<dt>1.3 <time class="relative">15 January 2010</time></dt>
+					<dt>1.3.0 <time class="relative">15 January 2010</time></dt>
 					<dd>Added German translation, improved date handling.</dd>
 					<dd>Fixed a lot of bugs and overall improvements. (Thanks, Brendan!)</dd>
 					
-					<dt>1.2 <time class="relative">26 August 2009</time></dt>
+					<dt>1.2.0 <time class="relative">26 August 2009</time></dt>
 					<dd>Added support for data source grouping (calendar view).</dd>
 					
-					<dt>1.1 <time class="relative">25 August 2009</time></dt>
+					<dt>1.1.0 <time class="relative">25 August 2009</time></dt>
 					<dd>Added support for data source filtering.</dd>
 					
 					<dt>1.0.2 <time class="relative">24 August 2009</time></dt>
@@ -292,7 +284,7 @@
 					<dt>1.0.1 <time class="relative">03 August 2009</time></dt>
 					<dd>Minor bug fixes.</dd>
 					
-					<dt>1.0  <time class="relative">21 August 2009</time></dt>
+					<dt>1.0.0 <time class="relative">21 August 2009</time></dt>
 					<dd>Initial release.</dd>
 				</dl>
 			</div>

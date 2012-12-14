@@ -1678,6 +1678,25 @@ dd {
 /* Sidebar */
 /* to do: these styles need to be cleared out */
 
+#site .sidebar-users {
+	overflow: hidden;
+	margin-bottom: 2.2rem;
+}
+
+#site .sidebar-users li {
+	float: left;
+	padding: 0;
+	margin: 0 10px 0 0;
+}
+
+#site .sidebar-users li:before {
+	display: none;
+}
+
+#site .sidebar-users li img {
+	background-color: #F5F5F5;	
+}
+
 #site .sidebar-links {
 	margin-top: 1rem;
 }
