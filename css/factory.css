@@ -658,9 +658,11 @@ pre[data-line] {
 	background: none;
 }
 
-#site .content-extension-compatibility a {
+#site .content-extension-compatibility a,
+#site .content-extension-compatibility a:hover {
 	color: #fff;
 	font-weight: 300;
+	background: none;
 }
 
 #site .content-extension-compatibility a[href] {
