@@ -149,7 +149,7 @@ var Factory;
 			}
 
 			// Get available space		
-			var space = Factory.elements.siteHeader.width() - Factory.elements.siteTitle.width() - Factory.navWidth;
+			var space = Factory.elements.siteHeader.width() - Factory.elements.siteTitle.width() - parseInt(Factory.elements.siteTitle.css('margin-right')) - Factory.navWidth;
 			
 			// Collapse navigation
 			if(space < 10) {
