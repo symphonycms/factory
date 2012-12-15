@@ -768,6 +768,7 @@ pre[data-line] {
 	display: block;
 	outline: none;
 	white-space: nowrap;
+	background: none;
 }
 
 #site .content-extension-submodule,
