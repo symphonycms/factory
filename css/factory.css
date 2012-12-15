@@ -57,11 +57,6 @@ img {
 	display: block;
 }
 
-code,
-var {
-	font: 1.3rem/2.4rem Monaco, Consolas, 'Andale Mono', monospace;
-}
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -508,13 +503,71 @@ ul li > ul {
 /*-----------------------------------------------------------------------------
 	Code:
 	
-	Syntax highlighting class will override the default Prism definitions.
-	Thus the Prism styles should be included first.
+	Syntax highlighting class will override the default Codemirror definitions.
+	Thus the CodeMirror styles have to be included first.
 -----------------------------------------------------------------------------*/
 
 pre {
 	overflow: auto;
+	background: #F5F5F5;
+	margin: 1.6rem -10px 1.4rem;
+	padding: 1.2rem 10px;
+	font: 1.2rem/2.4rem Monaco, Consolas, 'Andale Mono', monospace;
 }
+
+code,
+var {
+	font: 1.2rem/2.4rem Monaco, Consolas, 'Andale Mono', monospace;
+	padding: 0.2rem 0.4rem;
+	background: #f5f5f5;
+	border-radius: 2px;
+}
+
+pre code {
+	padding: 0;
+/*	font-size: 1.2rem;*/
+	border-radius: none;
+}
+
+/* CodeMirror */
+
+.cm-s-symphony .cm-keyword {color: #708;}
+.cm-s-symphony .cm-atom {color: #219;}
+.cm-s-symphony .cm-number {color: #164;}
+.cm-s-symphony .cm-def {color: #00f;}
+.cm-s-symphony .cm-variable {color: black;}
+.cm-s-symphony .cm-variable-2 {color: #05a;}
+.cm-s-symphony .cm-variable-3 {color: #085;}
+.cm-s-symphony .cm-property {color: black;}
+.cm-s-symphony .cm-operator {color: black;}
+.cm-s-symphony .cm-comment {color: #a6a6a6;}
+.cm-s-symphony .cm-string {color: #0080a0;}
+.cm-s-symphony .cm-string-2 {color: #f50;}
+.cm-s-symphony .cm-meta {color: #555;}
+.cm-s-symphony .cm-error {color: #f00;}
+.cm-s-symphony .cm-qualifier {color: #555;}
+.cm-s-symphony .cm-builtin {color: #30a;}
+.cm-s-symphony .cm-bracket {color: #997;}
+.cm-s-symphony .cm-tag {color: #A00947;}
+.cm-s-symphony .cm-attribute {color: #737373;}
+.cm-s-symphony .cm-header {color: blue;}
+.cm-s-symphony .cm-quote {color: #090;}
+.cm-s-symphony .cm-hr {color: #999;}
+.cm-s-symphony .cm-link {color: #00c;}
+
+.cm-negative {color: #d44;}
+.cm-positive {color: #292;}
+.cm-header, .cm-strong {font-weight: bold;}
+.cm-em {font-style: italic;}
+.cm-emstrong {font-style: italic; font-weight: bold;}
+.cm-link {text-decoration: underline;}
+
+.cm-invalidchar {color: #f00;}
+
+div.CodeMirror span.CodeMirror-matchingbracket {color: #0f0;}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
+
+/*
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -534,11 +587,11 @@ var {
 
 pre[data-line] {
 	padding: 1em 0 1em 20px;
-}
+}*/
 
 /* Tokens */
 
-.token.comment,
+/*.token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
@@ -562,11 +615,11 @@ pre[data-line] {
 .token.attr-value,
 .token.keyword {
 	color: #0080a0;
-}
+}*/
 
 /* Line highlighting */
 
-.line-highlight {
+/*.line-highlight {
 	background: rgba(0, 0, 0, 0.03);
 }
 
@@ -582,7 +635,7 @@ pre[data-line] {
 	border-radius: 0;
 	text-shadow: none;
 	box-shadow: none;
-}
+}*/
 
 /*-----------------------------------------------------------------------------
 	Media:
@@ -591,7 +644,7 @@ pre[data-line] {
 -----------------------------------------------------------------------------*/
 
 [class^=content-media] {
-	margin-bottom: 2.4rem;
+	margin: 0 -10px 2.4rem;
 	position: relative;
 }
 

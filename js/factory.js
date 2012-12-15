@@ -380,6 +380,14 @@ var Factory;
 		if(Factory.elements.contentExtension.length > 0) {
 			Factory.initExtension();
 		}
+		
+		// Syntax highlighting
+		$('pre code').each(function() {
+			var code = $(this).addClass('cm-s-symphony'),
+				language = code.attr('data-language') || 'htmlmixed';
+				
+			CodeMirror.runMode(this.textContent, language, this);
+		});
 	});
 	
 })(jQuery.noConflict());

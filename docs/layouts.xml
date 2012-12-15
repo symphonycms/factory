@@ -5,7 +5,7 @@
 	<content>
 		
 		<!-- Introduction -->
-		<section class="field centered language-markup">
+		<section class="field centered">
 			<div class="column content">
 				<h2>Introduction to Layouts</h2>
 				<p class="content-introduction">Symphony Factory offers a flexible layout system to build network sites that adapt to the visitor&#8217;s window or screen size. Starting with a fluid version, the design expands in three steps to a five column layout that can be individually filled with content blocks.</p>
@@ -24,7 +24,7 @@
 				<div class="content-annotation">
 					<p>The grid in made of <code>73px</code> wide modules with a gutter of <code>30px</code>.</p>
 				</div>
-				<div class="content-media-resize justified">
+				<div class="content-media-resize">
 					<img src="/docs/img/factory_grid.png" width="814" height="458" alt="Symphony Factory grid" />
 				</div>
 
@@ -106,7 +106,7 @@
 				<div class="content-annotation">
 					<p>Symphony Factory bundles <a href="">styles</a> and <a href="">scripts</a>, some of them mandatory, others obligatory. This is the default HTML skeleton.</p>
 				</div>
-				<pre class="content-pushaside justified"><code><![CDATA[<!DOCTYPE html>
+				<pre class="content-pushaside"><code><![CDATA[<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -151,7 +151,7 @@
 				<p>The network toolbar is provided via an XSL template, the content will be dynamically fetched from the main Symphony server.</p>
 
 				<h4>XSL</h4>
-				<pre class="content-pushaside justified"><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+				<pre class="content-pushaside"><code data-language="xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
 	<xsl:import href="xsl/network.xsl" />
@@ -163,7 +163,7 @@
 </xsl:stylesheet>]]></code></pre>
 
 				<h4>HTML Result</h4>
-				<pre class="content-pushaside justified"><code><![CDATA[<aside id="network">
+				<pre class="content-pushaside"><code><![CDATA[<aside id="network">
 
 	<!-- Network toolbar with the most important links -->
 	<header class="network-toolbar field collapsed">
@@ -274,7 +274,7 @@
 				<p>The content area is your playground, this is where your site lives.</p>
 				
 				<h4>Creating a Page Header</h4>
-				<pre class="content-pushaside justified"><code><![CDATA[<div id="site">
+				<pre class="content-pushaside"><code><![CDATA[<div id="site">
 	<header class="site-header centered">
 		<h1><span>Symphony</span> Factory</h1>
 		<nav>
@@ -294,7 +294,7 @@
 				<p>The network footer is – like the toolbar – provided via an XSL template, the content will be dynamically fetched from the main Symphony server.</p>
 
 				<h4>XSL</h4>
-				<pre class="content-pushaside justified"><code><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+				<pre class="content-pushaside"><code data-language="xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
 	<xsl:import href="xsl/footer.xsl" />
@@ -306,7 +306,7 @@
 </xsl:stylesheet>]]></code></pre>
 
 				<h4>HTML Result</h4>
-				<pre class="content-pushaside justified"><code><![CDATA[<footer id="footer">
+				<pre class="content-pushaside"><code><![CDATA[<footer id="footer">
 	<div class="field centered">
 		<p class="footer-community">
 			<strong>© 2010–2012 The Symphony Community</strong>
