@@ -261,6 +261,26 @@ var Factory;
 		},
 		
 	/*-------------------------------------------------------------------------
+		Media
+	-------------------------------------------------------------------------*/
+	
+		loadRetinaImages: function() {
+			if(window.devicePixelRatio >= 1.5) {
+				$('img[src*="gravatar.com"]').each(Factory.loadRetinaGravatar);
+			}
+		},
+		
+		loadRetinaGravatar: function() {
+			var gravatar = $(this),
+				src = gravatar.attr('src');
+			
+			// Double image size
+			gravatar.attr('src', src.replace(/s=([0-9]*)/, function(match, size) {
+				return 's=' + (size * 2);
+			}));			
+		},
+		
+	/*-------------------------------------------------------------------------
 		Date and Time
 	-------------------------------------------------------------------------*/
 		
@@ -388,6 +408,9 @@ var Factory;
 				
 			CodeMirror.runMode(this.textContent, language, this);
 		});
+		
+		// Retina images
+		Factory.loadRetinaImages();
 	});
 	
 })(jQuery.noConflict());
