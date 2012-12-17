@@ -36,7 +36,7 @@
 			<div class="column content">
 
 				<!-- Initial comment -->
-				<article id="position-1" class="comment">
+				<article id="position-1">
 					<p>The Symphony Network is evolving: We are in the middle of the transition <a href="http://getsymphony.com/discuss/blog/entry/new-symphony-website-plans/">from a theme park to an international airport</a>. Besides the main site we now have Nick's extensions site, Mark's Symphony Ninjas, Stephen's and Marco's xPathr and many more national projects. As we're about to see more satellite sites coming up, it's time to think about how to visually tie them together, hence forming a strong and clear Symphony identity across the network.</p>
 					<p>Let Symphony Factory enter the stage. </p>
 					<h3>Symphony Factory</h3>
@@ -82,7 +82,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-2" class="comment">
+				<article id="position-2">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/8f954979f1235a6d320a0659472b76f6?s=81" width="81" height="81" />
 						<strong>#2</strong> <a href="#" rel="author">remie</a> answered <time datetime="2012-08-17T12:32" class="relative">on 17 Aug 12, 12:32 pm</time>:
@@ -93,7 +93,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-3" class="comment">
+				<article id="position-3">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/448eb34e1675ac8b08fcbcf8b8c8c4f3?s=81" width="81" height="81" />
 						<strong>#3</strong> <a href="#" rel="author">Johanna</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 12:56 pm</time>:
@@ -104,7 +104,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-4" class="comment">
+				<article id="position-4">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=81" width="81" height="81" />
 						<strong>#10</strong> <a href="#" rel="author">nickdunn</a> answered <time datetime="2012-08-17T12:56" class="relative">on 18 Aug 12, 5:21 am</time>:
@@ -118,7 +118,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-5" class="comment">
+				<article id="position-5">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/c8fb9d2eac471ee064520f7aff116e51?s=81" width="81" height="81" />
 						<strong>#5</strong> <a href="#" rel="author">Moonoo2</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 1:26 pm</time>:
@@ -129,7 +129,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-6" class="comment">
+				<article id="position-6">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=81" width="81" height="81" />
 						<strong>#10</strong> <a href="#" rel="author">nickdunn</a> answered <time datetime="2012-08-17T12:56" class="relative">on 18 Aug 12, 5:21 am</time>:
@@ -149,37 +149,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-7" class="comment">
-					<footer class="author-info">
-						<img alt="Gravatar" src="http://www.gravatar.com/avatar/bac24b344b3f93a2a675c4c0ae6137d1?s=81" width="81" height="81" />
-						<strong>#7</strong> <a href="#" rel="author">bauhouse</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 2:59 pm</time>:
-					</footer>
-
-					<!-- Response -->
-					<p>I can confirm the bug. @brendo, that does make a difference. But that also means that if you are tracking the <code>install.sql</code> in a git repository, the order of the SQL statements changes from <a href="https://github.com/symphonycms/symphony-2/blob/master/install.sql#L21">the existing file</a>.</p>
-					<p>This retains the existing order:</p>
-					<div class="code-block">
-						<pre>$tables = array(
-					    'sym_authors',
-					    'sym_sessions',
-					    'sym_cache',
-					    'sym_entries',
-					    'sym_extensions',
-					    'sym_extensions_delegates',
-					    'sym_fields',
-					    'sym_fields_%',
-					    'sym_forgotpass',
-					    'sym_pages',
-					    'sym_pages_types',
-					    'sym_sections',
-					    'sym_sections_association'
-					);
-						</pre>
-					</div>
-				</article>
-				
-				<!-- Comment -->
-				<article id="position-8" class="comment">
+				<article id="position-8">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=81" width="81" height="81" />
 						<strong>#8</strong> <a href="#" rel="author">Nils</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 7:52 pm</time>:
@@ -190,7 +160,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-9" class="comment">
+				<article id="position-9">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/32e7e9b7bf00206a422e4292be30ed0d?s=81" width="81" height="81" />
 						<strong>#9</strong> <a href="#" rel="author">Nzagamba</a> answered <time datetime="2012-08-17T12:56" class="relative">on 17 Aug 12, 9:55 pm</time>:
@@ -201,7 +171,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-10" class="comment">
+				<article id="position-10">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=81" width="81" height="81" />
 						<strong>#10</strong> <a href="#" rel="author">nickdunn</a> answered <time datetime="2012-08-17T12:56" class="relative">on 18 Aug 12, 5:21 am</time>:
@@ -212,7 +182,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-11" class="comment">
+				<article id="position-11">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/328dc47c040ad108994562ba9e603d10?s=81" width="81" height="81" />
 						<strong>#11</strong> <a href="#" rel="author">bambocci</a> answered <time datetime="2012-08-17T12:56" class="relative">on 18 Aug 12, 4:05 pm</time>:
@@ -223,7 +193,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-12" class="comment">
+				<article id="position-12">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/af4861f6a49989457abc82ca452c074a?s=81" width="81" height="81" />
 						<strong>#12</strong> <a href="#" rel="author">creativedutchmen</a> answered <time datetime="2012-08-17T12:56" class="relative">on 18 Aug 12, 10:10 pm</time>:
@@ -234,7 +204,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-13" class="comment">
+				<article id="position-13">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/448eb34e1675ac8b08fcbcf8b8c8c4f3?s=81" width="81" height="81" />
 						<strong>#13</strong> <a href="#" rel="author">Johanna</a> answered <time datetime="2012-08-17T12:56" class="relative">on 18 Aug 12, 12:56 pm</time>:
@@ -248,7 +218,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-14" class="comment">
+				<article id="position-14">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/998a16fc437a9085d00c079df3748ac2?s=81" width="81" height="81" />
 						<strong>#14</strong> <a href="#" rel="author">bzerangue</a> answered <time datetime="2012-08-17T12:56" class="relative">on 20 Aug 12, 4:56 pm</time>:
@@ -259,7 +229,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-15" class="comment">
+				<article id="position-15">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/8f954979f1235a6d320a0659472b76f6?s=81" width="81" height="81" />
 						<strong>#15</strong> <a href="#" rel="author">remie</a> answered <time datetime="2012-08-17T12:56" class="relative">on 20 Aug 12, 7:14 pm</time>:
@@ -270,7 +240,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-16" class="comment">
+				<article id="position-16">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=81" width="81" height="81" />
 						<strong>#16</strong> <a href="#" rel="author">Nils</a> answered <time datetime="2012-08-17T12:56" class="relative">on 20 Aug 12, 8:04 pm</time>:
@@ -281,7 +251,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-17" class="comment">
+				<article id="position-17">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=81" width="81" height="81" />
 						<strong>#17</strong> <a href="#" rel="author">Nils</a> answered <time datetime="2012-08-17T12:56" class="relative">on 20 Aug 12, 8:09 pm</time>:
@@ -293,7 +263,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-18" class="comment">
+				<article id="position-18">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/c8fb9d2eac471ee064520f7aff116e51?s=81" width="81" height="81" />
 						<strong>#18</strong> <a href="#" rel="author">moonoo2</a> answered <time datetime="2012-08-17T12:56" class="relative">on 22 Aug 12, 9:11 pm</time>:
@@ -304,7 +274,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-19" class="comment">
+				<article id="position-19">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/172ac896352143f531fb27b7ad6ea358?s=81" width="81" height="81" />
 						<strong>#19</strong> <a href="#" rel="author">Lewis</a> answered <time datetime="2012-08-17T12:56" class="relative">on 22 Aug 12, 9:15 pm</time>:
@@ -318,7 +288,7 @@
 				</article>
 				
 				<!-- Comment -->
-				<article id="position-20" class="comment">
+				<article id="position-20">
 					<footer class="author-info">
 						<img alt="Gravatar" src="http://www.gravatar.com/avatar/87282eafff43d1c392c25d3bf317f742?s=81" width="81" height="81" />
 						<strong>#20</strong> <a href="#" rel="author">jensscherbl</a> answered <time datetime="2012-08-17T12:56" class="relative">on 22 Aug 12, 9:43 pm</time>:
