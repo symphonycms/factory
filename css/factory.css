@@ -1734,7 +1734,16 @@ pre[data-line] {
 	line-height: 3.6rem;
 }
 
-/* Pull quotes */
+/* Blockquotes */
+
+#site blockquote {
+	margin: 0 0 1.2rem;
+	max-width: 556px;
+	padding: 0 0 0 1.2rem;
+	border-left: 2px solid #CFCFCF;
+}
+
+/* Pullquotes */
 
 #site .content-pullquote {
 	width: 382px;
