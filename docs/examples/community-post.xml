@@ -21,20 +21,19 @@
 					</li>
 				</ul>
 			</header>
-			<div class="column sidebar">
-				<h3>Search</h3>
-				<form>
-					<input type="text" placeholder="What are you looking for?" />
-				</form>
-				<h3>Make a Post</h3>
-				<ul>
-					<li class="icon-post">Create a Discussion</li>
-					<li class="icon-post">Pose a Question</li>
-					<li class="icon-post">Submit a Showcase</li>
-					<li class="icon-post">Register an Event</li>
-				</ul>				
+			<div class="column sidebar infobox">
+				<img alt="Nils Hörrmann" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=176" width="176" height="176" />
+				<p class="sidebar-user">Nils Hörrmann <small>Germany</small></p>
+				<ul class="sidebar-links">
+					<li>
+						<a href="#">Profile</a>
+					</li>
+					<li>
+						<a href="#">Twitter</a>
+					</li>
+				</ul>
 			</div>
-			<div class="column content entries">
+			<div class="column content">
 
 				<!-- Initial comment -->
 				<article id="position-1" class="comment">
@@ -43,7 +42,7 @@
 					<h3>Symphony Factory</h3>
 					<p>The idea behind Symphony Factory is to provide an easy-to-use HTML, CSS and JavaScript framework to create websites for the Symphony Network with a unified design. Think of it as something like Twitter's Bootstrap or Zurb's Foundations, but specialised for the needs of a Symphony Network site.</p>
 					<p>The factory will offer:</p>
-					<ul>
+					<ul class="bullets">
 						<li>layouts to create single or multicolumn designs</li>
 						<li>snippets to create common layout elements like articles, forms, buttons, tables, dialogs and more</li>
 						<li>content structure and typography</li>
@@ -51,12 +50,12 @@
 					</ul>
 					<p>We hope the factory will make the development and maintenance of existing sites easier and encourage others to create additional ressources.</p>
 					<p><a href="http://symphonycms.github.com/factory/">Symphony Factory</a> will be freely available for all Symphony Network sites as a <a href="https://github.com/symphonycms/factory/">Git repository</a>. Also, the new default workspace shall be based on a modified version of the main layout.</p>
-<!--							<p>
-						<img src="https://raw.github.com/symphonycms/factory/development/img/sym_factory-withopennetwork.png" alt="Mockup: Symphony stream with open network overview" class="eight" />
-					</p>-->
-					<p>
-						<em>Mockup: Symphony stream with open network overview</em>
-					</p>
+					<div class="content-annotation">
+						<p>Mockup: Symphony stream with open network overview</p>
+					</div>
+					<div class="content-media-resize">
+						<img src="https://raw.github.com/symphonycms/factory/master/img/sym_factory-withopennetwork.png" alt="Mockup: Symphony stream with open network overview" class="eight" />
+					</div>
 					<h3>Funding</h3>
 					<p>The goal is to make Symphony Factory available and ready to use for the community late summer 2012. But creating a framework like this takes a lot of time and effort. To turn this idea into reality, Symphony Factory depends on your help to fund the work.</p>
 					<p>@Johanna and I are up for the challenge and willing to invest our time. If you like the idea of a design framework for Symphony and want to support the project, a donation would be very much appreciated.</p>
@@ -70,12 +69,6 @@
 
 					<!-- Author information -->
 					<footer class="author-info">
-						<div class="picture">
-							<a href="#">
-								<img alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=194" width="194" height="194" />
-							</a>
-							<a href="#position-1">Comment #1</a>
-						</div>
 						<ul class="button-set">
 							<li>
 								<a href="#">Edit</a>
