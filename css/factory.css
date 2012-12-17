@@ -2137,6 +2137,16 @@ dd {
 	transform: rotate(10deg);
 }
 
+/* Fluid and small layout */
+
+@media all and (max-width: 853px) {
+
+	#footer .footer-factory {
+		display: none;
+	}
+
+}
+
 /* Factory artwork for high-resolution displays */
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
