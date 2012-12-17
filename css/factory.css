@@ -1420,6 +1420,7 @@ pre[data-line] {
 	margin: 3.3rem 0 1.5rem;
 	padding: 0;
 	max-width: 592px;
+	line-height: 3.6rem;
 }
 
 /* Site Header */
@@ -1726,6 +1727,13 @@ pre[data-line] {
 	padding: 0;
 }
 
+#site p.question {
+	font-size: 2rem;
+	font-weight: 300;
+	margin: 3.3rem 0 1.5rem;
+	line-height: 3.6rem;
+}
+
 /* Pull quotes */
 
 #site .content-pullquote {
@@ -1838,19 +1846,10 @@ pre[data-line] {
 }
 
 /* Sidebar */
-/* to do: these styles need to be cleared out */
-
-#site .sidebar.infobox {
-	border-top: 1px solid #D9D9D9;
-	border-bottom: 1px solid #D9D9D9;
-	padding: 0 10px 0;
-	margin-left: 20px;
-	margin-top: 0.2rem;
-}
 
 #site .sidebar-users {
 	overflow: hidden;
-	margin: 2.2rem 0 2.1rem;
+	margin: 1rem 0 0.9rem;
 }
 
 #site .sidebar-users li {
@@ -1884,6 +1883,20 @@ pre[data-line] {
 	margin-left: -10px;
 	padding-left: 8px;
 	width: 187px;
+}
+
+/* Infobox, only used in sidebar so far */
+
+#site .infobox {
+	border-top: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+	padding: 0 10px 0;
+	margin-left: 20px;
+	margin-top: 0.2rem;
+}
+
+#site .infobox img {
+	margin: 1.2rem 0;
 }
 
 /* Entry overview */

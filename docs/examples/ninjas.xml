@@ -12,10 +12,19 @@
 			</header>
 			<div class="column sidebar infobox">
 				<img src="http://symphonyninjas.com/workspace/assets/images/interviews/john-porter.jpg" width="176" title="John Porter" />
+				<ul class="sidebar-links">
+					<li>
+						<a href="#">Profile</a>
+					</li>
+					<li>
+						<a href="#">Twitter</a>
+					</li>
+				</ul>
 				<p class="sidebar-annotation">John works as full time Symphony developer at Airlock</p>
 			</div>
 			<div class="column content conversation">
-				<ul>
+				<p>Symphony ipsum integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros:</p>
+				<ul class="bullets">
 					<li>
 						<a href="#What-is-your-background-and-how-did-you-start-working-with-Symphony-CMS" title="What is your background and how did you start working with Symphony CMS?">What is your background and how did you start working with Symphony CMS?</a>
 					</li>
