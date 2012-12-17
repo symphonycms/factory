@@ -2148,38 +2148,3 @@ dd {
 	}
 
 }
-
-/*-----------------------------------------------------------------------------
-	Creative chaos:
-	
-	to do: this needs to be reorganised, abstracted and integrated with
-	the main site style definitions.
------------------------------------------------------------------------------*/
-
-/* Entries */
-
-#site .entries article header {
-	padding: 0;
-}
-
-/* Comments */
-
-#site article.comment {
-	position: relative;
-	
-	/* @todo: this is highly experimental and only adjusted for expected behavior in Safari. */
-	min-height: 69px;
-	margin: 0 -10px;
-	padding: 0 10px;
-}
-
-#site article.comment:not(:first-of-type) {
-	border-top: 1px solid #bbbfbb;
-}
-
-#site article.comment footer {
-	margin: 0 100px 0 -10px;
-	padding: 0.6rem 10px;
-	width: 588px;
-	color: #9b9b9b;
-}
