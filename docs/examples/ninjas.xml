@@ -14,7 +14,7 @@
 				<img src="http://symphonyninjas.com/workspace/assets/images/interviews/john-porter.jpg" width="176" title="John Porter" />
 				<p class="sidebar-annotation">John works as full time Symphony developer at Airlock</p>
 			</div>
-			<div class="column content entries">
+			<div class="column content conversation">
 				<ul>
 					<li>
 						<a href="#What-is-your-background-and-how-did-you-start-working-with-Symphony-CMS" title="What is your background and how did you start working with Symphony CMS?">What is your background and how did you start working with Symphony CMS?</a>
@@ -32,7 +32,7 @@
 						<a href="#What-are-your-favorite-Symphony-CMS-extensions-and-why" title="What are your favorite Symphony CMS extensions and why?">What are your favorite Symphony CMS extensions and why?</a>
 					</li>
 				</ul>				
-				<h3 id="What-is-your-background-and-how-did-you-start-working-with-Symphony-CMS">What is your background and how did you start working with Symphony CMS?</h3>
+				<p class="question" id="What-is-your-background-and-how-did-you-start-working-with-Symphony-CMS">What is your background and how did you start working with Symphony CMS?</p>
 				<p>I studied Art and Photography at college, and persued a career in Photography retouching some time after that, but web design and development was always something I aspired to do professionaly. I finally took the plunge into a career in web development while working at a large travel company, in another dept. I'd been studying up a lot then, and luckily got the job. It has hindered my life to no end, as I developed an unhealthy fixation on data accuracy.</p>
 				<p>It was doing that job that got me working with XML and then XSLT when I had to transform gigabytes of data from a behemoth of a publishing platform. This in turn got me working with Symphony CMS, which I found out about from <a href="http://designprojectx.com/">Design Project X</a>. I initially never really thought about designing websites with Symphony as I was using it mainly to store and deliver data.</p>
 				<p>I eventually got a little frustrated with the lack of flexibility regarding URL structure from a Java developers we worked with. We were building a flagship product site which needed some level of dynamicity in the URL structure, and I realised Symphony was the perfect tool to prove a point about canonical, flexible URLs. Which I did, with ease. It was then that I really saw the potential for Symphony, and it's ability to provide just about any solution you need for most data centric web applications. Everything just clicked into place then.</p>
@@ -42,10 +42,10 @@
 					</p>
 				</blockquote>
 				<p>I've since worked at a small agency where I kept trying to push Symphony for projects, but only got one, and now work for <a href="http://airlock.com">Airlock</a> as a Symphony developer full time. I'm glad I made the move, so I can work on a daily basis with something I love, and enjoy. As <a href="http://www.bbc.co.uk/comedy/fastshow/characters/swiss_toni.shtml">Swiss Tony</a> would say “Working with Symphony is like making love to a beautiful woman…”‚ or something like that.</p>
-				<h3 id="What-is-your-favorite-characteristic-about-Symphony-CMS">What is your favorite characteristic about Symphony CMS?</h3>
+				<p class="question" id="What-is-your-favorite-characteristic-about-Symphony-CMS">What is your favorite characteristic about Symphony CMS?</p>
 				<p>It took me some time to get to grips with the CMS and ways of working as it does have quite a learning curve, but the thing I love most about it is the community. I've never come across a more helpful like-minded group of developers, who are always available to help other people, and at ridiculous hours of the day, thanks to the global spread of the user base.</p>
 				<p>While the documentation is still a work in progress for the main part, it always brightens my daily trawl of the forum to see people helping each other, asking questions without worry of mockery (which I have witnessed on so many other forums), and the massive bank of knowledge held in the community brain. I really enjoy being a part of it, and taking a lead in community activities to benefit the project.</p>
-				<h3 id="How-did-you-learn-XSLT-and-what-resources-did-you-use">How did you learn XSLT and what resources did you use?</h3>
+				<p class="question" id="How-did-you-learn-XSLT-and-what-resources-did-you-use">How did you learn XSLT and what resources did you use?</p>
 				<blockquote class="content-pullquote">
 					<p>
 						<span><span>I was greeted at the first Symposium with “Ah! Designermonkey, with all the questions!”.</span></span>
@@ -53,7 +53,7 @@
 				</blockquote>
 				<p>I was learning XSLT for manipulating some poorly formatted and structured XML, and I really struggled to 'get it' for a long time. Many of the forum goers from a couple of years back will remember me well. I was greeted at the first Symposium with “Ah! Designermonkey, with all the questions!”.</p>
 				<p>XSLT is still something that I struggle with compared to some of the other devs using Symphony, so I regularly dip into W3Schools, for basic info to remind me of the elements. I tend to use Google, Stack Overflow and the forum to find out what I need to know. I have a copy of the XSLT Cookbook, but I don't think I've ever used it! I also tend to bother Nils Werner with silly XSL questions. He'll get sick of it some time...</p>
-				<h3 id="What-does-your-Symphony-CMS-toolkit-look-like">What does your Symphony CMS toolkit look like?</h3>
+				<p class="question" id="What-does-your-Symphony-CMS-toolkit-look-like">What does your Symphony CMS toolkit look like?</p>
 				<p>I work on Mac, using the default install of PHP and homebrew install of MySQL. I used to use MAMP, but decided to be more Terminal centric over UI, so went for the defaults (with a little upgrading and customisation). I use:</p>
 				<ul>
 					<li><a href="http://www.sublimetext.com/2">Sublime Text</a> for coding.</li>
@@ -76,7 +76,7 @@
 					</li>
 					<li>The most essential tool? The kettle, tea and sugar.</li>
 				</ul>
-				<h3 id="What-are-your-favorite-Symphony-CMS-extensions-and-why">What are your favorite Symphony CMS extensions and why?</h3>
+				<p class="question" id="What-are-your-favorite-Symphony-CMS-extensions-and-why">What are your favorite Symphony CMS extensions and why?</p>
 				<p>There are so many to choose from. It's like asking me what my top 5 albums are, it all depends. What I find is that I regularly trawl through the list to see what's out there and where I can fit it into a project. There are some absolute corkers of extensions out there from very complex huge ones to some single file extensions that are all as great and infinitely useful. My favourite though, is the <a href="http://github.com/symphonists/url_router">URL Router</a>, created by Rob Philp and adopted by myself and the Symphonists community. It adds so much power into the design patterns of a site/application, with some very simple processes.</p>
 				<footer class="author-info">
 					<p>Interview by <em>Mark Lewis</em> on May 15, 2012</p>
