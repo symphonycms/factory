@@ -7,11 +7,11 @@
 		<!-- Field with sidebar -->
 		<div class="field">
 			<header class="page-header">
-				<h2 class="with-separator">John Porter</h2>
-				<p>United Kingdom</p>
+				<h2>An Interview with Designermonkey</h2>
 			</header>
 			<div class="column sidebar infobox">
 				<img src="http://symphonyninjas.com/workspace/assets/images/interviews/john-porter.jpg" width="176" title="John Porter" />
+				<p class="sidebar-user">John Porter <small>UK</small></p>
 				<ul class="sidebar-links">
 					<li>
 						<a href="#">Profile</a>
