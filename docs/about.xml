@@ -5,7 +5,7 @@
 	<content>
 		
 		<!-- Description -->
-		<div class="field centered">
+		<div class="field">
 			<div class="column sidebar">
 				<ul>
 					<li>
@@ -31,7 +31,7 @@
 		</div>
 		
 		<!-- Features -->
-<!--		<aside class="field tiles">
+<!--		<aside class="field wide tiles">
 			<div class="centered">-->
 			
 				<!-- Layouts -->

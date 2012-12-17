@@ -5,8 +5,8 @@
 	<aside id="network">
 	
 		<!-- Main navigation -->
-		<header class="network-toolbar field collapsed">
-			<div class="centered">
+		<header class="network-toolbar collapsed">
+			<div class="field">
 				<h1 class="network-logo column one">
 					<a href="{$config/root}/docs/about.xml">Symphony Network</a>
 				</h1>
@@ -32,7 +32,7 @@
 		
 		<!-- User profile -->
 		<div class="field network-profile">
-			<form class="centered">
+			<form>
 				
 				<!-- Gravatar -->
 				<div class="network-gravatar column one">
@@ -65,7 +65,7 @@
 		</div>
 		
 		<!-- Site switcher -->
-		<div class="field centered network-drawer">
+		<div class="field network-drawer">
 		
 			<!-- Symphony ressources -->
 			<div class="column three medium-two">

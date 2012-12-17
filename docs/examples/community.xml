@@ -5,7 +5,7 @@
 	<content>
 
 		<!-- Field with sidebar -->
-		<div class="field centered">
+		<div class="field">
 			<div class="column sidebar">
 				<h3>Search</h3>
 				<form>

@@ -3,7 +3,7 @@
 <data>
 	<title id="Examples" mode="push">Extensions</title>
 	<content>
-		<section class="field centered">
+		<section class="field">
 			<header class="page-header">
 				<h2>Date and Time</h2>
 				<p>3.0.6 <em class="header-tag-go">Released</em><a class="header-tag" href="/extensions/?type=field-types">Field Types</a><a class="header-tag" href="/extensions/?type=interface">Interface</a></p>
@@ -88,7 +88,7 @@
 		</section>
 		
 		<!-- About the extension -->
-		<section class="field centered language-markup">
+		<section class="field language-markup">
 			
 			<!-- About the extension -->
 			<div class="column sidebar infobox">
@@ -367,7 +367,7 @@
 		</section>
 			
 		<!-- Footer -->
-<!--		<aside class="field tiles">
+<!--		<aside class="field wide tiles">
 			<div class="centered">
 				<div class="tile two">
 					<h3>Date Modified Field</h3>

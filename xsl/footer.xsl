@@ -3,7 +3,7 @@
 
 <xsl:template name="footer">
 	<footer id="footer">
-		<div class="field centered">
+		<div class="field">
 		
 			<!-- Community -->
 			<p class="footer-community">

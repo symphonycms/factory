@@ -106,20 +106,14 @@ ul li > ul {
 	The centered layout is the default one and should be used by all
 	text focussed sites. The fluid version is conceived for special 
 	user interfaces like xPathr that need the full window width.
+	
+	All fields (see below) default to the centered layout.
 -----------------------------------------------------------------------------*/
-
-/* Wide */
-
-.wide {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0 50px;
-	width: 100%;
-}
 
 /* Centered */
 
-.centered {
+.centered,
+.field {
 	margin: 0 auto;
 	width: 100%;
 	position: relative;
@@ -127,7 +121,8 @@ ul li > ul {
 
 @media all and (max-width: 647px) {
 
-	body:not([data-exclude-state~=fluid]) .centered {
+	body:not([data-exclude-state~=fluid]) .centered,
+	body:not([data-exclude-state~=fluid]) .field {
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		padding: 0;
@@ -139,7 +134,8 @@ ul li > ul {
 
 @media all and (min-width: 648px) {
 
-	body:not([data-exclude-state~=small]) .centered {
+	body:not([data-exclude-state~=small]) .centered,
+	body:not([data-exclude-state~=small]) .field {
 		width: 648px;
 	}
 
@@ -149,7 +145,8 @@ ul li > ul {
 
 @media all and (min-width: 854px) {
 
-	body:not([data-exclude-state~=medium]) .centered {
+	body:not([data-exclude-state~=medium]) .centered,
+	body:not([data-exclude-state~=medium]) .field {
 		width: 854px;
 	}
 
@@ -159,10 +156,21 @@ ul li > ul {
 
 @media all and (min-width: 1060px) {
 
-	body:not([data-exclude-state~=large]) .centered {
+	body:not([data-exclude-state~=large]) .centered,
+	body:not([data-exclude-state~=large]) .field {
 		width: 1060px;
 	}
 
+}
+
+/* Wide */
+
+.wide {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 50px;
+	margin: 0;
+	width: 100%;
 }
 
 /*-----------------------------------------------------------------------------

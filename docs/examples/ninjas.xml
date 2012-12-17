@@ -5,7 +5,7 @@
 	<content>
 
 		<!-- Field with sidebar -->
-		<div class="field centered">
+		<div class="field">
 			<header class="page-header">
 				<h2 class="with-separator">John Porter</h2>
 				<p>United Kingdom</p>

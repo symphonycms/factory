@@ -5,7 +5,7 @@
 	<content>
 		
 		<!-- Introduction -->
-		<section class="field centered">
+		<section class="field">
 			<div class="column content">
 				<h2>Introduction to Layouts</h2>
 				<p class="content-introduction">Symphony Factory offers a flexible layout system to build network sites that adapt to the visitor&#8217;s window or screen size. Starting with a fluid version, the design expands in three steps to a five column layout that can be individually filled with content blocks.</p>
@@ -33,7 +33,7 @@
 				
 				<!-- Fields -->
 				<h4>Fields</h4>
-				<p>A site should always be structured by fields that group the content columns. This could either be <code>div</code>, <code>section</code>, <code>article</code> or other appropriate block elements with the class <code>.field</code>. Fields can either be centered using the class <code>.centered</code> or use the full window width by using the class <code>.wide</code>. Fields can be nested and justified where the latter enlarges their width by <code>10px</code> on each side to allow horizontal lines, images or code blocks to better align optically.</p>
+				<p>A site should always be structured by fields that group the content columns. This could either be <code>div</code>, <code>section</code>, <code>article</code> or other appropriate block elements with the class <code>.field</code>. Fields are centered by default but can be expanded to full width by adding the class <code>.wide</code>. Fields can be nested and justified where the latter enlarges their width by <code>10px</code> on each side to allow horizontal lines, images or code blocks to better align optically.</p>
 				
 				<!-- Columns -->
 				<h4>Columns</h4>
@@ -46,7 +46,7 @@
 				<p>All columns are initialised by the key class <code>.column</code>.</p>
 				
 				<p>Functional columns represent a basic sidebar plus main content layout:</p>
-				<pre><code><![CDATA[<div class="field centered">
+				<pre><code><![CDATA[<div class="field">
 	<div class="column sidebar">
 		<p>Sidebar</p>
 	</div>
@@ -58,7 +58,7 @@
 				<p>The sidebar has the fixed size of one column and is optional. The content area resizes based on the overall layout width.</p>
 				
 				<p>Fixed sized columns are defined by the base columns they span, so you can either apply <code>.one</code>, <code>.two</code>, <code>.three</code>, <code>.four</code> or <code>.five</code> to the column element. In order to make fixed width column layouts work across the different layouts, it&#8217;s possible to adjust the sizing context based: the class <code>.medium-one</code> will override all other width definitions when displaying the medium layout. This is helpful to adjust content display responsively. The fluid layout linearises all columns.</p>
-				<pre><code><![CDATA[<div class="field centered">
+				<pre><code><![CDATA[<div class="field">
 	<div class="column two">
 		Sized two base columns.
 	</div>
@@ -78,7 +78,7 @@
 		</section>
 		
 		<!-- Column examples -->
-		<div id="docs-column-example" class="field centered">
+		<div id="docs-column-example" class="field">
 			<div class="column one">column sized <code>.one</code></div>
 			<div class="column two">column sized <code>.two</code></div>
 			<div class="column one">column sized <code>.one</code></div>
@@ -91,7 +91,7 @@
 		</div>
 		
 		<!-- HTML -->
-		<section class="field centered language-markup">
+		<section class="field language-markup">
 			<div class="column content">
 				<h2>Basic Markup</h2>
 				<p>Symphony Factory uses HTML5 features and is compatible with all modern browsers. Internet Explorer support starts with version 9. If a site needs to be compatible with older browser versions, it's up to the developer to take care of this. Based on the user statistics of the existing network sites, this should only rarely be needed.</p>
@@ -166,8 +166,8 @@
 				<pre class="content-pushaside"><code><![CDATA[<aside id="network">
 
 	<!-- Network toolbar with the most important links -->
-	<header class="network-toolbar field collapsed">
-		<div class="centered">
+	<header class="network-toolbar collapsed">
+		<div class="field">
 			<h1 class="network-logo column one">
 				<a href="http://symphony/factory/docs/about.xml">Symphony Network</a>
 			</h1>
@@ -193,7 +193,7 @@
 	
 	<!-- Network profile of the current user or a registration form -->
 	<div class="field network-profile action-profile-hide">
-		<form class="centered">
+		<form>
 			<div class="network-gravatar column one">
 				<img src="http://symphony/factory/img/user.png" width="174" height="174" alt="Allen Chang">
 				<p>Change your avatar at <a href="http://gravatar.com">Gravatar</a>.</p>
@@ -222,7 +222,7 @@
 	</div>
 	
 	<!-- Network drawer with additional information and links -->
-	<div class="field centered network-drawer">
+	<div class="field network-drawer">
 		<div class="column three medium-two">
 			<h2>About Symphony</h2>
 			<p>Symphony is an open source content management system for your websites and webapps. It makes complex things simple.</p>
@@ -307,7 +307,7 @@
 
 				<h4>HTML Result</h4>
 				<pre class="content-pushaside"><code><![CDATA[<footer id="footer">
-	<div class="field centered">
+	<div class="field">
 		<p class="footer-community">
 			<strong>© 2010–2012 The Symphony Community</strong>
 			<a href="http://getsymphony.com">International Site</a> · <a href="http://twitter.com/symphonycms">Twitter</a>
