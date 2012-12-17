@@ -517,6 +517,7 @@ dd {
 .bullets li,
 .bullets dd {
 	padding-left: 11px;
+	line-height: 2.4rem;
 }
 
 .bullets li::before,
@@ -571,7 +572,7 @@ pre {
 
 code,
 var {
-	font: 1.2rem/2.4rem Monaco, Consolas, 'Andale Mono', monospace;
+	font: 1.2rem Monaco, Consolas, 'Andale Mono', monospace;
 	padding: 0.2rem 0.4rem;
 	background: #f5f5f5;
 	border-radius: 2px;
@@ -1401,8 +1402,8 @@ pre[data-line] {
 	font-size: 2.6rem;
 	font-weight: 400;
 	line-height: 3.6rem;
-	margin: 0;
-	padding: 2rem 0 1.2rem;
+	padding: 0;
+	margin: 2rem 0 1.2rem;
 }
 
 #site h3 {
@@ -1423,12 +1424,20 @@ pre[data-line] {
 	line-height: 3.6rem;
 }
 
+#site .content h2:first-child,
+#site .content h3:first-child,
+#site .content h4:first-child {
+
+	/* Reset margin top for the first headline */
+	margin-top: 0;
+}
+
 /* Site Header */
 
 #site .site-header {
 	border-bottom: 1px solid #CFCFCF;
 	box-shadow: 0 11px 15px -15px #c2c2c2, 0 5px 6px -8px rgba(0, 0, 0, 1);
-	margin-bottom: 2.4rem;
+	margin-bottom: 4.3rem;
 	padding: 3.2rem 30px 1.2rem;
 	position: relative;
 	box-sizing: border-box;
@@ -1571,7 +1580,7 @@ pre[data-line] {
 /* Page headers */
 
 #site .page-header {
-	margin: 2.4rem 30px 0;
+	margin: 2.4rem 30px 3.5rem;
 }
 
 #site .page-header h2 {
@@ -1584,6 +1593,7 @@ pre[data-line] {
 	font-size: 2.6rem;
 	font-weight: 300;
 	line-height: 3.6rem;
+	margin-bottom: 0;
 }
 
 #site .page-header-author {
@@ -1599,7 +1609,7 @@ pre[data-line] {
 }
 
 #site .page-header .tools-right {
-	margin-top: 2.5rem;
+	margin-top: 0.5rem;
 }
 
 /* Links */
@@ -1783,6 +1793,7 @@ pre[data-line] {
 	font-weight: 300;
 	line-height: 3.6rem;
 	margin: 0 0 1rem;
+	padding-top: 0.1rem;
 	max-width: 592px;
 }
 
