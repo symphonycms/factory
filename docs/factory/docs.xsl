@@ -39,30 +39,20 @@
 			<div id="site">
 				
 				<!-- Current header -->
-				<header>
-					<xsl:attribute name="class">
-						<xsl:choose>
-							<xsl:when test="data/title = 'xPathr'">site-header wide</xsl:when>
-							<xsl:otherwise>site-header centered</xsl:otherwise>
-						</xsl:choose>
-					</xsl:attribute>
-					<h1>
-						<span>Symphony</span>
-						<xsl:text> </xsl:text>
-						<xsl:choose>
-							<xsl:when test="data/title/@mode = 'push'">
-								<xsl:value-of select="data/title" />
-							</xsl:when>
-							<xsl:when test="data/title/@mode = 'empty'"></xsl:when>
-							<xsl:otherwise>Factory</xsl:otherwise>
-						</xsl:choose>
-					</h1>
-					<nav>
-						<xsl:apply-templates select="document('navigation.xml')/data/nav">
-							<xsl:with-param name="title" select="data/title/@id | data/title" />
-						</xsl:apply-templates>
-					</nav>
-				</header>
+				<xsl:choose>
+					<xsl:when test="data/title = 'xPathr'">
+						<header class="site-header wide">
+							<div class="centered">
+								<xsl:call-template name="site-header" />
+							</div>
+						</header>
+					</xsl:when>
+					<xsl:otherwise>
+						<header class="site-header centered">
+							<xsl:call-template name="site-header" />
+						</header>
+					</xsl:otherwise>
+				</xsl:choose>
 
 				<!-- Content -->
 				<xsl:apply-templates select="data/content/*" mode="ninja" />
@@ -88,6 +78,26 @@
 		</xsl:if>
 		<xsl:value-of select="." />
 	</a>
+</xsl:template>
+
+<!-- Site header -->
+<xsl:template name="site-header">
+	<h1>
+		<span>Symphony</span>
+		<xsl:text> </xsl:text>
+		<xsl:choose>
+			<xsl:when test="data/title/@mode = 'push'">
+				<xsl:value-of select="data/title" />
+			</xsl:when>
+			<xsl:when test="data/title/@mode = 'empty'"></xsl:when>
+			<xsl:otherwise>Factory</xsl:otherwise>
+		</xsl:choose>
+	</h1>
+	<nav>
+		<xsl:apply-templates select="document('navigation.xml')/data/nav">
+			<xsl:with-param name="title" select="data/title/@id | data/title" />
+		</xsl:apply-templates>
+	</nav>
 </xsl:template>
 
 </xsl:stylesheet>

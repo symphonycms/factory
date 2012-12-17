@@ -1435,6 +1435,14 @@ pre[data-line] {
 	right: 0;
 }
 
+#site .site-header .centered {
+
+	/* Wide layouts with centered site header (like xPathr) */
+	padding: 0 30px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
 #site .site-header h1 {
 	background: url(../img/logo.png) -1px 0 no-repeat;
 	float: left;
