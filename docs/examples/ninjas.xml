@@ -64,14 +64,14 @@
 				<p>XSLT is still something that I struggle with compared to some of the other devs using Symphony, so I regularly dip into W3Schools, for basic info to remind me of the elements. I tend to use Google, Stack Overflow and the forum to find out what I need to know. I have a copy of the XSLT Cookbook, but I don't think I've ever used it! I also tend to bother Nils Werner with silly XSL questions. He'll get sick of it some time...</p>
 				<p class="question" id="What-does-your-Symphony-CMS-toolkit-look-like">What does your Symphony CMS toolkit look like?</p>
 				<p>I work on Mac, using the default install of PHP and homebrew install of MySQL. I used to use MAMP, but decided to be more Terminal centric over UI, so went for the defaults (with a little upgrading and customisation). I use:</p>
-				<ul>
+				<ul class="bullets">
 					<li><a href="http://www.sublimetext.com/2">Sublime Text</a> for coding.</li>
 					<li><a href="http://www.sequelpro.com">Sequel Pro</a> for MySQL interaction.</li>
 					<li><a href="http://www.git-tower.com">Git Tower</a> and (mainly) Terminal for git.</li>
 					<li>A lot of Terminal for all sorts.</li>
 					<li>Transmit for FTP, although I hate using FTP.</li>
 					<li>Other useful little tools I use are: 
-						<ul>
+						<ul class="bullets">
 							<li>
 								<a href="http://krillapps.com/coderunner">Coderunner</a>
 							</li>
