@@ -13,7 +13,7 @@
 				<!-- Grid -->
 				<h3>Using the Grid</h3>
 				<p>Factory is based on a fixed width grid and offers four different layout states:</p>
-				<ul>
+				<ul class="bullets">
 					<li>a basic fluid layout for screen widths up to <code>647px</code>,</li>
 					<li>a small layout with 3 base columns for window widths up to <code>853px</code></li>
 					<li>a medium layout with 4 base columns for window widths up to <code>1060px</code> and</li>
@@ -38,7 +38,7 @@
 				<!-- Columns -->
 				<h4>Columns</h4>
 				<p>There are two different types of columns available in Symphony Factory:</p>
-				<ul>
+				<ul class="bullets">
 					<li>functional columns and</li>
 					<li>fixed sized columns</li>
 				</ul>
@@ -96,7 +96,7 @@
 				<h2>Basic Markup</h2>
 				<p>Symphony Factory uses HTML5 features and is compatible with all modern browsers. Internet Explorer support starts with version 9. If a site needs to be compatible with older browser versions, it's up to the developer to take care of this. Based on the user statistics of the existing network sites, this should only rarely be needed.</p>
 				<p>Factory consists of three main content areas:</p>
-				<ol>
+				<ol class="numbers">
 					<li>the network toolbar</li>
 					<li>the main site content</li>
 					<li>the network footer</li>
