@@ -120,7 +120,7 @@
 				<p>Information about <a href="http://symphony-cms.com/learn/tasks/view/install-an-extension/">installing and updating extensions</a> can be found in the Symphony documentation at <a href="http://symphony-cms.com/learn/">http://symphony-cms.com/learn/</a>.</p>
 				<h4>Updating</h4>
 				<p>To update Date and Time to a newer version perform the following steps:</p>
-				<ul>
+				<ul class="bullets">
 					<li>Make sure that you have a working backup of your Symphony install.</li>
 					<li>Update the Date and Time folder by either updating the repository and submodule or by replacing the files manually.</li>
 					<li>Log into the backend and enable the Date and Time extension to run the update script.</li>
@@ -128,7 +128,7 @@
 				<p>All interface related components of Date and Time are JavaScript based. Please make sure to clear your browser cache to avoid interface issues. If another extension or the Symphony core throws a JavaScript error, Date and Time will stop working.</p>
 				<h3>Field Settings</h3>
 				<p>Date and Time offers the following field settings:</p>
-				<ul>
+				<ul class="bullets">
 					<li>allow creation of new items: this will add a Create New button to the interface</li>
 					<li>allow sorting of items: this will enable item dragging and reordering</li>
 					<li>allow time editing: this will display date and time in the interface</li>
@@ -136,7 +136,7 @@
 					<li>pre-populate this field with today's date: this will automatically add the current date to new entries</li>
 				</ul>
 				<h3>Data Source Filtering</h3>
-				<ul>
+				<ul class="bullets">
 					<li>prefixing a filter with <code>start:</code> will only check start dates,</li>
 					<li>prefixing a filter with <code>end:</code> will only check end dates,</li>
 					<li>prefixing a filter with <code>strict:</code> will check, if start <strong>and</strong> end date are in the given filter range,</li>
@@ -162,46 +162,46 @@
 				<h3>Release History</h3>
 				<h4>Version 3</h4>
 				<p>This major update introduces Symphony 2.3 compatibility and a new, simplified interface that is based on core duplicators. It also includes general stability improvements.</p>
-				<dl class="collapsible" data-collapse="Hide release notes" data-expand="Show release notes">
+				<dl class="collapsible bullets" data-collapse="Hide release notes" data-expand="Show release notes">
 					<dt>
 						<var class="content-tag">3.0.6</var>
-						<time class="relative">17 August 2012</time>
+						<time class="relative note">17 August 2012</time>
 					</dt>
 					<dd>Fix language detection in Data Source</dd>
 					
 					<dt>
 						<var class="content-tag">3.0.5</var>
-						<time class="relative">12 August 2012</time>
+						<time class="relative note">12 August 2012</time>
 					</dt>
 					<dd>Fix collapsing state storage</dd>
 					
 					<dt>
 						<var class="content-tag">3.0.4</var>
-						<time class="relative">12 July 2012</time>
+						<time class="relative note">12 July 2012</time>
 					</dt>
 					<dd>Minor fixes and improvements.</dd>
 					
 					<dt>
 						<var class="content-tag">3.0.3</var>
-						<time class="relative">10 May 2012</time>
+						<time class="relative note">10 May 2012</time>
 					</dt>
 					<dd>Updated German translation.</dd>
 					
 					<dt>
 						<var class="content-tag">3.0.2</var>
-						<time class="relative">07 May 2012</time>
+						<time class="relative note">07 May 2012</time>
 					</dt>
 					<dd>Fixed problems with Date and Time fields inside subsections.</dd>
 					
 					<dt>
 						<var class="content-tag">3.0.1</var>
-						<time class="relative">07 May 2012</time>
+						<time class="relative note">07 May 2012</time>
 					</dt>
 					<dd>Removed accidentally bundled Stage submodule.</dd>
 					
 					<dt>
 						<var class="content-tag">3.0.0</var>
-						<time class="relative">06 May 2012</time>
+						<time class="relative note">06 May 2012</time>
 					</dt>
 					<dd>Symphony 2.3 compatibility.</dd>
 					<dd>Switched from Stage to Duplicator to generate the interface.</dd>
@@ -211,10 +211,10 @@
 				
 				<h4>Version 2</h4>
 				<p>This major update introduces Symphony 2.2 compatibility and implements a new calendar and switches to Stage to provide a consistent look and feels with Subsection Manager. Please make sure that you initialise the Stage submodule.</p>
-				<dl class="collapsible collapsed" data-collapse="Hide release notes" data-expand="Show release notes">
+				<dl class="collapsible collapsed bullets" data-collapse="Hide release notes" data-expand="Show release notes">
 					<dt>
 						<var class="content-tag">2.4.0</var>
-						<time class="relative">14 February 2012</time>
+						<time class="relative note">14 February 2012</time>
 					</dt>
 					<dd>Allow field to be required. (Thanks, Brendan!)</dd>
 					<dd>Include languages for Date and Time Data Source in preferences.</dd>
@@ -224,49 +224,49 @@
 					
 					<dt>
 						<var class="content-tag">2.3.2</var>
-						<time class="relative">17 January 2012</time>
+						<time class="relative note">17 January 2012</time>
 					</dt>
 					<dd>Updated forum link.</dd>
 					
 					<dt>
 						<var class="content-tag">2.3.1</var>
-						<time class="relative">17 January 2012</time>
+						<time class="relative note">17 January 2012</time>
 					</dt>
 					<dd>Update meta informations.</dd>
 					
 					<dt>
 						<var class="content-tag">2.3.0</var>
-						<time class="relative">17 January 2012</time>
+						<time class="relative note">17 January 2012</time>
 					</dt>
 					<dd>Moved extension and Stage submodule to new home.</dd>
 					
 					<dt>
 						<var class="content-tag">2.2.4</var>
-						<time class="relative">13 December 2011</time>
+						<time class="relative note">13 December 2011</time>
 					</dt>
 					<dd>Updated <code>extension.meta.xml</code>.</dd>
 					
 					<dt>
 						<var class="content-tag">2.2.3</var>
-						<time class="relative">06 December 2011</time>
+						<time class="relative note">06 December 2011</time>
 					</dt>
 					<dd>Updated <code>extension.meta.xml</code>.</dd>
 					
 					<dt>
 						<var class="content-tag">2.2.2</var>
-						<time class="relative">06 December 2011</time>
+						<time class="relative note">06 December 2011</time>
 					</dt>
 					<dd>Updated readme.</dd>
 					
 					<dt>
 						<var class="content-tag">2.2.1</var>
-						<time class="relative">06 December 2011</time>
+						<time class="relative note">06 December 2011</time>
 					</dt>
 					<dd>Updated basic extension information and <code>extension.meta.xml</code>.</dd>
 					
 					<dt>
 						<var class="content-tag">2.2.0</var>
-						<time class="relative">03 December 2011</time>
+						<time class="relative note">03 December 2011</time>
 					</dt>
 					<dd>Added <code>extension.meta.xml</code> file.</dd>
 					<dd>Fix timezone issues.</dd>
@@ -276,13 +276,13 @@
 					
 					<dt>
 						<var class="content-tag">2.1.1</var>
-						<time class="relative">27 July 2011</time>
+						<time class="relative note">27 July 2011</time>
 					</dt>
 					<dd>Safari compatibility for keyboard interactions.</dd>
 					
 					<dt>
 						<var class="content-tag">2.1.0</var>
-						<time class="relative">26 July 2011</time>
+						<time class="relative note">26 July 2011</time>
 					</dt>
 					<dd>Added French translation. (Thanks, Nicolas!)</dd>
 					<dd>Added new extended filter mode. (Thanks, Nicolas!)</dd>
@@ -290,13 +290,13 @@
 					
 					<dt>
 						<var class="content-tag">2.0.1</var>
-						<time class="relative">17 June 2011</time>
+						<time class="relative note">17 June 2011</time>
 					</dt>
 					<dd>Corrected version number.</dd>
 					
 					<dt>
 						<var class="content-tag">2.0.0</var>
-						<time class="relative">16 June 2011</time>
+						<time class="relative note">16 June 2011</time>
 					</dt>
 					<dd>Implemented Stage.</dd>
 					<dd>Implemented new calendar.</dd>
@@ -306,60 +306,60 @@
 				</dl>
 				
 				<h4>Version 1</h4>
-				<dl class="collapsible collapsed" data-collapse="Hide release notes" data-expand="Show release notes">
+				<dl class="collapsible collapsed bullets" data-collapse="Hide release notes" data-expand="Show release notes">
 					<dt>
 						<var class="content-tag">1.5.1</var>
-						<time class="relative">22 November 2010</time>
+						<time class="relative note">22 November 2010</time>
 					</dt>
 					<dd>Section Schema compatibility. (Thanks, Brendan!)</dd>
 					
 					<dt>
 						<var class="content-tag">1.5.0</var>
-						<time class="relative">10 November 2010</time>
+						<time class="relative note">10 November 2010</time>
 					</dt>
 					<dd>Added Norwegian translation. (Thanks, Frode!)</dd>
 					<dd>Updated data source filtering. (Thanks, John!)</dd>
 					
 					<dt>
 						<var class="content-tag">1.4.0</var>
-						<time class="relative">27 August 2010</time>
+						<time class="relative note">27 August 2010</time>
 					</dt>
 					<dd>Added Italian translation, improved date localisation. (Thanks, Simone!)</dd>
 					
 					<dt>
 						<var class="content-tag">1.3.0</var>
-						<time class="relative">15 January 2010</time>
+						<time class="relative note">15 January 2010</time>
 					</dt>
 					<dd>Added German translation, improved date handling.</dd>
 					<dd>Fixed a lot of bugs and overall improvements. (Thanks, Brendan!)</dd>
 					
 					<dt>
 						<var class="content-tag">1.2.0</var>
-						<time class="relative">26 August 2009</time>
+						<time class="relative note">26 August 2009</time>
 					</dt>
 					<dd>Added support for data source grouping (calendar view).</dd>
 					
 					<dt>
 						<var class="content-tag">1.1.0</var>
-						<time class="relative">25 August 2009</time>
+						<time class="relative note">25 August 2009</time>
 					</dt>
 					<dd>Added support for data source filtering.</dd>
 					
 					<dt>
 						<var class="content-tag">1.0.2</var>
-						<time class="relative">24 August 2009</time>
+						<time class="relative note">24 August 2009</time>
 					</dt>
 					<dd>Minor bug fixes.</dd>
 					
 					<dt>
 						<var class="content-tag">1.0.1</var>
-						<time class="relative">03 August 2009</time>
+						<time class="relative note">03 August 2009</time>
 					</dt>
 					<dd>Minor bug fixes.</dd>
 					
 					<dt>
 						<var class="content-tag">1.0.0</var>
-						<time class="relative">21 August 2009</time>
+						<time class="relative note">21 August 2009</time>
 					</dt>
 					<dd>Initial release.</dd>
 				</dl>

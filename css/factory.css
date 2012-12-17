@@ -62,33 +62,6 @@ table {
 	border-spacing: 0;
 }
 
-ul,
-ol {
-	padding: 0;
-	margin: 0 0 1.2rem;
-}
-
-ol li {
-	list-style-position: inside;
-}
-
-ul li {
-	list-style: none;
-	padding-left: 13px;
-	position: relative;
-}
-
-ul li::before {
-	content: "·";
-	position: absolute;
-	left: 0;
-	font-weight: 800;
-}
-
-ul li > ul {
-	margin: 0 0 0 15px;
-}
-
 /* Behaviours */
 
 .hidden {
@@ -509,6 +482,79 @@ ul li > ul {
 }
 
 /*-----------------------------------------------------------------------------
+	Lists:
+	
+	Lists with bullet points or numbers.
+-----------------------------------------------------------------------------*/
+
+ul,
+ol,
+dl {
+	padding: 0;
+	margin: 0 0 1.2rem;
+	max-width: 556px;
+	list-style: none;
+}
+
+/* Definitions */
+
+dt {
+	padding-top: 1.2rem;
+	margin: 0;
+}
+
+dt .note {
+	color: rgba(0, 0, 0, 0.6);
+	margin-left: 10px;
+}
+
+dd {
+	margin: 0;
+}
+
+/* Bullet points */
+
+.bullets li,
+.bullets dd {
+	padding-left: 11px;
+}
+
+.bullets li::before,
+.bullets dd::before {
+	content: "·";
+	font-weight: 600;
+	width: 11px;
+	margin-left: -11px;
+	display: inline-block;
+}
+
+.bullets li > ul {
+	margin: 0 0 0 11px;
+}
+
+/* Numbers */
+
+.numbers {
+	counter-reset: numbers;
+}
+
+.numbers li {
+	padding-left: 25px;
+	counter-increment: numbers;
+}
+
+.numbers li::before {
+	content: counter(numbers) '. ';
+	width: 25px;
+	margin-left: -25px;
+	display: inline-block;
+}
+
+.bullets li > ol {
+	margin: 0 0 0 25px;
+}
+
+/*-----------------------------------------------------------------------------
 	Code:
 	
 	Syntax highlighting class will override the default Codemirror definitions.
@@ -701,10 +747,6 @@ pre[data-line] {
 	font-weight: 400;
 }
 
-#site .content-extension-label li::before {
-	display: none;
-}
-
 #site .content-extension-compatibility {
 	margin-left: 206px;
 	overflow-x: auto;
@@ -824,10 +866,6 @@ pre[data-line] {
 
 .button-set li:last-of-type {
 	border-right: none;
-}
-
-.button-set li::before {
-	display: none;
 }
 
 .button:hover,
@@ -1289,10 +1327,6 @@ pre[data-line] {
 	margin: 1.2rem 0;
 }
 
-#network .network-drawer li::before {
-	content: none;
-}
-
 #network .network-drawer li {
 	padding-left: 0;
 }
@@ -1725,27 +1759,6 @@ pre[data-line] {
 	left: 2.4rem;
 }
 
-/* Lists */
-
-ul,
-ol,
-dl {
-	max-width: 556px;
-}
-
-dt {
-	padding-top: 1.2rem;
-}
-
-dt time {
-	color: rgba(0, 0, 0, 0.6);
-	margin-left: 10px;
-}
-
-dd {
-	margin-left: 10px;
-}
-
 /* Highlighting */
 
 #site .content-introduction {
@@ -1844,10 +1857,6 @@ dd {
 	float: left;
 	padding: 0;
 	margin: 0 10px 0 0;
-}
-
-#site .sidebar-users li:before {
-	display: none;
 }
 
 #site .sidebar-users li img {
