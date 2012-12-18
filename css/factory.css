@@ -208,6 +208,31 @@ table {
 	margin-right: -10px;
 }
 
+/* Separation */
+
+.separated {
+	border-top: 1px solid #e6e6e6;
+	padding-top: 1.2rem;
+	position: relative;
+}
+
+.separated::before,
+.separated::after {
+	content: "";
+	display: block;
+	background: #FBFDFB;
+	height: 1px;
+	width: 20px;
+	position: absolute;
+	top: -1px;
+	left: 0;
+}
+
+.separated::after {
+	right: 0;
+	left: auto;
+}
+
 /* Columns */
 
 .column {
