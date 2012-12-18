@@ -10,13 +10,13 @@
 				<h2>Symphony Factory</h2>
 				<p><em class="header-tag-go">Open</em> <em class="header-tag">Discussion</em></p>
 				<ul class="button-set tools-right">
-					<li class="delete">
-						<a href="#">Delete</a>
+					<li>
+						<a href="#">Edit</a>
 					</li>
-					<li class="close">
+					<li>
 						<a href="#">Close</a>
 					</li>
-					<li class="star">
+					<li>
 						<a href="#">Star</a>
 					</li>
 				</ul>
@@ -28,15 +28,9 @@
 				<!-- User information -->
 				<footer class="column sidebar infobox">
 					<img alt="Nils Hörrmann" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=176" width="176" height="176" />
-					<p>Nils Hörrmann <small>Germany</small></p>
-					<ul class="sidebar-links">
-						<li>
-							<a href="#">Profile</a>
-						</li>
-						<li>
-							<a href="#">Twitter</a>
-						</li>
-					</ul>
+					<p>
+						<a href="#">Nils Hörrmann</a> <small>Germany</small> <br /><time class="relative">17 Aug 12, 12:07 pm</time>
+					</p>
 					<ul class="sidebar-stats">
 						<li><strong>88</strong> replies</li>
 						<li><strong>17</strong> participants</li>
@@ -74,19 +68,6 @@
 					</p>
 					<p>The basic goal is 2.000 EUR (approx. US$ 2.500), which will cover research, design and documentation. Of course, work will not stop after the initial release, but the more money is raised, the faster the factory can move on.</p>
 					<p>We are excited to make his happen - and hope that you think so, too. Thanks for your help!</p>
-
-					<!-- Author information -->
-<!--					<footer class="column sidebar">
-						<ul class="button-set">
-							<li>
-								<a href="#">Edit</a>
-							</li>
-							<li>
-								<a href="#">Remove</a>
-							</li>
-						</ul>
-						<p>Published on 17 Aug 12, 12:07 pm</p>
-					</footer>-->
 				</div>
 			</article>
 				
