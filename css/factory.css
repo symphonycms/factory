@@ -1890,6 +1890,25 @@ pre[data-line] {
 	color: #666;
 }
 
+#site .sidebar-stats {
+	border-top: 1px solid #D9D9D9;
+	padding: 1.2rem 10px;
+	margin: 0 -10px;
+	overflow: hidden;
+}
+
+#site .sidebar-stats li {
+	float: left;
+	width: 50%;
+}
+
+#site .sidebar-stats strong {
+	font-size: 3.6rem;
+	font-weight: 300;
+	display: inline-block;
+	line-height: 4rem;	
+}
+
 #site .sidebar h3 {
 	font-size: 1.3rem;
 	font-weight: 600;

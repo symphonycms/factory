@@ -37,6 +37,10 @@
 							<a href="#">Twitter</a>
 						</li>
 					</ul>
+					<ul class="sidebar-stats">
+						<li><strong>88</strong> replies</li>
+						<li><strong>17</strong> participants</li>
+					</ul>
 				</footer>
 
 				<!-- Initial comment -->
