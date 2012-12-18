@@ -1867,6 +1867,11 @@ pre[data-line] {
 
 /* Sidebar */
 
+#site .sidebar-user {
+	margin-top: 0.6rem;
+	margin-bottom: 0;
+}
+
 #site .sidebar-users {
 	overflow: hidden;
 	margin: 1rem 0 0.9rem;
@@ -1880,6 +1885,11 @@ pre[data-line] {
 
 #site .sidebar-users li img {
 	background-color: #F5F5F5;	
+}
+
+#site .sidebar-userimg {
+	float: left;
+	padding-right: 1.2rem;
 }
 
 #site .sidebar-links {

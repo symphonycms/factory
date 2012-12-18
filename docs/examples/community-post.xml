@@ -93,8 +93,10 @@
 			<!-- Comment -->
 			<article id="position-2" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/8f954979f1235a6d320a0659472b76f6?s=36" width="36" height="36" />
-					<strong>#2</strong> <a href="#" rel="author">remie</a> <br /><time datetime="2012-08-17T12:32" class="relative">17 Aug 12, 12:32 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/8f954979f1235a6d320a0659472b76f6?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">remie</a> <br /><time datetime="2012-08-17T12:32" class="relative">17 Aug 12, 12:32 pm</time>
+					</p>
 				</footer>
 				
 				<!-- Response -->
@@ -106,8 +108,10 @@
 			<!-- Comment -->
 			<article id="position-3" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/448eb34e1675ac8b08fcbcf8b8c8c4f3?s=36" width="36" height="36" />
-					<strong>#3</strong> <a href="#" rel="author">Johanna</a> <br /><time datetime="2012-08-17T12:56" class="relative">17 Aug 12, 12:56 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/448eb34e1675ac8b08fcbcf8b8c8c4f3?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">Johanna</a> <br /><time datetime="2012-08-17T12:56" class="relative">17 Aug 12, 12:56 pm</time>
+					</p>
 				</footer>
 				
 				<!-- Response -->
@@ -119,8 +123,10 @@
 			<!-- Comment -->
 			<article id="position-4" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=36" width="36" height="36" />
-					<strong>#10</strong> <a href="#" rel="author">nickdunn</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 5:21 am</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">nickdunn</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 5:21 am</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -135,8 +141,10 @@
 			<!-- Comment -->
 			<article id="position-5" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/c8fb9d2eac471ee064520f7aff116e51?s=36" width="36" height="36" />
-					<strong>#5</strong> <a href="#" rel="author">Moonoo2</a> <br /><time datetime="2012-08-17T12:56" class="relative">17 Aug 12, 1:26 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/c8fb9d2eac471ee064520f7aff116e51?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">Moonoo2</a> <br /><time datetime="2012-08-17T12:56" class="relative">17 Aug 12, 1:26 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -148,8 +156,10 @@
 			<!-- Comment -->
 			<article id="position-6" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=36" width="36" height="36" />
-					<strong>#10</strong> <a href="#" rel="author">nickdunn</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 5:21 am</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">nickdunn</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 5:21 am</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -170,8 +180,10 @@
 			<!-- Comment -->
 			<article id="position-8" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=36" width="36" height="36" />
-					<strong>#8</strong> <a href="#" rel="author">Nils</a> <br /><time datetime="2012-08-17T12:56" class="relative">17 Aug 12, 7:52 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">Nils</a> <br /><time datetime="2012-08-17T12:56" class="relative">17 Aug 12, 7:52 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -183,8 +195,10 @@
 			<!-- Comment -->
 			<article id="position-9" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/32e7e9b7bf00206a422e4292be30ed0d?s=36" width="36" height="36" />
-					<strong>#9</strong> <a href="#" rel="author">Nzagamba</a> <br /><time datetime="2012-08-17T12:56" class="relative">17 Aug 12, 9:55 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/32e7e9b7bf00206a422e4292be30ed0d?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">Nzagamba</a> <br /><time datetime="2012-08-17T12:56" class="relative">17 Aug 12, 9:55 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -196,8 +210,10 @@
 			<!-- Comment -->
 			<article id="position-10">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=36" width="36" height="36" />
-					<strong>#10</strong> <a href="#" rel="author">nickdunn</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 5:21 am</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/2d76dcc25e93b3941e7112b666b594eb?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">nickdunn</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 5:21 am</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -209,8 +225,10 @@
 			<!-- Comment -->
 			<article id="position-11" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/328dc47c040ad108994562ba9e603d10?s=36" width="36" height="36" />
-					<strong>#11</strong> <a href="#" rel="author">bambocci</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 4:05 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/328dc47c040ad108994562ba9e603d10?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">bambocci</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 4:05 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -222,8 +240,10 @@
 			<!-- Comment -->
 			<article id="position-12" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/af4861f6a49989457abc82ca452c074a?s=36" width="36" height="36" />
-					<strong>#12</strong> <a href="#" rel="author">creativedutchmen</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 10:10 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/af4861f6a49989457abc82ca452c074a?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">creativedutchmen</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 10:10 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -235,8 +255,10 @@
 			<!-- Comment -->
 			<article id="position-13" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/448eb34e1675ac8b08fcbcf8b8c8c4f3?s=36" width="36" height="36" />
-					<strong>#13</strong> <a href="#" rel="author">Johanna</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 12:56 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/448eb34e1675ac8b08fcbcf8b8c8c4f3?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">Johanna</a> <br /><time datetime="2012-08-17T12:56" class="relative">18 Aug 12, 12:56 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -251,8 +273,10 @@
 			<!-- Comment -->
 			<article id="position-14" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/998a16fc437a9085d00c079df3748ac2?s=36" width="36" height="36" />
-					<strong>#14</strong> <a href="#" rel="author">bzerangue</a> <br /><time datetime="2012-08-17T12:56" class="relative">20 Aug 12, 4:56 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/998a16fc437a9085d00c079df3748ac2?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">bzerangue</a> <br /><time datetime="2012-08-17T12:56" class="relative">20 Aug 12, 4:56 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -264,8 +288,10 @@
 			<!-- Comment -->
 			<article id="position-15" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/8f954979f1235a6d320a0659472b76f6?s=36" width="36" height="36" />
-					<strong>#15</strong> <a href="#" rel="author">remie</a> <br /><time datetime="2012-08-17T12:56" class="relative">20 Aug 12, 7:14 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/8f954979f1235a6d320a0659472b76f6?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">remie</a> <br /><time datetime="2012-08-17T12:56" class="relative">20 Aug 12, 7:14 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -277,8 +303,10 @@
 			<!-- Comment -->
 			<article id="position-16" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=36" width="36" height="36" />
-					<strong>#16</strong> <a href="#" rel="author">Nils</a> <br /><time datetime="2012-08-17T12:56" class="relative">20 Aug 12, 8:04 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">Nils</a> <br /><time datetime="2012-08-17T12:56" class="relative">20 Aug 12, 8:04 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -290,8 +318,10 @@
 			<!-- Comment -->
 			<article id="position-17" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=36" width="36" height="36" />
-					<strong>#17</strong> <a href="#" rel="author">Nils</a> <br /><time datetime="2012-08-17T12:56" class="relative">20 Aug 12, 8:09 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">Nils</a> <br /><time datetime="2012-08-17T12:56" class="relative">20 Aug 12, 8:09 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -304,8 +334,10 @@
 			<!-- Comment -->
 			<article id="position-18" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/c8fb9d2eac471ee064520f7aff116e51?s=36" width="36" height="36" />
-					<strong>#18</strong> <a href="#" rel="author">moonoo2</a> <br /><time datetime="2012-08-17T12:56" class="relative">22 Aug 12, 9:11 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/c8fb9d2eac471ee064520f7aff116e51?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">moonoo2</a> <br /><time datetime="2012-08-17T12:56" class="relative">22 Aug 12, 9:11 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -317,8 +349,10 @@
 			<!-- Comment -->
 			<article id="position-19" class="field">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/172ac896352143f531fb27b7ad6ea358?s=36" width="36" height="36" />
-					<strong>#19</strong> <a href="#" rel="author">Lewis</a> <br /><time datetime="2012-08-17T12:56" class="relative">22 Aug 12, 9:15 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/172ac896352143f531fb27b7ad6ea358?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">Lewis</a> <br /><time datetime="2012-08-17T12:56" class="relative">22 Aug 12, 9:15 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
@@ -333,8 +367,10 @@
 			<!-- Comment -->
 			<article id="position-20">
 				<footer class="column sidebar infobox">
-					<img alt="Gravatar" src="http://www.gravatar.com/avatar/87282eafff43d1c392c25d3bf317f742?s=36" width="36" height="36" />
-					<strong>#20</strong> <a href="#" rel="author">jensscherbl</a> <br /><time datetime="2012-08-17T12:56" class="relative">22 Aug 12, 9:43 pm</time>
+					<img class="sidebar-userimg" alt="Gravatar" src="http://www.gravatar.com/avatar/87282eafff43d1c392c25d3bf317f742?s=36" width="36" height="36" />
+					<p class="sidebar-user">
+						<a href="#" rel="author">jensscherbl</a> <br /><time datetime="2012-08-17T12:56" class="relative">22 Aug 12, 9:43 pm</time>
+					</p>
 				</footer>
 
 				<!-- Response -->
