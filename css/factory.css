@@ -1746,7 +1746,7 @@ pre[data-line] {
 
 /* Blockquotes */
 
-#site blockquote {
+#site blockquote:not(.content-pullquote)) {
 	margin: 0 0 1.2rem;
 	max-width: 556px;
 	padding: 0 0 0 1.2rem;
