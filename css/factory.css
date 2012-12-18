@@ -1776,6 +1776,8 @@ pre[data-line] {
 	max-width: 556px;
 	padding: 0 0 0 1.2rem;
 	border-left: 2px solid #CFCFCF;
+	color: rgba(0, 0, 0, 0.6);
+	font-style: italic;
 }
 
 /* Pullquotes */
