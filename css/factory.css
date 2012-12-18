@@ -1914,6 +1914,7 @@ pre[data-line] {
 
 #site .sidebar-userimg {
 	float: left;
+	margin-top: 0.6rem;
 	padding-right: 1.2rem;
 }
 
