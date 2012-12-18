@@ -28,7 +28,7 @@
 				<!-- User information -->
 				<footer class="column sidebar infobox">
 					<img alt="Nils Hörrmann" src="http://www.gravatar.com/avatar/5d35230cfa87eb2c85521377105cb114?s=176" width="176" height="176" />
-					<p class="sidebar-user">Nils Hörrmann <small>Germany</small></p>
+					<p>Nils Hörrmann <small>Germany</small></p>
 					<ul class="sidebar-links">
 						<li>
 							<a href="#">Profile</a>
