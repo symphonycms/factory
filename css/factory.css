@@ -1732,6 +1732,9 @@ a.button:hover,
 /* Tags */
 
 #site .content-tag,
+#site .content-tag-stop,
+#site .content-tag-wait,
+#site .content-tag-go,
 #site .header-tag,
 #site .header-tag-stop,
 #site .header-tag-wait,
@@ -1750,24 +1753,30 @@ a.button:hover,
 	color: #000;
 }
 
-#site .content-tag {
+#site .content-tag,
+#site .content-tag-stop,
+#site .content-tag-wait,
+#site .content-tag-go {
 	top: 0;
 	margin: 0;
 }
 
-#site .header-tag-stop {
+#site .header-tag-stop,
+#site .content-tag-stop {
 	background: #B20B4F;
 	border-color: #B20B4F;
 	color: #fff;
 }
 
-#site .header-tag-wait {
+#site .header-tag-wait,
+#site .content-tag-wait {
 	background: #f49e36;
 	border-color: #f49e36;
 	color: #fff;
 }
 
-#site .header-tag-go {
+#site .header-tag-go,
+#site .content-tag-go {
 	background: #92C44D;
 	border-color: #92C44D;
 	color: #fff;
@@ -1989,11 +1998,13 @@ a.button:hover,
 }
 
 #site .sidebar h3 {
-	font-size: 1.3rem;
-	font-weight: 600;
+	font-size: 1.1rem;
+	font-weight: 400;
 	letter-spacing: 0.1em;
-	margin-top: 0.6rem;
+	margin-top: 1.2rem;
+	margin-bottom: 0;
 	text-transform: uppercase;
+	line-height: 2.4rem;
 }
 
 #site .sidebar input {
@@ -2027,41 +2038,77 @@ a.button:hover,
 /* Entry search */
 
 #site .entry-search {
-	padding-bottom: 1.2rem;
 	margin-top: 0.5rem;
-	margin-bottom: 0;
+	margin-bottom: 2.4rem;
 }
 
 /* Entry overview */
 
 #site .entry-overview {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	height: 5.3rem;
+	min-height: 5.3rem;
 	padding-top: 0.64rem;
 	padding-left: 10px;
 	margin-bottom: 0;
+	position: relative;
+	padding-right: 140px;
 }
 
 #site .entry-header {
-	float: left;
-}
-
-#site .entry-header h3 {
 	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: inherit;
 	margin: 0;
 }
 
-#site .entry-header p {
+#site .entry-author {
+	display: inline-block;
 	margin-bottom: 0;
 }
 
+#site .entry-activity {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+
+#site .entry-author::after {
+	content: ", latest: ";
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#site .entry-activity a:after {
+	content: ", ";
+	color: rgba(0, 0, 0, 0.6);
+}
+
+@media all and (min-width: 1060px) {
+
+	#site .entry-author::after {
+		display: none;
+	}
+	
+	#site .entry-activity {
+		display: block;
+		position: absolute;
+		top: 0.6rem;
+		left: 525px;
+	}
+	
+	#site .entry-activity time {
+		display: block;
+	}
+	
+	#site .entry-activity a:after {
+		display: none;
+	}
+	
+}
+
 #site .entry-meta {
-	float: right;
 	width: 289px;
-	margin: 0 0 0 30px;
-	position: relative;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 #site .entry-count,
