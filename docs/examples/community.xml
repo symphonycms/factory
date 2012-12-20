@@ -21,124 +21,153 @@
 				</ul>				
 			</div>
 			<div class="column content">
+				
+				<!-- Search -->
 				<form class="entry-search justified">
 					<input type="text" placeholder="Type to search …" />
 				</form>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3>
-							<a href="community-post.xml" class="dark">Who's online: how did you hear about Symphony?</a>
-						</h3>
-						<p class="dimmed">Discussion by <a href="#" class="dark">bauhouse</a></p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-12-05T07:00">5 Dec 2012</time><br />
-						<a href="#" class="dark">creativedutchmen</a>
-						<a href="#" class="entry-count">212 <em class="entry-difference">17</em></a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Symphony 2.3 development notes</a></h3>
-						<p class="dimmed">Discussion by <a href="#" class="dark">brendo</a></p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">19 Mar 2012</time><br />
-						<a href="#" class="dark">Henry</a>
-						<a href="#" class="entry-count">15 <em class="entry-difference">&#8201;5</em></a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Hackathon 2.3 podcast</a></h3>
-						<p class="dimmed">Blog by <a href="#" class="dark">Allen</a></p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">17 Mar 2012</time><br />
-						<a href="#" class="dark">nickdunn</a>
-						<a href="#" class="entry-count">17 <em class="entry-difference">&#8201;7</em></a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Happy March 26th! #symphonycms 2.3 beta 3 is ready for&#8230;</a></h3>
-						<p class="dimmed">Tweet</p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">13 Jul 2011</time><br />
-						<a href="#" class="dark">symphonycms</a>
-						<a href="#" class="entry-count">23</a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Moxie Cinema</a></h3>
-						<p class="dimmed">Showcase by <a href="#" class="dark">fawx</a></p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">13 Jul 2011</time><br />
-						<a href="#" class="dark">creativedutchmen</a>
-						<a href="#" class="entry-count">38</a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Who's online: how did you hear about Symphony?</a></h3>
-						<p class="dimmed">Discussion by <a href="#" class="dark">bauhouse</a></p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">20 Mar 2012</time><br />
-						<a href="#" class="dark">creativedutchmen</a>
-						<a href="#" class="entry-count">212</a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Symphony 2.3 development notes</a></h3>
-						<p class="dimmed">Discussion by <a href="#" class="dark">brendo</a></p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">19 Mar 2012</time><br />
-						<a href="#" class="dark">Henry</a>
-						<a href="#" class="entry-count">15</a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Hackathon 2.3 podcast</a></h3>
-						<p class="dimmed">Blog by <a href="#" class="dark">Allen</a></p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">17 Mar 2012</time><br />
-						<a href="#" class="dark">nickdunn</a>
-						<a href="#" class="entry-count">36</a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Happy March 26th! #symphonycms 2.3 beta 3 is ready for&#8230;</a></h3>
-						<p class="dimmed">Tweet</p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">13 Jul 2011</time><br />
-						<a href="#" class="dark">symphonycms</a>
-						<a href="#" class="entry-count">21</a>
-					</p>
-				</article>
-				<article class="entry-overview justified">
-					<header class="entry-header">
-						<h3><a href="community-post.xml" class="dark">Moxie Cinema</a></h3>
-						<p class="dimmed">Showcase by <a href="#" class="dark">fawx</a></p>
-					</header>
-					<p class="entry-meta">
-						<time class="relative" datetime="2012-03-20T07:00">13 Jul 2011</time><br />
-						<a href="#" class="dark">creativedutchmen</a>
-						<a href="#" class="entry-count">112</a>
-					</p>
-				</article>
 				
+				<!-- Discussions -->
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">Who's online: how did you hear about Symphony?</a>
+					</h3>
+					<p class="entry-author dimmed">Discussion by <a href="#" class="dark">bauhouse</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">Tintin81</a>
+						<time class="relative" datetime="2012-12-17T02:06">17 Dec 12, 2:06 pm</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">226 <em class="entry-difference">17</em></a>
+					</p>
+				</article>
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">System Date Fields</a>
+					</h3>
+					<p class="entry-author dimmed">Extension by <a href="#" class="dark">designermonkey</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">designermonkey</a>
+						<time class="relative" datetime="2012-12-20T03:09">20 Dec 2012</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">5 <em class="entry-difference">2</em></a>
+					</p>
+				</article>
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">ACE Editors</a>
+					</h3>
+					<p class="entry-author dimmed">Discussion by <a href="#" class="dark">tonyarnold</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">moonoo2</a>
+						<time class="relative" datetime="2012-12-20T02:07">20 Dec 2012</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">4 <em class="entry-difference">1</em></a>
+					</p>
+				</article>
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">APIPage</a>
+					</h3>
+					<p class="entry-author dimmed">Extension by <a href="#" class="dark">iwyg</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">jensscherbl</a>
+						<time class="relative" datetime="2012-12-20T01:58">20 Dec 2012</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">5</a>
+					</p>
+				</article>
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">JIT Filter - Resize and fit "inside"</a>
+					</h3>
+					<p class="entry-author dimmed">Discussion by <a href="#" class="dark">germchaos</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">germchaos</a>
+						<time class="relative" datetime="2012-12-20T01:45">20 Dec 2012</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">5</a>
+					</p>
+				</article>
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">Encrypt field contents. Extension?</a>
+					</h3>
+					<p class="entry-author dimmed">Discussion by <a href="#" class="dark">Henry</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">davecoggins</a>
+						<time class="relative" datetime="2012-12-20T12:58">20 Dec 2012</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">3</a>
+					</p>
+				</article>
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">Unsetting Checkbox from frontend form</a>
+					</h3>
+					<p class="entry-author dimmed">Discussion by <a href="#" class="dark">moonoo2</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">michael-e</a>
+						<time class="relative" datetime="2012-12-20T12:38">20 Dec 2012</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">13</a>
+					</p>
+				</article>
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">best way to access system date and author on section entrys?</a>
+					</h3>
+					<p class="entry-author dimmed">Discussion by <a href="#" class="dark">jeffstrt</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">moonoo2</a>
+						<time class="relative" datetime="2012-12-20T02:01">20 Dec 2012</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">3</a>
+					</p>
+				</article>
+				<article class="entry-overview justified">
+					<h3 class="entry-header">
+						<a href="community-post.xml" class="dark">Multilevel Dropdown or Flyout Admin Nav</a>
+					</h3>
+					<p class="entry-author dimmed">Discussion by <a href="#" class="dark">heskethm</a></p>
+					<p class="entry-activity">
+						<a href="#" class="dark">heskethm</a>
+						<time class="relative" datetime="2012-12-20T00:31">20 Dec 2012</time>
+					</p>
+					<p class="entry-meta">
+						<a href="#" class="entry-count">0</a>
+					</p>
+				</article>
+
+
+
+
+<!--
+3	Yesterday	moonoo2
+Creating a photo gallery with two sources, user uploaded and flickr api.. any suggestions?
+
+2	Yesterday	koolaid
+Mixing filters of the same type in the DataSources
+
+3	Yesterday	michael-e
+Filemanager
+
+144	Yesterday	plenaforma
+Gateway class problems
+
+6	Yesterday	designermonkey
+Downloading images to server via XML Importer-->
+
+
 				<!-- Pagination -->
-				<nav class="tools pagination">
+<!--				<nav class="tools pagination">
 					<a class="prev">Previous</a>
 					<div class="pages">
 						<a href="#" class="selected">1</a>
@@ -155,7 +184,7 @@
 						<a href="#">177</a>
 					</div>
 					<a href="#" class="next">Next</a>
-				</nav>
+				</nav>-->
 			</div>
 		</div>
 	</content>
