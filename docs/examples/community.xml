@@ -8,16 +8,28 @@
 		<div class="field">
 			<div class="column sidebar">
 				<h3>Filter</h3>
-				<ul>
-					<li>Important</li>
-					<li>Starred</li>
+				<ul class="sidebar-filter">
+					<li>
+						<a href="#">Important</a>
+					</li>
+					<li>
+						<a href="#">Starred</a>
+					</li>
 				</ul>				
 				<h3>Make a Post</h3>
 				<ul>
-					<li>Create a Discussion</li>
-					<li>Pose a Question</li>
-					<li>Submit a Showcase</li>
-					<li>Register an Event</li>
+					<li>
+						<a href="#">Create a Discussion</a>
+					</li>
+					<li>
+						<a href="#">Pose a Question</a>
+					</li>
+					<li>
+						<a href="#">Submit a Showcase</a>
+					</li>
+					<li>
+						<a href="#">Register an Event</a>
+					</li>
 				</ul>				
 			</div>
 			<div class="column content">
