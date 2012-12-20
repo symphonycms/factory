@@ -1376,6 +1376,14 @@ a.button,
 	margin-top: 18px;
 }
 
+@media all and (max-width: 647px) {
+
+	#network .network-drawer .three {
+		width: auto;
+	}
+
+}
+
 #network .network-drawer h2 {
 	border-bottom: 1px solid #9E0A46;
 	color: #350318;
