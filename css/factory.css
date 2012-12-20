@@ -45,12 +45,23 @@ input, select, textarea {
 }
 
 a {
-	color: #000;
+	color: #0080a0;
+	background-image: -webkit-linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-image: -moz-linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-image: -ms-linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-image: -o-linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-image: linear-gradient(transparent 97%, #b8d8e0 97%);
+	background-size: 100% 97%;
+	cursor: pointer;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #B20B4F;
+	background-image: -webkit-linear-gradient(transparent 97%, #0080a0 97%);
+	background-image: -moz-linear-gradient(transparent 97%, #0080a0 97%);
+	background-image: -ms-linear-gradient(transparent 97%, #0080a0 97%);
+	background-image: -o-linear-gradient(transparent 97%, #0080a0 97%);
+	background-image: linear-gradient(transparent 97%, #0080a0 97%);
 }
 
 img {
@@ -873,7 +884,7 @@ pre[data-line] {
 
 form {
 	padding: 0;
-	margin: 0;
+	margin: 0 0 3rem;
 }
 
 fieldset {
@@ -889,6 +900,8 @@ label {
 
 textarea {
 	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .button,
@@ -902,6 +915,15 @@ textarea {
 	background-image: linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
 	display: inline-block;
+}
+
+.button {
+	padding: 0 10px;
+	margin: 0;
+	vertical-align: text-bottom;
+	height: 2.6rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .button-set li {
@@ -918,19 +940,23 @@ textarea {
 .button-set li:hover {
 	background: #e8e8e8;
 	box-shadow: inset 0 0 2px rgba(100, 100, 100, 0.1);
+	cursor: pointer;
 }
 
 a.button,
 .button-set a {
-	display: block;
+	display: inline-block;
 	padding: 0 10px;
-	color: #282828 !important;
-	background: none !important;
+	color: #282828;
+}	
+
+.button-set a {
+	background: none;
 }
 
-.button:hover,
+a.button:hover,
 .button-set a:hover {
-	color: #000 !important;
+	color: #000;
 	cursor: pointer;
 }
 
@@ -977,6 +1003,11 @@ a.button,
 #network ::selection,
 #network ::-moz-selection {
 	background: rgba(255, 255, 255, 0.2);
+}
+
+#network a,
+#network a:hover {
+	background: none;
 }
 
 /* Profile interactions */
@@ -1657,25 +1688,6 @@ a.button,
 }
 
 /* Links */
-
-#site a {
-	color: #0080a0;
-	background-image: -webkit-linear-gradient(transparent 97%, #b8d8e0 97%);
-	background-image: -moz-linear-gradient(transparent 97%, #b8d8e0 97%);
-	background-image: -ms-linear-gradient(transparent 97%, #b8d8e0 97%);
-	background-image: -o-linear-gradient(transparent 97%, #b8d8e0 97%);
-	background-image: linear-gradient(transparent 97%, #b8d8e0 97%);
-	background-size: 100% 97%;
-	cursor: pointer;
-}
-
-#site a:hover {
-	background-image: -webkit-linear-gradient(transparent 97%, #0080a0 97%);
-	background-image: -moz-linear-gradient(transparent 97%, #0080a0 97%);
-	background-image: -ms-linear-gradient(transparent 97%, #0080a0 97%);
-	background-image: -o-linear-gradient(transparent 97%, #0080a0 97%);
-	background-image: linear-gradient(transparent 97%, #0080a0 97%);
-}
 
 #site .sidebar a,
 #site a.dark,

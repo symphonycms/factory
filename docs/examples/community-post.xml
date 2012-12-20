@@ -379,7 +379,7 @@
 					<textarea id="comment" rows="10" name="fields[comment]"></textarea>
 				</fieldset>
 				<a class="return button" href="http://getsymphony.com/discuss/">Cancel</a>
-				<input class="button" type="submit" name="action[forum-new-comment]" value="Comment" />
+				<input class="button tools-right" type="submit" name="action[forum-new-comment]" value="Comment" />
 			</form>
 		</section>
 	</content>
