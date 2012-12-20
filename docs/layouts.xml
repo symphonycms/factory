@@ -33,7 +33,7 @@
 				
 				<!-- Fields -->
 				<h4>Fields</h4>
-				<p>A site should always be structured by fields that group the content columns. This could either be <code>div</code>, <code>section</code>, <code>article</code> or other appropriate block elements with the class <code>.field</code>. Fields are centered by default but can be expanded to full width by adding the class <code>.wide</code>. Fields can be nested and justified where the latter enlarges their width by <code>10px</code> on each side to allow horizontal lines, images or code blocks to better align optically.</p>
+				<p>A site should always be structured by fields that group the content columns. These could either be <code>div</code>, <code>section</code>, <code>article</code> or other appropriate block elements with the class <code>.field</code>. Fields are centered by default, but can be expanded to full width by adding the class <code>.wide</code>. Fields can be nested and justified, where the latter enlarges their width by <code>10px</code> on each side to allow horizontal lines, images or code blocks to better visually align.</p>
 				
 				<!-- Columns -->
 				<h4>Columns</h4>
@@ -57,7 +57,7 @@
 </div>]]></code></pre>
 				<p>The sidebar has the fixed size of one column and is optional. The content area resizes based on the overall layout width.</p>
 				
-				<p>Fixed sized columns are defined by the base columns they span, so you can either apply <code>.one</code>, <code>.two</code>, <code>.three</code>, <code>.four</code> or <code>.five</code> to the column element. In order to make fixed width column layouts work across the different layouts, it&#8217;s possible to adjust the sizing context based: the class <code>.medium-one</code> will override all other width definitions when displaying the medium layout. This is helpful to adjust content display responsively. The fluid layout linearises all columns.</p>
+				<p>Fixed sized columns are defined by the base columns they span, so you can either apply <code>.one</code>, <code>.two</code>, <code>.three</code>, <code>.four</code> or <code>.five</code> to the column element. In order to make fixed width column layouts work across the different layouts, it&#8217;s possible to adjust the sizing context based: the class <code>.medium-one</code> will override all other width definitions when displaying the medium layout. This is helpful to responsively adjust the content display. The fluid layout linearises all columns.</p>
 				<pre><code><![CDATA[<div class="field">
 	<div class="column two">
 		Sized two base columns.
@@ -70,7 +70,7 @@
 				<p>All columns are floated and it&#8217;s up to the developer to make sure that 
 				their widths sum up to the full page width per row if this is desired. 
 				The widths <code>.four</code> and <code>.five</code> are not meant to display running text, 
-				they should be used for tables and images.</p>
+				but are intended for tables and images.</p>
 				
 				<p>If you&#8217;d like to nest columns inside a column, make sure to wrap those
 				columns with another <code>.field</code> element.</p>		
