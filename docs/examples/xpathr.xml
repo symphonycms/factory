@@ -3,6 +3,10 @@
 <data>
 	<title id="Examples" mode="push">xPathr</title>
 	<content>
-
+		<div class="field">
+			<div class="column content">
+				<p class="dimmed">Please have a look at the <a href="https://github.com/symphonycms/factory/issues/35">discussions around xPathr on Github</a>.</p>
+			</div>
+		</div>
 	</content>
 </data>

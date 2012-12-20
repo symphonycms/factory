@@ -3,6 +3,10 @@
 <data>
 	<title>Scripts</title>
 	<content>
-
+		<div class="field">
+			<div class="column content">
+				<p class="dimmed">Script documentation will be added in version 1.0 final.</p>
+			</div>
+		</div>
 	</content>
 </data>

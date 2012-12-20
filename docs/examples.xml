@@ -3,6 +3,10 @@
 <data>
 	<title>Examples</title>
 	<content>
-
+		<div class="field">
+			<div class="column content">
+				<p class="dimmed">An overview of all examples will be added in version 1.0 final.</p>
+			</div>
+		</div>
 	</content>
 </data>

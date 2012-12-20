@@ -11,7 +11,7 @@
 					<li>
 						<a href="https://github.com/symphonycms/factory">Fork on Github</a></li>
 					<li>
-						<a href="https://github.com/symphonycms/factory/archive/master.zip">Download Version 1.0</a></li>
+						<a href="https://github.com/symphonycms/factory/archive/master.zip">Download Version 1.0 Beta</a></li>
 					<li>
 						<a href="https://github.com/symphonycms/factory/issues?state=open">Issues and Requests</a>
 					</li>
@@ -22,61 +22,10 @@
 				<h4>Repository</h4>
 				<pre><code>git@github.com:symphonycms/factory.git</code></pre>
 				<h4>Symphony Community Licence</h4>
-				<p>Copyright 2012 Symphony Community</p>
+				<p>Copyright &#169; 2012 Symphony Community</p>
 				<p>Symphony Factory is free to use, free of charge for all Symphony Network sites (MIT style). <br />It may not be used in contexts other than the Symphony Network.</p>
 				<p>Symphony Factory was created by <a href="http://hananils.de">Johanna and Nils Hörrmann</a> and kindly <a href="http://pledgie.com/campaigns/18062">funded by the Symphony Community</a>.</p>
 			</div>
 		</div>
-		
-		<!-- Features -->
-<!--		<aside class="field wide tiles">
-			<div class="centered">-->
-			
-				<!-- Layouts -->
-<!--				<article class="tile one">
-					<h3>Layouts</h3>
-					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					<p>
-						<a href="layouts.xml">More about layouts.</a>
-					</p>
-				</article>-->
-				
-				<!-- Snippets -->
-<!--				<article class="tile one">
-					<h3>Snippets</h3>
-					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					<p>
-						<a href="snippets.xml">More about snippets.</a>
-					</p>
-				</article>-->
-				
-				<!-- Styles -->
-<!--				<article class="tile one">
-					<h3>Styles</h3>
-					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					<p>
-						<a href="styles.xml">More about styles.</a>
-					</p>
-				</article>-->
-				
-				<!-- Scripts -->
-<!--				<article class="tile one">
-					<h3>Scripts</h3>
-					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					<p>
-						<a href="scripts.xml">More about scripts.</a>
-					</p>
-				</article>-->
-				
-				<!-- Examples -->
-<!--				<article class="tile one">
-					<h3>Examples</h3>
-					<p>Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					<p>
-						<a href="examples.xml">See some examples.</a>
-					</p>
-				</article>
-			</div>
-		</aside>-->
 	</content>
 </data>
