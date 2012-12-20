@@ -891,7 +891,8 @@ fieldset {
 	padding: 0;
 	margin: 0;
 	border: none;
-	width: 588px;
+	max-width: 588px;
+	width: 100%;
 }
 
 label {
