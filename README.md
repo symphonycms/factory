@@ -4,7 +4,7 @@ Let Symphony Factory enter the stage.
 
 # Symphony Factory
 
-The idea behind Symphony Factory is to provide an easy-to-use HTML, CSS and JavaScript framework to create websites for the Symphony Network with a unified design. We hope the factory will make the development and maintenance of existing sites easier and encourage others to create additional ressources.
+The idea behind Symphony Factory is to provide an easy-to-use HTML, CSS and JavaScript framework to create websites for the Symphony Network with a unified design. We hope the factory will make the development and maintenance of existing sites easier and encourage others to create additional resources.
 
 [Symphony Factory](http://symphonycms.github.com/factory/) is **currently in beta** and freely available for all Symphony Network sites as a [Git repository](https://github.com/symphonycms/factory/).
 
