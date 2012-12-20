@@ -1380,6 +1380,7 @@ a.button,
 
 	#network .network-drawer .three {
 		width: auto;
+		margin-right: 30px;
 	}
 
 }
@@ -1458,6 +1459,36 @@ a.button,
 
 #network .get-symphony [class^=icon]::before {
 	font-size: 3.4rem;	
+}
+
+@media all and (max-width: 520px) {
+
+	#network .get-symphony a {
+		float: left;
+	}
+
+	#network .get-symphony a:first-child {
+		float: none;
+		display: block;
+		margin-bottom: .5rem;
+	}
+
+	#network .get-symphony a.icon-fork {
+		border-left: none;
+		padding-left: 0;
+	}
+
+}
+
+@media all and (max-width: 320px) {
+
+	#network .get-symphony a {
+		float: none;
+		display: block;
+		border-left: none;
+		padding-left: 0;
+	}
+
 }
 
 /*-----------------------------------------------------------------------------
