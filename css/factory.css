@@ -1188,6 +1188,11 @@ a.button:hover,
 	transition: all 0.25s ease-in-out;
 }
 
+#network .network-profile form {
+	margin: 0;
+	padding: 0;
+}
+
 #network .network-profile fieldset {
 	padding: 0;
 	border: none;
