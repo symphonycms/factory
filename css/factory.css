@@ -2139,6 +2139,27 @@ a.button,
 	text-align: right;
 }
 
+@media all and (max-width: 540px) {
+
+	#footer {
+		height: auto;
+		padding: 3em 30px 2em;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	#footer .footer-community,
+	#footer .footer-links {
+		position: static;
+		top: auto;
+		left: auto;
+		right: auto;
+		text-align: left;
+		margin-bottom: .5em;
+	}
+
+}
+
 #footer strong {
 	font-weight: 400;
 	display: block;
