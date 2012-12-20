@@ -251,7 +251,7 @@
 			var grid;
 			
 			// Make sure that no additional keys are pressed
-			if(event.metaKey !== true && event.altKey !== true && event.shiftKey !== true && event.ctrlKey !== true) {
+			if(!$(event.target).is('input') && event.metaKey !== true && event.altKey !== true && event.shiftKey !== true && event.ctrlKey !== true) {
 			
 				// Show/hide labels, shortcut = l
 				if(event.which == 76) {
