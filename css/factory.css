@@ -902,6 +902,8 @@ textarea {
 	width: 100%;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 2px;
 }
 
 .button,
