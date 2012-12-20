@@ -1016,6 +1016,14 @@ a.button,
 	margin: 0;
 }
 
+@media all and (max-width: 647px) {
+
+	#network .network-toolbar {
+		background-image: none;
+	}
+
+}
+
 #network .network-toolbar .centered {
 	position: relative;
 }
@@ -1048,6 +1056,22 @@ a.button,
 	padding: 0.5rem 36px 0.5rem 0;
 	position: relative;
 	line-height: 1.4rem;
+}
+
+@media all and (max-width: 647px) {
+
+	#network .network-nav {
+		background: #383838;
+		float: none;
+		display: block;
+		clear: both;
+		overflow: hidden;
+		margin-left: 0;
+		padding: 0.4rem 30px;
+		border-top: 1px solid #484848;
+		border-bottom: 1px solid #575757;
+	}
+
 }
 
 #network .network-nav::before {
@@ -1127,6 +1151,14 @@ a.button,
 	padding: 2.4rem 0;
 	max-height: 24rem;
 	overflow: hidden;
+}
+
+@media all and (max-width: 647px) {
+
+	#network .network-profile {
+		max-height: none;
+	}
+
 }
 
 #network .network-profile.action-profile-hide {
