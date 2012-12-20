@@ -1536,7 +1536,6 @@ a.button,
 	float: left;
 	text-rendering: optimizeLegibility;
 	margin: 0 40px 0 0;
-	white-space: nowrap;
 }
 
 .svg #site .site-header h1 {
