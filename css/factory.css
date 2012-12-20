@@ -1895,6 +1895,7 @@ a.button:hover,
 	border-bottom: 1px solid #CECECE;
 	padding: 0.5rem 32px 0.5rem 0;
 	margin-bottom: 1.2rem;
+	background: #fbfdfb;
 }
 
 #site .content-annotation p::before,
