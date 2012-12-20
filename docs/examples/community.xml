@@ -7,10 +7,6 @@
 		<!-- Field with sidebar -->
 		<div class="field">
 			<div class="column sidebar">
-				<h3>Search</h3>
-				<form>
-					<input type="text" placeholder="What are you looking for?" />
-				</form>
 				<h3>Filter</h3>
 				<ul>
 					<li>Important</li>
@@ -25,6 +21,9 @@
 				</ul>				
 			</div>
 			<div class="column content">
+				<form class="entry-search justified">
+					<input type="text" placeholder="Type to search …" />
+				</form>
 				<article class="entry-overview justified">
 					<header class="entry-header">
 						<h3>

@@ -901,12 +901,21 @@ label {
 	display: block;
 }
 
-textarea {
+textarea,
+input {
 	width: 100%;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	border: 1px solid rgba(0, 0, 0, 0.25);
 	border-radius: 2px;
+}
+
+input {
+	padding: 0 0.9rem;
+}
+
+textarea {
+	padding: 0.6rem 0.9rem;
 }
 
 .button,
@@ -925,6 +934,7 @@ textarea {
 .button {
 	padding: 0 10px;
 	margin: 0;
+	width: auto;
 	vertical-align: text-bottom;
 	height: 2.6rem;
 	box-sizing: border-box;
@@ -2014,12 +2024,21 @@ a.button:hover,
 	margin-left: 0.6rem;
 }
 
+/* Entry search */
+
+#site .entry-search {
+	padding-bottom: 1.2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+}
+
 /* Entry overview */
 
 #site .entry-overview {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	height: 5.3rem;
 	padding-top: 0.64rem;
+	padding-left: 10px;
 	margin-bottom: 0;
 }
 
