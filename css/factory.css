@@ -1861,7 +1861,7 @@ a.button:hover,
 }
 
 #site .content-annotation {
-	margin-top: 1.8rem;
+	margin-top: 3rem;
 	overflow: visible;
 	position: relative;
 }
@@ -1869,8 +1869,8 @@ a.button:hover,
 #site .content-annotation p {
 	color: #666;
 	border-bottom: 1px solid #CECECE;
-	background: #FBFDFB;
 	padding: 0.5rem 32px 0.5rem 0;
+	margin-bottom: 1.2rem;
 }
 
 #site .content-annotation p::before,
