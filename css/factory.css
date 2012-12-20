@@ -1865,7 +1865,7 @@ a.button:hover,
 	color: #666;
 	border-bottom: 1px solid #CECECE;
 	background: #FBFDFB;
-	padding: 0.5rem 0;
+	padding: 0.5rem 32px 0.5rem 0;
 }
 
 #site .content-annotation p::before,
@@ -1876,7 +1876,7 @@ a.button:hover,
 	height: 0; 
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
-	border-top: 6px solid #CECECE;
+	border-top: 6px solid #b4b4b4; 
 	position: absolute;
 	bottom: -6px;
 	left: 40px;
@@ -1898,7 +1898,7 @@ a.button:hover,
 		right: -10px;
 		bottom: 1.2rem;
 		width: 176px;
-		padding: 0.5rem 10px;
+		padding: 0.5rem 10px 0.5rem 0;
 	}
 
 }
