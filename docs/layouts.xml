@@ -22,7 +22,7 @@
 				<p>If a site includes <code>js/factory.grid.js</code>, you can visualise the grid by pressing <code>g</code>, show the baselines by pressing <code>b</code> or label the grid elements by pressing <code>l</code>:</p>
 
 				<div class="content-annotation">
-					<p>The grid in made of <code>73px</code> wide modules with a gutter of <code>30px</code>.</p>
+					<p>The grid is made up of <code>73px</code> wide modules with a gutter of <code>30px</code>.</p>
 				</div>
 				<div class="content-media-resize">
 					<img src="/docs/img/factory_grid.png" width="814" height="458" alt="Symphony Factory grid" />
