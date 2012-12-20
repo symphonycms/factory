@@ -146,26 +146,6 @@
 					</p>
 				</article>
 
-
-
-
-<!--
-3	Yesterday	moonoo2
-Creating a photo gallery with two sources, user uploaded and flickr api.. any suggestions?
-
-2	Yesterday	koolaid
-Mixing filters of the same type in the DataSources
-
-3	Yesterday	michael-e
-Filemanager
-
-144	Yesterday	plenaforma
-Gateway class problems
-
-6	Yesterday	designermonkey
-Downloading images to server via XML Importer-->
-
-
 				<!-- Pagination -->
 <!--				<nav class="tools pagination">
 					<a class="prev">Previous</a>
