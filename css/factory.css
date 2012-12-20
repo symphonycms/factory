@@ -2166,10 +2166,12 @@ a.button:hover,
 	-ms-transition: color 0.25s ease-in-out;
 	-o-transition: color 0.25s ease-in-out;
 	transition: color 0.25s ease-in-out;
+	background: none;
 }
 
 #footer a:hover {
 	color: #fff;
+	background: none;
 }
 
 #footer a[class^=logo]::before {
