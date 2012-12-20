@@ -362,14 +362,14 @@
 
 			<!-- Thread navigation -->
 			<nav class="column content pagination">
-				<a>Previous</a>
-				<div class="pages">
+				<a class="pagination-prev">Previous</a>
+				<div class="pagination-pages">
 					<a href="#" class="selected">1</a>
 					<a href="#">2</a>
 					<a href="#">3</a>
 					<a href="#">4</a>
 				</div>
-				<a href="#">Next</a>
+				<a href="#" class="pagination-next">Next</a>
 			</nav>
 			
 			<!-- New message -->

@@ -159,9 +159,9 @@
 				</article>
 
 				<!-- Pagination -->
-<!--				<nav class="tools pagination">
-					<a class="prev">Previous</a>
-					<div class="pages">
+				<nav class="pagination">
+					<a class="pagination-prev">Previous</a>
+					<div class="pagination-pages">
 						<a href="#" class="selected">1</a>
 						<a href="#">2</a>
 						<a href="#">3</a>
@@ -172,11 +172,11 @@
 						<a href="#">8</a>
 						<a href="#">9</a>
 						<a href="#">10</a>
-						<a href="#" class="ellipsis">176</a>
+						<a href="#" class="pagination-ellipsis">176</a>
 						<a href="#">177</a>
 					</div>
-					<a href="#" class="next">Next</a>
-				</nav>-->
+					<a href="#" class="pagination-next">Next</a>
+				</nav>
 			</div>
 		</div>
 	</content>
