@@ -10,4 +10,6 @@ The idea behind Symphony Factory is to provide an easy-to-use HTML, CSS and Java
 
 ## Funding
 
-Symphony Factory was created by [Johanna and Nils Hörrmann](http://hananils.de) and kindly [funded by the Symphony Community](http://pledgie.com/campaigns/18062). Thank you so much for your support!
+Symphony Factory was created by [Johanna and Nils Hörrmann](http://hananils.de) and kindly [funded by the Symphony Community](http://pledgie.com/campaigns/18062).
+
+Thank you so much for your support!
