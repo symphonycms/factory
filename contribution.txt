@@ -1,0 +1,5 @@
+# Contribution Guide
+
+If you like to contribute to Symphony Factory please fork the repository, commit your changes to a new branch and send a pull request against the `development` branch.
+
+Thanks!
