@@ -12,15 +12,15 @@
 	General definitions:
 
   # Colours
-	
+
 	$network: b20b4f;
 	$site: #fbfdfb;
 	$pink: #b20b4f;
-	
+
   # Units
-	
-	`rem` are used for vertical and `px` for horizontal measures. 
-	While `rem` help creating a scalable vertical rhythm, 
+
+	`rem` are used for vertical and `px` for horizontal measures.
+	While `rem` help creating a scalable vertical rhythm,
 	`px` should simplify the process of working with images.
 	This may change in the future.
 -----------------------------------------------------------------------------*/
@@ -85,12 +85,12 @@ table {
 
 /*-----------------------------------------------------------------------------
 	Layouts:
-	
+
 	There are one kinds of general site layouts: centered and wide.
 	The centered layout is the default one and should be used by all
-	text focussed sites. The fluid version is conceived for special 
+	text focussed sites. The fluid version is conceived for special
 	user interfaces like xPathr that need the full window width.
-	
+
 	All fields (see below) default to the centered layout.
 -----------------------------------------------------------------------------*/
 
@@ -159,35 +159,35 @@ table {
 
 /*-----------------------------------------------------------------------------
 	Grid, fields and columns:
-	
-	Symphony Factory is built upon an adaptive grid system that is based 
+
+	Symphony Factory is built upon an adaptive grid system that is based
 	on 73px wide modules with a gutter of 30px. Depending on the window/screen
 	width, it offers four different layouts:
-	
+
 	- a basic fluid layout for the smallest screen sizes,
 	- a small layout (3 columns wide)
 	- a medium layout (4 columns wide) and
 	- a large layout (5 columns wide)
-	
-	If you want to exclude one of these layout states on your site, just add a 
-	`data-exclude-state` attribute on the body with the space-separated names  
+
+	If you want to exclude one of these layout states on your site, just add a
+	`data-exclude-state` attribute on the body with the space-separated names
 	(fluid, small, medium, large).
 
 	A site should always be structured by fields that group the content columns.
 	Fields can be nested and justified (which allows borders and lines to break
 	the element by a few pixels for optical alignment).
-	
-	Columns can either be defined by width (one, two, three, four, five) or by 
-	function (sidebar or content). A column width can be adjusted based on the 
-	layout context: the class `.medium-one` will override all other width 
-	definitions when displaying the medium layout. This is helpful to adjust 
+
+	Columns can either be defined by width (one, two, three, four, five) or by
+	function (sidebar or content). A column width can be adjusted based on the
+	layout context: the class `.medium-one` will override all other width
+	definitions when displaying the medium layout. This is helpful to adjust
 	content display responsively. The fluid layout linearises all columns.
-	
-	All columns are floated and it's up to the developer to make sure that 
-	their widths sum up to the full page width per row if this is desired. 
-	The widths .four and .five are not meant to display running text, 
+
+	All columns are floated and it's up to the developer to make sure that
+	their widths sum up to the full page width per row if this is desired.
+	The widths .four and .five are not meant to display running text,
 	they should be used for tables and images.
-	
+
 	If you'd like to nest columns inside a column, make sure to wrap those
 	columns with another .field element.
 -----------------------------------------------------------------------------*/
@@ -255,7 +255,7 @@ table {
 
 .justified .column:first-child {
 	margin-left: 10px;
-} 
+}
 
 /* Columns by function */
 
@@ -323,9 +323,9 @@ table {
 /* Columns by width in small layout */
 
 @media all and (min-width: 648px) and (max-width: 853px) {
-	
+
 	.small-hide {
-	
+
 		/* Hide this column in small layout */
 		display: none;
 	}
@@ -333,19 +333,19 @@ table {
 	.small-one {
 		width: 176px;
 	}
-	
+
 	.small-two {
 		width: 382px;
 	}
-	
+
 	.small-three {
 		width: 588px;
 	}
-	
+
 	.small-four {
 		width: 793px;
 	}
-	
+
 	.small-five {
 		width: 1000px;
 	}
@@ -355,7 +355,7 @@ table {
 /* Columns by width in medium layout */
 
 @media all and (min-width: 854px) and (max-width: 1059px) {
-	
+
 	.medium-hide {
 
 		/* Hide this column in medium layout */
@@ -365,19 +365,19 @@ table {
 	.medium-one {
 		width: 176px;
 	}
-	
+
 	.medium-two {
 		width: 382px;
 	}
-	
+
 	.medium-three {
 		width: 588px;
 	}
-	
+
 	.medium-four {
 		width: 793px;
 	}
-	
+
 	.medium-five {
 		width: 1000px;
 	}
@@ -387,7 +387,7 @@ table {
 /* Columns by width in large layout */
 
 @media all and (min-width: 1060px) {
-	
+
 	.large-hide {
 
 		/* Hide this column in large layout */
@@ -397,19 +397,19 @@ table {
 	.large-one {
 		width: 176px;
 	}
-	
+
 	.large-two {
 		width: 382px;
 	}
-	
+
 	.large-three {
 		width: 588px;
 	}
-	
+
 	.large-four {
 		width: 793px;
 	}
-	
+
 	.large-five {
 		width: 1000px;
 	}
@@ -425,7 +425,7 @@ table {
 		/* Hide this column in fluid layout */
 		display: none;
 	}
-	
+
 	#site .column {
 
 		/* Linearise columns */
@@ -438,11 +438,11 @@ table {
 /*-----------------------------------------------------------------------------
 	Tiles:
 
-	Tiles are a special set of fixed height columns on a full width 
-	backsplash. They are meant to used for additional content or short 
+	Tiles are a special set of fixed height columns on a full width
+	backsplash. They are meant to used for additional content or short
 	feature descriptions.
-	
-	Tiles can be sizes by using the width classes also used for columns 
+
+	Tiles can be sizes by using the width classes also used for columns
 	(one, two, three, four, five).
 -----------------------------------------------------------------------------*/
 
@@ -490,7 +490,7 @@ table {
 
 /*-----------------------------------------------------------------------------
 	Icons:
-	
+
 	Symphony Factory uses Entypo pictograms by Daniel Bruce – www.entypo.com
 -----------------------------------------------------------------------------*/
 
@@ -498,9 +498,9 @@ table {
 	font-family: 'Entypo';
 	src: url('fonts/entypo.eot');
 	src: url('fonts/entypo.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/entypo.woff') format('woff'),
-	     url('fonts/entypo.ttf') format('truetype'),
-	     url('fonts/entypo.svg#svgEntypo') format('svg');
+		 url('fonts/entypo.woff') format('woff'),
+		 url('fonts/entypo.ttf') format('truetype'),
+		 url('fonts/entypo.svg#svgEntypo') format('svg');
 }
 
 [class^=icon]::before {
@@ -519,7 +519,7 @@ table {
 
 /*-----------------------------------------------------------------------------
 	Lists:
-	
+
 	Lists with bullet points or numbers.
 -----------------------------------------------------------------------------*/
 
@@ -593,7 +593,7 @@ dd {
 
 /*-----------------------------------------------------------------------------
 	Code:
-	
+
 	Syntax highlighting class will override the default Codemirror definitions.
 	Thus the CodeMirror styles have to be included first.
 -----------------------------------------------------------------------------*/
@@ -670,7 +670,7 @@ pre[class*="language-"] {
 	padding: 1.5rem 10px;
 }
 
-:not(pre) > code[class*="language-"], 
+:not(pre) > code[class*="language-"],
 pre[class*="language-"],
 var {
 	background: #F5F5F5;
@@ -773,7 +773,7 @@ pre[data-line] {
 	border-right: 1px solid rgba(0, 0, 0, 0.25);
 	background-image: -webkit-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	background-image: -moz-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
-	background-image: -ms-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);	
+	background-image: -ms-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	background-image: -o-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	background-image: linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2), 2px 0 10px rgba(100, 100, 100, 0.1);
@@ -924,7 +924,7 @@ textarea {
 	border-radius: 2px;
 	background-image: -webkit-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	background-image: -moz-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
-	background-image: -ms-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);	
+	background-image: -ms-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	background-image: -o-linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	background-image: linear-gradient(top, #FBFDFB 0%, #e8e8e8 95%);
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
@@ -963,7 +963,7 @@ a.button,
 	display: inline-block;
 	padding: 0 10px;
 	color: #282828;
-}	
+}
 
 .button-set a {
 	background: none;
@@ -1278,7 +1278,7 @@ a.button:hover,
 	background: #A00947;
 	background-image: -webkit-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
 	background-image: -moz-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
-	background-image: -ms-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);	
+	background-image: -ms-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
 	background-image: -o-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
 	background-image: linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.025) 95%);
 	box-shadow: inset 0 -1px 0 rgba(210, 101, 145, 0.2);
@@ -1288,7 +1288,7 @@ a.button:hover,
 	border-color: #700731;
 	background-image: -webkit-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
 	background-image: -moz-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
-	background-image: -ms-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);	
+	background-image: -ms-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
 	background-image: -o-linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
 	background-image: linear-gradient(top, rgba(226, 14, 100, 0.4) 0%, rgba(106, 7, 47, 0.4) 95%);
 	cursor: pointer;
@@ -1468,7 +1468,7 @@ a.button:hover,
 }
 
 #network .get-symphony [class^=icon]::before {
-	font-size: 3.4rem;	
+	font-size: 3.4rem;
 }
 
 /*-----------------------------------------------------------------------------
@@ -1545,7 +1545,7 @@ a.button:hover,
 		padding-top: 4.4rem;
 		padding-bottom: 2.4rem;
 	}
-	
+
 }
 
 #site .site-header::before,
@@ -1902,11 +1902,11 @@ a.button:hover,
 #site .content-annotation p::after {
 	content: " ";
 	display: block;
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
-	border-top: 6px solid #b4b4b4; 
+	border-top: 6px solid #b4b4b4;
 	position: absolute;
 	bottom: -6px;
 	left: 40px;
@@ -1967,7 +1967,7 @@ a.button:hover,
 }
 
 #site .sidebar-users li img {
-	background-color: #F5F5F5;	
+	background-color: #F5F5F5;
 }
 
 #site .sidebar-userimg {
@@ -2000,7 +2000,7 @@ a.button:hover,
 	font-size: 3.6rem;
 	font-weight: 300;
 	display: inline-block;
-	line-height: 4rem;	
+	line-height: 4rem;
 }
 
 #site .sidebar h3 {
@@ -2092,22 +2092,22 @@ a.button:hover,
 	#site .entry-author::after {
 		display: none;
 	}
-	
+
 	#site .entry-activity {
 		display: block;
 		position: absolute;
 		top: 0.6rem;
 		left: 525px;
 	}
-	
+
 	#site .entry-activity time {
 		display: block;
 	}
-	
+
 	#site .entry-activity a:after {
 		display: none;
 	}
-	
+
 }
 
 #site .entry-meta {
@@ -2256,7 +2256,7 @@ a.button:hover,
 	height: 11.7rem;
 	clear: both;
 	color: #fff;
-	font-weight: 300;	
+	font-weight: 300;
 	overflow: hidden;
 	position: relative;
 	z-index: 10;
@@ -2274,7 +2274,7 @@ a.button:hover,
 	top: 3.8rem;
 	left: 30px;
 	margin: 0;
-	
+
 	/* Make sure font smoothing in Webkit doesn't change when the Factory artwork is animated */
 	-webkit-font-smoothing: subpixel-antialiased;
 }
