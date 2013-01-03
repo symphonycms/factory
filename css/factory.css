@@ -1062,6 +1062,14 @@ a.button:hover,
 	margin: 0;
 }
 
+@media all and (max-width: 647px) {
+
+	#network .network-toolbar {
+		background-image: none;
+	}
+
+}
+
 #network .network-toolbar .centered {
 	position: relative;
 }
@@ -1094,6 +1102,22 @@ a.button:hover,
 	padding: 0.5rem 36px 0.5rem 0;
 	position: relative;
 	line-height: 1.4rem;
+}
+
+@media all and (max-width: 647px) {
+
+	#network .network-nav {
+		background: #383838;
+		float: none;
+		display: block;
+		clear: both;
+		overflow: hidden;
+		margin-left: 0;
+		padding: 0.4rem 30px;
+		border-top: 1px solid #484848;
+		border-bottom: 1px solid #575757;
+	}
+
 }
 
 #network .network-nav::before {
@@ -1173,6 +1197,14 @@ a.button:hover,
 	padding: 2.4rem 0;
 	max-height: 24rem;
 	overflow: hidden;
+}
+
+@media all and (max-width: 647px) {
+
+	#network .network-profile {
+		max-height: none;
+	}
+
 }
 
 #network .network-profile.action-profile-hide {
@@ -1395,6 +1427,15 @@ a.button:hover,
 	margin-top: 18px;
 }
 
+@media all and (max-width: 647px) {
+
+	#network .network-drawer .three {
+		width: auto;
+		margin-right: 30px;
+	}
+
+}
+
 #network .network-drawer h2 {
 	border-bottom: 1px solid #9E0A46;
 	color: #350318;
@@ -1469,6 +1510,36 @@ a.button:hover,
 
 #network .get-symphony [class^=icon]::before {
 	font-size: 3.4rem;
+}
+
+@media all and (max-width: 520px) {
+
+	#network .get-symphony a {
+		float: left;
+	}
+
+	#network .get-symphony a:first-child {
+		float: none;
+		display: block;
+		margin-bottom: .5rem;
+	}
+
+	#network .get-symphony a.icon-fork {
+		border-left: none;
+		padding-left: 0;
+	}
+
+}
+
+@media all and (max-width: 320px) {
+
+	#network .get-symphony a {
+		float: none;
+		display: block;
+		border-left: none;
+		padding-left: 0;
+	}
+
 }
 
 /*-----------------------------------------------------------------------------
@@ -1587,7 +1658,6 @@ a.button:hover,
 	float: left;
 	text-rendering: optimizeLegibility;
 	margin: 0 40px 0 0;
-	white-space: nowrap;
 }
 
 .svg #site .site-header h1 {
@@ -2283,6 +2353,27 @@ a.button:hover,
 	left: auto;
 	right: 30px;
 	text-align: right;
+}
+
+@media all and (max-width: 540px) {
+
+	#footer {
+		height: auto;
+		padding: 3em 30px 2em;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	#footer .footer-community,
+	#footer .footer-links {
+		position: static;
+		top: auto;
+		left: auto;
+		right: auto;
+		text-align: left;
+		margin-bottom: .5em;
+	}
+
 }
 
 #footer strong {
