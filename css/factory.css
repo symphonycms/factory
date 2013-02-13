@@ -1139,6 +1139,11 @@ a.button:hover,
 	padding: 0.5rem 0;
 }
 
+#network .network-nav a.active {
+	color: rgba(255, 255,255, 1);
+	font-weight: 700;
+}
+
 #network .network-nav a:hover {
 	color: #fff;
 }
