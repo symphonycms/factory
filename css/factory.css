@@ -532,6 +532,13 @@ dl {
 	list-style: none;
 }
 
+ul li ul {
+  margin-bottom: 0;
+}
+ul li li {
+  margin-left: 25px;
+}
+
 /* Definitions */
 
 dt {
