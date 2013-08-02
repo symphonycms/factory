@@ -1576,6 +1576,12 @@ a.button:hover,
 	text-transform: uppercase;
 }
 
+#site .content h1 {
+	font-size: 3.2rem;
+	text-transform: none;
+	margin-bottom: 2rem;
+}
+
 #site h2 {
 	font-size: 2.6rem;
 	font-weight: 400;
